@@ -1,7 +1,7 @@
 # Личный проект «Погнали» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Михаил Мигаленко](https://up.htmlacademy.ru/adaptive/20/user/1409557).
-* Наставник: `Неизвестно`.
+* Наставник: [Антон Попов 🃏](https://htmlacademy.ru/profile/joker).
 
 ---
 
