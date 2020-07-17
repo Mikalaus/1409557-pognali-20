@@ -6,7 +6,220 @@
   </head>
   <body>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS, уровень 2</a>».</p>
+    <header>
+      <div class="center-wrap">
+        <div class="display-min header__display-min">
+          <a href="index.html" class="display-min__logo"></a>
+          <button type="button" class="display-min__menu"></button>
+        </div>
+        <div class="display header__display-full">
+          <nav class="links display__links">
+            <a href="#" class="links__item1">О сервисе</a>
+            <a href="form.html" class="links__item2">Направления</a>
+            <a href="photo.html" class="links__item3">Попутчики</a>
+          </nav>
+          <a href="" class="enter-link display__enter-link">Авторизация</a>
+          <div class="contacts display_contacts">
+            <a href="tel:88005558628" class="contacts__telephone">8 800 555-86-28</a>
+            <a href="" class="contacts__mail">mail@htmlacademy.ru</a>
+          </div>
+          <div class="social-media display__social-media">
+            <a href="#" class="social-media__fb">facebook</a>
+            <a href="#" class="social-media__vk">vk</a>
+            <a href="#" class="social-media__insta">instagram</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="center-wrap">
+        <section class="main-info">
+          <h1 class="main-info__title">В путешествие с крутыми попутчиками!</h1>
+          <div class="main-info__user-links">
+            <a href="" class="main-info__phone"><img src="" alt="phone"></a>
+            <a href="" class="main-info__mail"><img src="" alt="@mail"></a>
+            <a href="" class="enter-link main-info__enter-link">Авторизация</a>
+          </div>
+          <blockquote class="main-info__review">
+            <q class="main-info__review-quote">Лучшее приложение, что я видел в жизни!</q>
+            <cite class="main-info__review-author">Мурат Эльтазин главный редактор газеты «гаджетлайф»</cite>
+          </blockquote>
+          <ul class="usage-list main-info__list">
+            <li class="usage-list__item usage-list__item_orange"><p>Выберите направление</p><span>1</span></li>
+            <li class="usage-list__item usage-list__item_light-orange"><p>Изучите идеи путешественников</p><span>2</span></li>
+            <li class="usage-list__item usage-list__item_dark-yellow"><p>Находите тех, кто похож на вас</p><span>3</span></li>
+            <li class="usage-list__item usage-list__item_yellow"><p>Путешествуйте вместе!</p><span>4</span></li>
+          </ul>
+        </section>
+        <section class="service typical-bottom-section">
+          <h1 class="typical-title service__title">О сервисе</h1>
+          <p>Любое путешествие веселее с попутчиками, которые на одной волне с тобой! Делитесь своими идеями путешествий и черпайте вдохновение в чужих.</p>
+          <p><b>А если найдете кого-то близкого по духу — скорее зовите в совместный трип!</b></p>
+        </section>
+        <section class="countries typical-bottom-section">
+          <h1 class="typical-title countries__title">Направления</h1>
+          <p>Мы не продаем туры и ничего не рекламируем. Люди сами пишут о странах, куда хотели бы отправиться и чем можно там заняться.</p>
+          <div class="countries__country-cards">
+            <div class="card countries__card">
+              <div class="card__content-block">
+                <img src="" alt="" class="card__country-flag">
+                <h3 class="card__country">Таиланд</h3>
+                <p class="card__country-description">Джунгли зовут!</p>
+                <span class="card__guests">18321</span>
+              </div>
+            </div>
+            <div class="card countries__card">
+              <div class="card__content-block">
+                <img src="" alt="" class="card__country-flag">
+                <h3 class="card__country">Франция</h3>
+                <p class="card__country-description">Трэ бьен, манифик!</p>
+                <span class="card__guests">12518</span>
+              </div>
+            </div>
+            <div class="card countries__card">
+              <div class="card__content-block">
+                <img src="" alt="" class="card__country-flag">
+                <h3 class="card__country">Чехия</h3>
+                <p class="card__country-description">Закоулки старой Европы</p>
+                <span class="card__guests">5326</span>
+              </div>
+            </div>
+          </div>
+          <a href="" class="typical-link countries__link">Показать все</a>
+        </section>
+        <section class="companion typical-bottom-section">
+          <h1 class="typical-title companion__title">Попутчики</h1>
+          <p>Все мы индивидуальны и у каждого свой взгляд на идеальный отдых. Одному нужен пляж и коктейль, а другому маршрут для хайкинга.</p>
+          <p><b>Теперь можно легко найти единомышленников!</b></p>
+          <div class="companion__cards">
+            <div class="companion__card">
+              <div class="companion-level card__level">
+                <span class="companion-level__level-value">99</span>
+                <span class="companion-level__level">level</span>
+              </div>
+              <div class="card__content">
+                <div class="card__countries">
+                  <div class="card__country_name-of-country"><img src="" alt=""></div>
+                  <div class="card__country_name-of-country"><img src="" alt=""></div>
+                  <div class="card__country_name-of-country"><img src="" alt=""></div>
+                </div>
+                <span class="card__companion-name">Таня Фирсова</span>
+                <div class="card__hashtags">#ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи</div>
+                <div class="transport-options card__transport-options">
+                  <form action="" class="transport-options__form1">
+                    <label><input class="airplane" type="checkbox"></label>
+                    <label><input class="bus" type="checkbox"></label>
+                    <label><input class="cycle" type="checkbox"></label>
+                    <label><input class="walk" type="checkbox"></label>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <div class="companion__card">
+              <div class="card-level companion__level">
+                <span class="card-level__level-value">80</span>
+                <span class="card-level__level">level</span>
+              </div>
+              <div class="card__content">
+                <div class="card__countries">
+                  <div class="card__country_name-of-country"><img src="" alt=""></div>
+                  <div class="card__country_name-of-country"><img src="" alt=""></div>
+                </div>
+                <span class="card__companion-name">Петя Демин</span>
+                <div class="card__hashtags">#бургер #бар #футбол #концерт #крафт</div>
+                <div class="transport-options card__transport-options">
+                  <form action="" class="transport-options__form2">
+                    <label><input class="airplane" type="checkbox"></label>
+                    <label><input class="bus" type="checkbox"></label>
+                    <label><input class="cycle" type="checkbox"></label>
+                    <label><input class="walk" type="checkbox"></label>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a href="" class="typical-link companion__link">Показать всех</a>
+        </section>
+        <section class="price-list typical-bottom-section">
+          <div class="price-list__list">
+            <div class="price-list__add-profile">
+              <h1 class="typical-title price-list__title">Добавьте свой профиль</h1>
+              <a href="#" class="price-list__profile-link"></a>
+            </div>
+            <dl class="price-list__items">
+              <div class="price-list__item">
+                <dt class="prices__option">Базовое размещение</dt>
+                <dd class="prices__cost">Бесплатно</dd>
+              </div>
+              <div class="price-list__item">
+                <dt class="prices__option">Вывод на первых позициях</dt>
+                <dd class="prices__cost">99 руб./мес</dd>
+              </div>
+              <div class="price-list__item">
+                <dt class="prices__option">Кастомный цвет карточки</dt>
+                <dd class="prices__cost">59 руб./мес</dd>
+              </div>
+            </dl>
+            <button class="price-list__open-biusness">Показать тарифы для бизнеса</button>
+          </div>
+          <div class="price-list__buisness-list">
+            <h1 class="typical-title buisness-list__title">Бизнес-тарифы</h1>
+            <dl class="buisness-list__items">
+              <div class="buisness-list__item">
+                <dt class="prices__option">Реклама у блоггера</dt>
+                <dd class="prices__cost">300 000 руб./пост</dd>
+              </div>
+              <div class="buisness-list__item">
+                <dt class="prices__option">Накрутка подписчиков</dt>
+                <dd class="prices__cost">от 1 руб./шт.</dd>
+              </div>
+              <div class="buisness-list__item">
+                <dt class="prices__option">Лайки от ботов</dt>
+                <dd class="prices__cost">от 20 коп./лайк</dd>
+              </div>
+              <div class="buisness-list__item">
+                <dt class="prices__option">Ваш продакт-плейсмент</dt>
+                <dd class="prices__cost">Индивидуально</dd>
+              </div>
+            </dl>
+            <button class="buisness-list__close">Закрыть окно</button>
+          </div>
+        </section>
+        <section class="regitration typical-bottom-section">
+          <h1 class="typical-title registration__title">Заинтересовались?</h1><!--Можно ли модификатор вкладывать в элемент?-->
+          <p class="registration__description">Зарегистрируйтесь, это быстро и бесплатно! Уже зарегистрированы? Тогда скорее <span class="registration__description_yellow-word">авторизуйтесь</span>.</p>
+          <form action="" class="registration__form"><input type="text" class="registration__mail-input"></form>
+          <p class="registration__write-us-text">Остались вопросы? Мы с радостью на них ответим!</p>
+          <div class="contacts registration_contacts">
+            <a href="tel:88005558628" class="contacts__telephone">8 800 555-86-28</a>
+            <a href="" class="contacts__mail">mail@htmlacademy.ru</a>
+          </div>
+        </section>
+        <section class="address typical-bottom-section">
+          <h2 class="address__position">ул. Большая Конюшенная, 19/8</h2>
+          <a href="" class="addres__build-way">Проложить маршрут</a>
+        </section>
+        <section class="map">
+          <!--<iframe src="" width="" height=""></iframe>-->
+        </section>
+      </div>
+    </main>
+
+    <footer>
+      <div class="center-wrap">
+        <a href="#" class="footer__logo"></a>
+        <div class="social-media footer__social-media">
+          <a href="#" class="social-media__fb">facebook</a>
+          <a href="#" class="social-media__vk">vk</a>
+          <a href="#" class="social-media__insta">instagram</a>
+        </div>
+        <div class="footer__bottom-part-wrapper">
+          <span>Разработано</span>
+          <a href="https://up.htmlacademy.ru/adaptive">htmlacademy</a>
+        </div>
+      </div>
+    </footer>
 
   </body>
 </html>
