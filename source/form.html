@@ -6,27 +6,27 @@
   </head>
   <body>
 
-    <header>
+    <header class="header">
       <div class="center-wrap">
-        <div class="display-min header__display-min">
-          <a href="index.html" class="display-min__logo"></a>
-          <button type="button" class="display-min__menu"></button>
-        </div>
-        <div class="display header__display-full">
-          <nav class="links display__links">
-            <a href="index.html" class="links__item1">О сервисе</a>
-            <a href="#" class="links__item2">Направления</a>
-            <a href="catalog.html" class="links__item3">Попутчики</a>
-          </nav>
-          <a href="" class="enter-link display__enter-link">Авторизация</a>
-          <div class="contacts display_contacts">
-            <a href="tel:88005558628" class="contacts__telephone">8 800 555-86-28</a>
-            <a href="" class="contacts__mail">mail@htmlacademy.ru</a>
-          </div>
-          <div class="social-media display__social-media">
-            <a href="#" class="social-media__fb">facebook</a>
-            <a href="#" class="social-media__vk">vk</a>
-            <a href="#" class="social-media__insta">instagram</a>
+        <div class="header__display">
+          <a href="index.html" class="logo header__logo"></a>
+          <button type="button" class="header__menu-open"></button>
+          <div class="header__menu">
+            <nav class="header__links">
+              <a href="index.html" class="header__link">О сервисе</a>
+              <a href="#" class="header__link">Направления</a>
+              <a href="catalog.html" class="header__link">Попутчики</a>
+            </nav>
+            <a href="" class="enter-link header__enter-link">Авторизация</a>
+            <div class="contacts header_contacts">
+              <a href="tel:88005558628" class="contacts__telephone">8 800 555-86-28</a>
+              <a href="" class="contacts__mail">mail@htmlacademy.ru</a>
+            </div>
+            <div class="social-media header__social-media">
+              <a href="#" class="social-media__link social-media__link_fb">facebook</a>
+              <a href="#" class="social-media__link social-media__link_vk">vk</a>
+              <a href="#" class="social-media__link social-media__link_insta">instagram</a>
+            </div>
           </div>
         </div>
       </div>
@@ -44,9 +44,9 @@
               <span class="card-level__level-value">80</span>
               <span class="card-level__level">level</span>
             </div>
-            <div class="profile__photo"></div>
+            <img src="" alt="" class="profile__photo">
           </div>
-          <button class="typical-button typical-button_color_lightgrey profile__change-img-button">Сменить фото</button>
+          <a class="typical-button typical-button_secondary profile__change-img-button">Сменить фото</a>
           <div class="profile__tags">
             <form action="" class="profile__tags-form">
               <legend class="profile__tags-legend">Тэги</legend>
@@ -66,16 +66,14 @@
         <section class="typical-top-section plans">
           <div class="plans__cards">
             <div class="plans__card">
-              <span class="plans__card-num">1.</span>
-              <span class="plans__countries-name">Франция, Италия</span>
+              <h2 class="plans__countries-name">1. Франция, Италия</h2>
               <p class="plans__trip-description">3 попутчика<br>26 мар — 29 мар</p>
               <a class="plans__change-button">Изменить</a>
             </div>
             <div class="plans__card">
-              <span class="plans__card-num">2.</span>
-              <span class="plans__countries-name">Таиланд, Индонезия</span>
+              <h2 class="plans__countries-name">2. Таиланд, Индонезия</h2>
               <p class="plans__trip-description">1 попутчик<br>1 июл — 15 июл</p>
-              <a class="plans__change-button">Изменить</a>
+              <a href="#" class="plans__change-button">Изменить</a>
             </div>
           </div>
         </section>
@@ -83,13 +81,13 @@
           <div class="add-plan__title-block">
             <h1 class="add-plan__title">Добавить план:</h1>
             <ul class="add-plan__slider-dots">
-              <li class="add-plan__slider-item add-plan__slider-item_active"></li>
-              <li class="add-plan__slider-item"></li>
-              <li class="add-plan__slider-item"></li>
+              <li class="add-plan__slider-item add-plan__slider-item_active">&bull;</li>
+              <li class="add-plan__slider-item">&bull;</li>
+              <li class="add-plan__slider-item">&bull;</li>
             </ul>
           </div>
           <form action="" class="add-plan__form">
-            <div class="date add-plan__date">
+            <fieldset class="date add-plan__date">
               <h1 class="add-plan__step-title">Шаг1.<br>Даты пребывания</h1>
               <p class="add-plan__step-description">
                 Укажите предпочтительное
@@ -104,9 +102,9 @@
                   <span class="quantity__measure">чел.</span>
                 </div>
                 <div class="quantity-input quantity-block__quantity-input">
-                  <button class="quantity-input__min-button"></button>
+                  <button class="quantity-input__min-button">-</button>
                   <input type="text" class="quantity-input__input">
-                  <button class="quantity-input__max-button"></button>
+                  <button class="quantity-input__max-button">+</button>
                 </div>
               </div>
               <div class="quantity-block date__duration">
@@ -115,19 +113,19 @@
                   <span class="quantity__measure">дн.</span>
                 </div>
                 <div class="quantity-block__quantity-input">
-                  <button class="quantity-input__min-button"></button>
+                  <button class="quantity-input__min-button">-</button>
                   <input type="text" class="quantity-input__input">
-                  <button class="quantity-input__max-button"></button>
+                  <button class="quantity-input__max-button">+</button>
                 </div>
               </div>
-              <div class="date__checkbox">
+              <div class="add-plan-checkbox date__checkbox">
                 <label for="kids">Можно с детьми</label><input type="checkbox" id="kids">
               </div>
               <div class="calendar date__calendar">
                 <div class="calendar__month-block">
-                  <button class="calendar__previous-month"></button>
+                  <a href="#" class="calendar__previous-month"></a>
                   <span class="calendar__month">Март 2019</span>
-                  <button class="calendar__next-month"></button>
+                  <a href="#" class="calendar__next-month"></a>
                 </div>
                 <div class="calendar__calendar-block">
                   <ul class="calendar__weekday-list">
@@ -183,11 +181,11 @@
                     <li class="calendar__item">4</li>
                     <li class="calendar__item">5</li>
                   </ul>
-                  <button class="typical-button date__next-step">Следующий шаг</button>
+                  <a href="#" class="typical-button date__next-step">Следующий шаг</a>
                 </div>
               </div>
-            </div>
-            <div class="direction add-plan__direction">
+            </fieldset>
+            <fieldset class="direction add-plan__direction">
               <h1 class="add-plan__step-title">Шаг 2.<br>Маршрут</h1>
               <p class="add-plan__step-description">Укажите страны, которые вы хотели посетить. Это может быть одна или сразу несколько.</p>
               <div class="direction__add-country">
@@ -197,7 +195,7 @@
                     <div class="fade-block choose-country__fade-block"><button class="choose-country__list-open-button"></button></div>
                   </div>
                   <div class="choose-country__country-flag"></div>
-                  <button class="choose-country__delete-button"></button>
+                  <a class="choose-country__delete-button"></a>
                 </div>
                 <div class="choose-country direction__choose-country">
                   <div class="choose-country__country-name">
@@ -205,14 +203,14 @@
                     <div class="fade-block choose-country__fade-block"><button class="choose-country__list-open-button"></button></div>
                   </div>
                   <div class="choose-country__country-flag"></div>
-                  <button class="choose-country__delete-button"></button>
+                  <a class="choose-country__delete-button"></a>
                 </div>
                 <div class="choose-country direction__choose-country">
                   <div class="choose-country__country-name choose-country__country-name_choose">
                     <span>Выберите страну</span>
                   </div>
                   <div class="choose-country__country-flag choose-country__country-flag_choose"><button class="choose-country__list-open-button"></button></div>
-                  <button class="choose-country__delete-button"></button>
+                  <a class="choose-country__delete-button"></a>
                 </div>
                 <div class="choose-country direction__choose-country direction__choose-country_add">
                   <div class="choose-country__country-name choose-country__country-name_add">
@@ -221,10 +219,10 @@
                   <div class="choose-country__country-flag choose-country__country-flag_add"></div>
                 </div>
               </div>
-              <button class="typical-button direction__next-step">Следующий шаг</button>
-              <button class="direction__previous-step">На шаг назад</button>
-            </div>
-            <div class="entertainment add-plan__entertainment">
+              <a class="typical-button direction__next-step">Следующий шаг</a>
+              <a class="direction__previous-step">На шаг назад</a>
+            </fieldset>
+            <fieldset class="entertainment add-plan__entertainment">
               <h1 class="add-plan__step-title">Шаг 3.<br>Развлечения</h1>
               <p class="add-plan__step-description">Наконец, расскажите о своих планах времяпровождения. Можно писать в свободной форме и ставить тэги.</p>
               <div class="entertainment__trip-direction">
@@ -233,26 +231,26 @@
                     <h3 class="entertainment__country-name">Босния и Герцеговина</h3>
                     <div class="fade-block entertainment__fade-block"></div>
                   </div>
-                  <textarea name="" id="" cols="30" rows="10" class="entertainment__plan-input"></textarea>
+                  <textarea name="" id="" cols="30" rows="10" class="add-plan__plan-input"></textarea>
                 </div>
                 <div class="entertainment__country-card">
                   <div class="entertainment__label">
                     <h3 class="entertainment__country-name">Чехия</h3>
                     <div class="fade-block entertainment__fade-block"></div>
                   </div>
-                  <textarea name="" id="" cols="30" rows="10" class="entertainment__plan-input"></textarea>
+                  <textarea name="" id="" cols="30" rows="10" class="add-plan__plan-input"></textarea>
                 </div>
               </div>
               <button type="submit" class="typical-button direction__next-step">Отправить</button>
-              <button class="direction__previous-step">На шаг назад</button>
-            </div>
+              <a class="direction__previous-step">На шаг назад</a>
+            </fieldset>
           </form>
         </section>
       </div>
 
     </main>
 
-    <footer>
+    <footer class="footer">
       <div class="center-wrap">
         <a href="#" class="footer__logo"></a>
         <div class="social-media footer__social-media">
