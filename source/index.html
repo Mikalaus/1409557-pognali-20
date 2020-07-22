@@ -6,27 +6,27 @@
   </head>
   <body>
 
-    <header>
+    <header class="header">
       <div class="center-wrap">
-        <div class="display-min header__display-min">
-          <a href="index.html" class="display-min__logo"></a>
-          <button type="button" class="display-min__menu"></button>
-        </div>
-        <div class="display header__display-full">
-          <nav class="links display__links">
-            <a href="#" class="links__item1">О сервисе</a>
-            <a href="form.html" class="links__item2">Направления</a>
-            <a href="catalog.html" class="links__item3">Попутчики</a>
-          </nav>
-          <a href="" class="enter-link display__enter-link">Авторизация</a>
-          <div class="contacts display_contacts">
-            <a href="tel:88005558628" class="contacts__telephone">8 800 555-86-28</a>
-            <a href="" class="contacts__mail">mail@htmlacademy.ru</a>
-          </div>
-          <div class="social-media display__social-media">
-            <a href="#" class="social-media__fb">facebook</a>
-            <a href="#" class="social-media__vk">vk</a>
-            <a href="#" class="social-media__insta">instagram</a>
+        <div class="header__display">
+          <a href="index.html" class="logo header__logo"></a>
+          <button type="button" class="header__menu-open"></button>
+          <div class="header__menu">
+            <nav class="header__links">
+              <a href="index.html" class="header__link">О сервисе</a>
+              <a href="form.html" class="header__link">Направления</a>
+              <a href="#" class="header__link">Попутчики</a>
+            </nav>
+            <a href="" class="enter-link header__enter-link">Авторизация</a>
+            <div class="contacts header_contacts">
+              <a href="tel:88005558628" class="contacts__telephone">8 800 555-86-28</a>
+              <a href="" class="contacts__mail">mail@htmlacademy.ru</a>
+            </div>
+            <div class="social-media header__social-media">
+              <a href="#" class="social-media__link social-media__link_fb">facebook</a>
+              <a href="#" class="social-media__link social-media__link_vk">vk</a>
+              <a href="#" class="social-media__link social-media__link_insta">instagram</a>
+            </div>
           </div>
         </div>
       </div>
@@ -45,17 +45,17 @@
             <q class="main-info__review-quote">Лучшее приложение, что я видел в жизни!</q>
             <cite class="main-info__review-author">Мурат Эльтазин главный редактор газеты «гаджетлайф»</cite>
           </blockquote>
-          <ul class="usage-list main-info__list">
-            <li class="usage-list__item usage-list__item_orange"><p>Выберите направление</p><span>1</span></li>
-            <li class="usage-list__item usage-list__item_light-orange"><p>Изучите идеи путешественников</p><span>2</span></li>
-            <li class="usage-list__item usage-list__item_dark-yellow"><p>Находите тех, кто похож на вас</p><span>3</span></li>
-            <li class="usage-list__item usage-list__item_yellow"><p>Путешествуйте вместе!</p><span>4</span></li>
-          </ul>
+          <ol class="main-info__list">
+            <li class="main-info__item main-info__item_orange">Выберите направление</li>
+            <li class="main-info__item main-info__item_light-orange">Изучите идеи путешественников</li>
+            <li class="main-info__item main-info__item_dark-yellow">Находите тех, кто похож на вас</li>
+            <li class="main-info__item main-info__item_yellow">Путешествуйте вместе!</li>
+          </ol>
         </section>
         <section class="service typical-bottom-section">
           <h1 class="typical-title service__title">О сервисе</h1>
           <p>Любое путешествие веселее с попутчиками, которые на одной волне с тобой! Делитесь своими идеями путешествий и черпайте вдохновение в чужих.</p>
-          <p><b>А если найдете кого-то близкого по духу — скорее зовите в совместный трип!</b></p>
+          <p><strong>А если найдете кого-то близкого по духу — скорее зовите в совместный трип!</strong></p>
         </section>
         <section class="countries typical-bottom-section">
           <h1 class="typical-title countries__title">Направления</h1>
@@ -63,7 +63,7 @@
           <div class="countries__country-cards">
             <div class="card countries__card">
               <div class="card__content-block">
-                <img src="" alt="" class="card__country-flag">
+                <img src="" alt="" class="card__country-flag card__country-flag_thai">
                 <h3 class="card__country">Таиланд</h3>
                 <p class="card__country-description">Джунгли зовут!</p>
                 <span class="card__guests">18321</span>
@@ -71,7 +71,7 @@
             </div>
             <div class="card countries__card">
               <div class="card__content-block">
-                <img src="" alt="" class="card__country-flag">
+                <img src="" alt="" class="card__country-flag card__country-flag_france">
                 <h3 class="card__country">Франция</h3>
                 <p class="card__country-description">Трэ бьен, манифик!</p>
                 <span class="card__guests">12518</span>
@@ -79,7 +79,7 @@
             </div>
             <div class="card countries__card">
               <div class="card__content-block">
-                <img src="" alt="" class="card__country-flag">
+                <img src="" alt="" class="card__country-flag card__country-flag_chech">
                 <h3 class="card__country">Чехия</h3>
                 <p class="card__country-description">Закоулки старой Европы</p>
                 <span class="card__guests">5326</span>
@@ -98,21 +98,21 @@
                 <span class="companion-level__level-value">99</span>
                 <span class="companion-level__level">level</span>
               </div>
-              <div class="card__content">
-                <div class="card__countries">
-                  <div class="card__country_name-of-country"><img src="" alt=""></div>
-                  <div class="card__country_name-of-country"><img src="" alt=""></div>
-                  <div class="card__country_name-of-country"><img src="" alt=""></div>
+              <div class="companion__content">
+                <div class="companion__countries">
+                  <div class="companion__country companion__country_name-of-country"><img src="" alt=""></div>
+                  <div class="companion__country companion__country_name-of-country"><img src="" alt=""></div>
+                  <div class="companion__country companion__country_name-of-country"><img src="" alt=""></div>
                 </div>
-                <span class="card__companion-name">Таня Фирсова</span>
-                <div class="card__hashtags">#ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи</div>
-                <div class="transport-options card__transport-options">
-                  <form action="" class="transport-options__form1">
-                    <label><input class="airplane" type="checkbox"></label>
-                    <label><input class="bus" type="checkbox"></label>
-                    <label><input class="cycle" type="checkbox"></label>
-                    <label><input class="walk" type="checkbox"></label>
-                  </form>
+                <span class="companion__companion-name companion__companion-name_offline">Таня Фирсова</span>
+                <div class="companion__hashtags">#ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи</div>
+                <div class="transport-options companion__transport-options">
+                  <ul class="transport-options__list">
+                    <li class="transport-options__option transport-options__option_active"></li>
+                    <li class="transport-options__option transport-options__option_active"></li>
+                    <li class="transport-options__option transport-options__option_disabled"></li>
+                    <li class="transport-options__option transport-options__option_active"></li>
+                  </ul>
                 </div>
               </div>
             </div>
@@ -121,20 +121,20 @@
                 <span class="card-level__level-value">80</span>
                 <span class="card-level__level">level</span>
               </div>
-              <div class="card__content">
-                <div class="card__countries">
-                  <div class="card__country_name-of-country"><img src="" alt=""></div>
-                  <div class="card__country_name-of-country"><img src="" alt=""></div>
+              <div class="companion__content">
+                <div class="companion__countries">
+                  <div class="companion__country companion__country_name-of-country"><img src="" alt=""></div>
+                  <div class="companion__country companion__country_name-of-country"><img src="" alt=""></div>
                 </div>
-                <span class="card__companion-name">Петя Демин</span>
-                <div class="card__hashtags">#бургер #бар #футбол #концерт #крафт</div>
-                <div class="transport-options card__transport-options">
-                  <form action="" class="transport-options__form2">
-                    <label><input class="airplane" type="checkbox"></label>
-                    <label><input class="bus" type="checkbox"></label>
-                    <label><input class="cycle" type="checkbox"></label>
-                    <label><input class="walk" type="checkbox"></label>
-                  </form>
+                <span class="companion__companion-name companion__companion-name_online">Петя Демин</span>
+                <div class="companion__hashtags">#бургер #бар #футбол #концерт #крафт</div>
+                <div class="transport-options companion__transport-options">
+                  <ul class="transport-options__list">
+                    <li class="transport-options__option transport-options__option_active"></li>
+                    <li class="transport-options__option_disabled"></li>
+                    <li class="transport-options__option transport-options__option_disabled"></li>
+                    <li class="transport-options__option transport-options__option_disabled"></li>
+                  </ul>
                 </div>
               </div>
             </div>
@@ -148,40 +148,31 @@
               <a href="#" class="price-list__profile-link"></a>
             </div>
             <dl class="price-list__items">
-              <div class="price-list__item">
                 <dt class="prices__option">Базовое размещение</dt>
                 <dd class="prices__cost">Бесплатно</dd>
-              </div>
-              <div class="price-list__item">
+
                 <dt class="prices__option">Вывод на первых позициях</dt>
                 <dd class="prices__cost">99 руб./мес</dd>
-              </div>
-              <div class="price-list__item">
+
                 <dt class="prices__option">Кастомный цвет карточки</dt>
                 <dd class="prices__cost">59 руб./мес</dd>
-              </div>
             </dl>
             <button class="price-list__open-biusness">Показать тарифы для бизнеса</button>
           </div>
           <div class="price-list__buisness-list">
             <h1 class="typical-title buisness-list__title">Бизнес-тарифы</h1>
             <dl class="buisness-list__items">
-              <div class="buisness-list__item">
-                <dt class="prices__option">Реклама у блоггера</dt>
+              <dt class="prices__option">Реклама у блоггера</dt>
                 <dd class="prices__cost">300 000 руб./пост</dd>
-              </div>
-              <div class="buisness-list__item">
+
                 <dt class="prices__option">Накрутка подписчиков</dt>
                 <dd class="prices__cost">от 1 руб./шт.</dd>
-              </div>
-              <div class="buisness-list__item">
+
                 <dt class="prices__option">Лайки от ботов</dt>
                 <dd class="prices__cost">от 20 коп./лайк</dd>
-              </div>
-              <div class="buisness-list__item">
+
                 <dt class="prices__option">Ваш продакт-плейсмент</dt>
                 <dd class="prices__cost">Индивидуально</dd>
-              </div>
             </dl>
             <button class="buisness-list__close">Закрыть окно</button>
           </div>
@@ -189,7 +180,10 @@
         <section class="regitration typical-bottom-section">
           <h1 class="typical-title registration__title">Заинтересовались?</h1><!--Можно ли модификатор вкладывать в элемент?-->
           <p class="registration__description">Зарегистрируйтесь, это быстро и бесплатно! Уже зарегистрированы? Тогда скорее <span class="registration__yellow-word">авторизуйтесь</span>.</p>
-          <form action="" class="registration__form"><input type="text" class="registration__mail-input"></form>
+          <form action="" class="registration__form">
+            <input type="email" class="registration__mail-input">
+            <button type="submit" class="registrtion__submit"></button>
+          </form>
           <p class="registration__write-us-text">Остались вопросы? Мы с радостью на них ответим!</p>
           <div class="contacts registration_contacts">
             <a href="tel:88005558628" class="contacts__telephone">8 800 555-86-28</a>
@@ -198,7 +192,7 @@
         </section>
         <section class="address typical-bottom-section">
           <h2 class="address__position">ул. Большая Конюшенная, 19/8</h2>
-          <a href="" class="addres__build-way">Проложить маршрут</a>
+          <a href="" class="typical-link typical-link_secondary address__build-way">Проложить маршрут</a>
         </section>
         <section class="map">
           <!--<iframe src="" width="" height=""></iframe>-->
@@ -206,7 +200,7 @@
       </div>
     </main>
 
-    <footer>
+    <footer class="footer">
       <div class="center-wrap">
         <a href="#" class="footer__logo"></a>
         <div class="social-media footer__social-media">
