@@ -1,0 +1,109 @@
+.contacts{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  font-family: "Blogger Sans bold", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+
+  &__telephone{
+    display: block;
+    color: #192144;
+    margin-bottom: 27px;
+    text-transform: uppercase;
+  }
+
+  &__telephone_yellow{
+    color: #FFD74B;
+  }
+
+  &__telephone::before{
+    display: none;
+    position: absolute;
+    content:'';
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    background: url("../img/contacts_icon.svg") center no-repeat;
+    top: -15px;
+    left: -61px;
+  }
+
+  &__mail{
+    color: #192144;
+    text-transform: uppercase;
+  }
+
+  &__mail_yellow{
+    color: #FFD74B;
+  }
+
+  &__mail::before{
+    display: none;
+    position: absolute;
+    content:'';
+    display: inline-block;
+    width: 45px;
+    height: 46px;
+    background: url("../img/contacts_icon_mail.svg") center no-repeat;
+    top: 30px;
+    left: -61px;
+  }
+}
+
+@media (min-width: 768px) {
+  .contacts{
+    font-size: 28px;
+    line-height: 28px;
+    overflow: visible;
+
+    &__telephone{
+      margin-bottom: 39px;
+    }
+
+    &__telephone::before{
+      width: 68px;
+      height: 80px;
+      background: url("../img/contacts-icon-phone-tablet.svg") center no-repeat;
+      top: -25px;
+      left: -90px;
+    }
+
+    &__mail::before{
+      width: 68px;
+      height: 68px;
+      background: url("../img/contacts-icon-tablet.svg") center no-repeat;
+      top: 45px;
+      left: -90px;
+    }
+  }
+}
+
+@media (min-width: 1440px){
+  .contacts{
+
+    &_desktop{
+      display: none;
+    }
+
+    flex-direction: row;
+    gap: 231px;
+
+    &__telephone::before{
+      width: 90px;
+      height: 90px;
+      background: url("../img/contacts-icon-desktop.svg") center no-repeat;
+      top: -30px;
+      left: -120px;
+    }
+
+    &__mail::before{
+      width: 90px;
+      height: 90px;
+      background: url("../img/contacts-icon-mail-desktop.svg") center no-repeat;
+      top: -30px;
+      left: 320px;
+    }
+  }
+}

@@ -1,0 +1,39 @@
+.social-media{
+  width: 105px;
+  height: 21px;
+  font-size: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &_footer{
+    width: 135px;
+  }
+
+  &__link{
+    display: block;
+  }
+
+  &__link_yellow{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45px;
+    height: 45px;
+    background-color: #FFD74B;
+    border-radius: 50%;
+
+    @media (min-width: 768px){
+      width: 62px;
+      height: 62px;
+    }
+  }
+}
+
+@media (min-width: 1440px){
+  .social-media{
+    &_desktop{
+      display: none;
+    }
+  }
+}

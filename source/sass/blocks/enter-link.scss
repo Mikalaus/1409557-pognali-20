@@ -1,0 +1,37 @@
+@media (min-width: 768px) {
+  .enter-link{
+    box-sizing: border-box;
+    position: absolute;
+    display: block;
+    top: 83px;
+    right: -305px;
+    width: 188px;
+    font-family: "Blogger Sans bold", "Arial", sans-serif;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #161C35;
+    padding-left: 29px;
+    padding-top: 20px;
+    padding-right: 28px;
+    padding-bottom: 18px;
+    z-index: 20;
+
+    &_scrolled{
+      position: fixed;
+      top: 46px;
+      right: calc(50% - 94px);
+      margin-right: -250px;
+    }
+  }
+
+}
+
+@media (min-width: 1440px) {
+  .enter-link{
+    position: relative;
+    right: 0;
+    top: 0;
+  }
+}

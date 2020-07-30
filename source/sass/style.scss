@@ -1,1 +1,20 @@
-// Начните писать стили здесь
+@import "global.scss";
+@import "mixins.scss";
+@import "blocks/header.scss";
+@import "blocks/enter-link.scss";
+@import "blocks/contacts.scss";
+@import "blocks/social-media.scss";
+@import "blocks/user-links.scss";
+@import "blocks/main-info.scss";
+@import "blocks/companion-level.scss";
+@import "blocks/service.scss";
+@import "blocks/countries.scss";
+@import "blocks/card.scss";
+@import "blocks/companion.scss";
+@import "blocks/transport-options.scss";
+@import "blocks/price-list.scss";
+@import "blocks/buisness-list.scss";
+@import "blocks/registration.scss";
+@import "blocks/address.scss";
+@import "blocks/footer.scss";
+@import "fonts.scss";

@@ -1,0 +1,43 @@
+.transport-options{
+  width: 130px;
+  display: flex;
+  justify-content: space-between;
+  height: 25px;
+
+  &_disabled{
+    opacity: 0.15;
+  }
+
+  & li{
+    list-style: none;
+    display: inline-block;
+  }
+
+  &__plain{
+    width: 20px;
+    height: 20px;
+    background: url("../img/plane.svg") center no-repeat;
+    margin-left: -40px;
+    margin-right: 11px;
+  }
+
+  &__bus{
+    width: 20px;
+    height: 20px;
+    background: url("../img/bus.svg") center no-repeat;
+    margin-right: 12px;
+  }
+
+  &__bike{
+    width: 20px;
+    height: 20px;
+    background: url("../img/bike.svg") center no-repeat;
+    margin-right: 8px;
+  }
+
+  &__walk{
+    width: 20px;
+    height: 20px;
+    background: url("../img/run.svg") center no-repeat;
+  }
+}

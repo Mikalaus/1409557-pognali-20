@@ -1,0 +1,282 @@
+.price-list{
+  background: #EDEFF6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @include typical-bottom-section;
+  padding-bottom: 35px;
+
+  &__add-profile{
+    display: flex;
+    height: 100px;
+    width: 245px;
+    position: relative;
+    margin-left: 25px;
+    margin-top: 37px;
+  }
+
+  &__title{
+    @include typical-title;
+    text-shadow: 0 3px 2px #CDC7CD;
+    display: block;
+    width: 107px;
+    margin-top: 15px;
+  }
+
+  &__profile-link{
+    display: block;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background: url("../img/rates.png") center no-repeat;
+    top: 0px;
+    right: 0;
+  }
+
+  &__items{
+    margin-top: 30px;
+  }
+
+  &__option{
+    box-sizing: border-box;
+    height: 30px;
+    padding-top: 13px;
+    border-top: 1px solid #E1E3E9;
+    position: relative;
+    margin-left: 25px;
+    font-family: "Blogger Sans light", "Arial", sans-serif;
+    font-size: 16px;
+    line-height: 16px;
+    color: #444444;
+    margin-bottom: 6px;
+    width: 199.75px;
+
+    &::after{
+      box-sizing: border-box;
+      position: absolute;
+      content: "";
+      font-family: "Blogger Sans", "Arial", sans-serif;
+      font-size: 16px;
+      line-height: 16px;
+      display: block;
+      width: 34px;
+      height: 34px;
+      border-radius: 50%;
+      top: 3px;
+      left: 210px;
+      color: white;
+      padding-top: 10px;
+      padding-left: 13px;
+    }
+
+    &:first-of-type::after{
+      background-color: #FF8D30;
+      content: "1";
+    }
+
+    &:nth-of-type(2)::after{
+      background-color: #FFBD30;
+      content: "2";
+    }
+
+    &:last-of-type::after{
+      background-color: #FFD74B;
+      content: "3";
+    }
+  }
+
+  &__cost{
+    font-family: "Blogger Sans light", "Arial", sans-serif;
+    font-size: 16px;
+    line-height: 16px;
+    color: #444444;
+    margin-left: 25px;
+    margin-bottom: 16px;
+  }
+
+  &__open-buisness{
+    font-family: "Blogger Sans bold", "Arial", sans-serif;
+    font-size: 16px;
+    line-height: 16px;
+    color: #132576;
+    outline: none;
+    border: none;
+    margin-left: 19px;
+    margin-top: 25px;
+  }
+}
+
+@media (min-width: 768px) {
+  .price-list{
+    padding-bottom: 88px;
+    padding-left: 40px;
+
+    &__profile-link{
+      right: -35px;
+      top: 360px;
+    }
+
+    &__list{
+      width: 768px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      position: relative;
+      background: url("../img/price-list-back-tablet.png") 490px 151px no-repeat;
+    }
+
+    &__add-profile{
+      width: 482px;
+      margin-left: 105px;
+    }
+
+    &__title{
+      width: 482px;
+    }
+
+    &__items{
+      margin-top: 35px;
+      height: 199px;
+      width: 599px;
+      margin-left: 90px;
+      position: relative;
+    }
+
+    &__option{
+      position: relative;
+      display: block;
+      box-sizing: border-box;
+      border-top: 1px solid #E1E3E9;
+      height: 63px;
+      padding-top: 20px;
+      font-size: 28px;
+      line-height: 28px;
+      width: 562px;
+
+      &::after{
+        display: none;
+      }
+
+      &::before{
+        box-sizing: border-box;
+        position: absolute;
+        content: "";
+        font-family: "Blogger Sans", "Arial", sans-serif;
+        font-size: 28px;
+        line-height: 28px;
+        display: block;
+        width: 68px;
+        height: 68px;
+        border-radius: 50%;
+        top: 0;
+        left: -90px;
+        color: white;
+      }
+
+      &:first-of-type::before{
+        padding-top: 23px;
+        padding-left: 27px;
+        background-color: #FF8D30;
+        content: "1";
+      }
+
+      &:nth-of-type(2)::before{
+        padding-top: 21px;
+        padding-left: 27px;
+        background-color: #FFBD30;
+        content: "2";
+      }
+
+      &:last-of-type::before{
+        padding-top: 20px;
+        padding-left: 27px;
+        background-color: #FFD74B;
+        content: "3";
+      }
+    }
+
+    &__option:last-of-type{
+      border-bottom: 1px solid #E1E3E9;
+    }
+
+    &__cost{
+      width: 130px;
+      text-align: center;
+      font-size: 28px;
+      line-height: 28px;
+      position: absolute;
+      right: 34px;
+      top: 0px;
+      margin-top: 19px;
+    }
+
+    &__cost:nth-of-type(2){
+      margin-top: 90px;
+    }
+
+    &__cost:nth-of-type(3){
+      margin-top: 160px;
+    }
+
+    &__open-buisness{
+      position: relative;
+      font-size: 20px;
+      line-height: 20px;
+      margin-top: 58px;
+      margin-left: 110px;
+
+      &::before{
+        width: 68px;
+        height: 68px;
+        content: "";
+        display: block;
+        position: absolute;
+        background: url("../img/open-buisness.svg") center no-repeat;
+        top: -24px;
+        left: -84px;
+      }
+    }
+  }
+}
+
+@media (min-width: 1440px) {
+  .price-list{
+    padding-top: 87px;
+    padding-bottom: 185px;
+
+    &__list{
+      width: 1320px;
+      background: url("../img/price-list-back-desktop.svg") 670px 150px no-repeat;
+    }
+
+    &__add-profile{
+      margin: 0 auto;
+      margin-bottom: 60px;
+    }
+
+    &__items{
+      margin-left: 115px;
+      margin-bottom: 4px;
+    }
+
+    &__option{
+      width: 805px;
+    }
+
+    &__cost{
+      right: -230px;
+    }
+
+    &__profile-link{
+      top: 200px;
+      left: 610px;
+      width: 198px;
+      height: 198px;
+      background: url("../img/rates-desktop.png") center no-repeat;
+    }
+
+    &__open-buisness{
+      margin-left: 135px;
+    }
+  }
+}

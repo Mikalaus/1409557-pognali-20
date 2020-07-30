@@ -1,0 +1,337 @@
+.header{
+  height: 50px;
+  background-color: #161C34;
+  display: flex;
+  justify-content: center;
+  padding-top: 19px;
+  width: 100%;
+  margin-bottom: -40px;
+
+  &_scrolled{
+    margin-top: -23px;
+    height: 50px;
+    background-color: #fff;
+    position: fixed;
+    z-index: 10;
+    padding-top: 23px;
+    .header__logo{
+      background: url("../img/logo-mobile-blue@1x.png") center no-repeat;
+    }
+
+    .header__menu-open{
+      background: url("../img/icon_menu_mobile-grey.svg") center no-repeat;
+      height: 11px;
+      width: 25px;
+      padding: 0;
+    }
+
+    .header__menu-open_close-version{
+      background: url("../img/icon_menu_mobile_close.svg") center no-repeat;
+      height: 19px;
+      width: 18px;
+    }
+  }
+
+  &_menu-open{
+    background-color: #fff;
+    position: fixed;
+    padding-bottom: 41px;
+    z-index: 10;
+    margin-top: -23px;
+  }
+
+  &__display{
+    display: flex;
+    justify-content: center;
+    z-index: 10;
+  }
+
+  &__logo{
+    display: block;
+    width: 100px;
+    height: 19px;
+    margin-right: 145px;
+    font-size: 0;
+    background: url("../img/logo-mobile-white@1x.png") center no-repeat;
+  }
+
+  &__logo_menu-open{
+    background: url("../img/logo-mobile-blue@1x.png") center no-repeat;
+    margin-left: -7px;
+  }
+
+  &__menu-open{
+    background: url("../img/icon_menu_mobile.svg") center no-repeat;
+    height: 11px;
+    width: 25px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+  }
+
+  &__menu-open_close-version{
+    background: url("../img/icon_menu_mobile_close.svg") center no-repeat;
+    height: 19px;
+    width: 18px;
+  }
+
+  &__menu{
+    width: 100%;
+    padding-bottom: 41px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__menu-wrap{
+    position: relative;
+    width: 270px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__menu_hidden{
+    display: none;
+  }
+
+  &__links{
+    width: 193px;
+    height: 105px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 76px;
+  }
+
+  &__link{
+    color: #192144;
+    font-family: "Blogger Sans med", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 35px;
+    text-transform: uppercase;
+  }
+
+  &__enter-link{
+    display: block;
+    background-color: #FFD74B;
+    font-family: "Blogger Sans bold", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 30px;
+    color: #161C35;
+    text-transform: uppercase;
+    padding-top: 12px;
+    padding-bottom: 8px;
+    padding-left: 78px;
+    padding-right: 81px;
+    border-radius: 25px;
+    margin-top: 51px;
+  }
+
+  &__contacts{
+    margin-top: 66px;
+  }
+
+  &__social-media{
+    margin-top: 53px;
+  }
+}
+
+@media (min-width: 768px){
+  .header{
+    height: 132px;
+    background-color: #161C34;
+
+    &_menu-open{
+      background-color: white;
+    }
+
+    &__logo{
+      width: 164px;
+      height: 42px;
+      background: url("../img/logo-tablet-white@1x.png") center no-repeat;
+      margin-top: 26px;
+      margin-left: -330px;
+      margin-right: 166px;
+    }
+
+    &__logo_menu-open{
+      background: url("../img/logo-tablet-blue@1x.png") center no-repeat;
+    }
+
+    &_scrolled{
+      background-color: white;
+
+      .header__logo{
+        background: url("../img/logo-tablet-blue@1x.png") center no-repeat;
+      }
+    }
+
+    &__menu{
+      padding-left: 40px;
+    }
+
+    &__menu-wrap{
+      width: 768px;
+      align-items: flex-start;
+    }
+
+    &__links{
+      width: 383px;
+      height: 197px;
+      display: flex;
+      justify-content: flex-start;
+      flex-wrap: wrap;
+      margin-top: 76px;
+    }
+
+    &__link{
+      font-family: "Blogger Sans med", "Arial", sans-serif;
+      font-size: 60px;
+      line-height: 71px;
+    }
+
+    &__display{
+      justify-content: center;
+    }
+
+    &__menu-open{
+      margin-top: 42px;
+    }
+
+    &__contacts{
+      margin-left: 95px;
+      margin-top: 129px;
+      margin-bottom: 94px;
+    }
+
+    &__enter-link{
+      display: none;
+    }
+  }
+}
+
+@media (min-width: 1440px) {
+  .header{
+    display: flex;
+    justify-content: center;
+    height: 90px;
+    padding-top: 47px;
+    width: calc(100% - 60px);
+    padding-left: 60px;
+    background-color: #161C34;
+
+    & .center-wrap{
+      width: 1320px;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+    }
+
+    &_menu-open{
+      background-color: white;
+    }
+
+    &__logo{
+      width: 200px;
+      height: 52px;
+      background: url("../img/logo-desktop-white@1x.png") center no-repeat;
+      margin-top: 0px;
+      margin-left: 0;
+      margin-right: 0px;
+      position: relative;
+
+      &::after{
+        width: 60px;
+        height: 2px;
+        content: "";
+        display: inline-block;
+        position: absolute;
+        background: url("../img/header-dash-desktop-white.svg");
+        top: 26px;
+        right: -100px;
+      }
+    }
+
+    &__logo_menu-open{
+      background: url("../img/logo-desktop-blue@1x.png") center no-repeat;
+    }
+
+    &_scrolled{
+      background-color: white;
+
+      .header__logo{
+        background: url("../img/logo-desktop-blue@1x.png") center no-repeat;
+
+        &::after{
+          width: 44px;
+          background: url("../img/header-dash-desktop-blue.svg");
+        }
+      }
+
+      .header__menu{
+        background-color: white;
+      }
+
+      .header__link{
+        color: #192144;
+      }
+    }
+
+    &__menu{
+      width: 1000px;
+      display: flex;
+      padding-left: 40px;
+      padding-top: 0;
+      background-color: #161C34;
+    }
+
+    &__menu-wrap{
+      display: block;
+      width: 768px;
+      align-items: flex-start;
+    }
+
+    &__links{
+      width: 390px;
+      height: 20px;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: nowrap;
+      margin-top: 20px;
+      margin-left: 105px;
+    }
+
+    &__link{
+      font-family: "Blogger Sans med", "Arial", sans-serif;
+      font-size: 20px;
+      line-height: 20px;
+      color: white;
+    }
+
+    &__display{
+      width: 200px;
+      justify-content: flex-start;
+    }
+
+    &__menu-open{
+      display: none;
+    }
+
+    &__enter-link{
+      display: none;
+    }
+
+    &__menu_hidden{
+      display: block;
+    }
+
+    &__menu{
+      display: block;
+    }
+  }
+}
