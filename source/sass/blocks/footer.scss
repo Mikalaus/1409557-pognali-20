@@ -5,54 +5,54 @@
   @include typical-top-section;
   background: white;
   padding-bottom: 19px;
+}
 
-  &__wrap{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
+.footer__wrap{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
-  &__logo{
-    display: block;
-    width: 96px;
-    height: 17px;
-    background: url("../img/footer-logo.svg") center no-repeat;
-    font-size: 0;
-    margin-top: 37px;
-    margin-left: 0px;
-  }
+.footer__logo{
+  display: block;
+  width: 96px;
+  height: 17px;
+  background: url("../img/footer-logo.svg") center no-repeat;
+  font-size: 0;
+  margin-top: 37px;
+  margin-left: 0px;
+}
 
-  &__social-media{
-    margin-top: 52px;
-    margin-left: -2px;
-  }
+.footer__social-media{
+  margin-top: 52px;
+  margin-left: -2px;
+}
 
-  &__bottom-part-wrapper{
-    display: flex;
-    justify-content: flex-start;
-    margin-top: 36px;
-    border-top: 1px solid #F2F2F2;
-    width: 270px;
-  }
+.footer__bottom-part-wrapper{
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 36px;
+  border-top: 1px solid #F2F2F2;
+  width: 270px;
+}
 
-  &__designed-by{
-    font-family: "Blogger Sans", "Arial", sans-serif;
-    font-size: 16px;
-    line-height: 16px;
-    color: #444444;
-    margin-top: 34px;
-  }
+.footer__designed-by{
+  font-family: "Blogger Sans", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 16px;
+  color: #444444;
+  margin-top: 34px;
+}
 
-  &__academy{
-    font-size: 0;
-    display: block;
-    width: 27px;
-    height: 33px;
-    background: url("../img/htmlacademy.svg") center no-repeat;
-    font-size: 0;
-    margin-top: 25px;
-    margin-left: 159px;
-  }
+.footer__academy{
+  font-size: 0;
+  display: block;
+  width: 27px;
+  height: 33px;
+  background: url("../img/htmlacademy.svg") center no-repeat;
+  font-size: 0;
+  margin-top: 25px;
+  margin-left: 159px;
 }
 
 @media (min-width: 768px) {
@@ -63,50 +63,50 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
+  }
 
-    &__wrap{
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      align-items: center;
+  .footer__wrap{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footer__logo{
+    width: 164px;
+    height: 42px;
+    background: url("../img/logo-tablet-blue@1x.png") center no-repeat;
+    margin-right: 70px;
+    margin-top: 45px;
+    margin-left: 40px;
+    transform: translateX(-20px);
+  }
+
+  .footer__social-media{
+    width: 185px;
+    height: 62px;
+    margin-top: 45px;
+
+    & img{
+      transform: scale(1.2);
     }
+  }
 
-    &__logo{
-      width: 164px;
-      height: 42px;
-      background: url("../img/logo-tablet-blue@1x.png") center no-repeat;
-      margin-right: 70px;
-      margin-top: 45px;
-      margin-left: 40px;
-      transform: translateX(-20px);
-    }
+  .footer__bottom-part-wrapper{
+    border: none;
+  }
 
-    &__social-media{
-      width: 185px;
-      height: 62px;
-      margin-top: 45px;
+  .footer__designed-by{
+    font-size: 20px;
+    line-height: 20px;
+    width: 104px;
+    margin-left: 99px;
+    margin-top: 15px;
+  }
 
-      & img{
-        transform: scale(1.2);
-      }
-    }
-
-    &__bottom-part-wrapper{
-      border: none;
-    }
-
-    &__designed-by{
-      font-size: 20px;
-      line-height: 20px;
-      width: 104px;
-      margin-left: 99px;
-      margin-top: 15px;
-    }
-
-    &__academy{
-      margin-left: 23px;
-      margin-top: 10px;
-    }
+  .footer__academy{
+    margin-left: 23px;
+    margin-top: 10px;
   }
 }
 
@@ -116,16 +116,16 @@
    padding-left: 60px;
    flex-direction: row;
    justify-content: center;
+ }
 
-    &__logo{
-      width: 200px;
-      height: 55px;
-      background: url("../img/logo-desktop-blue@1x.png") center no-repeat;
-    }
+  .footer__logo{
+    width: 200px;
+    height: 55px;
+    background: url("../img/logo-desktop-blue@1x.png") center no-repeat;
+  }
 
-    &__wrap{
-     width: 1320px;
-     justify-content: space-between;
-    }
+  .footer__wrap{
+   width: 1320px;
+   justify-content: space-between;
   }
 }

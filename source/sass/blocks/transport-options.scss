@@ -7,37 +7,37 @@
   &_disabled{
     opacity: 0.15;
   }
+}
 
-  & li{
-    list-style: none;
-    display: inline-block;
-  }
+.transport-options li{
+  list-style: none;
+  display: inline-block;
+}
 
-  &__plain{
-    width: 20px;
-    height: 20px;
-    background: url("../img/plane.svg") center no-repeat;
-    margin-left: -40px;
-    margin-right: 11px;
-  }
+.transport-options__plain{
+  width: 20px;
+  height: 20px;
+  background: url("../img/plane.svg") center no-repeat;
+  margin-left: -40px;
+  margin-right: 11px;
+}
 
-  &__bus{
-    width: 20px;
-    height: 20px;
-    background: url("../img/bus.svg") center no-repeat;
-    margin-right: 12px;
-  }
+.transport-options__bus{
+  width: 20px;
+  height: 20px;
+  background: url("../img/bus.svg") center no-repeat;
+  margin-right: 12px;
+}
 
-  &__bike{
-    width: 20px;
-    height: 20px;
-    background: url("../img/bike.svg") center no-repeat;
-    margin-right: 8px;
-  }
+.transport-options__bike{
+  width: 20px;
+  height: 20px;
+  background: url("../img/bike.svg") center no-repeat;
+  margin-right: 8px;
+}
 
-  &__walk{
-    width: 20px;
-    height: 20px;
-    background: url("../img/run.svg") center no-repeat;
-  }
+.transport-options__walk{
+  width: 20px;
+  height: 20px;
+  background: url("../img/run.svg") center no-repeat;
 }
