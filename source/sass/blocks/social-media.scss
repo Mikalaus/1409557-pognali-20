@@ -24,13 +24,13 @@
   background-color: #FFD74B;
   border-radius: 50%;
 
-  @media (min-width: 768px){
+  @media (min-width: $tablet){
     width: 62px;
     height: 62px;
   }
 }
 
-@media (min-width: 1440px){
+@media (min-width: $desktop){
   .social-media{
 
     &_desktop{

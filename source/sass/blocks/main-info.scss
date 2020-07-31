@@ -22,7 +22,7 @@
   display: block;
   overflow: visible;
   min-width: 250px;
-  font-family: "Blogger Sans bold", "Arial", sans-serif;
+  font-family: $bold;
   font-size: 36px;
   line-height: 40px;
   text-align: center;
@@ -40,10 +40,9 @@
   min-width: 190px;
   min-height: 40px;
   box-sizing: border-box;
-  font-family: "Blogger Sans bold", "Arial", sans-serif;
+  font-family: $bold;
   font-size: 20px;
   line-height: 20px;
-  font-weight: bold;
   text-transform: uppercase;
   color: #161C35;
   background-color: #FFD74B;
@@ -64,7 +63,7 @@
 }
 
 .main-info__review-quote{
-  font-family: "Blogger Sans light", "Arial", sans-serif;
+  font-family: $light;
   font-size: 16px;
   line-height: 22px;
   color: #FFFFFF;
@@ -72,7 +71,7 @@
 }
 
 .main-info__review-author{
-  font-family: "Blogger Sans bold", "Arial", sans-serif;
+  font-family: $bold;
   font-size: 16px;
   line-height: 22px;
   color: #FFFFFF;
@@ -103,7 +102,7 @@
 
 .main-info__link{
   display: block;
-  font-family: "Blogger Sans bold", "Arial", sans-serif;
+  font-family: $bold;
   font-size: 18px;
   line-height: 18px;
   color: #161C35;
@@ -118,7 +117,7 @@
   content: counter(myCounter);
   display: block;
   color: white;
-  font-family: "Blogger Sans bold", "Arial", sans-serif;
+  font-family: $bold;
   font-size: 18px;
   line-height: 18px;
   color: #FFFFFF;
@@ -150,7 +149,7 @@
   margin-top: -80px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet) {
   .main-info{
     background: url("../img/traveller-illustration-tablet@1x.png") calc(50% + 85px) 270px no-repeat,
                 url("../img/globe-back-tablet@1x.jpg") -200px 248px no-repeat;
@@ -257,7 +256,7 @@
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: $desktop) {
   .main-info{
     background: none;
     background: url("../img/traveller-illustration-desktop@1x.png") calc(50% + 100px) -10px no-repeat;

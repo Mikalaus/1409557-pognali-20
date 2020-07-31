@@ -29,7 +29,7 @@
 .companion p:first-of-type{
   display: block;
   width: 217px;
-  font-family: "Blogger Sans light", "Arial", sans-serif;
+  font-family: $light;
   font-size: 16px;
   line-height: 22px;
   color: #FFFFFF;
@@ -40,7 +40,7 @@
 .companion p:nth-of-type(2){
   display: block;
   width: 217px;
-  font-family: "Blogger Sans bold", "Arial", sans-serif;
+  font-family: $bold;
   font-size: 16px;
   line-height: 22px;
   color: #FFFFFF;
@@ -90,7 +90,7 @@
 
 .companion__companion-name{
   position: relative;
-  font-family: "Blogger Sans bold", "Arial", sans-serif;
+  font-family: $bold;
   font-size: 21px;
   line-height: 21px;
   color: #1D2E5B;
@@ -122,7 +122,7 @@
 }
 
 .companion__hashtags{
-  font-family: "Blogger Sans light", "Arial", sans-serif;
+  font-family: $light;
   font-size: 16px;
   line-height: 18px;
   text-align: center;
@@ -141,7 +141,7 @@
   margin-top: 19px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet) {
   .companion{
     padding-left: 40px;
     padding-bottom: 86px;
@@ -242,7 +242,7 @@
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: $desktop) {
   .companion{
     padding-bottom: 71px;
     width: calc(100% - 60px);

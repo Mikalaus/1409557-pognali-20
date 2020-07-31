@@ -26,7 +26,7 @@
   display: block;
   width: 211px;
   min-height: 88px;
-  font-family: "Blogger Sans light", "Arial", sans-serif;
+  font-family: $light;
   font-size: 16px;
   line-height: 22px;
   text-align: center;
@@ -51,7 +51,7 @@
   width: 230px;
   height: 62px;
   border-radius: 10px;
-  font-family: "Blogger Sans bold", "Arial", sans-serif;
+  font-family: $bold;
   font-size: 18px;
   line-height: 18px;
   padding-left: 21px;
@@ -95,7 +95,7 @@
 .registration__write-us-text{
   margin-top: 28px;
   display: block;
-  font-family: "Blogger Sans light", "Arial", sans-serif;
+  font-family: $light;
   font-size: 16px;
   line-height: 22px;
   text-align: center;
@@ -109,7 +109,7 @@
   margin-left: 27px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet) {
   .registration{
     padding-bottom: 77px;
   }
@@ -173,7 +173,7 @@
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: $desktop) {
   .registration{
     padding-top: 85px;
     padding-bottom: 93px;
@@ -200,7 +200,7 @@
   }
 
   .registration__submit{
-    font-family: "Blogger Sans bold", "Arial", sans-serif;
+    font-family: $bold;
     font-size: 24px;
     color: #1D2E5B;
     line-height: 24px;

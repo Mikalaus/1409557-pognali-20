@@ -25,7 +25,7 @@
 
 .countries p{
   display: block;
-  font-family: "Blogger Sans light", "Arial", sans-serif;
+  font-family: $light;
   font-size: 16px;
   line-height: 22px;
   color: #444444;
@@ -48,7 +48,7 @@
   margin-top: 28px;
 }
 
-@media (min-width: 768px){
+@media (min-width: $tablet){
   .countries{
     padding-bottom: 80px;
     padding-right: 40px;
@@ -99,7 +99,7 @@
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: $desktop) {
   $back: calc(50% + 495px);
   .countries{
     width: calc(100% - 100px);

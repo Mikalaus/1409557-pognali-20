@@ -1,3 +1,10 @@
+$bold: "Blogger Sans bold", "Arial", sans-serif;
+$default: "Blogger Sans", "Arial", sans-serif;
+$med: "Blogger Sans med", "Arial", sans-serif;
+$light: "Blogger Sans light", "Arial", sans-serif;
+$tablet: 768px;
+$desktop: 1440px;
+
 body{
   padding: 0;
   margin: 0;
@@ -10,8 +17,4 @@ a{
 .center-wrap{
   position: relative;
   width: 100%;
-}
-
-*{
-  outline: 1px solid red;
 }

@@ -1,4 +1,4 @@
-@media (min-width: 768px) {
+@media (min-width: $tablet) {
   .enter-link{
     box-sizing: border-box;
     position: absolute;
@@ -6,7 +6,7 @@
     top: 83px;
     right: -320px;
     width: 188px;
-    font-family: "Blogger Sans bold", "Arial", sans-serif;
+    font-family: $bold;
     font-size: 20px;
     line-height: 20px;
     text-align: center;
@@ -28,7 +28,7 @@
 
 }
 
-@media (min-width: 1440px) {
+@media (min-width: $desktop) {
   .enter-link{
     position: relative;
     right: 0;

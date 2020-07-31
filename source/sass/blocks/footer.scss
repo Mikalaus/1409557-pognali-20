@@ -37,7 +37,7 @@
 }
 
 .footer__designed-by{
-  font-family: "Blogger Sans", "Arial", sans-serif;
+  font-family: $default;
   font-size: 16px;
   line-height: 16px;
   color: #444444;
@@ -55,7 +55,7 @@
   margin-left: 159px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet) {
   .footer{
     padding-left: 40px;
     padding-right: 40px;
@@ -110,7 +110,7 @@
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: $desktop) {
  .footer{
    width: calc(100% - 100px);
    padding-left: 60px;

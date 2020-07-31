@@ -107,7 +107,7 @@
 
 .header__link{
   color: #192144;
-  font-family: "Blogger Sans med", "Arial", sans-serif;
+  font-family: $med;
   font-style: normal;
   font-weight: 500;
   font-size: 30px;
@@ -118,7 +118,7 @@
 .header__enter-link{
   display: block;
   background-color: #FFD74B;
-  font-family: "Blogger Sans bold", "Arial", sans-serif;
+  font-family: $bold;
   font-style: normal;
   font-weight: bold;
   font-size: 17px;
@@ -141,7 +141,7 @@
   margin-top: 53px;
 }
 
-@media (min-width: 768px){
+@media (min-width: $tablet){
   .header{
     height: 132px;
     background-color: #161C34;
@@ -191,7 +191,7 @@
   }
 
   .header__link{
-    font-family: "Blogger Sans med", "Arial", sans-serif;
+    font-family: $med;
     font-size: 60px;
     line-height: 71px;
   }
@@ -215,7 +215,7 @@
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: $desktop) {
   .header{
     display: flex;
     justify-content: center;
@@ -306,7 +306,7 @@
   }
 
   .header__link{
-    font-family: "Blogger Sans med", "Arial", sans-serif;
+    font-family: $med;
     font-size: 20px;
     line-height: 20px;
     color: white;
