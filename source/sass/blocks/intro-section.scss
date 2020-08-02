@@ -1,0 +1,44 @@
+.intro-section{
+  @include typical-bottom-section-catalog;
+  background-color: #182044;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
+
+.intro-section__wrap{
+  height: 77px;
+  padding-top: 27px;
+  padding-bottom: -20px;
+  width: 270px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.intro-section__title{
+  font-family: $bold;
+  font-size: 36px;
+  line-height: 36px;
+  color: #FFF;
+  position: relative;
+
+  &::after{
+    top: 44px;
+    position: absolute;
+    content: "";
+    display: block;
+    width: 100%;
+    height: 5px;
+    border-radius: 4px;
+    background: #FF8D30;
+  }
+}
+
+@media (min-width: $tablet) {
+  .intro-section__title{
+    font-family: $bold;
+    font-size: 60px;
+    line-height: 70px;
+  }
+}

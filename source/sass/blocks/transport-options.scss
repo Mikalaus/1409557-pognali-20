@@ -1,8 +1,9 @@
 .transport-options{
-  width: 130px;
+  min-width: 130px;
   display: flex;
   justify-content: space-between;
   height: 25px;
+
 
   &_disabled{
     opacity: 0.15;
@@ -18,7 +19,7 @@
   width: 20px;
   height: 20px;
   background: url("../img/plane.svg") center no-repeat;
-  margin-left: -40px;
+  margin-left: 0px;
   margin-right: 11px;
 }
 
@@ -40,4 +41,110 @@
   width: 20px;
   height: 20px;
   background: url("../img/run.svg") center no-repeat;
+}
+
+.transport-options__option+label{
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  user-select: none;
+  cursor: pointer;
+  background-color: #fff;
+  border-radius: 50%;
+  top: 0px;
+  left: 0;
+  display: inline-block;
+  vertical-align: baseline;
+  width: 32px;
+  height: 32px;
+  flex-shrink: 0;
+  flex-grow: 0;
+
+  &::before{
+    content: '';
+    position: absolute;
+    top: 8px;
+    left: 7px;
+    width: 17px;
+    height: 16px;
+    opacity: 0.15;
+    margin-right: 0.5em;
+  }
+
+  &:nth-of-type(1)::before{
+    background: url("../img/plane.svg") center no-repeat;
+  }
+
+  &:nth-of-type(2)::before{
+    background: url("../img/bus.svg") center no-repeat;
+  }
+
+  &:nth-of-type(3)::before{
+    background: url("../img/bike.svg") center no-repeat;
+  }
+
+  &:nth-of-type(4)::before{
+    background: url("../img/run.svg") center no-repeat;
+  }
+}
+
+.transport-options__option+span{
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  user-select: none;
+  cursor: pointer;
+  background-color: #EDEFF6;
+  border-radius: 50%;
+  top: 0px;
+  left: 0;
+  display: inline-block;
+  vertical-align: baseline;
+  width: 32px;
+  height: 32px;
+  flex-shrink: 0;
+  flex-grow: 0;
+
+  &::before{
+    content: '';
+    position: absolute;
+    top: 8px;
+    left: 7px;
+    width: 17px;
+    height: 16px;
+    opacity: 0.15;
+    margin-right: 0.5em;
+  }
+
+  &:nth-of-type(2n)::before{
+    background: url("../img/plane.svg") center no-repeat;
+  }
+
+  &:nth-of-type(4n)::before{
+    background: url("../img/bus.svg") center no-repeat;
+  }
+
+  &:nth-of-type(6n)::before{
+    background: url("../img/bike.svg") center no-repeat;
+  }
+
+  &:nth-of-type(8n)::before{
+    background: url("../img/run.svg") center no-repeat;
+  }
+}
+
+.transport-options__option{
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+
+  &_active{
+    &+span::before{
+      opacity: 1;
+    }
+  }
+}
+
+.transport-options__option:checked+label::before{
+  opacity: 1;
 }

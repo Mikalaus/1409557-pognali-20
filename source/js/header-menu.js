@@ -1,9 +1,9 @@
-menuOpen = document.querySelector(".header__menu-open");
-menu = document.querySelector(".header__menu");
-header = document.querySelector(".header");
-logo = document.querySelector(".header__logo");
-enter = document.querySelector(".enter-link");
-userLinks = document.querySelector(".main-info__user-links");
+var menuOpen = document.querySelector(".header__menu-open");
+var menu = document.querySelector(".header__menu");
+var header = document.querySelector(".header");
+var logo = document.querySelector(".header__logo");
+var enter = document.querySelector(".enter-link");
+var userLinks = document.querySelector(".user-links");
 
 window.onscroll = function(){
   if(window.pageYOffset > 50){

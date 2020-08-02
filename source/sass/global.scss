@@ -8,6 +8,7 @@ $desktop: 1440px;
 body{
   padding: 0;
   margin: 0;
+  min-width: 320px;
 }
 
 a{
@@ -17,4 +18,8 @@ a{
 .center-wrap{
   position: relative;
   width: 100%;
+}
+
+*{
+
 }

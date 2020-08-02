@@ -7,6 +7,15 @@
   }
 }
 
+@mixin typical-bottom-section-catalog{
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  @media (min-width: 768px){
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+  }
+}
+
 @mixin typical-top-section{
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
@@ -82,14 +91,4 @@
     top: 21px;
     right: 19px;
   }
-}
-@mixin circle($percent) {
-  $circumference: 60px;
-  $arc: $circumference * $percent / 100;
-  $gap: $circumference - $arc;
-
-  stroke-width: 3px;
-  stroke-linecap: round;
-  stroke-dashoffset: 25px;
-  stroke-dasharray: $arc $gap;
 }

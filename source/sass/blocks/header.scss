@@ -8,6 +8,19 @@
   margin-bottom: -40px;
 }
 
+.header_catalog{
+  background-color: #182044;
+}
+
+.header_catalog.header_scrolled,
+.header_catalog.header_menu-open{
+  padding-top: 30px;
+}
+
+.header__user-links{
+  display: none;
+}
+
 .header_scrolled{
   margin-top: -23px;
   height: 50px;
@@ -145,6 +158,16 @@
   .header{
     height: 132px;
     background-color: #161C34;
+
+    &_catalog{
+      background-color: #182044;
+    }
+  }
+
+  .header__user-links{
+    display: block;
+    position: absolute;
+    top: -70px;
   }
 
   .header_menu-open{
@@ -229,6 +252,15 @@
       flex-direction: row;
       justify-content: flex-start;
     }
+  }
+
+  .header__user-links{
+    position: absolute;
+    display: flex;
+    width: 288px;
+    height: 50px;
+    top: 10px;
+    left: calc(50% + 377px);
   }
 
   .header_menu-open{

@@ -2,3 +2,10 @@
   position: relative;
   display: flex;
 }
+
+@media(min-width: $desktop){
+  .user-links__enter-link.enter-link_header.enter-link_scrolled{
+    top: 35px;
+    right: calc(50% - 412px);
+  }
+}
