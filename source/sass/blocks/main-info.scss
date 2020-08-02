@@ -1,6 +1,6 @@
 .main-info{
-  background: url("../img/traveller-illustration-mobile@1x.png") calc(50% + 20px) 170px no-repeat,
-              url("../img/globe-back-mobile@1x.jpg") 0px -145px no-repeat;
+  background: url("../img/globe-back-mobile@1x.jpg") 0px -555px no-repeat;
+  background-size: cover;
   background-color: #161C34;
   width: 100%;
   display: flex;
@@ -12,6 +12,7 @@
 }
 
 .main-info__wrap{
+  background: url("../img/traveller-illustration-mobile@1x.png") 55px 170px no-repeat;
   width: 270px;
   display: flex;
   flex-direction: column;
@@ -36,7 +37,7 @@
   margin-top: 245px;
 }
 
-.main-info__enter-link{
+.user-links__enter-link{
   min-width: 190px;
   min-height: 40px;
   box-sizing: border-box;
@@ -151,12 +152,13 @@
 
 @media (min-width: $tablet) {
   .main-info{
-    background: url("../img/traveller-illustration-tablet@1x.png") calc(50% + 85px) 270px no-repeat,
-                url("../img/globe-back-tablet@1x.jpg") -200px 248px no-repeat;
+    background: url("../img/globe-back-tablet@1x.jpg") -400px -182px no-repeat;
+    background-size: cover;
     background-color: #161C34;
   }
 
   .main-info__wrap{
+    background: url("../img/traveller-illustration-tablet@1x.png") calc(50% + 85px) 270px no-repeat;
     width: 688px;
   }
 
@@ -259,10 +261,11 @@
 @media (min-width: $desktop) {
   .main-info{
     background: none;
-    background: url("../img/traveller-illustration-desktop@1x.png") calc(50% + 100px) -10px no-repeat;
+    background: url("../img/globe-back-desktop@1x.jpg") -130px 0px no-repeat;
+    background-size: cover;
     background-color: #161C34;
-    padding-bottom: 108px;
     width: calc(100% - 60px);
+    padding-bottom: 0;
     padding-left: 60px;
     justify-content: center;
   }
@@ -270,11 +273,11 @@
   .main-info__wrap{
     width: 1320px;
     display: flex;
-    background: url("../img/traveller-illustration-desktop@1x.png") 514px -10px no-repeat,
-                url("../img/globe-back-desktop@1x.jpg") -180px -120px no-repeat;
+    background: url("../img/traveller-illustration-desktop@1x.png") 514px -10px no-repeat;
     flex-direction: row;
     justify-content: flex-start;
     flex-wrap: wrap;
+    padding-bottom: 108px;
   }
 
   .main-info__title{
@@ -346,19 +349,19 @@
     &_scrolled{
       position: fixed;
       top: -195px;
-      right: calc(50% - 162px);
+      right: calc(50% - 215px);
       margin-right: -250px;
       z-index: 20;
     }
   }
 
-  .main-info__phone,
-  .main-info__mail{
+  .user-links__phone,
+  .user-links__mail{
     transform: scale(1.25);
     margin-right: 5px;
   }
 
-  .main-info__phone{
+  .user-links__phone{
     margin-right: 10px;
   }
 }

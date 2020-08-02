@@ -8,6 +8,7 @@
 }
 
 .footer__wrap{
+  margin-top: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -47,8 +48,8 @@
 .footer__academy{
   font-size: 0;
   display: block;
-  width: 27px;
-  height: 33px;
+  min-width: 27px;
+  min-height: 33px;
   background: url("../img/htmlacademy.svg") center no-repeat;
   font-size: 0;
   margin-top: 25px;
@@ -66,10 +67,14 @@
   }
 
   .footer__wrap{
+    width: 690px;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
+    box-sizing: border-box;
+    padding-left: 0;
+    margin-left: -40px;
   }
 
   .footer__logo{
@@ -100,8 +105,8 @@
     font-size: 20px;
     line-height: 20px;
     width: 104px;
-    margin-left: 99px;
-    margin-top: 15px;
+    margin-left: 150px;
+    margin-top: 17px;
   }
 
   .footer__academy{
@@ -121,11 +126,17 @@
   .footer__logo{
     width: 200px;
     height: 55px;
+    margin-right: 20px;
     background: url("../img/logo-desktop-blue@1x.png") center no-repeat;
   }
 
+  .footer__designed-by{
+    margin-left: 135px;
+  }
+
   .footer__wrap{
-   width: 1320px;
-   justify-content: space-between;
+    margin-left: -65px;
+    width: 1320px;
+    justify-content: space-between;
   }
 }
