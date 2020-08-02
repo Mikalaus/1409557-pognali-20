@@ -1,0 +1,140 @@
+.countries{
+  background: #EDEFF6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @include typical-bottom-section;
+  padding-bottom: 35px;
+  z-index: 5;
+}
+
+.countries__wrap{
+  width: 270px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.countries__title{
+  display: block;
+  @include typical-title;
+  text-shadow: 0 3px 2px #CDC7CD;
+  margin-top: 71px;
+  margin-left: 25px;
+}
+
+.countries p{
+  display: block;
+  font-family: $light;
+  font-size: 16px;
+  line-height: 22px;
+  color: #444444;
+  width: 216px;
+  margin-top: 0px;
+  margin-left: 25px;
+}
+
+.countries__country-cards{
+  margin-top: 42px;
+  display: flex;
+  flex-direction: column;
+  width: 270px;
+  align-items: center;
+  gap: 10px;
+}
+
+.countries__link{
+  @include typical-link;
+  margin-top: 28px;
+}
+
+@media (min-width: $tablet){
+  .countries{
+    padding-bottom: 80px;
+    padding-right: 40px;
+    padding-left: 15px;
+  }
+
+  .countries__wrap{
+    background: url("../img/flags-back@1x.png") 455px 80px no-repeat,
+                url("../img/countries-back-tablet.png") 55px 405px no-repeat;
+    width: 768px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .countries__title{
+    margin-bottom: 58px;
+    margin-left: 86px;
+  }
+
+  .countries p{
+    margin-left: 88px;
+    width: 378px;
+    font-size: 28px;
+    line-height: 33px;
+  }
+
+  .countries__country-cards{
+    position: relative;
+    width: 616px;
+    margin-top: 75px;
+    margin-left: 90px;
+  }
+
+  .countries__country-cards::after{
+    position: absolute;
+    bottom: 0;
+    display: block;
+    content: '';
+    width: 617px;
+    height: 94px;
+    background: url("../img/fade-countries.png");
+  }
+
+  .countries__link{
+    margin-top: 47px;
+    margin-left: 88px;
+  }
+}
+
+@media (min-width: $desktop) {
+  $back: calc(50% + 495px);
+  .countries{
+    width: calc(100% - 100px);
+    padding-left: 60px;
+    background: url("../img/flags-back@1x.png") $back 88px no-repeat;
+    padding-bottom: 90px;
+  }
+
+  .countries__wrap{
+    width: 1320px;
+    height: 575px;
+    flex-wrap: wrap;
+    padding-left: 40px;
+    margin-left: -160px;
+    padding-top: 85px;
+    background: url("../img/countries-back-tablet.png") 90px 90px no-repeat;
+  }
+
+  .countries__country-cards{
+    order: -1;
+    margin-left: 120px;
+  }
+
+  .countries__title{
+    margin-top: 81px;
+    margin-left: 25px;
+  }
+
+  .countries p{
+    margin-left: 25px;
+    margin-bottom: 50px;
+  }
+
+  .countries__link{
+    width: 275px;
+    margin-left: 25px;
+  }
+}

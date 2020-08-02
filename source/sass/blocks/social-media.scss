@@ -1,0 +1,40 @@
+.social-media{
+  width: 105px;
+  height: 21px;
+  font-size: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &_footer{
+    width: 135px;
+  }
+}
+
+.social-media__link{
+  display: block;
+}
+
+.social-media__link_yellow{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 45px;
+  height: 45px;
+  background-color: #FFD74B;
+  border-radius: 50%;
+
+  @media (min-width: $tablet){
+    width: 62px;
+    height: 62px;
+  }
+}
+
+@media (min-width: $desktop){
+  .social-media{
+
+    &_desktop{
+      display: none;
+    }
+  }
+}

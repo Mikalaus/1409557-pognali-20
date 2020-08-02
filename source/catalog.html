@@ -2,31 +2,33 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
     <title>HTML Academy: Погнали</title>
   </head>
-
   <body>
 
     <header class="header">
       <div class="center-wrap">
         <div class="header__display">
-          <a href="index.html" class="logo header__logo"></a>
+          <a href="index.html" class="logo header__logo">Погнали</a>
           <button type="button" class="header__menu-open"></button>
-          <div class="header__menu">
+        </div>
+        <div class="header__menu header__menu_hidden">
+          <div class="header__menu-wrap">
             <nav class="header__links">
-              <a href="index.html" class="header__link">О сервисе</a>
+              <a href="#" class="header__link">О сервисе</a>
               <a href="form.html" class="header__link">Направления</a>
-              <a href="#" class="header__link">Попутчики</a>
+              <a href="catalog.html" class="header__link">Попутчики</a>
             </nav>
-            <a href="" class="enter-link header__enter-link">Авторизация</a>
-            <div class="contacts header_contacts">
+            <a href="" class="header__enter-link">Авторизация</a>
+            <div class="contacts header__contacts contacts_desktop">
               <a href="tel:88005558628" class="contacts__telephone">8 800 555-86-28</a>
               <a href="" class="contacts__mail">mail@htmlacademy.ru</a>
             </div>
-            <div class="social-media header__social-media">
-              <a href="#" class="social-media__link social-media__link_fb">facebook</a>
-              <a href="#" class="social-media__link social-media__link_vk">vk</a>
-              <a href="#" class="social-media__link social-media__link_insta">instagram</a>
+            <div class="social-media header__social-media social-media_desktop">
+              <a href="#" class="social-media__link"><img src="img/facebook.svg" width="11" height="21" alt="facebook"></a>
+              <a href="#" class="social-media__link"><img src="img/vk.svg" width="23" height="12" alt="vkontakte"></a>
+              <a href="#" class="social-media__link"><img src="img/instagram.svg" width="18" height="18" alt="instagram"></a>
             </div>
           </div>
         </div>
@@ -293,18 +295,19 @@
     </main>
 
     <footer class="footer">
-      <div class="center-wrap">
-        <a href="#" class="footer__logo"></a>
-        <div class="social-media footer__social-media">
-          <a href="#" class="social-media__fb">facebook</a>
-          <a href="#" class="social-media__vk">vk</a>
-          <a href="#" class="social-media__insta">instagram</a>
+      <div class="footer__wrap">
+        <a href="#" class="footer__logo">Погнали</a>
+        <div class="social-media social-media_footer footer__social-media">
+          <a href="#" class="social-media__link social-media__link_yellow"><img src="img/facebook.svg" width="11" height="21" alt="facebook"></a>
+          <a href="#" class="social-media__link social-media__link_yellow"><img src="img/vk.svg" width="23" height="12" alt="vkontakte"></a>
+          <a href="#" class="social-media__link social-media__link_yellow"><img src="img/instagram.svg" width="18" height="18" alt="instagram"></a>
         </div>
         <div class="footer__bottom-part-wrapper">
-          <span>Разработано</span>
-          <a href="https://up.htmlacademy.ru/adaptive">htmlacademy</a>
+          <span class="footer__designed-by">Разработано</span>
+          <a class="footer__academy" href="https://up.htmlacademy.ru/adaptive">htmlacademy</a>
         </div>
       </div>
     </footer>
+    <script src="js/header-menu.js"></script>
   </body>
 </html>
