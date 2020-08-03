@@ -59,7 +59,7 @@
   overflow: visible;
   width: 215px;
   height: 2px;
-  background: linear-gradient(to right, #D2B54E, #D2B54E 33%, #1D2E5B 33%);
+  background: linear-gradient(to right, #D2B54E, #D2B54E 73px, #1D2E5B 73px);
 }
 
 .level-input__min-range,
@@ -80,4 +80,44 @@
 
 .level-input__max-range{
   right: -5px;
+}
+
+@media (min-width: $tablet){
+  .level-input__range{
+    order: -1;
+  }
+
+  .level-input__min-range,
+  .level-input__max-range{
+    transform: scale(1.33);
+  }
+
+  .level-input__max-range{
+    right: 1px;
+  }
+
+  .level-input__range{
+    height: 3px;
+    width: 281px;
+    margin-top: -4px;
+  }
+
+  .level-input__num input{
+    width: 74px;
+    height: 46px;
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 0.04em
+  }
+
+  .level-input__num{
+    margin-top: -2px;
+    margin-right: 2px;
+
+    &::after{
+      top: 5px;
+      transform: scale(1.33);
+      left: 64px;
+    }
+  }
 }

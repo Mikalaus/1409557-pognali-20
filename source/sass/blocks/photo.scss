@@ -65,16 +65,34 @@
   height: 31px;
   border: none;
   outline: none;
-  background: url("../img/like.png") center no-repeat;
+  background: url("../img/like.svg") center no-repeat;
   margin-top: 8px;
 
   &_active{
-    background: url("../img/like-active.png") center no-repeat;
+    background: url("../img/like-active.svg") center no-repeat;
   }
 }
 
-.photo__img{
+.photo__companion{
+  width: 70px;
+  height: 70px;
   border-radius: 50%;
+
+  &_firsova{
+    background: url("../img/firsova-mobile@1x.jpg") center no-repeat;
+  }
+
+  &_demin{
+    background: url("../img/demin-mobile@1x.jpg") center no-repeat;
+  }
+
+  &_smolov{
+    background: url("../img/smolov-mobile@1x.jpg") center no-repeat;
+  }
+
+  &_rogovaya{
+    background: url("../img/rogovaya-mobile@1x.jpg") center no-repeat;
+  }
 }
 
 .photo__call-button{
@@ -299,13 +317,10 @@
   font-family: $bold;
   font-size: 24px;
   line-height: 24px;
-  }
-
-  &::after{
-    padding-top: 10px;
-    padding-left: 7px;
-    background: #fff;
-    color: #1D2E5B;
+  padding-top: 10px;
+  padding-left: 7px;
+  background: #fff;
+  color: #1D2E5B;
   }
 
   &_99{
@@ -371,6 +386,10 @@
   justify-content: space-between;
 }
 
+.photo__breadcrumbs{
+  display: none;
+}
+
 .photo__previous-page,
 .photo__next-page{
   outline: none;
@@ -386,4 +405,269 @@
 
 .photo__next-page{
   transform: rotate(180deg);
+}
+
+.photo__page-buttons{
+  width: 100%;
+  display: flex;
+  gap: 1px;
+}
+
+@media (min-width: $tablet){
+  .photo{
+    width: 688px;
+    margin-top: 42px;
+    gap: 40px;
+  }
+
+  .photo__card{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-top: 35px;
+    padding-left: 35px;
+    padding-bottom: 6px;
+  }
+
+  .photo__about-companion{
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 200px;
+    min-width: 500px;
+  }
+
+  .photo__like{
+    order: 10;
+    margin-top: 0;
+  }
+
+  .photo__companion{
+    width: 190px;
+    height: 190px;
+    border-radius: 20px;
+
+    &_firsova{
+      background: url("../img/firsova-tablet@1x.jpg") center no-repeat;
+    }
+
+    &_demin{
+      background: url("../img/demin-tablet@1x.jpg") center no-repeat;
+    }
+
+    &_smolov{
+      background: url("../img/smolov-tablet@1x.jpg") center no-repeat;
+    }
+
+    &_rogovaya{
+      background: url("../img/rogovaya-tablet@1x.jpg") center no-repeat;
+    }
+  }
+
+  .photo__name{
+    position: relative;
+    font-size: 30px;
+    line-height: 30px;
+    min-width: 225px;
+    margin-left: 8px;
+    margin-top: -3px;
+
+    &::after{
+      transform: scale(1.25);
+      top: 11px;
+      right: -18px;
+    }
+  }
+
+  .photo__hashtags{
+    width: 226px;
+    min-height: 46px;
+    font-size: 20px;
+    line-height: 23px;
+    margin-left: 10px;
+    margin-top: 5px;
+  }
+
+  .photo__like{
+    margin-top: 43px;
+    margin-left: 4px;
+  }
+
+  .photo__call-button{
+    position: relative;
+    font-size: 20px;
+    line-height: 20px;
+    padding: 17px 32px 14px 32px;
+    left: 0;
+    bottom: 0;
+    top: 2px;
+  }
+
+  .photo__like-button{
+    transform: scale(1.66);
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 0;
+  }
+
+
+  .photo__companion-likes{
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .photo__transport-level-wrapper{
+    order: 2;
+    flex-direction: column;
+    align-items: center;
+    min-height: 190px;
+    width: 60px;
+    margin-left: 60px;
+  }
+
+  .photo__transport-title,
+  .photo__level-title{
+    display: none;
+  }
+
+  .photo__transport{
+    height: 130px;
+    margin-top: -7px;
+    margin-left: 10px;
+    margin-bottom: 5px;
+  }
+
+  .photo__transport-options{
+    flex-direction: column;
+    align-items: center;
+    padding-left: 5px;
+    margin-top: 0;
+  }
+
+  .photo__level{
+    margin-left: 20px;
+  }
+
+  .photo__level-value{
+    box-sizing: border-box;
+    display: block;
+    position: relative;
+    margin: 0;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+
+    &::after {
+    top: 3px;
+    left: 3px;
+    height: 54px;
+    width: 54px;
+    padding-top: 10px;
+    padding-left: 14px;
+    }
+
+    &::before{
+      content: "level";
+      display: inline-block;
+      position: absolute;
+      font-family: $default;
+      font-size: 14px;
+      line-height: 14px;
+      color: #000000;
+      opacity: 0.4;
+      border-top: 1px solid #000000;
+      padding-top: 2px;
+      top: 36px;
+      left: 18px;
+      z-index: 5;
+    }
+  }
+
+  .photo__want-to-visit{
+    order: 3;
+  }
+
+  .photo__want-to-visit-title{
+    min-width: 688px;
+    margin-left: -45px;
+    padding-left: 85px;
+    background: linear-gradient(to right, #EDEFF6, #EDEFF6 70px, #FFF 70px, #FFF 212px, #EDEFF6 212px, #EDEFF6);
+  }
+
+  .photo__country-list{
+    width: 100%;
+    display: flex;
+    gap: 30px;
+    flex-direction: row;
+    margin-top: 27px;
+    margin-left: 3px;
+  }
+
+  .photo__country-item{
+    font-size: 20px;
+    line-height: 20px;
+
+    &::before{
+      transform: scale(1.33);
+      margin-right: 11px;
+      border-radius: 2px;
+    }
+  }
+
+  .photo__show-more{
+    font-size: 20px;
+    line-height: 20px;
+    margin-top: 13px;
+
+    &::before{
+      transform: scale(1.44);
+      margin-right: 25px;
+    }
+  }
+
+  .photo__page-scroll{
+    width: 100%;
+    margin-top: 12px;
+    box-sizing: border-box;
+    background: white;
+    border-radius: 20px;
+    padding-right: 35px;
+  }
+
+  .photo__breadcrumbs{
+    display: flex;
+    justify-content: flex-start;
+    margin-left: -11px;
+    margin-top: 25px;
+    padding-bottom: 10px;
+  }
+
+  .photo__page-num{
+    width: 50px;
+    box-sizing: border-box;
+    height: 50px;
+    list-style: none;
+    font-family: $bold;
+    font-size: 20px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: #1D2E5B;
+    border-radius: 50%;
+    padding-top: 17px;
+    padding-left: 20px;
+
+    &_selected{
+      background-color: #FFD74B;
+    }
+  }
+
+  .photo__page-buttons{
+    width: 53px;
+    margin-top: 25px;
+  }
+
+  .photo__previous-page,
+  .photo__next-page{
+    width: 26.5px;
+    background-position: left;
+  }
 }

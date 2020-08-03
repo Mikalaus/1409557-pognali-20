@@ -23,20 +23,21 @@
 }
 
 fieldset{
+  padding-left: 0;
   border: none;
   outline: none;
+  &:not(:first-of-type){
+    margin-top: -5px;
+  }
 }
 
 .companion-filter__block{
   width: 220px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   padding-left: 0;
   margin-left: 0px;
 
   &:not(:first-of-type){
-    margin-top: -5px;
+    margin-top: 0px;
   }
 }
 
@@ -161,4 +162,108 @@ fieldset{
 
 .companion-filter__content-block_hidden{
   display: none;
+}
+
+@media (min-width: $tablet){
+  .companion-filter{
+    width: 688px;
+    margin-top: 43px;
+    padding-top: 12px;
+    padding-left: 35px;
+    padding-bottom: 39px;
+  }
+
+  .companion-filter__form{
+    margin-top: -25px;
+    border-top: 1px solid #F3C72B;
+    padding-top: 23px;
+
+    & fieldset:nth-of-type(4) .companion-filter__title-part{
+     padding-top: 21px;
+   }
+
+    & fieldset:nth-of-type(5) .companion-filter__title-part{
+     padding-top: 25px;
+   }
+  }
+
+  .companion-filter__title{
+    font-size: 30px;
+    line-height: 30px;
+    min-width: 500px;
+    letter-spacing: 0em;
+  }
+
+  .companion-filter__expend-button{
+    display: none;
+  }
+
+  .companion-filter__title-part{
+    width: 110px;
+    border-top: none;
+    display: block;
+    margin-left: -5px;
+    margin-right: 5px;
+
+    &:nth-child(4){
+      padding-top: 20px;
+    }
+  }
+
+  .companion-filter__content-block_hidden{
+    display: block;
+  }
+
+  .companion-filter__block{
+    width: 617px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding-left: 0;
+
+    &:first-of-type{
+      margin-bottom: -5px;
+    }
+  }
+
+  .companion-filter__content-block{
+    width: 496px;
+    margin-top: 12px;
+    margin-left: 23px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .companion-filter__legend{
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .companion-filter__input label{
+    font-size: 20px;
+    line-height: 20px;
+    width: 114px;
+
+    &::before{
+      top: -1px;
+      left: -32px;
+      transform: scale(1.33);
+    }
+  }
+
+  .companion-filter__transport-options{
+    display: flex;
+    justify-content: flex-start;
+    gap: 11px;
+    margin-left: 15px;
+  }
+
+  .companion-filter__submit-button{
+    min-width: 617px;
+    font-size: 20px;
+    line-height: 20px;
+    margin-top: 66px;
+    margin-left: 0px;
+  }
 }
