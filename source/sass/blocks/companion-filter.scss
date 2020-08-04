@@ -164,7 +164,7 @@ fieldset{
   display: none;
 }
 
-@media (min-width: $tablet){
+@media (min-width: $tablet) and (max-width: $media-max-desktop){
   .companion-filter{
     width: 688px;
     margin-top: 43px;
@@ -202,7 +202,7 @@ fieldset{
     width: 110px;
     border-top: none;
     display: block;
-    margin-left: -5px;
+    margin-left: 0px;
     margin-right: 5px;
 
     &:nth-child(4){
@@ -265,5 +265,11 @@ fieldset{
     line-height: 20px;
     margin-top: 66px;
     margin-left: 0px;
+  }
+}
+
+@media (min-width: $desktop){
+  .companion-filter{
+    margin-top: 40px;
   }
 }

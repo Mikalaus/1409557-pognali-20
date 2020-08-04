@@ -89,3 +89,25 @@
     }
   }
 }
+
+@media (min-width: $desktop){
+  .intro-section{
+    padding-bottom: 13px;
+  }
+
+  .intro-section__wrap{
+    width: 1320px;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 66px;
+    padding-right: 63px;
+    padding-top: 55px;
+    }
+
+  .intro-section__title{
+    &::after{
+      top: 128px;
+      left: 0;
+    }
+  }
+}

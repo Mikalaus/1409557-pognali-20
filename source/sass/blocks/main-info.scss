@@ -81,7 +81,7 @@
 
 .main-info__list{
   margin-top: 0;
-  margin-left: -40px;
+  padding-left: 0;
   display: flex;
   flex-wrap: wrap;
   counter-reset: myCounter;
@@ -190,11 +190,6 @@
     min-height: 75px;
     font-size: 21px;
     line-height: 25px;
-  }
-
-  .main-info__user-links{
-    position: absolute;
-    top: -420px;
   }
 
   .main-info__list{
@@ -342,26 +337,7 @@
     }
   }
 
-  .main-info__user-links{
-    top: -310px;
-    right: calc(50% - 660px);
-
-    &_scrolled{
-      position: fixed;
-      top: -195px;
-      right: calc(50% - 215px);
-      margin-right: -250px;
-      z-index: 20;
-    }
-  }
-
-  .user-links__phone,
-  .user-links__mail{
-    transform: scale(1.25);
-    margin-right: 5px;
-  }
-
-  .user-links__phone{
-    margin-right: 10px;
+  .main-info__list{
+    margin-left: 0px;
   }
 }

@@ -469,7 +469,7 @@
     line-height: 30px;
     min-width: 225px;
     margin-left: 8px;
-    margin-top: -3px;
+    margin-top: 0px;
 
     &::after{
       transform: scale(1.25);
@@ -531,12 +531,14 @@
 
   .photo__transport{
     height: 130px;
-    margin-top: -7px;
-    margin-left: 10px;
+    width: 40px;
+    margin-top: 0px;
+    margin-left: -15px;
     margin-bottom: 5px;
   }
 
   .photo__transport-options{
+    min-width: 40px;
     flex-direction: column;
     align-items: center;
     padding-left: 5px;
@@ -544,7 +546,7 @@
   }
 
   .photo__level{
-    margin-left: 20px;
+    margin-left: 0px;
   }
 
   .photo__level-value{
@@ -636,8 +638,9 @@
   .photo__breadcrumbs{
     display: flex;
     justify-content: flex-start;
-    margin-left: -11px;
+    margin-left: 0px;
     margin-top: 25px;
+    padding-left: 30px;
     padding-bottom: 10px;
   }
 
@@ -669,5 +672,118 @@
   .photo__next-page{
     width: 26.5px;
     background-position: left;
+  }
+}
+
+@media (min-width: $desktop){
+  .photo{
+    min-width: 951px;
+    min-height: 285px;
+    order: -1;
+  }
+
+  .photo__card{
+    flex-direction: column;
+    padding: 0;
+    height: 285px;
+  }
+
+  .photo__companion{
+    width: 285px;
+    height: 285px;
+
+    &_firsova{
+      background: url("../img/firsova-desktop@1x.jpg") center no-repeat;
+    }
+
+    &_demin{
+      background: url("../img/demin-desktop@1x.jpg") center no-repeat;
+    }
+
+    &_smolov{
+      background: url("../img/smolov-desktop@1x.jpg") center no-repeat;
+    }
+
+    &_rogovaya{
+      background: url("../img/rogovaya-desktop@1x.jpg") center no-repeat;
+    }
+  }
+
+  .photo__about-companion{
+    width: 605px;
+    height: 285px;
+  }
+
+  .photo__name{
+    margin-top: 46px;
+    margin-left: 60px;
+
+    &::after{
+      left: -25px;
+    }
+  }
+
+  .photo__hashtags{
+    margin-left: 60px;
+  }
+
+  .photo__like{
+    margin-left: 60px;
+  }
+
+  .photo__want-to-visit{
+    order: 2;
+    width: 220px;
+    min-height: 80px;
+    margin-top: 45px;
+  }
+
+  .photo__country-item{
+    &:not(:last-of-type){
+      margin-bottom: -15px;
+    }
+
+    &::before{
+      margin-right: 19px;
+    }
+  }
+
+  .photo__want-to-visit-title{
+    display: none;
+  }
+
+  .photo__country-list{
+    margin-left: 0;
+    margin-top: 0;
+    flex-direction: column;
+  }
+
+  .photo__transport-level-wrapper{
+    flex-direction: row;
+    order: 3;
+    min-height: 60px;
+    margin-top: 45px;
+    margin-left: -13px;
+    min-width: 232px;
+  }
+
+  .photo__transport{
+    height: 50px;
+    margin-top: 0px;
+    margin-left: 0;
+    min-width: 150px;
+  }
+
+  .photo__transport-options{
+    flex-direction: row;
+    margin-top: 10px;
+  }
+
+  .photo__level{
+    margin-left: 20px;
+  }
+
+  .photo__level-value{
+    margin-top: -10px;
   }
 }

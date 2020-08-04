@@ -82,7 +82,7 @@
   right: -5px;
 }
 
-@media (min-width: $tablet){
+@media (min-width: $tablet) and (max-width: $media-max-desktop){
   .level-input__range{
     order: -1;
   }

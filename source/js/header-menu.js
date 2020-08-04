@@ -9,15 +9,15 @@ window.onscroll = function(){
   if(window.pageYOffset > 50){
     header.classList.add("header_scrolled");
     enter.classList.add("enter-link_scrolled")
-    userLinks.classList.add("main-info__user-links_scrolled")
+    userLinks.classList.add("user-links_scrolled")
   } else {
     header.classList.remove("header_scrolled");
     if (header.classList.contains("header_menu-open")){
       enter.classList.add("enter-link_scrolled");
-      userLinks.classList.add("main-info__user-links_scrolled")
+      userLinks.classList.add("user-links_scrolled")
     } else {
         enter.classList.remove("enter-link_scrolled");
-        userLinks.classList.remove("main-info__user-links_scrolled")
+        userLinks.classList.remove("user-links_scrolled")
       }
     }
   }
