@@ -1,0 +1,24 @@
+.alphabet-list{
+  display: none;
+}
+
+@media (min-width: $desktop) {
+  .alphabet-list{
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .alphabet-list__item{
+    list-style: none;
+    min-width: 250px;
+    margin-bottom: 50px;
+  }
+
+  .alphabet-list__link{
+    font-family: $bold;
+    font-size: 60px;
+    line-height: 60px;
+    text-transform: uppercase;
+    color: #192144;
+  }
+}

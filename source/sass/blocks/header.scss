@@ -17,10 +17,6 @@
   padding-top: 30px;
 }
 
-.header__user-links{
-  display: none;
-}
-
 .header_scrolled{
   margin-top: -23px;
   height: 50px;
@@ -164,12 +160,6 @@
     }
   }
 
-  .header__user-links{
-    display: block;
-    position: absolute;
-    top: -70px;
-  }
-
   .header_menu-open{
     background-color: white;
   }
@@ -254,13 +244,12 @@
     }
   }
 
-  .header__user-links{
-    position: absolute;
-    display: flex;
-    width: 288px;
-    height: 50px;
-    top: 10px;
-    left: calc(50% + 377px);
+  .header_catalog{
+    background-color: #182044;
+  }
+
+  .header_catalog .header__menu{
+    background-color: #182044;
   }
 
   .header_menu-open{

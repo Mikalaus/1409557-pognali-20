@@ -10,6 +10,13 @@
   }
 }
 
+.transport-options__list{
+  width: 140px;
+  height: 25px;
+  padding-left: 0;
+  margin-top: 0;
+}
+
 .transport-options li{
   list-style: none;
   display: inline-block;
@@ -59,6 +66,10 @@
   height: 32px;
   flex-shrink: 0;
   flex-grow: 0;
+
+  @media (min-width: $tablet) and (max-width: $media-max-desktop){
+    transform: scale(1.33);
+  }
 
   &::before{
     content: '';
@@ -130,6 +141,11 @@
 
   &:nth-of-type(8n)::before{
     background: url("../img/run.svg") center no-repeat;
+  }
+
+  @media (min-width: $tablet){
+    transform: scale(1.33);
+    background-color: transparent;
   }
 }
 

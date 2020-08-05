@@ -4,4 +4,11 @@
   flex-direction: column;
   align-items: center;
   padding-bottom: 62px;
+
+  @media (min-width: $desktop){
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 84px;
+  }
 }

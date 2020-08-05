@@ -3,9 +3,60 @@
   display: flex;
 }
 
+.user-links_header{
+  display: none;
+}
+
+@media (min-width: $tablet){
+  .user-links{
+    position: absolute;
+    top: -420px;
+  }
+
+  .user-links_header{
+    display: block;
+    position: absolute;
+    top: -70px;
+    margin-left: -40px;
+  }
+}
+
 @media(min-width: $desktop){
-  .user-links__enter-link.enter-link_header.enter-link_scrolled{
-    top: 35px;
+  .user-links{
+    top: -310px;
+    right: calc(50% - 660px);
+
+    &_scrolled{
+      position: fixed;
+      top: -195px;
+      right: calc(50% - 215px);
+      margin-right: -250px;
+      z-index: 20;
+    }
+  }
+
+  .user-links__phone,
+  .user-links__mail{
+    transform: scale(1.25);
+    margin-right: 5px;
+  }
+
+  .user-links__phone{
+    margin-right: 10px;
+  }
+
+  .user-links_header{
+    margin-left: 0;
+    position: absolute;
+    display: flex;
+    width: 288px;
+    height: 50px;
+    top: 10px;
+    left: calc(50% + 377px);
+  }
+
+  .enter-link_header.enter-link_scrolled{
+    top: 25px;
     right: calc(50% - 412px);
   }
 }
