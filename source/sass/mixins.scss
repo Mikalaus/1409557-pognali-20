@@ -92,3 +92,27 @@
     right: 19px;
   }
 }
+
+@mixin typical-button{
+  width: 100%;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  text-align: center;
+  font-family: $med;
+  color: #161C35;
+  background-color: #FFD74B;
+  border-radius: 20px;
+  text-transform: uppercase;
+}
+
+@mixin typical-button_secondary{
+  @include typical-button;
+  background-color: #DFE3F0;
+}
+
+@mixin blue-title($size){
+  font-family: $bold;
+  font-size: $size;
+  line-height: $size;
+  color: #1D2E5B;
+}

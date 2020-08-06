@@ -1,0 +1,73 @@
+.profile{
+  background-color: #EDEFF6;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 34px;
+}
+
+.profile__wrap{
+  width: 270px;
+  margin-top: 24px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.profile__photo{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.profile__level{
+  margin-right: 35px;
+}
+
+.profile__change-img-button{
+  @include typical-button_secondary;
+  font-size: 20px;
+  line-height: 18px;
+  margin-top: 18px;
+  margin-bottom: 17px;
+}
+
+.profile__tags-form{
+  width: 100%;
+  min-height: 90px;
+}
+
+.profile__tags{
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #CBCED9;
+  border-radius: 10px;
+  padding-left: 20px;
+  padding-top: 15px;
+  margin-left: 0;
+}
+
+.profile__tags-legend{
+  width: 65px;
+  padding-top: 4px;
+  font-family: $bold;
+  font-size: 16px;
+  line-height: 18px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #1D2E5B
+}
+
+.profile__tags-input{
+  outline: none;
+  border: none;
+  background-color: transparent;
+
+  resize: none;
+  width: 217px;
+  min-height: 36px;
+  font-family: $default;
+  font-size: 16px;
+  line-height: 18px;
+  color: #444444;
+  opacity: 0.6;
+}

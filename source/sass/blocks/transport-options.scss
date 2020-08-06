@@ -17,6 +17,32 @@
   margin-top: 0;
 }
 
+.transport-options__input{
+  width: 100%;
+  border: 1px solid #CBCED9;
+  border-radius: 10px;
+  padding-right: 0;
+  box-sizing: border-box;
+  margin-top: 25px;
+  padding-left: 70px;
+  margin-left: 0;
+}
+
+.transport-options__input label{
+  margin-right: -3px;
+}
+
+.transport-options__legend{
+  font-family: $bold;
+  font-size: 16px;
+  line-height: 18px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #1D2E5B;
+  padding-top: 4px;
+  width: 100px;
+}
+
 .transport-options li{
   list-style: none;
   display: inline-block;
