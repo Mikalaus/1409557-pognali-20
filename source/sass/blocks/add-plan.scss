@@ -6,6 +6,10 @@
   padding-bottom: 43px;
 }
 
+.add-plan__step-change{
+  display: none;
+}
+
 .add-plan fieldset{
   border: none;
   outline: none;
@@ -63,6 +67,7 @@
   width: 100%;
   border-radius: 10px;
   padding-left: 25px;
+  padding-right: 22px;
   padding-top: 8px;
   margin-left: 0;
 }
@@ -76,7 +81,7 @@
   font-size: 16px;
   line-height: 22px;
   color: #444444;
-  width: 220px;
+  min-width: 220px;
 }
 
 .add-plan__companion-search-duration-wrap{
@@ -146,7 +151,7 @@
 }
 
 .add-plan__input{
-  width: 136px;
+  min-width: 136px;
   border-left: none;
   border-right: none;
   border-top: 1px solid #CBCED9;
@@ -226,7 +231,7 @@
 }
 
 .add-plan__choose-country{
-  width: 100%;
+  min-width: 220px;
   display: flex;
   position: relative;
   cursor: pointer;
@@ -326,6 +331,10 @@
     color: white;
     margin-left: 5px;
     margin-top: 3px;
+  }
+
+  &_expended{
+    display: none;
   }
 }
 
@@ -551,7 +560,7 @@
 
 .add-plan__plan-input{
   width: 220px;
-  height: 220px;
+  min-height: 220px;
   box-sizing: border-box;
   resize: none;
   padding-left: 14px;
@@ -574,9 +583,611 @@
   @include typical-button;
   border: none;
   padding-top: 8px;
-  height: 40px;
+  min-height: 40px;
   font-size: 17px;
   line-height: 30px;
   margin-left: -7px;
   margin-bottom: 10px;
+}
+
+@media (min-width: $tablet){
+  .add-plan__wrap{
+    width: 688px;
+    padding-bottom: 63px;
+  }
+
+  .add-plan__form{
+    gap: 40px;
+  }
+
+  .add-plan__title{
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  .add-plan__slider-dots{
+    width: 76px;
+    margin-right: -15px;
+  }
+
+  .add-plan__slider-item{
+    transform: scale(1.2);
+    margin-top: 15px;
+  }
+
+  .add-plan fieldset{
+    border-radius: 30px;
+    padding-top: 28px;
+    padding-left: 44px;
+    padding-right: 44px;
+    padding-bottom: 52px;
+
+    &:last-of-type{
+      padding-bottom: 53px;
+    }
+  }
+
+  .add-plan__wrap{
+    width: 706px;
+    box-sizing: border-box;
+    padding-left: 44px;
+    padding-right: 44px;
+  }
+
+  .add-plan__step-title{
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  .add-plan__step-description{
+    font-size: 20px;
+    line-height: 24px;
+    min-width: auto;
+
+    &_direction{
+      width: 400px;
+    }
+  }
+
+  .add-plan__companion-search-duration-wrap{
+    width: 100%;
+    margin-top: 40px;
+    flex-direction: column;
+  }
+
+  .add-plan__companion-search,
+  .add-plan__duration{
+    border-top: 1px solid #E1E3E9;
+    padding-top: 26px;
+  }
+
+  .add-plan__companion-search{
+    order: -2;
+  }
+
+  .add-plan__kids+label{
+    order: -1;
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-left: 60px;
+    margin-top: 24px;
+    margin-bottom: 24px;
+
+    &::before{
+      transform: scale(1.5);
+      left: -54px;
+    }
+  }
+
+  .add-plan__duration{
+    order: 0;
+  }
+
+  .add-plan__secondary-title{
+    font-size: 20px;
+    line-height: 18px;
+    margin-bottom: 14px;
+  }
+
+  .add-plan__measure{
+    font-size: 20px;
+    line-height: 18px;
+  }
+
+  .add-plan__button{
+    padding-top: 34px;
+    padding-bottom: 34px;
+    padding-left: 23px;
+    padding-right: 20px;
+  }
+
+  .add-plan__input{
+    padding-top: 0px;
+    padding-bottom: 0px;
+    font-size: 20px;
+    height: 68px;
+    line-height: 18px;
+    flex-grow: 1;
+  }
+
+  .add-plan__calendar{
+    margin-top: 58px;
+  }
+
+  .add-plan__next-step{
+    margin-top: 27px;
+  }
+
+  .add-plan__choose-country-wrap{
+    width: 100%;
+    border-top: 1px solid #E1E3E9;
+    padding-top: 42px;
+    margin-top: 33px;
+    position: relative;
+    background: url("../img/form-border-tablet.svg") 396px 0 no-repeat,
+                url("../img/form-border-fade-tablet.svg") 396px 326px no-repeat,
+  }
+
+  .add-plan__choose-country_add{
+    width: 369px;
+  }
+
+  .add-plan__fade-block{
+    background: none;
+    width: 20px;
+    height: 17px;
+    right: 56px;
+    top: 19px;
+  }
+
+  .add-plan__country-name{
+    width: 369px;
+    padding-top: 26px;
+    padding-bottom: 22px;
+    padding-left: 26px;
+
+    &::before{
+      display: none;
+    }
+
+    &::after{
+      width: 14px;
+      height: 14px;
+      right: -35px;
+      top: 27px;
+      z-index: 2;
+    }
+
+    &_choose{
+      width: 299px;
+      height: 70px;
+      box-sizing: border-box;
+
+      &::after{
+        background-color: white;
+        right: -104px;
+      }
+    }
+
+    &_add::after{
+      background-color: #EDEFF6;
+      right: -34px;
+    }
+  }
+
+  .add-plan__country-title{
+    font-size: 20px;
+    line-height: 20px;
+
+    &_expended{
+      display: inline-block;
+    }
+  }
+
+  .add-plan__list-open-button{
+    transform: scale(1.3);
+
+    &_dropdown-open{
+      transform: scale(2);
+    }
+  }
+
+  .add-plan__country-flag{
+    margin-left: 52px;
+    border: none;
+    width: 70px;
+    height: 70px;
+
+    &_bosnia-gerzegovina{
+      background: url("../img/bosnia-gerzegovina-tablet.png") center no-repeat;
+    }
+
+    &_chech{
+      background: url("../img/chech-tablet.png") center no-repeat;
+    }
+
+    &_choose{
+      margin-left: 0;
+      border: 1px solid #CBCED9;
+      border-radius: 4px;
+      border-left: none;
+      padding-top: 25px;
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+    }
+
+    &_add{
+      margin-left: -47px;
+      margin-top: 25px;
+      width: 20px;
+      height: 20px;
+      background-position: center;
+      transform: scale(1.5);
+    }
+
+    &_dropdown-open{
+      border-color: #1D2E5B;
+      border-bottom-right-radius: 0;
+    }
+  }
+
+  .add-plan__delete-button{
+    width: 22px;
+    height: 24px;
+    top: 20px;
+    right: -10px;
+    background: url("../img/form-delete-button-tablet.svg") center no-repeat;
+
+    &_dropdown-open{
+      display: inline-block;
+    }
+  }
+
+  .add-plan__choose-country-dropdown{
+    min-height: 414px;
+    margin-top: 70px;
+    box-sizing: border-box;
+    background-color: white;
+    padding-left: 27px;
+    box-shadow: 0px 8px 16px rgba(54, 80, 148, 0.18);
+    display: flex;
+    width: 574px;
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+
+    &_hidden{
+      display: none;
+    }
+  }
+
+  .add-plan__alphabet-list{
+    border-top: 1px solid #CBCED9;
+    width: 270px;
+    height: 350px;
+    margin-top: 35px;
+  }
+
+  .add-plan__alphabet-item{
+    width: 54px;
+    height: 70px;
+    padding: 27px 22px;
+
+    &_selected{
+      background: #1D2E5B;
+      border-color: #1D2E5B;
+
+      & a{
+        color: white;
+      }
+    }
+  }
+
+  .add-plan__alphabet-link{
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .add-plan__letter-a-list{
+    border-bottom: none;
+    border-right: none;
+    height: auto;
+    margin-bottom: 0;
+    padding-top: 38px;
+    margin-left: 70px;
+  }
+
+  .add-plan__letter-a-item{
+    margin-bottom: 10px;
+  }
+
+  .add-plan__letter-a-link{
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .add-plan__change-step{
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .add-plan__previous-step{
+    margin-top: 30px;
+    font-size: 24px;
+    line-height: 22px;
+    text-transform: none;
+    position: relative;
+
+    &::before{
+      content: '';
+      display: inline-block;
+      position: absolute;
+      width: 16px;
+      height: 16px;
+      background: url("../img/polygon.svg") center no-repeat;
+      transform: rotate(180deg);
+      left: -35px;
+    }
+
+    &_submit{
+      margin-top: 0px;
+    }
+  }
+
+  .add-plan__trip-direction{
+    border-top: 1px solid #E1E3E9;
+    padding-top: 10px;
+    gap: 25px;
+    margin-bottom: 49px;
+
+    &::before{
+      display: none;
+    }
+
+    &::after{
+      content: '';
+      display: inline-block;
+      position: absolute;
+      right: -10px;
+      top: 48px;
+      width: 14px;
+      height: 274px;
+      background: url("../img/form-direction-border-tablet.svg") center no-repeat;
+    }
+  }
+
+  .add-plan__direction-name{
+    font-size: 30px;
+    line-height: 30px;
+  }
+
+  .add-plan__direction-flag{
+    width: 70px;
+    height: 47px;
+    margin-top: -5px;
+
+    &_bosnia-gerzegovina{
+      background: url("../img/bosnia-gerzegovina-tablet.png") center no-repeat;
+    }
+
+    &_chech{
+      background: url("../img/chech-tablet.png") center no-repeat;
+    }
+  }
+
+  .add-plan__plan-input{
+    width: 500px;
+    min-height: 140px;
+    margin-left: 15px;
+    padding: 19px 18px;
+    font-size: 20px;
+    line-height: 20px;
+    box-sizing: border-box;
+  }
+
+  .add-plan__submit-button{
+    margin-left: 15px;
+  }
+}
+
+@media (min-width: $desktop){
+  .add-plan__wrap{
+    width: 1320px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .add-plan__slider-dots{
+    display: none;
+  }
+
+  .add-plan__title{
+    margin-left: 69px;
+  }
+
+  .add-plan fieldset{
+    padding-left: 160px;
+    padding-right: 160px;
+    padding-top: 101px;
+    padding-bottom: 106px;
+  }
+
+  .add-plan__step-title{
+    min-width: 407px;
+    margin-top: 0;
+  }
+
+  .add-plan__step-description{
+    width: 577px;
+  }
+
+  .add-plan__step-change{
+    min-width: 200px;
+    display: block;
+    padding-left: 0;
+    margin-left: 195px;
+  }
+
+  .add-plan__step{
+    font-family: $default;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #000000;
+    opacity: 0.6;
+    list-style: none;
+
+    &:not(:last-of-type){
+      margin-bottom: 20px;
+    }
+
+    &::before{
+      width: 6px;
+      height: 6px;
+      content: '';
+      display: inline-block;
+      background: #1D2E5B;
+      opacity: 0.3;
+      border-radius: 50%;
+      margin-bottom: 4px;
+      margin-right: 36px;
+    }
+
+    &_selected{
+      opacity: 1;
+
+      &::before{
+        opacity: 1;
+      }
+    }
+  }
+
+  .add-plan__block-title-part{
+    display: flex;
+  }
+
+  .add-plan__label-wrap{
+    width: 475px;
+  }
+
+  .add-plan__quantity-input{
+    width: 180px;
+    margin-top: -70px;
+    margin-left: 220px;
+  }
+
+  .add-plan__input{
+    min-width: 96px;
+  }
+
+  .add-plan__duration{
+    border: none;
+  }
+
+  .add-plan__companion-search{
+    border: none;
+
+    &:first-of-type{
+      margin-right: auto;
+    }
+  }
+
+  .add-plan__companion-search-duration-wrap{
+    border-top: 1px solid #E1E3E9;
+    padding-top: 35px;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .add-plan__next-step{
+    margin-top: 57px;
+  }
+
+  .add-plan__choose-country-wrap{
+    background: none;
+
+    &::after{
+      content: '';
+      display: inline-block;
+      height: 540px;
+      width: 1px;
+      left: 757px;
+      top: 0;
+      background-color: #E1E3E9;
+      position: absolute;
+    }
+  }
+
+  .add-plan__country-name{
+    width: 730px;
+
+    &_choose{
+      width: 660px;
+    }
+  }
+
+  .add-plan__choose-country_add{
+    width: 730px;
+  }
+
+  .add-plan__choose-country-dropdown{
+    width: 730px;
+    padding-left: 26px;
+  }
+
+  .add-plan__alphabet-list{
+    border: none;
+    width: 380px;
+    height: 476px;
+    margin-right: 40px;
+  }
+
+  .add-plan__alphabet-item{
+    width: 60px;
+    height: 70px;
+    box-sizing: border-box;
+    margin-right: 15px;
+    margin-bottom: 13px;
+    border-radius: 4px;
+    border: 1px solid #CBCED9;
+
+    &_selected{
+      border-color: #1D2E5B;
+    }
+  }
+
+  .add-plan__letter-a-item{
+    margin-bottom: 13px;
+  }
+
+  .add-plan__previous-step{
+    margin-top: 40px;
+
+    &:last-of-type{
+      margin-top: 0px;
+    }
+  }
+
+  .add-plan__trip-direction{
+    margin-top: 55px;
+    padding-top: 80px;
+
+    &::after{
+      left: 775px;
+      top: 120px;
+    }
+  }
+
+  .add-plan__label{
+    width: 887px;
+  }
+
+  .add-plan__plan-input{
+    width: 730px;
+    min-height: 142px;
+    padding-left: 25px;
+    padding-top: 27px;
+  }
 }
