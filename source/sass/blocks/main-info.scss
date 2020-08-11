@@ -22,7 +22,7 @@
 .main-info__title{
   display: block;
   overflow: visible;
-  min-width: 250px;
+  width: 250px;
   font-family: $bold;
   font-size: 36px;
   line-height: 40px;
@@ -259,16 +259,15 @@
     background: url("../img/globe-back-desktop@1x.jpg") -130px 0px no-repeat;
     background-size: cover;
     background-color: #161C34;
-    width: calc(100% - 60px);
+    width: 100%;
     padding-bottom: 0;
-    padding-left: 60px;
     justify-content: center;
   }
 
   .main-info__wrap{
     width: 1320px;
     display: flex;
-    background: url("../img/traveller-illustration-desktop@1x.png") 514px -10px no-repeat;
+    background: url("../img/traveller-illustration-desktop@1x.png") 544px -10px no-repeat;
     flex-direction: row;
     justify-content: flex-start;
     flex-wrap: wrap;
@@ -276,17 +275,17 @@
   }
 
   .main-info__title{
-    margin-left: 40px;
-    margin-top: 90px;
+    margin-left: 68px;
+    margin-top: 77px;
     text-align: left;
-    margin-right: 524px;
+    margin-right: 846px;
   }
 
   .main-info__review{
     min-width: 264px;
     min-height: 183px;
-    margin-top: 100px;
-    margin-left: 0;
+    margin-top: 103px;
+    margin-right: 0px;
   }
 
   .main-info__list{
@@ -312,7 +311,7 @@
     }
 
     &:nth-of-type(3){
-      margin-left: -30px;
+      margin-left: -35px;
 
       &::after{
         left: 300px;
@@ -326,7 +325,7 @@
     &:last-of-type{
       width: 315px;
       min-height: 107px;
-      margin-left: -20px;
+      margin-left: -35px;
     }
 
     &::after{

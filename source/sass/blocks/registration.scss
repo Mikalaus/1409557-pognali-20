@@ -15,6 +15,7 @@
   flex-direction: column;
   align-items: center;
   width: 270px;
+  padding-top: 10px;
 }
 
 .registration__title{
@@ -36,6 +37,16 @@
 .registration__yellow-link{
   color: #FFD74B;
   border-bottom: 1px solid #FFD74B;
+  display: inline-block;
+
+  &:hover{
+    color: #FF8D30;
+    border-color: #FF8D30;
+  }
+
+  &:active{
+    opacity: 0.3;
+  }
 }
 
 .registration__form{
@@ -59,6 +70,12 @@
   border: none;
   color: #444444;
   border: 4px solid white;
+  background-color: white;
+
+  &:hover{
+    background-color: #EDEFF6;
+    border-color: #EDEFF6;
+  }
 }
 
 .registration__mail-input::-webkit-input-placeholder{

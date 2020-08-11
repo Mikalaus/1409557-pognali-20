@@ -48,6 +48,7 @@
   display: flex;
   justify-content: flex-start;
   position: relative;
+  cursor: pointer;
 }
 
 .companion-filter__legend{
@@ -56,6 +57,15 @@
   line-height: 18px;
   text-transform: uppercase;
   color: #1D2E5B;
+  cursor: pointer;
+
+  &:hover{
+    opacity: 0.7;
+  }
+
+  &:active{
+    opacity: 0.3;
+  }
 }
 
 .companion-filter__expend-button{
@@ -68,6 +78,14 @@
   background: url("../img/companion-filter-expend-button.svg") center no-repeat;
   top: 14px;
   right: 0;
+
+  &:hover{
+    opacity: 0.7;
+  }
+
+  &:active{
+    opacity: 0.3;
+  }
 }
 
 .companion-filter__expend-button_open{
@@ -96,6 +114,14 @@
   cursor: pointer;
   &:not(:last-of-type){
     margin-bottom: 12px;
+  }
+
+  &:hover{
+    opacity: 0.7;
+  }
+
+  &:active{
+    opacity: 0.3;
   }
 
   &::before{
@@ -158,6 +184,15 @@
   padding-right: 73px;
   border-radius: 25px;
   margin-top: 20px;
+
+  &:hover{
+    filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.14));
+  }
+
+  &:active{
+    background: #F3C72B;
+    color: #B1942E;
+  }
 }
 
 .companion-filter__content-block_hidden{

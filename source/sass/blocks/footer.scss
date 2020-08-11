@@ -35,6 +35,15 @@
   margin-top: 36px;
   border-top: 1px solid #F2F2F2;
   width: 270px;
+  cursor: pointer;
+
+  &:hover{
+    opacity: 0.7;
+  }
+
+  &:active{
+    opacity: 0.3;
+  }
 }
 
 .footer__designed-by{
@@ -58,8 +67,6 @@
 
 @media (min-width: $tablet) {
   .footer{
-    padding-left: 40px;
-    padding-right: 40px;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -67,14 +74,13 @@
   }
 
   .footer__wrap{
-    width: 690px;
+    width: 688px;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
     box-sizing: border-box;
     padding-left: 0;
-    margin-left: -40px;
   }
 
   .footer__logo{
@@ -83,7 +89,7 @@
     background: url("../img/logo-tablet-blue@1x.png") center no-repeat;
     margin-right: 70px;
     margin-top: 45px;
-    margin-left: 40px;
+    margin-left: 20px;
     transform: translateX(-20px);
   }
 
@@ -117,8 +123,6 @@
 
 @media (min-width: $desktop) {
  .footer{
-   width: calc(100% - 100px);
-   padding-left: 60px;
    flex-direction: row;
    justify-content: center;
  }
@@ -135,7 +139,6 @@
   }
 
   .footer__wrap{
-    margin-left: -65px;
     width: 1320px;
     justify-content: space-between;
   }

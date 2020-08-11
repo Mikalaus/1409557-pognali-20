@@ -13,6 +13,14 @@
   color: #192144;
   margin-bottom: 27px;
   text-transform: uppercase;
+
+  &:hover{
+    color: #FFBD30;
+  }
+
+  &:active{
+    opacity: 0.3;
+  }
 }
 
 .contacts__telephone_yellow{
@@ -34,6 +42,14 @@
 .contacts__mail{
   color: #192144;
   text-transform: uppercase;
+
+  &:hover{
+    color: #FFBD30;
+  }
+
+  &:active{
+    opacity: 0.3;
+  }
 }
 
 .contacts__mail_yellow{

@@ -14,7 +14,6 @@
 
 .service__wrap{
   width: 270px;
-  padding-left: 50px;
 }
 
 .service__title{
@@ -59,14 +58,15 @@
   }
 
   .service__wrap{
-    background: url("../img/about-tablet@1x.png") 380px 40px no-repeat,
+    background: url("../img/about-tablet@1x.png") 344px 40px no-repeat,
                 url("../img/service-tablet.svg") 0px 0px no-repeat;
 
     width: 688px;
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
     align-content: flex-start;
-    padding-left: 70px;
+    padding-left: 35px;
   }
 
   .service__title{
@@ -106,6 +106,18 @@
     color: #1D2E5B;
     box-shadow: 0 4px 5px rgba(0, 0, 0, 0.3);
 
+    &:hover{
+      background-color: #FFBD30;
+    }
+
+    &:active{
+      &::after{
+        opacity: 0.3
+      }
+
+      color: rgba(#161C35, 0.3);
+    }
+
     &::after{
       content: "";
       display: inline-block;
@@ -126,9 +138,7 @@
     $back2: calc(50% + 345px);
     background: url("../img/service-back-desktop.svg") $back 70px no-repeat,
                 url("../img/about-desktop@1x.png") $back2 85px no-repeat;
-    background-color: #192144;
-    width: calc(100% - 60px);
-    padding-left: 60px;
+    background-color: #192144;;
     padding-top: 101px;
   }
 
@@ -137,7 +147,7 @@
     background: none;
     overflow: visible;
     width: 1320px;
-    padding-left: 35px;
+    padding-left: 65px;
     align-items: flex-start;
   }
 

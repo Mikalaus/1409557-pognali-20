@@ -14,11 +14,12 @@
     position: absolute;
     content: '';
     display: inline-block;
-    top: 0;
-    left: 102px;
-    width: 16px;
-    height: 35px;
-    background: url("../img/level-input-med.svg") center no-repeat;
+    top: 11px;
+    left: 101px;
+    width: 17px;
+    height: 13px;
+    background: linear-gradient(#fff, #fff 6px, #CBCED9 6px, #CBCED9 7px, #fff 7px, #fff);
+    z-index: 3;
   }
 }
 
@@ -39,17 +40,33 @@
 
 .level-input__num input:first-of-type{
   position: relative;
-  border-left: 1px solid #CBCED9;
+  border: 1px solid #CBCED9;
   border-top-left-radius: 4px;
   border-bottom-left-radius: 4px;
-  border-right: none;
+
+  &:hover{
+    border-color: #959BB2;
+  }
+
+  &:focus{
+    border-color: #161C35;
+  }
 }
 
 .level-input__num input:last-of-type{
-  border-right: 1px solid #CBCED9;
+  border: 1px solid #CBCED9;
   border-top-right-radius: 4px;
   border-bottom-right-radius: 4px;
-  border-left: none;
+  margin-left: -1px;
+
+  &:hover{
+    border-color: #959BB2;
+    z-index: 2;
+  }
+
+  &:focus{
+    border-color: #161C35;
+  }
 }
 
 .level-input__range{
@@ -72,6 +89,11 @@
   border: none;
   outline: none;
   top: -4px;
+
+  &:hover,
+  &:active{
+    transform: scale(1.41);
+  }
 }
 
 .level-input__min-range{
@@ -115,9 +137,9 @@
     margin-right: 2px;
 
     &::after{
-      top: 5px;
+      top: 15px;
       transform: scale(1.33);
-      left: 64px;
+      left: 65px;
     }
   }
 }
