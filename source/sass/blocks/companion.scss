@@ -9,6 +9,7 @@
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   background-color: #192144;
   padding-bottom: 30px;
+  overflow: visible;
 }
 
 .companion__wrap{
@@ -17,6 +18,7 @@
   align-items: flex-start;
   background: url("../img/smolov-back-desktop@1x.png") 130px 35px no-repeat;
   width: 270px;
+  overflow: visible;
 }
 
 .companion__title{
@@ -54,18 +56,26 @@
   gap: 10px;
   overflow: hidden;
   margin-top: 38px;
+  overflow: visible;
+  z-index: 2;
 }
 
 .companion__card{
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.16);
   width: 270px;
-  min-height: 428px;
   border-radius: 10px;
   position: relative;
+  overflow: visible;
+
+  &:hover{
+    filter: drop-shadow(0px 4px 9px rgba(0, 0, 0, 0.16));
+    background-size: 350px 350px;
+    background-position: -40px -40px;
+  }
 
   &_firsova{
     background: url("../img/firsova-desktop@1x.jpg") top no-repeat;
     border-radius: 10px;
+    z-index: 1;
   }
   &_demin{
     background: url("../img/demin-desktop@1x.jpg") top no-repeat;
@@ -83,6 +93,7 @@
   min-height: 158px;
   display: flex;
   margin-top: 252px;
+  padding-bottom: 20px;
   align-items: center;
   flex-direction: column;
   background: #FFFFFF;
@@ -103,6 +114,15 @@
   line-height: 21px;
   color: #1D2E5B;
   margin-top: 11px;
+  cursor: pointer;
+
+  &:hover{
+    opacity: 0.7;
+  }
+
+  &:active{
+    opacity: 0.3;
+  }
 
   &_offline::before{
     position: absolute;
@@ -152,15 +172,16 @@
 
 @media (min-width: $tablet) {
   .companion{
-    padding-left: 40px;
     padding-bottom: 86px;
     padding-top: 27px;
     background: none;
     background-color: #192144;
+    justify-content: center;
   }
 
   .companion__wrap{
-    padding-left: 26px;
+    padding-left: 35px;
+    box-sizing: border-box;
     width: 688px;
     align-items: flex-start;
     background: url("../img/rogovaya-back-desktop@1x.png") 389px 53px no-repeat,
@@ -200,15 +221,13 @@
 
   .companion__card{
     width: 285px;
-    min-height: 483px;
     border-radius: 20px;
   }
 
   .companion__content{
     width: 285px;
-    min-height: 198px;
     display: flex;
-    margin-top: 267px;
+    margin-top: 286px;
     align-items: center;
     flex-direction: column;
     background: #FFFFFF;
@@ -242,7 +261,7 @@
   }
 
   .companion__transport-options{
-    margin-top: 25px;
+    margin-top: 20px;
   }
 
   .companion__link{
@@ -259,8 +278,6 @@
 @media (min-width: $desktop) {
   .companion{
     padding-bottom: 71px;
-    width: calc(100% - 60px);
-    padding-left: 60px;
     background: url("../img/companion-back-tablet.svg") calc(50% - 555px) 70px no-repeat;
     background-color: #192144;
   }
@@ -271,9 +288,10 @@
     flex-wrap: wrap;
     height: 550px;
     width: 1320px;
-    padding-left: 100px;
+    box-sizing: border-box;
+    padding-left: 70px;
     margin-top: 103px;
-    margin-left: -25px;
+    margin-left: 0;
   }
 
   .companion__link{
@@ -300,7 +318,7 @@
 
   .companion__cards{
     margin-top: 4px;
-    margin-left: 130px;
+    margin-left: auto;
     gap: 60px;
   }
 }

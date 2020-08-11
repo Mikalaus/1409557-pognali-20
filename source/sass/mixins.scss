@@ -50,7 +50,18 @@
   font-size: 18px;
   line-height: 18px;
   color: #1D2E5B;
-  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.3);
+
+  &:hover{
+    background-color: #FFBD30;
+  }
+
+  &:active{
+    &::after{
+      opacity: 0.3
+    }
+
+    color: rgba(#161C35, 0.3);
+  }
 
   &::after{
     content: "";
@@ -103,6 +114,18 @@
   background-color: #FFD74B;
   border-radius: 20px;
   text-transform: uppercase;
+
+  &:hover{
+    background-color: #FFBD30;
+  }
+
+  &:active{
+    &::after{
+      opacity: 0.3
+    }
+
+    color: rgba(#161C35, 0.3);
+  }
 
   @media (min-width: $tablet){
     box-sizing: border-box;

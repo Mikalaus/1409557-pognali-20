@@ -108,12 +108,19 @@
   border: none;
   margin-left: 19px;
   margin-top: 25px;
+
+  &:hover{
+    opacity: 0.7;
+  }
+
+  &:active{
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: $tablet) {
   .price-list{
     padding-bottom: 88px;
-    padding-left: 40px;
   }
 
   .price-list__profile-link{
@@ -251,7 +258,8 @@
 
   .price-list__list{
     width: 1320px;
-    background: url("../img/price-list-back-desktop.svg") 670px 150px no-repeat;
+    padding-left: 40px;
+    background: url("../img/price-list-back-desktop.svg") 710px 150px no-repeat;
   }
 
   .price-list__add-profile{
@@ -281,6 +289,7 @@
   }
 
   .price-list__open-buisness{
+    margin-top: 50px;
     margin-left: 135px;
   }
 }

@@ -126,27 +126,48 @@
 
 .add-plan__quantity-input{
   display: flex;
+
+  &:hover{
+    .add-plan__input{
+      border-color: #959BB2;
+    }
+
+    .add-plan__button{
+      opacity: 0.5;
+    }
+  }
+
+  &:focus-within{
+    .add-plan__input{
+      border-color: #161C35;
+    }
+
+    .add-plan__button{
+      opacity: 1;
+    }
+  }
 }
 
 .add-plan__button{
   background-color: #fff;
   outline: none;
-  border-top: 1px solid #CBCED9;
-  border-bottom: 1px solid #CBCED9;
+  border-top: 1px solid #161C35;
+  border-bottom: 1px solid #161C35;
   font-size: 0;
   width: 42px;
   height: 42px;
+  opacity: 0.2;
 
   &_min{
     border-right: none;
-    border-left: 1px solid #CBCED9;
+    border-left: 1px solid #161C35;
     background: url("../img/form-minus.svg") center no-repeat;
   }
 
   &_max{
     border-left: none;
-    border-right: 1px solid #CBCED9;
-    background: url("../img/form-plus.svg") center no-repeat;
+    border-right: 1px solid #161C35;
+    background: url("../img/form-plus-quantity.svg") center no-repeat;
   }
 }
 
@@ -179,6 +200,15 @@
   user-select: none;
   cursor: pointer;
 
+  &:hover::before{
+    border-color: #959BB2;
+  }
+
+  &:active::before{
+    background-color: #E2E5F1;
+    border-color: #E2E5F1;
+  }
+
   &::before{
     box-sizing: border-box;
     content: '';
@@ -207,9 +237,19 @@
   opacity: 0;
 }
 
-.add-plan__kids:checked+label::before{
-  background: url("../img/filter-checkbox-active.svg") center no-repeat;
-  background-color: #FFF;
+.add-plan__kids:checked+label{
+  &::before{
+    background: url("../img/filter-checkbox-active.svg") center no-repeat;
+    background-color: #FFF;
+  }
+
+  &:hover::before{
+    border-color: #959BB2;
+  }
+
+  &:active::before{
+    border-color: #E2E5F1;
+  }
 }
 
 .add-plan__calendar{
@@ -236,9 +276,32 @@
   position: relative;
   cursor: pointer;
 
+  &_choose:hover{
+    .add-plan__country-name_choose{
+      border-color: #959BB2;
+    }
+    .add-plan__country-flag{
+      border-color: #959BB2;
+    }
+  }
+
   &_add{
     background-color: #EDEFF6;
     border-radius: 4px;
+
+    &:hover{
+      background-color: #DFE3F0;
+
+      .add-plan__country-flag_add{
+        opacity: 1;
+      }
+    }
+
+    &:active{
+      .add-plan__country-flag_add{
+        opacity: 0.3;
+      }
+    }
   }
 }
 
@@ -364,6 +427,15 @@
   &_dropdown-open{
     margin-top: 6px;
     background: url("../img/close-form.svg") center no-repeat;
+    opacity: 0.3;
+
+    &:hover{
+      opacity: 1;
+    }
+
+    &:active{
+      opacity: 0.1;
+    }
   }
 }
 
@@ -384,6 +456,7 @@
   &_add{
     border: none;
     background: url("../img/form-plus.svg") 25px 14px no-repeat;
+    opacity: 0.7;
   }
 
   &_bosnia-gerzegovina{
@@ -462,6 +535,14 @@
   padding-left: 17px;
   background-color: #fff;
 
+  &:active{
+    background: #1D2E5B;
+
+    & a{
+      color: white;
+    }
+  }
+
   &_selected{
     background-color: #EDEFF6;
     border-bottom-color: #EDEFF6;
@@ -472,8 +553,6 @@
   font-family: $med;
   font-size: 14px;
   line-height: 18px;
-  /* or 129% */
-
   text-align: center;
   text-transform: uppercase;
 
@@ -500,6 +579,14 @@
   font-size: 16px;
   line-height: 22px;
   color: #444444;
+
+  &:hover{
+    color: #1D2E5B;
+  }
+
+  &:active{
+    opacity: 0.3;
+  }
 }
 
 .add-plan__trip-direction{
@@ -568,6 +655,7 @@
   padding-right: 19px;
   border-radius: 4px;
   border: 1px solid #CBCED9;
+  outline: none;
 
   font-family: $default;
   font-size: 16px;
@@ -576,6 +664,14 @@
 
   & placeholder{
     opacity: 0.3;
+  }
+
+  &:hover{
+    border-color: #959BB2;
+  }
+
+  &:focus{
+    border-color: #161C35;
   }
 }
 
@@ -594,10 +690,14 @@
   .add-plan__wrap{
     width: 688px;
     padding-bottom: 63px;
+    box-sizing: border-box;
+    padding-left: 44px;
+    padding-right: 44px;
   }
 
   .add-plan__form{
     gap: 40px;
+    width: 618px;
   }
 
   .add-plan__title{
@@ -625,13 +725,6 @@
     &:last-of-type{
       padding-bottom: 53px;
     }
-  }
-
-  .add-plan__wrap{
-    width: 706px;
-    box-sizing: border-box;
-    padding-left: 44px;
-    padding-right: 44px;
   }
 
   .add-plan__step-title{
@@ -933,6 +1026,14 @@
     &_submit{
       margin-top: 0px;
     }
+
+    &:hover{
+      opacity: 0.7;
+    }
+
+    &:active{
+      opacity: 0.3;
+    }
   }
 
   .add-plan__trip-direction{
@@ -1153,6 +1254,15 @@
     border-radius: 4px;
     border: 1px solid #CBCED9;
 
+    &:hover{
+      border-color: #959BB2;
+    }
+
+    &:active{
+      background: #1D2E5B;
+      border-color: #1D2E5B
+    }
+
     &_selected{
       border-color: #1D2E5B;
     }
@@ -1163,10 +1273,10 @@
   }
 
   .add-plan__previous-step{
-    margin-top: 40px;
+    margin-top: 50px;
 
-    &:last-of-type{
-      margin-top: 0px;
+    &_submit{
+      margin-top: 0;
     }
   }
 

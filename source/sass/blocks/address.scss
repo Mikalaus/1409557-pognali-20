@@ -39,11 +39,28 @@
   @include typical-link;
   @include typical-link_secondary;
   margin-top: 19px;
+
+  &:hover{
+    border-color: #192144;
+    background-color: #192144;
+    color: #fff;
+
+    &::after{
+      background-image: url("../img/polygon-white.svg");
+    }
+  }
+
+  &:active{
+    color: #5E647C;
+
+    &::after{
+      opacity: 0.3;
+    }
+  }
 }
 
 @media (min-width: $tablet) {
   .address{
-    padding-left: 40px;
     padding-bottom: 83px;
   }
 
@@ -96,7 +113,7 @@
   .address__position{
     width: 430px;
     margin-top: 37px;
-    margin-left: 325px;
+    margin-left: 345px;
 
     &::before{
       width: 90px;

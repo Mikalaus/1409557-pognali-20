@@ -17,9 +17,9 @@
         <div class="header__menu header__menu_hidden">
           <div class="header__menu-wrap">
             <nav class="header__links">
-              <a href="index.html" class="header__link"><span data-hover="О сервисе">О сервисе</span></a>
-              <a href="#" class="header__link"><span data-hover="Направления">Направления</span></a>
-              <a href="catalog.html" class="header__link"><span data-hover="Попутчики">Попутчики</span></a>
+              <a href="#" class="header__link"><span data-hover="О сервисе">О сервисе</span></a>
+              <a href="form.html" class="header__link"><span data-hover="Направления">Направления</span></a>
+              <a href="photo.html" class="header__link"><span data-hover="Попутчики">Попутчики</span></a>
             </nav>
             <a href="" class="header__enter-link">Авторизация</a>
             <div class="contacts header__contacts contacts_desktop">
@@ -42,8 +42,8 @@
           <div class="main-info__wrap">
             <h1 class="main-info__title">В путешествие с крутыми попутчиками!</h1>
             <div class="user-links main-info__user-links">
-              <a href="" class="user-links__phone"><img src="img/icon_phone_btn.svg" alt="phone"></a>
-              <a href="" class="user-links__mail"><img src="img/icon_mail_btn.svg" alt="@mail"></a>
+              <a href="" class="user-links__phone"></a>
+              <a href="" class="user-links__mail"></a>
               <a href="" class="enter-link user-links__enter-link">Авторизация</a>
             </div>
             <blockquote class="main-info__review">
@@ -122,12 +122,10 @@
                   <span class="companion__companion-name companion__companion-name_offline">Таня Фирсова</span>
                   <div class="companion__hashtags">#ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи</div>
                   <div class="transport-options companion__transport-options">
-                    <ul class="transport-options__list">
-                      <li class="transport-options__plain transport-options_active"></li>
-                      <li class="transport-options__bus transport-options_disabled"></li>
-                      <li class="transport-options__bike transport-options_disabled"></li>
-                      <li class="transport-options__walk transport-options_disabled"></li>
-                    </ul>
+                    <span class="transport-options__option transport-options__option_no-back transport-options__option_plain transport-options__option_active"></span><span><span class="transport-options__tooltip">Авиаперелет</span></span>
+                    <span class="transport-options__option transport-options__option_no-back transport-options__option_bus"></span><span><span class="transport-options__tooltip">Автотранспорт</span></span>
+                    <span class="transport-options__option transport-options__option_no-back transport-options__option_bike"></span><span><span class="transport-options__tooltip">Велосипед</span></span>
+                    <span class="transport-options__option transport-options__option_no-back transport-options__option_walk"></span><span><span class="transport-options__tooltip">Пешком</span></span>
                   </div>
                 </div>
               </div>
@@ -141,12 +139,10 @@
                   <span class="companion__companion-name companion__companion-name_online">Петя Демин</span>
                   <div class="companion__hashtags">#бургер #бар #футбол #концерт #крафт</div>
                   <div class="transport-options companion__transport-options">
-                    <ul class="transport-options__list">
-                      <li class="transport-options__plain transport-options_active"></li>
-                      <li class="transport-options__bus transport-options_active"></li>
-                      <li class="transport-options__bike transport-options_disabled"></li>
-                      <li class="transport-options__walk transport-options_active"></li>
-                    </ul>
+                    <span class="transport-options__option transport-options__option_no-back transport-options__option_plain transport-options__option_active"></span><span><span class="transport-options__tooltip">Авиаперелет</span></span>
+                    <span class="transport-options__option transport-options__option_no-back transport-options__option_bus transport-options__option_active"></span><span><span class="transport-options__tooltip">Автотранспорт</span></span>
+                    <span class="transport-options__option transport-options__option_no-back transport-options__option_bike"></span><span><span class="transport-options__tooltip">Велосипед</span></span>
+                    <span class="transport-options__option transport-options__option_no-back transport-options__option_walk transport-options__option_active"></span><span><span class="transport-options__tooltip">Пешком</span></span>
                   </div>
                 </div>
               </div>
@@ -192,7 +188,7 @@
         </section>
         <section class="registration">
           <div class="registration__wrap">
-            <h1 class="typical-title registration__title">Заинтересовались?</h1><!--Можно ли модификатор вкладывать в элемент?-->
+            <h1 class="typical-title registration__title">Заинтересовались?</h1>
             <p class="registration__description">Зарегистрируйтесь, это быстро и бесплатно! Уже зарегистрированы? Тогда скорее <a href="registration.html" class="registration__yellow-link">авторизуйтесь</a>.</p>
             <form action="" class="registration__form">
               <input type="email" class="registration__mail-input" placeholder="E-mail">
@@ -231,7 +227,7 @@
         </div>
       </div>
     </footer>
-    <script src="js/header-menu.js"></script>
+    <script src="js/headr-menu.js"></script>
     <script src="js/buisness-list.js"></script>
   </body>
 </html>

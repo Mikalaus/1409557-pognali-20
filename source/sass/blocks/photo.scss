@@ -16,6 +16,14 @@
   padding-top: 15px;
   padding-left: 18px;
   padding-bottom: 75px;
+
+  &:hover{
+    filter: drop-shadow(0px 4px 9px rgba(0, 0, 0, 0.16));
+
+    .photo__companion{
+      background-size: 80px 80px;
+    }
+  }
 }
 
 .photo__about-companion{
@@ -33,6 +41,15 @@
   color: #1D2E5B;
   margin-top: 0;
   margin-bottom: 0;
+  cursor: pointer;
+
+  &:hover{
+    opacity: 0.7;
+  }
+
+  &:active{
+    opacity: 0.3;
+  }
 
   &::after{
     display: inline-block;
@@ -68,8 +85,24 @@
   background: url("../img/like.svg") center no-repeat;
   margin-top: 8px;
 
+  &:hover{
+    background-image: url("../img/like-hover.svg");
+  }
+
+  &:active{
+    opacity: 0.9;
+  }
+
   &_active{
     background: url("../img/like-active.svg") center no-repeat;
+
+    &:hover{
+      background-image: url("../img/like-active-hover.svg");
+    }
+
+    &:active{
+      opacity: 0.9;
+    }
   }
 }
 
@@ -109,6 +142,14 @@
   padding: 12px 78px;
   background-color: #FFD74B;
   border-radius: 25px;
+
+  &:hover{
+    background-color: #FFBD30;
+  }
+
+  &:active{
+    color: #B98D32;
+  }
 }
 
 .photo__like{
@@ -303,6 +344,14 @@
   text-transform: uppercase;
   color: #1D2E5B;
 
+  &:hover::before{
+    opacity: 0.7;
+  }
+
+  &:active::before{
+    opacity: 0.3;
+  }
+
   &::before{
     content: '';
     display: inline-block;
@@ -334,6 +383,14 @@
   background: url("../img/page-arrow-left.svg") center no-repeat;
   background-color: white;
 
+  &:hover{
+    opacity: 0.7;
+  }
+
+  &:active{
+    opacity: 0.3;
+  }
+
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
 }
@@ -362,6 +419,12 @@
     padding-top: 35px;
     padding-left: 35px;
     padding-bottom: 6px;
+
+    &:hover{
+      .photo__companion{
+        background-size: 220px 220px;
+      }
+    }
   }
 
   .photo__about-companion{
@@ -496,7 +559,7 @@
   }
 
   .photo__country-list{
-    width: 100%;
+    width: calc(100% - 4px);
     display: flex;
     gap: 30px;
     flex-direction: row;
@@ -557,8 +620,15 @@
     border-radius: 50%;
     padding-top: 17px;
     padding-left: 20px;
+    cursor: pointer;
 
+    &:hover{
+      opacity: 0.7;
+    }
+
+    &:active,
     &_selected{
+      opacity: 1;
       background-color: #FFD74B;
     }
   }
@@ -586,6 +656,12 @@
     flex-direction: column;
     padding: 0;
     height: 285px;
+
+    &:hover{
+      .photo__companion{
+        background-size: 320px 320px;
+      }
+    }
   }
 
   .photo__companion{

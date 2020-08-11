@@ -62,13 +62,22 @@
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
   z-index: 11;
+  cursor: pointer;
+
+  &:hover{
+    background-color: #EDEFF6;
+  }
+
+  &:active{
+    color: #AFB5C8;
+  }
 }
 
 @media (min-width: $tablet) {
   .buisness-list{
     top: calc(50% - 263px);
     width: 688px;
-    margin-left: -43px;
+    margin-left: 0px;
   }
 
   .buisness-list__items{
@@ -127,7 +136,6 @@
   .buisness-list{
     width: 750px;
     border-radius: 30px;
-    margin-left: -38px;
   }
 
   .buisness-list__title{

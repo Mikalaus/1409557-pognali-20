@@ -3,6 +3,49 @@
   display: flex;
 }
 
+.user-links__phone{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: url("../img/icon-call.svg") center no-repeat;
+  background-color: #FF8D30;
+
+  &:hover{
+    background-color: #F26926;
+  }
+
+  &:active{
+    opacity: 0.7;
+  }
+}
+
+.user-links__mail{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: url("../img/icon-mail.svg") center no-repeat;
+  background-color: #FFBD30;
+
+  &:hover{
+    background-color: #FF8D30;
+  }
+
+  &:active{
+    opacity: 0.7;
+  }
+}
+
+.user-links__enter-link{
+
+  &:hover{
+    background-color: #FFBD30;
+  }
+
+  &:active{
+    opacity: 0.7;
+  }
+}
+
 .user-links_header{
   display: none;
 }

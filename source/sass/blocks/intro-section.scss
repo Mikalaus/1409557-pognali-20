@@ -79,6 +79,14 @@
     margin-left: 157px;
     margin-top: 83px;
 
+    &:hover{
+      opacity: 0.7;
+    }
+
+    &:active{
+      opacity: 0.3;
+    }
+
     &::after{
       content: '';
       display: inline-block;

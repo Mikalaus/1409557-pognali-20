@@ -50,6 +50,14 @@
   margin-top: 14px;
   font-size: 0;
 
+  &:hover{
+    opacity: 0.7;
+  }
+
+  &:active{
+    opacity: 0.3;
+  }
+
   &_close{
     margin-top: 11px;
     margin-left: 27px;
@@ -95,6 +103,11 @@
   color: #192144;
   opacity: 0.3;
 
+  &:hover{
+    opacity: 0.7;
+  }
+
+  &:active,
   &_selected{
     opacity: 1;
   }
@@ -180,6 +193,19 @@
   letter-spacing: 0.05em;
   text-transform: uppercase;
   color: #192144;
+  cursor: pointer;
+
+  &:hover{
+    background-color: #C8CEE8;
+  }
+
+  &:active{
+    color: #949AB7;
+
+    &::before{
+      opacity: 0.3;
+    }
+  }
 
   &::before{
     display: inline-block;

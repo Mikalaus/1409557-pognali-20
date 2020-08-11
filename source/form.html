@@ -14,8 +14,8 @@
           <a href="index.html" class="logo header__logo">Погнали</a>
           <button type="button" class="header__menu-open"></button>
           <div class="header__user-links user-links user-links_header">
-            <a href="" class="user-links__phone"><img src="img/icon_phone_btn.svg" alt="phone"></a>
-            <a href="" class="user-links__mail"><img src="img/icon_mail_btn.svg" alt="@mail"></a>
+            <a href="" class="user-links__phone"></a>
+            <a href="" class="user-links__mail"></a>
             <a href="" class="enter-link user-links__enter-link enter-link_header">Авторизация</a>
           </div>
         </div>
@@ -24,7 +24,7 @@
             <nav class="header__links">
               <a href="index.html" class="header__link"><span data-hover="О сервисе">О сервисе</span></a>
               <a href="#" class="header__link"><span data-hover="Направления">Направления</span></a>
-              <a href="catalog.html" class="header__link"><span data-hover="Попутчики">Попутчики</span></a>
+              <a href="photo.html" class="header__link"><span data-hover="Попутчики">Попутчики</span></a>
             </nav>
             <a href="" class="header__enter-link">Авторизация</a>
             <div class="contacts header__contacts contacts_desktop">
@@ -52,7 +52,7 @@
         <section class="profile">
           <div class="profile__wrap">
             <div class="companion-level companion-level_big companion-level_80 profile__level"></div>
-            <img src="img/demin-mobile@1x.jpg" alt="" class="profile__photo">
+            <div class="profile__photo"></div>
             <a class="profile__change-img-button">Сменить фото</a>
             <form action="" class="profile__tags-form">
               <fieldset class="profile__tags">
@@ -67,10 +67,10 @@
               <fieldset class="transport-options__input">
                 <legend align="center" class="transport-options__legend">Транспорт</legend>
                 <div class="transport-options__input-wrap">
-                  <input class="transport-options__option transport-options__transport-option_plain" id="plane" name="transport" type="checkbox" checked><label for="plane"></label>
-                  <input class="transport-options__option transport-options__transport-option_bus" id="bus" name="transport" type="checkbox" checked><label for="bus"></label>
-                  <input class="transport-options__option transport-options__transport-option_bike" id="bike" name="transport" type="checkbox"><label for="bike"></label>
-                  <input class="transport-options__option transport-options__transport-option_walk" id="walk" name="transport" type="checkbox" checked><label for="walk"></label>
+                  <input class="transport-options__option transport-options__option_plain" id="plane" name="transport" type="checkbox" checked><label for="plane"><span class="transport-options__tooltip">Авиаперелет</span></label>
+                  <input class="transport-options__option transport-options__option_bus" id="bus" name="transport" type="checkbox" checked><label for="bus"><span class="transport-options__tooltip">Автотранспорт</span></label>
+                  <input class="transport-options__option transport-options__option_bike" id="bike" name="transport" type="checkbox"><label for="bike"><span class="transport-options__tooltip">Велосипед</span></label>
+                  <input class="transport-options__option transport-options__option_walk" id="walk" name="transport" type="checkbox" checked><label for="walk"><span class="transport-options__tooltip">Пешком</span></label>
                 </div>
               </fieldset>
             </form>
@@ -204,9 +204,9 @@
                       <li class="calendar__item calendar__item_disabled">23</li>
                       <li class="calendar__item calendar__item_disabled">24</li>
                       <li class="calendar__item calendar__item_disabled">25</li>
-                      <li class="calendar__item calendar__item_selected calendar__item_selected_first">26</li>
-                      <li class="calendar__item calendar__item_selected">27</li>
-                      <li class="calendar__item calendar__item_selected calendar__item_selected_last">28</li>
+                      <li class="calendar__item calendar__item_active calendar__item_selected calendar__item_selected_first">26</li>
+                      <li class="calendar__item calendar__item_active calendar__item_selected">27</li>
+                      <li class="calendar__item calendar__item_active calendar__item_selected calendar__item_selected_last">28</li>
                       <li class="calendar__item calendar__item_active">29</li>
                       <li class="calendar__item calendar__item_active">30</li>
                       <li class="calendar__item calendar__item_active">31</li>
@@ -250,7 +250,7 @@
                     <div class="add-plan__country-flag add-plan__country-flag_chech"></div>
                     <a class="add-plan__delete-button"></a>
                   </div>
-                  <div class="add-plan__choose-country">
+                  <div class="add-plan__choose-country add-plan__choose-country_choose">
                     <div class="add-plan__country-name add-plan__country-name_choose">
                       <span class="add-plan__country-title add-plan__country-title_choose">Выберите страну</span>
                     </div>
@@ -330,14 +330,14 @@
                       <h3 class="add-plan__direction-name">Босния и Герцеговина</h3>
                       <div class="add-plan__fade"><div class="add-plan__direction-flag add-plan__direction-flag_bosnia-gerzegovina"></div></div>
                     </div>
-                    <textarea class="add-plan__plan-input" placeholder="План действий"></textarea>
+                    <textarea class="add-plan__plan-input" placeholder="План действий" required></textarea>
                   </div>
                   <div class="add-plan__country-card">
                     <div class="add-plan__label">
                       <h3 class="add-plan__direction-name">Чехия</h3>
                       <div class="add-plan__fade"><div class="add-plan__direction-flag add-plan__direction-flag_chech"></div></div>
                     </div>
-                    <textarea class="add-plan__plan-input">Пить пиво и лазить по старым замкам, наслаждаться архитектурой и вот это все.</textarea>
+                    <textarea class="add-plan__plan-input" required>Пить пиво и лазить по старым замкам, наслаждаться архитектурой и вот это все.</textarea>
                   </div>
                 </div>
                 <div class="add-plan__change-step">
