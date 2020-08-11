@@ -131,4 +131,31 @@
     left: 25px;
     z-index: 5;
   }
+
+  @media (min-width: $tablet){
+    width: 94px;
+    height: 94px;
+
+    &::after{
+      width: 88px;
+      height: 88px;
+      padding-top: 16px;
+      padding-left: 23px;
+      @media(min-width: $desktop){
+        background-color: #192144;
+        color: white;
+      }
+    }
+
+    &::before{
+      top: 58px;
+      left: 21px;
+
+      @media(min-width: $desktop){
+        color: white;
+        opacity: 1;
+        border-top: 2px solid #5E647C;
+      }
+    }
+  }
 }

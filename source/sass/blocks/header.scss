@@ -122,6 +122,33 @@
   font-size: 30px;
   line-height: 35px;
   text-transform: uppercase;
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+
+  & span{
+    display: inline-block;
+    transition: 0.3s;
+  }
+
+  & span::before{
+    content: attr(data-hover);
+    display: inline-block;
+    position: absolute;
+    top: 100%;
+    color: #FFD74B;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.header__link:hover span,
+.header__link:focus span{
+  transform: translateY(-100%);
+}
+
+.header__link:active{
+  opacity: 0.3;
+  color: #FFD74B;
 }
 
 .header__enter-link{

@@ -22,9 +22,9 @@
         <div class="header__menu header__menu_hidden">
           <div class="header__menu-wrap">
             <nav class="header__links">
-              <a href="#" class="header__link">О сервисе</a>
-              <a href="form.html" class="header__link">Направления</a>
-              <a href="catalog.html" class="header__link">Попутчики</a>
+              <a href="index.html" class="header__link"><span data-hover="О сервисе">О сервисе</span></a>
+              <a href="#" class="header__link"><span data-hover="Направления">Направления</span></a>
+              <a href="catalog.html" class="header__link"><span data-hover="Попутчики">Попутчики</span></a>
             </nav>
             <a href="" class="header__enter-link">Авторизация</a>
             <div class="contacts header__contacts contacts_desktop">
@@ -57,14 +57,21 @@
             <form action="" class="profile__tags-form">
               <fieldset class="profile__tags">
                 <legend align="center" class="profile__tags-legend">Тэги</legend>
-                <textarea type="text" class="profile__tags-input">#бургер #бар #футбол #концерт #крафт</textarea>
+                <div class="profile__tags-wrap">
+                  <textarea type="text" class="profile__tags-input">#бургер #бар #футбол #концерт #крафт</textarea>
+                </div>
               </fieldset>
+            </form>
+
+            <form action="" class="profile__transport-form transport-options">
               <fieldset class="transport-options__input">
                 <legend align="center" class="transport-options__legend">Транспорт</legend>
-                <input class="transport-options__option transport-options__transport-option_plain" id="plane" name="transport" type="checkbox" checked><label for="plane"></label>
-                <input class="transport-options__option transport-options__transport-option_bus" id="bus" name="transport" type="checkbox" checked><label for="bus"></label>
-                <input class="transport-options__option transport-options__transport-option_bike" id="bike" name="transport" type="checkbox"><label for="bike"></label>
-                <input class="transport-options__option transport-options__transport-option_walk" id="walk" name="transport" type="checkbox" checked><label for="walk"></label>
+                <div class="transport-options__input-wrap">
+                  <input class="transport-options__option transport-options__transport-option_plain" id="plane" name="transport" type="checkbox" checked><label for="plane"></label>
+                  <input class="transport-options__option transport-options__transport-option_bus" id="bus" name="transport" type="checkbox" checked><label for="bus"></label>
+                  <input class="transport-options__option transport-options__transport-option_bike" id="bike" name="transport" type="checkbox"><label for="bike"></label>
+                  <input class="transport-options__option transport-options__transport-option_walk" id="walk" name="transport" type="checkbox" checked><label for="walk"></label>
+                </div>
               </fieldset>
             </form>
           </section>
@@ -103,14 +110,24 @@
             </div>
             <form action="form.html" method="post" class="add-plan__form">
               <fieldset class="add-plan__block">
-                <h1 class="add-plan__step-title">Шаг 1.<br>Даты пребывания</h1>
-                <p class="add-plan__step-description">
-                  Укажите предпочтительное
-                  количество попутчиков, которых
-                  вы хотели бы позвать в поездку
-                  и ее предполагаемую
-                  длительность.
-                </p>
+                <div class="add-plan__block-title-part">
+                  <div class="add-plan__description">
+                    <h1 class="add-plan__step-title">Шаг 1.<br>Даты пребывания</h1>
+                    <p class="add-plan__step-description">
+                      Укажите предпочтительное
+                      количество попутчиков, которых
+                      вы хотели бы позвать в поездку
+                      и ее предполагаемую
+                      длительность.
+                    </p>
+                  </div>
+
+                  <ul class="add-plan__step-change">
+                    <li class="add-plan__step add-plan__step_selected">Даты</li>
+                    <li class="add-plan__step">Маршрут</li>
+                    <li class="add-plan__step">Развлечения</li>
+                  </ul>
+                </div>
 
                 <div class="add-plan__companion-search-duration-wrap">
                   <div class="add-plan__companion-search">
@@ -147,13 +164,13 @@
                   </div>
                   <div class="calendar__calendar-block">
                     <ul class="calendar__weekday-list">
-                      <li class="calendar__weekday">П</li>
-                      <li class="calendar__weekday">В</li>
-                      <li class="calendar__weekday">С</li>
-                      <li class="calendar__weekday">Ч</li>
-                      <li class="calendar__weekday">П</li>
-                      <li class="calendar__weekday calendar__weekday_weekend">С</li>
-                      <li class="calendar__weekday calendar__weekday_weekend">В</li>
+                      <li class="calendar__weekday">П <span class="calendar__weekday-big">н</span></li>
+                      <li class="calendar__weekday">В <span class="calendar__weekday-big">т</span></li>
+                      <li class="calendar__weekday">С <span class="calendar__weekday-big">р</span></li>
+                      <li class="calendar__weekday">Ч <span class="calendar__weekday-big">т</span></li>
+                      <li class="calendar__weekday">П <span class="calendar__weekday-big">т</span></li>
+                      <li class="calendar__weekday calendar__weekday_weekend">С <span class="calendar__weekday-big calendar__weekday-big_weekend">б</span></li>
+                      <li class="calendar__weekday calendar__weekday_weekend">В <span class="calendar__weekday-big calendar__weekday-big_weekend">с</span></li>
                     </ul>
                     <ul class="calendar__dates-list">
                       <li class="calendar__item calendar__item_disabled">23</li>
@@ -189,7 +206,7 @@
                       <li class="calendar__item calendar__item_disabled">25</li>
                       <li class="calendar__item calendar__item_selected calendar__item_selected_first">26</li>
                       <li class="calendar__item calendar__item_selected">27</li>
-                      <li class="calendar__item calendar__item_selected">28</li>
+                      <li class="calendar__item calendar__item_selected calendar__item_selected_last">28</li>
                       <li class="calendar__item calendar__item_active">29</li>
                       <li class="calendar__item calendar__item_active">30</li>
                       <li class="calendar__item calendar__item_active">31</li>
@@ -204,12 +221,22 @@
                 </div>
               </fieldset>
               <fieldset class="add-plan__block">
-                <h1 class="add-plan__step-title">Шаг 2.<br>Маршрут</h1>
-                <p class="add-plan__step-description">Укажите страны, которые вы хотели посетить. Это может быть одна или сразу несколько.</p>
+                <div class="add-plan__block-title-part">
+                  <div class="add-plans__description">
+                    <h1 class="add-plan__step-title">Шаг 2.<br>Маршрут</h1>
+                    <p class="add-plan__step-description add-plan__step-description_direction">Укажите страны, которые вы хотели посетить. Это может быть одна или сразу несколько.</p>
+                  </div>
+
+                  <ul class="add-plan__step-change">
+                    <li class="add-plan__step">Даты</li>
+                    <li class="add-plan__step add-plan__step_selected">Маршрут</li>
+                    <li class="add-plan__step">Развлечения</li>
+                  </ul>
+                </div>
                 <div class="add-plan__choose-country-wrap">
                   <div class="add-plan__choose-country">
                     <div class="add-plan__country-name">
-                      <span class="add-plan__country-title">Босния и герце</span>
+                      <span class="add-plan__country-title">Босния и герцегов<span class="add-plan__country-title_expended">ина</span></span>
                       <div class="add-plan__fade-block"><button class="add-plan__list-open-button"></button></div>
                     </div>
                     <div class="add-plan__country-flag add-plan__country-flag_bosnia-gerzegovina"></div>
@@ -232,7 +259,7 @@
 
                     <div class="add-plan__choose-country-dropdown add-plan__choose-country-dropdown_hidden">
                       <ul class="add-plan__alphabet-list">
-                        <li class="add-plan__alphabet-item add-plan__alphabet-item_selected"><a href="" class="filter__alphabet-link">А</a></li>
+                        <li class="add-plan__alphabet-item add-plan__alphabet-item_selected"><a href="" class="add-plan__alphabet-link">А</a></li>
                         <li class="add-plan__alphabet-item"><a href="" class="add-plan__alphabet-link">Б</a></li>
                         <li class="add-plan__alphabet-item"><a href="" class="add-plan__alphabet-link">В</a></li>
                         <li class="add-plan__alphabet-item"><a href="" class="add-plan__alphabet-link">Г</a></li>
@@ -286,8 +313,17 @@
                 </div>
               </fieldset>
               <fieldset class="add-plan__block">
-                <h1 class="add-plan__step-title">Шаг 3.<br>Развлечения</h1>
-                <p class="add-plan__step-description">Наконец, расскажите о своих планах времяпровождения. Можно писать в свободной форме и ставить тэги.</p>
+                <div class="add-plan__block-title-part">
+                  <div class="add-plans__description">
+                    <h1 class="add-plan__step-title">Шаг 3.<br>Развлечения</h1>
+                    <p class="add-plan__step-description">Наконец, расскажите о своих планах времяпровождения. Можно писать в свободной форме и ставить тэги.</p>
+                  </div>
+                  <ul class="add-plan__step-change">
+                    <li class="add-plan__step">Даты</li>
+                    <li class="add-plan__step">Маршрут</li>
+                    <li class="add-plan__step add-plan__step_selected">Развлечения</li>
+                  </ul>
+                </div>
                 <div class="add-plan__trip-direction">
                   <div class="add-plan__country-card">
                     <div class="add-plan__label">
@@ -306,7 +342,7 @@
                 </div>
                 <div class="add-plan__change-step">
                   <button type="submit" class="add-plan__submit-button">Отправить</button>
-                  <a class="add-plan__previous-step">На шаг назад</a>
+                  <a class="add-plan__previous-step add-plan__previous-step_submit">На шаг назад</a>
                 </div>
               </fieldset>
             </form>

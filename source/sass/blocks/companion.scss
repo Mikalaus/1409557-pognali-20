@@ -61,6 +61,8 @@
   width: 270px;
   min-height: 428px;
   border-radius: 10px;
+  position: relative;
+
   &_firsova{
     background: url("../img/firsova-desktop@1x.jpg") top no-repeat;
     border-radius: 10px;
@@ -68,6 +70,12 @@
   &_demin{
     background: url("../img/demin-desktop@1x.jpg") top no-repeat;
   }
+}
+
+.companion__level{
+  position: absolute;
+  top: 17px;
+  left: 17px;
 }
 
 .companion__content{
@@ -240,6 +248,11 @@
   .companion__link{
     margin-left: 3px;
     margin-top: 81px;
+  }
+
+  .companion__level{
+    top: 20px;
+    left: 22px;
   }
 }
 
