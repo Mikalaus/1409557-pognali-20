@@ -1,0 +1,87 @@
+.plans{
+  background-color: #DFE3F0;
+  display: flex;
+  justify-content: center;
+  padding-top: 6px;
+  padding-bottom: 13px;
+}
+
+.plans__wrap{
+  width: 270px;
+}
+
+.plans__title{
+  @include blue-title(24px);
+}
+
+.plans__cards{
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: 28px;
+  padding-left: 0;
+  counter-reset: myCounter;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.plans__card{
+  border-radius: 10px;
+  padding-left: 25px;
+  background-color: #fff;
+  width: 100%;
+  box-sizing: border-box;
+  padding-top: 11px;
+  list-style: none;
+  position: relative;
+  padding-bottom: 23px;
+
+
+  &::before{
+    counter-increment: myCounter;
+    content: counter(myCounter)".";
+    display: block;
+    font-family: $med;
+    font-size: 16px;
+    line-height: 16px;
+    text-align: center;
+    color: #1D2E5B;
+    position: absolute;
+    top: 24px;
+    left: 23px;
+  }
+}
+
+.plans__countries-name{
+  @include blue-title (16px);
+  margin-left: 16px;
+}
+
+.plans p{
+  min-width: 100px;
+  text-align: left;
+  font-family: $med;
+  font-size: 14px;
+  line-height: 14px;
+  text-align: left;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #1D2E5B;
+}
+
+.plans__companion-num{
+  margin-bottom: -10px;
+  margin-top: 20px;
+}
+
+.plans__change-button{
+  display: block;
+  font-family: $med;
+  font-size: 14px;
+  line-height: 14px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #000000;
+  opacity: 0.3;
+  margin-top: 25px;
+}
