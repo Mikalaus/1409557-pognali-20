@@ -1,30 +1,24 @@
 .card{
   display: flex;
-  flex-basis: 188px;
+  flex-direction: column;
   width: 270px;
   flex-grow: 0;
   border-radius: 10px;
   box-shadow: 0 4px 5px rgba(0, 0, 0, 0.3);
   position: relative;
+  overflow: hidden;
+}
 
-  &_thai{
-    background: url("../img/thailand-mobile@1x.jpg") top no-repeat;
-  }
-
-  &_france{
-    background: url("../img/france-mobile@1x.jpg") top no-repeat;
-  }
-
-  &_chech{
-    background: url("../img/czech-mobile@1x.jpg") top no-repeat;
-  }
+.card__country-img{
+  width: 270px;
+  max-height: 110px;
 }
 
 .card__content-block{
   box-sizing: border-box;
   display: flex;
-  margin-top: auto;
   align-items: center;
+  margin-top: -10px;
   width: 270px;
   min-height: 89px;
   background: #FFFFFF;
@@ -86,23 +80,13 @@
 
 @media (min-width: $tablet) {
   .card{
+    flex-direction: row;
     flex-basis: 140px;
     width: 616px;
     border-radius: 20px;
     box-shadow: none;
-
-    &_thai{
-      background: url("../img/thailand-desktop@1x.jpg") right no-repeat;
-    }
-
-    &_france{
-      background: url("../img/france-desktop@1x.jpg") right no-repeat;
-    }
-
-    &_chech{
-      background: url("../img/czech-desktop@1x.jpg") right no-repeat;
-    }
   }
+
   .card__content-block{
     display: flex;
     flex-direction: column;
@@ -114,6 +98,7 @@
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
     padding-left: 27px;
+    order: -1;
   }
 
   .card__about-country{
@@ -164,7 +149,6 @@
 @media (min-width: $desktop) {
   .card{
     width: 560px;
-    margin-left: -55px;
   }
 
   .card__content-block{

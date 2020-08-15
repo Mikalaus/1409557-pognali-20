@@ -1,6 +1,11 @@
 .main-info{
   background: url("../img/globe-back-mobile@1x.jpg") 0px -555px no-repeat;
   background-size: cover;
+  @media(min-resolution: 2dppx){
+    background: url("../img/globe-back-mobile@2x.jpg") 0px -555px no-repeat;
+    background-size: cover;
+    background-color: #161C34;
+  }
   background-color: #161C34;
   width: 100%;
   display: flex;
@@ -13,6 +18,9 @@
 
 .main-info__wrap{
   background: url("../img/traveller-illustration-mobile@1x.png") 55px 170px no-repeat;
+  @media(min-resolution: 2dppx){
+    background: url("../img/traveller-illustration-mobile@2x.png") 55px 170px/192px 255px no-repeat;
+  }
   width: 270px;
   display: flex;
   flex-direction: column;
@@ -153,12 +161,20 @@
 @media (min-width: $tablet) {
   .main-info{
     background: url("../img/globe-back-tablet@1x.jpg") -400px -182px no-repeat;
+    @media(min-resolution: 2dppx){
+      background: url("../img/globe-back-tablet@2x.jpg") -400px -182px no-repeat;
+      background-size: cover;
+      background-color: #161C34;
+    }
     background-size: cover;
     background-color: #161C34;
   }
 
   .main-info__wrap{
     background: url("../img/traveller-illustration-tablet@1x.png") calc(50% + 85px) 270px no-repeat;
+    @media(min-resolution: 2dppx){
+      background: url("../img/traveller-illustration-tablet@2x.png") calc(50% + 85px) 270px/372px 451px no-repeat;
+    }
     width: 688px;
   }
 
@@ -257,6 +273,11 @@
   .main-info{
     background: none;
     background: url("../img/globe-back-desktop@1x.jpg") -130px 0px no-repeat;
+    @media(min-resolution: 2dppx){
+      background: url("../img/globe-back-desktop@2x.jpg") -130px 0px no-repeat;
+      background-size: cover;
+      background-color: #161C34;
+    }
     background-size: cover;
     background-color: #161C34;
     width: 100%;
@@ -268,6 +289,9 @@
     width: 1320px;
     display: flex;
     background: url("../img/traveller-illustration-desktop@1x.png") 544px -10px no-repeat;
+    @media(min-resolution: 2dppx){
+      background: url("../img/traveller-illustration-desktop@2x.png") 544px -10px/431px 640px no-repeat;
+    }
     flex-direction: row;
     justify-content: flex-start;
     flex-wrap: wrap;

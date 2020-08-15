@@ -33,7 +33,10 @@
   position: absolute;
   width: 100px;
   height: 100px;
-  background: url("../img/rates.png") center no-repeat;
+  background: url("../img/rates@1x.png") center/100px no-repeat;
+  @media(min-resolution: 2dppx){
+    background: url("../img/rates@2x.png") center/100px no-repeat;
+  }
   top: 0px;
   right: 0;
 }
@@ -285,7 +288,10 @@
     left: 610px;
     width: 198px;
     height: 198px;
-    background: url("../img/rates-desktop.png") center no-repeat;
+    background: url("../img/rates@1x.png") center no-repeat;
+    @media(min-resolution: 2dppx){
+      background: url("../img/rates@2x.png") center/198px no-repeat;
+    }
   }
 
   .price-list__open-buisness{

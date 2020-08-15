@@ -11,7 +11,13 @@
     <header class="header">
       <div class="center-wrap">
         <div class="header__display">
-          <a href="index.html" class="logo header__logo">Погнали</a>
+          <a href="index.html" class="logo header__logo">
+            <picture>
+              <source media="(min-width: 1440px)" srcset="img/logo-desktop-white@1x.png 1x, img/logo-desktop-white@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/logo-tablet-white@1x.png 1x, img/logo-tablet-white@2x.png 2x">
+              <img src="img/logo-mobile-white@1x.png 1x" srcset="img/logo-mobile-white@2x.png 2x">
+            </picture>
+          </a>
           <button type="button" class="header__menu-open"></button>
         </div>
         <div class="header__menu header__menu_hidden">
@@ -27,9 +33,9 @@
               <a href="" class="contacts__mail">mail@htmlacademy.ru</a>
             </div>
             <div class="social-media header__social-media social-media_desktop">
-              <a href="#" class="social-media__link"><img src="img/facebook.svg" width="11" height="21" alt="facebook"></a>
-              <a href="#" class="social-media__link"><img src="img/vk.svg" width="23" height="12" alt="vkontakte"></a>
-              <a href="#" class="social-media__link"><img src="img/instagram.svg" width="18" height="18" alt="instagram"></a>
+              <a href="#" class="social-media__link"><svg width="11" height="21"><use xlink:href="img/svg-sprite.svg#fb-icon"></use></svg></a>
+              <a href="#" class="social-media__link"><svg width="23" height="12"><use xlink:href="img/svg-sprite.svg#vk-icon"></use></svg></a>
+              <a href="#" class="social-media__link"><svg width="18" height="18"><use xlink:href="img/svg-sprite.svg#insta-icon"></use></svg></a>
             </div>
           </div>
         </div>
@@ -72,6 +78,10 @@
             <p>Мы не продаем туры<br>и ничего не рекламируем. Люди сами пишут о странах, куда хотели бы отправиться<br>и чем можно там заняться.</p>
             <div class="countries__country-cards">
               <div class="card card_thai countries__card">
+                <picture>
+                  <source media="(min-width: 768px)" srcset="img/thailand-desktop@1x.jpg 1x, img/thailand-desktop@2x.jpg 2x">
+                  <img src="img/thailand-mobile@1x.jpg" srcset="img/thailand-mobile@2x.jpg 2x">
+                </picture>
                 <div class="card__content-block">
                   <img src="img/thai-flag.png" alt="" class="card__country-flag">
                   <div class="card__about-country">
@@ -82,6 +92,10 @@
                 </div>
               </div>
               <div class="card card_france countries__card">
+                <picture>
+                  <source media="(min-width: 768px)" srcset="img/france-desktop@1x.jpg 1x, img/france-desktop@2x.jpg 2x">
+                  <img src="img/france-mobile@1x.jpg" srcset="img/france-mobile@2x.jpg 2x">
+                </picture>
                 <div class="card__content-block">
                   <img src="img/france-flag.png" alt="" class="card__country-flag">
                   <div class="card__about-country">
@@ -92,6 +106,10 @@
                 </div>
               </div>
               <div class="card card_chech countries__card">
+                <picture>
+                  <source media="(min-width: 768px)" srcset="img/czech-desktop@1x.jpg 1x, img/czech-desktop@2x.jpg 2x">
+                  <img src="img/czech-mobile@1x.jpg 1x" srcset="img/czech-mobile@2x.jpg 2x">
+                </picture>
                 <div class="card__content-block">
                   <img src="img/chech-flag.png" alt="" class="card__country-flag">
                   <div class="card__about-country">
@@ -113,6 +131,11 @@
             <div class="companion__cards">
               <div class="companion__card companion__card_firsova">
                 <div class="companion-level companion-level_99 companion__level"></div>
+                <div class="companion__companion-img">
+                  <picture>
+                    <img src="img/firsova-desktop@1x.jpg 1x" srcset="img/firsova-desktop@2x.jpg 2x">
+                  </picture>
+                </div>
                 <div class="companion__content">
                   <div class="companion__countries">
                     <div class="companion__country"><img src="img/sri-lanka-flag.png" alt=""></div>
@@ -131,6 +154,11 @@
               </div>
               <div class="companion__card companion__card_demin">
                 <div class="companion-level companion-level_80 companion__level"></div>
+                <div class="companion__companion-img">
+                  <picture>
+                    <img src="img/demin-desktop@1x.jpg 1x" srcset="img/demin-desktop@2x.jpg 2x">
+                  </picture>
+                </div>
                 <div class="companion__content">
                   <div class="companion__countries">
                     <div class="companion__country"><img src="img/belgium-flag.png" alt=""></div>
@@ -191,7 +219,7 @@
             <h1 class="typical-title registration__title">Заинтересовались?</h1>
             <p class="registration__description">Зарегистрируйтесь, это быстро и бесплатно! Уже зарегистрированы? Тогда скорее <a href="registration.html" class="registration__yellow-link">авторизуйтесь</a>.</p>
             <form action="" class="registration__form">
-              <input type="email" class="registration__mail-input" placeholder="E-mail">
+              <input type="email" class="registration__mail-input" placeholder="E-mail" required>
               <button type="submit" class="registration__submit">Регистрация</button>
             </form>
             <p class="registration__write-us-text">Остались вопросы? Мы с радостью на них ответим!</p>
@@ -217,17 +245,17 @@
       <div class="footer__wrap">
         <a href="#" class="footer__logo">Погнали</a>
         <div class="social-media social-media_footer footer__social-media">
-          <a href="#" class="social-media__link social-media__link_yellow"><img src="img/facebook.svg" width="11" height="21" alt="facebook"></a>
-          <a href="#" class="social-media__link social-media__link_yellow"><img src="img/vk.svg" width="23" height="12" alt="vkontakte"></a>
-          <a href="#" class="social-media__link social-media__link_yellow"><img src="img/instagram.svg" width="18" height="18" alt="instagram"></a>
+          <a href="#" class="social-media__link social-media__link_yellow"><svg width="11" height="21"><use xlink:href="img/svg-sprite.svg#fb-icon"></use></svg></a>
+          <a href="#" class="social-media__link social-media__link_yellow"><svg width="23" height="12"><use xlink:href="img/svg-sprite.svg#vk-icon"></use></svg></a>
+          <a href="#" class="social-media__link social-media__link_yellow"><svg width="18" height="18"><use xlink:href="img/svg-sprite.svg#insta-icon"></use></svg></a>
         </div>
         <div class="footer__bottom-part-wrapper">
           <span class="footer__designed-by">Разработано</span>
-          <a class="footer__academy" href="https://up.htmlacademy.ru/adaptive">htmlacademy</a>
+          <a class="footer__academy" href="https://up.htmlacademy.ru/adaptive"><svg width="27" height="34"><use xlink:href="img/svg-sprite.svg#htmlacademy"></use></svg></a>
         </div>
       </div>
     </footer>
-    <script src="js/headr-menu.js"></script>
+    <script src="js/header-menu.js"></script>
     <script src="js/buisness-list.js"></script>
   </body>
 </html>

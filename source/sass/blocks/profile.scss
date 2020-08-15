@@ -17,7 +17,11 @@
   width: 100px;
   height: 100px;
   border-radius: 50%;
-  background: url("../img/demin-tablet@1x.jpg") center no-repeat;
+  overflow: hidden;
+
+  & img{
+    width: 100px;
+  }
 }
 
 .profile__level{
@@ -103,14 +107,15 @@
   }
 
   .profile__photo{
-    width: 70px;
-    height: 70px;
+    width: 94px;
+    height: 94px;
     border-radius: 5px;
-    transform: scale(1.34);
     order: -1;
-    background: url("../img/demin-mobile@1x.jpg") center no-repeat;
-    margin-top: 10px;
     margin-right: 10px;
+
+    & img{
+      width: 94px;
+    }
   }
 
   .profile__transport-form{
@@ -175,9 +180,12 @@
     border-top-left-radius: 12px;
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
-    background: url("../img/demin-desktop.jpg") center no-repeat;
     transform: none;
     margin: 0;
+
+    & img{
+      width: 190px;
+    }
 
     &::after{
       content: "фото";
