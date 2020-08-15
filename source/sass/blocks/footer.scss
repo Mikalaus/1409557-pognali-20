@@ -121,10 +121,10 @@
 }
 
 @media (min-width: $desktop) {
- .footer{
-   flex-direction: row;
-   justify-content: center;
- }
+  .footer{
+    flex-direction: row;
+    justify-content: center;
+  }
 
   .footer__logo{
     width: 200px;
