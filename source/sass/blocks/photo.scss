@@ -20,8 +20,8 @@
   &:hover{
     filter: drop-shadow(0px 4px 9px rgba(0, 0, 0, 0.16));
 
-    .photo__companion{
-      background-size: 80px 80px;
+    .photo__companion img{
+      transform: scale(1.2);
     }
   }
 }
@@ -71,11 +71,6 @@
   }
 }
 
-.photo__companion{
-  width: 70px;
-  position: relative;
-}
-
 .photo__like-button{
   cursor: pointer;
   width: 31px;
@@ -110,22 +105,8 @@
   width: 70px;
   height: 70px;
   border-radius: 50%;
-
-  &_firsova{
-    background: url("../img/firsova-mobile@1x.jpg") center no-repeat;
-  }
-
-  &_demin{
-    background: url("../img/demin-mobile@1x.jpg") center no-repeat;
-  }
-
-  &_smolov{
-    background: url("../img/smolov-mobile@1x.jpg") center no-repeat;
-  }
-
-  &_rogovaya{
-    background: url("../img/rogovaya-mobile@1x.jpg") center no-repeat;
-  }
+  position: relative;
+  overflow: hidden;
 }
 
 .photo__call-button{
@@ -443,22 +424,6 @@
     width: 190px;
     height: 190px;
     border-radius: 20px;
-
-    &_firsova{
-      background: url("../img/firsova-tablet@1x.jpg") center no-repeat;
-    }
-
-    &_demin{
-      background: url("../img/demin-tablet@1x.jpg") center no-repeat;
-    }
-
-    &_smolov{
-      background: url("../img/smolov-tablet@1x.jpg") center no-repeat;
-    }
-
-    &_rogovaya{
-      background: url("../img/rogovaya-tablet@1x.jpg") center no-repeat;
-    }
   }
 
   .photo__name{
@@ -668,20 +633,8 @@
     width: 285px;
     height: 285px;
 
-    &_firsova{
-      background: url("../img/firsova-desktop@1x.jpg") center no-repeat;
-    }
-
-    &_demin{
-      background: url("../img/demin-desktop@1x.jpg") center no-repeat;
-    }
-
-    &_smolov{
-      background: url("../img/smolov-desktop@1x.jpg") center no-repeat;
-    }
-
-    &_rogovaya{
-      background: url("../img/rogovaya-desktop@1x.jpg") center no-repeat;
+    & img{
+      width: 285px;
     }
   }
 

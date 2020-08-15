@@ -1,6 +1,10 @@
 .service{
   position: relative;
   background: url("../img/about-mobile@1x.png") center no-repeat;
+  @media (min-resolution: 2dppx){
+    background: url("../img/about-mobile@2x.png") center/292px 353px no-repeat;
+    background-color: #161C34;
+  }
   background-color: #161C34;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   width: 100%;
@@ -53,14 +57,19 @@
   .service{
     padding-top: 66px;
     background: none;
-    background-color: #180244;
     padding-bottom: 90px;
+    background: url("../img/about-tablet@1x.png") calc(50% + 190px) 110px no-repeat,
+                url("../img/service-tablet.svg") calc(50% - 3px) 70px no-repeat;
+    background-color: #161C34;
+
+    @media (min-resolution: 2dppx){
+      background: url("../img/about-tablet@2x.png") calc(50% + 190px) 110px/376px 548px no-repeat,
+                  url("../img/service-tablet.svg") calc(50% - 3px) 70px no-repeat;
+      background-color: #161C34;
+    }
   }
 
   .service__wrap{
-    background: url("../img/about-tablet@1x.png") 344px 40px no-repeat,
-                url("../img/service-tablet.svg") 0px 0px no-repeat;
-
     width: 688px;
     box-sizing: border-box;
     display: flex;
@@ -138,7 +147,13 @@
     $back2: calc(50% + 345px);
     background: url("../img/service-back-desktop.svg") $back 70px no-repeat,
                 url("../img/about-desktop@1x.png") $back2 85px no-repeat;
-    background-color: #192144;;
+
+    @media (min-resolution: 2dppx){
+      background: url("../img/service-back-desktop.svg") $back 70px no-repeat,
+                  url("../img/about-desktop@2x.png") $back2 85px/630px 665px no-repeat;
+      background-color: #192144;
+    }
+    background-color: #192144;
     padding-top: 101px;
   }
 

@@ -32,9 +32,9 @@
               <a href="" class="contacts__mail">mail@htmlacademy.ru</a>
             </div>
             <div class="social-media header__social-media social-media_desktop">
-              <a href="#" class="social-media__link"><img src="img/facebook.svg" width="11" height="21" alt="facebook"></a>
-              <a href="#" class="social-media__link"><img src="img/vk.svg" width="23" height="12" alt="vkontakte"></a>
-              <a href="#" class="social-media__link"><img src="img/instagram.svg" width="18" height="18" alt="instagram"></a>
+              <a href="#" class="social-media__link"><svg width="11" height="21"><use xlink:href="img/svg-sprite.svg#fb-icon"></use></svg></a>
+              <a href="#" class="social-media__link"><svg width="23" height="12"><use xlink:href="img/svg-sprite.svg#vk-icon"></use></svg></a>
+              <a href="#" class="social-media__link"><svg width="18" height="18"><use xlink:href="img/svg-sprite.svg#insta-icon"></use></svg></a>
             </div>
           </div>
         </div>
@@ -480,7 +480,13 @@
           <section class="photo">
             <div class="photo__card">
               <div class="photo__about-companion">
-                <div class="photo__companion photo__companion_firsova"></div>
+                <div class="photo__companion">
+                  <picture>
+                    <source media="(min-width: 1440px)" srcset="img/firsova-desktop@1x.jpg 1x, img/firsova-desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="img/firsova-tablet@1x.jpg 1x, img/firsova-tablet@2x.jpg 2x">
+                    <img src="img/firsova-mobile@1x.jpg 1x" srcset="img/firsova-mobile@2x.jpg 2x">
+                  </picture>
+                </div>
                 <h1 class="photo__name photo__name_offline">Таня Фирсова</h1>
                 <div class="photo__like">
                   <a href="" class="typical-button photo__call-button">Позвать!</a>
@@ -515,7 +521,13 @@
             </div>
             <div class="photo__card">
               <div class="photo__about-companion">
-                <div class="photo__companion photo__companion_demin"></div>
+                <div class="photo__companion">
+                  <picture>
+                    <source media="(min-width: 1440px)" srcset="img/demin-desktop@1x.jpg 1x, img/demin-desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="img/demin-tablet@1x.jpg 1x, img/demin-tablet@2x.jpg 2x">
+                    <img src="img/demin-mobile@1x.jpg 1x" srcset="img/demin-mobile@2x.jpg 2x">
+                  </picture>
+                </div>
                 <h1 class="photo__name photo__name_offline">Петя Демин</h1>
                 <div class="photo__like">
                   <a href="" class="typical-button photo__call-button">Позвать!</a>
@@ -549,7 +561,13 @@
             </div>
             <div class="photo__card">
               <div class="photo__about-companion">
-                <div class="photo__companion photo__companion_smolov"></div>
+                <div class="photo__companion">
+                  <picture>
+                    <source media="(min-width: 1440px)" srcset="img/smolov-desktop@1x.jpg 1x, img/smolov-desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="img/smolov-tablet@1x.jpg 1x, img/smolov-tablet@2x.jpg 2x">
+                    <img src="img/smolov-mobile@1x.jpg 1x" srcset="img/smolov-mobile@2x.jpg 2x">
+                  </picture>
+                </div>
                 <h1 class="photo__name photo__name_offline">Марк Смолов</h1>
                 <div class="photo__like">
                   <a href="" class="typical-button photo__call-button">Позвать!</a>
@@ -584,7 +602,13 @@
             </div>
             <div class="photo__card">
               <div class="photo__about-companion">
-                <div class="photo__companion photo__companion_rogovaya"></div>
+                <div class="photo__companion">
+                  <picture>
+                    <source media="(min-width: 1440px)" srcset="img/rogovaya-desktop@1x.jpg 1x, img/rogovaya-desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="img/rogovaya-tablet@1x.jpg 1x, img/rogovaya-tablet@2x.jpg 2x">
+                    <img src="img/rogovaya-mobile@1x.jpg 1x" srcset="img/rogovaya-mobile@2x.jpg 2x">
+                  </picture>
+                </div>
                 <h1 class="photo__name photo__name_online">Лариса Роговая</h1>
                 <div class="photo__like">
                   <a href="" class="typical-button photo__call-button">Позвать!</a>
@@ -638,13 +662,13 @@
       <div class="footer__wrap">
         <a href="#" class="footer__logo">Погнали</a>
         <div class="social-media social-media_footer footer__social-media">
-          <a href="#" class="social-media__link social-media__link_yellow"><img src="img/facebook.svg" width="11" height="21" alt="facebook"></a>
-          <a href="#" class="social-media__link social-media__link_yellow"><img src="img/vk.svg" width="23" height="12" alt="vkontakte"></a>
-          <a href="#" class="social-media__link social-media__link_yellow"><img src="img/instagram.svg" width="18" height="18" alt="instagram"></a>
+          <a href="#" class="social-media__link social-media__link_yellow"><svg width="11" height="21"><use xlink:href="img/svg-sprite.svg#fb-icon"></use></svg></a>
+          <a href="#" class="social-media__link social-media__link_yellow"><svg width="23" height="12"><use xlink:href="img/svg-sprite.svg#vk-icon"></use></svg></a>
+          <a href="#" class="social-media__link social-media__link_yellow"><svg width="18" height="18"><use xlink:href="img/svg-sprite.svg#insta-icon"></use></svg></a>
         </div>
         <div class="footer__bottom-part-wrapper">
           <span class="footer__designed-by">Разработано</span>
-          <a class="footer__academy" href="https://up.htmlacademy.ru/adaptive">htmlacademy</a>
+          <a class="footer__academy" href="https://up.htmlacademy.ru/adaptive"><svg width="27" height="34"><use xlink:href="img/svg-sprite.svg#htmlacademy"></use></svg></a>
         </div>
       </div>
     </footer>

@@ -59,7 +59,6 @@
   display: block;
   min-width: 27px;
   min-height: 33px;
-  background: url("../img/htmlacademy.svg") center no-repeat;
   font-size: 0;
   margin-top: 25px;
   margin-left: 159px;
@@ -122,10 +121,10 @@
 }
 
 @media (min-width: $desktop) {
- .footer{
-   flex-direction: row;
-   justify-content: center;
- }
+  .footer{
+    flex-direction: row;
+    justify-content: center;
+  }
 
   .footer__logo{
     width: 200px;

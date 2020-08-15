@@ -72,9 +72,16 @@
   border: 4px solid white;
   background-color: white;
 
-  &:hover{
-    background-color: #EDEFF6;
-    border-color: #EDEFF6;
+
+  &:invalid{
+    background-color: white;
+    border-color: white;
+    color: #FF0000;
+
+    &::-webkit-input-placeholder{
+      color: #FF0000;
+      opacity: 1;
+    }
   }
 }
 
