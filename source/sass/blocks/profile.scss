@@ -88,6 +88,10 @@
   line-height: 18px;
   color: #444444;
   opacity: 0.6;
+
+  &:focus{
+    opacity: 1;
+  }
 }
 
 
