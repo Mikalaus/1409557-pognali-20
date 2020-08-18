@@ -1,20 +1,22 @@
-.countries{
+.countries {
   display: flex;
   flex-direction: column;
   align-items: center;
   @include typical-bottom-section;
   padding-bottom: 35px;
   z-index: 5;
+  padding-top: 30px;
+  margin-top: -30px;
 }
 
-.countries__wrap{
+.countries__wrap {
   width: 270px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
 }
 
-.countries__title{
+.countries__title {
   display: block;
   @include typical-title;
   text-shadow: 0 3px 2px #CDC7CD;
@@ -22,7 +24,7 @@
   margin-left: 25px;
 }
 
-.countries p{
+.countries p {
   display: block;
   font-family: $light;
   font-size: 16px;
@@ -33,7 +35,7 @@
   margin-left: 25px;
 }
 
-.countries__country-cards{
+.countries__country-cards {
   margin-top: 42px;
   display: flex;
   flex-direction: column;
@@ -42,23 +44,25 @@
   gap: 10px;
 }
 
-.countries__link{
+.countries__link {
   @include typical-link;
   margin-top: 28px;
 }
 
-@media (min-width: $tablet){
-  .countries{
+@media (min-width: $tablet) {
+  .countries {
+    padding-top: 60px;
+    margin-top: -60px;
     padding-bottom: 80px;
     display: flex;
     justify-content: center;
   }
 
-  .countries__wrap{
+  .countries__wrap {
     background: url("../img/flags-back@1x.png") 400px 80px no-repeat,
                 url("../img/countries-back-tablet.png") 0px 405px no-repeat;
 
-    @media(min-resolution: 2dppx){
+    @media(min-resolution: 2dppx) {
       background: url("../img/flags-back@2x.png") 400px 80px/288px 574px no-repeat,
                   url("../img/countries-back-tablet.png") 0px 405px no-repeat;
     }
@@ -70,26 +74,26 @@
     box-sizing: border-box;
   }
 
-  .countries__title{
+  .countries__title {
     margin-bottom: 58px;
     margin-left: 0px;
   }
 
-  .countries p{
+  .countries p {
     margin-left: 0px;
     width: 378px;
     font-size: 28px;
     line-height: 33px;
   }
 
-  .countries__country-cards{
+  .countries__country-cards {
     position: relative;
     width: 616px;
     margin-top: 75px;
     margin-left: 5px;
   }
 
-  .countries__country-cards::after{
+  .countries__country-cards::after {
     position: absolute;
     bottom: 0;
     display: block;
@@ -99,7 +103,7 @@
     background: url("../img/fade-countries.png");
   }
 
-  .countries__link{
+  .countries__link {
     margin-top: 47px;
     margin-left: 3px;
   }
@@ -107,16 +111,16 @@
 
 @media (min-width: $desktop) {
   $back: calc(50% + 518px);
-  .countries{
+  .countries {
     background: url("../img/flags-back@1x.png") $back 88px no-repeat;
-    @media(min-resolution: 2dppx){
+    @media(min-resolution: 2dppx) {
       background: url("../img/flags-back@2x.png") $back 88px/287px 575px no-repeat;
     }
     padding-bottom: 90px;
     justify-content: center;
   }
 
-  .countries__wrap{
+  .countries__wrap {
     width: 1320px;
     height: 660px;
     flex-wrap: wrap;
@@ -125,23 +129,23 @@
     background: url("../img/countries-back-tablet.png") 0px 90px no-repeat;
   }
 
-  .countries__country-cards{
+  .countries__country-cards {
     order: -1;
     margin-left: -2px;
     width: 560px;
   }
 
-  .countries__title{
+  .countries__title {
     margin-top: 81px;
     margin-left: -18px;
   }
 
-  .countries p{
+  .countries p {
     margin-left: -15px;
     margin-bottom: 50px;
   }
 
-  .countries__link{
+  .countries__link {
     width: 275px;
     margin-left: -15px;
   }

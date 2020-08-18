@@ -1,11 +1,13 @@
-.profile{
+.profile {
   background-color: #EDEFF6;
   display: flex;
   justify-content: center;
-  padding-bottom: 34px;
+  padding-bottom: 64px;
+  margin-top: -30px;
+  padding-top: 30px;
 }
 
-.profile__wrap{
+.profile__wrap {
   width: 270px;
   margin-top: 24px;
   display: flex;
@@ -13,22 +15,22 @@
   justify-content: center;
 }
 
-.profile__photo{
+.profile__photo {
   width: 100px;
   height: 100px;
   border-radius: 50%;
   overflow: hidden;
 
-  & img{
+  & img {
     width: 100px;
   }
 }
 
-.profile__level{
+.profile__level {
   margin-right: 35px;
 }
 
-.profile__change-img-button{
+.profile__change-img-button {
   @include typical-button_secondary;
   font-size: 20px;
   line-height: 18px;
@@ -36,17 +38,17 @@
   margin-bottom: 17px;
 }
 
-.profile__tags-form{
+.profile__tags-form {
   width: 100%;
   min-height: 90px;
 }
 
-.profile__transport-form{
+.profile__transport-form {
   width: 100%;
   min-height: 63px;
 }
 
-.profile__tags{
+.profile__tags {
   width: 100%;
   box-sizing: border-box;
   border: 1px solid #CBCED9;
@@ -55,16 +57,16 @@
   padding-top: 15px;
   margin-left: 0;
 
-  &:hover{
+  &:hover {
     border-color: #959BB2;
   }
 
-  &:focus-within{
+  &:focus-within {
     border-color: #161C35;
   }
 }
 
-.profile__tags-legend{
+.profile__tags-legend {
   width: 65px;
   padding-top: 4px;
   font-family: $bold;
@@ -75,7 +77,7 @@
   color: #1D2E5B
 }
 
-.profile__tags-input{
+.profile__tags-input {
   outline: none;
   border: none;
   background-color: transparent;
@@ -89,14 +91,20 @@
   color: #444444;
   opacity: 0.6;
 
-  &:focus{
+  &:focus {
     opacity: 1;
   }
 }
 
 
-@media (min-width: $tablet){
-  .profile__wrap{
+@media (min-width: $tablet) {
+  .profile {
+    padding-bottom: 94px;
+    margin-top: -60px;
+    padding-top: 60px;
+  }
+
+  .profile__wrap {
     box-sizing: border-box;
     width: 688px;
     margin-top: 65px;
@@ -105,24 +113,24 @@
     justify-content: space-between;
   }
 
-  .profile__level{
+  .profile__level {
     order: -3;
     margin-right: 0;
   }
 
-  .profile__photo{
+  .profile__photo {
     width: 94px;
     height: 94px;
     border-radius: 5px;
     order: -1;
     margin-right: 10px;
 
-    & img{
+    & img {
       width: 94px;
     }
   }
 
-  .profile__transport-form{
+  .profile__transport-form {
     width: 308px;
     min-height: 104px;
     order: -2;
@@ -133,29 +141,29 @@
   .profile__tags-legend,
   .transport-options__legend,
   .transport-options__input-wrap,
-  .profile__tags-wrap{
+  .profile__tags-wrap {
     transform: rotate(180deg);
   }
 
-  .profile__change-img-button{
+  .profile__change-img-button {
     padding-top: 22px;
     padding-bottom: 20px;
     letter-spacing: 0.09em;
   }
 
-  .profile__tags{
+  .profile__tags {
     max-height: 105px;
     padding-right: 40px;
     padding-bottom: 36px;
   }
 
-  .profile__tags-input{
+  .profile__tags-input {
     width: 540px;
   }
 }
 
-@media (min-width: $desktop){
-  .profile__wrap{
+@media (min-width: $desktop) {
+  .profile__wrap {
     width: 1320px;
     box-sizing: border-box;
     padding-left: 64px;
@@ -164,17 +172,19 @@
     cursor: pointer;
   }
 
-  .profile__change-img-button{
+  .profile__change-img-button {
     display: none;
   }
 
-  .profile__level{
+  .profile__level {
     position: absolute;
     right: 329px;
     top: -213px;
+    z-index: 6;
   }
 
-  .profile__photo{
+  .profile__photo {
+    z-index: 6;
     width: 190px;
     height: 190px;
     position: absolute;
@@ -187,11 +197,11 @@
     transform: none;
     margin: 0;
 
-    & img{
+    & img {
       width: 190px;
     }
 
-    &::after{
+    &::after {
       content: "фото";
       display: block;
       position: absolute;
@@ -213,28 +223,28 @@
       border-bottom-right-radius: 10px;
     }
 
-    &:hover::after{
+    &:hover::after {
       background: #D1D7E9;
     }
 
-    &:active::after{
+    &:active::after {
       opacity: 0.3;
     }
   }
 
-  .profile__tags-form{
+  .profile__tags-form {
     order: -1;
     width: 732px;
     min-height: 105px;
   }
 
-  .profile__transport-form{
+  .profile__transport-form {
     order: 0;
     width: 384px;
     min-height: 105px;
   }
 
-  .profile__transport-form label{
+  .profile__transport-form label {
     transform: scale(1.33);
   }
 }

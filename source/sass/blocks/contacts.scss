@@ -1,4 +1,4 @@
-.contacts{
+.contacts {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -8,26 +8,26 @@
   line-height: 18px;
 }
 
-.contacts__telephone{
+.contacts__telephone {
   display: block;
   color: #192144;
   margin-bottom: 27px;
   text-transform: uppercase;
 
-  &:hover{
+  &:hover {
     color: #FFBD30;
   }
 
-  &:active{
+  &:active {
     opacity: 0.3;
   }
 }
 
-.contacts__telephone_yellow{
+.contacts__telephone_yellow {
   color: #FFD74B;
 }
 
-.contacts__telephone::before{
+.contacts__telephone::before {
   display: none;
   position: absolute;
   content:'';
@@ -39,24 +39,24 @@
   left: -61px;
 }
 
-.contacts__mail{
+.contacts__mail {
   color: #192144;
   text-transform: uppercase;
 
-  &:hover{
+  &:hover {
     color: #FFBD30;
   }
 
-  &:active{
+  &:active {
     opacity: 0.3;
   }
 }
 
-.contacts__mail_yellow{
+.contacts__mail_yellow {
   color: #FFD74B;
 }
 
-.contacts__mail::before{
+.contacts__mail::before {
   display: none;
   position: absolute;
   content:'';
@@ -69,17 +69,17 @@
 }
 
 @media (min-width: $tablet) {
-  .contacts{
+  .contacts {
     font-size: 28px;
     line-height: 28px;
     overflow: visible;
   }
 
-  .contacts__telephone{
+  .contacts__telephone {
     margin-bottom: 39px;
   }
 
-  .contacts__telephone::before{
+  .contacts__telephone::before {
     width: 68px;
     height: 80px;
     background: url("../img/contacts-icon-phone-tablet.svg") center no-repeat;
@@ -87,7 +87,7 @@
     left: -90px;
   }
 
-  .contacts__mail::before{
+  .contacts__mail::before {
     width: 68px;
     height: 68px;
     background: url("../img/contacts-icon-tablet.svg") center no-repeat;
@@ -96,17 +96,17 @@
   }
 }
 
-@media (min-width: $desktop){
-  .contacts{
+@media (min-width: $desktop) {
+  .contacts {
     flex-direction: row;
     gap: 231px;
 
-    &_desktop{
+    &_desktop {
       display: none;
     }
   }
 
-  .contacts__telephone::before{
+  .contacts__telephone::before {
     width: 90px;
     height: 90px;
     background: url("../img/contacts-icon-desktop.svg") center no-repeat;
@@ -114,7 +114,7 @@
     left: -120px;
   }
 
-  .contacts__mail::before{
+  .contacts__mail::before {
     width: 90px;
     height: 90px;
     background: url("../img/contacts-icon-mail-desktop.svg") center no-repeat;

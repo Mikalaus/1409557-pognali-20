@@ -1,4 +1,4 @@
-.companion-level{
+.companion-level {
   box-sizing: border-box;
   display: block;
   position: relative;
@@ -26,7 +26,7 @@
   color: #1D2E5B;
   }
 
-  @media (min-width: $tablet){
+  @media (min-width: $tablet) {
     box-sizing: border-box;
     display: block;
     position: relative;
@@ -44,7 +44,7 @@
     padding-left: 14px;
     }
 
-    &::before{
+    &::before {
       content: "level";
       display: inline-block;
       position: absolute;
@@ -61,44 +61,44 @@
     }
   }
 
-  &_99{
+  &_99 {
     background-image: linear-gradient(-90deg, transparent 53%, #FF8D30 53%),
                       linear-gradient(150deg, transparent 50%, #FF8D30 50%),
                       linear-gradient(90deg, transparent 50%, #FF8D30 50%);
 
-    &::after{
+    &::after {
       content: '99';
     }
   }
 
-  &_80{
+  &_80 {
     background-image: linear-gradient(90deg, transparent 50%, #FF8D30 50%),
                       linear-gradient(180deg, transparent 50%, #FF8D30 50%);
 
-    &::after{
+    &::after {
       content: '80';
     }
   }
 
-  &_25{
+  &_25 {
     background-image: linear-gradient(270deg, transparent 50%, white 50%),
                       linear-gradient(180deg, #FF8D30 50%, white 50%);
 
-    &::after{
+    &::after {
       content: '25';
     }
   }
 
-  &_50{
+  &_50 {
     background-image: linear-gradient(90deg, #fff 50%, #FF8D30 50%);
 
-    &::after{
+    &::after {
       content: '50';
     }
   }
 }
 
-.companion-level_big{
+.companion-level_big {
   width: 100px;
   height: 100px;
 
@@ -114,7 +114,7 @@
   background-color: #EDEFF6;
   }
 
-  &::before{
+  &::before {
     content: "level";
     width: 51px;
     text-align: center;
@@ -132,26 +132,26 @@
     z-index: 5;
   }
 
-  @media (min-width: $tablet){
+  @media (min-width: $tablet) {
     width: 94px;
     height: 94px;
 
-    &::after{
+    &::after {
       width: 88px;
       height: 88px;
       padding-top: 16px;
       padding-left: 23px;
-      @media(min-width: $desktop){
+      @media(min-width: $desktop) {
         background-color: #192144;
         color: white;
       }
     }
 
-    &::before{
+    &::before {
       top: 58px;
       left: 21px;
 
-      @media(min-width: $desktop){
+      @media(min-width: $desktop) {
         color: white;
         opacity: 1;
         border-top: 2px solid #5E647C;

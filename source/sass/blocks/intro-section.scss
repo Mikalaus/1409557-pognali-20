@@ -1,4 +1,4 @@
-.intro-section{
+.intro-section {
   @include typical-bottom-section-catalog;
   background-color: #182044;
   display: flex;
@@ -7,16 +7,17 @@
   margin-bottom: 0px;
   padding-top: 0;
   padding-bottom: 0;
+  z-index: 3;
 }
 
-.intro-section__wrap{
+.intro-section__wrap {
   width: 270px;
   height: 104px;
   display: flex;
   justify-content: flex-start;
 }
 
-.intro-section__title{
+.intro-section__title {
   font-family: $bold;
   font-size: 36px;
   line-height: 36px;
@@ -24,7 +25,7 @@
   position: relative;
   margin-top: 57px;
 
-  &::after{
+  &::after {
     top: 44px;
     position: absolute;
     content: "";
@@ -36,17 +37,17 @@
   }
 }
 
-.intro-section__index-link{
+.intro-section__index-link {
   display: none;
 }
 
 @media (min-width: $tablet) {
-  .intro-section{
+  .intro-section {
     margin-top: 10px;
     margin-bottom: 0px;
   }
 
-  .intro-section__wrap{
+  .intro-section__wrap {
     box-sizing: border-box;
     padding-top: 40px;
     width: 688px;
@@ -57,19 +58,19 @@
     height: 230px;
   }
 
-  .intro-section__title{
+  .intro-section__title {
     font-family: $bold;
     font-size: 60px;
     line-height: 70px;
 
-    &::after{
+    &::after {
       top: 129px;
       left: 3px;
       height: 8px;
     }
   }
 
-  .intro-section__index-link{
+  .intro-section__index-link {
     display: block;
     font-family: $bold;
     font-size: 20px;
@@ -79,15 +80,15 @@
     margin-left: 157px;
     margin-top: 83px;
 
-    &:hover{
+    &:hover {
       opacity: 0.7;
     }
 
-    &:active{
+    &:active {
       opacity: 0.3;
     }
 
-    &::after{
+    &::after {
       content: '';
       display: inline-block;
       width: 32px;
@@ -98,12 +99,12 @@
   }
 }
 
-@media (min-width: $desktop){
-  .intro-section{
+@media (min-width: $desktop) {
+  .intro-section {
     padding-bottom: 13px;
   }
 
-  .intro-section__wrap{
+  .intro-section__wrap {
     width: 1320px;
     display: flex;
     justify-content: space-between;
@@ -112,8 +113,8 @@
     padding-top: 55px;
     }
 
-  .intro-section__title{
-    &::after{
+  .intro-section__title {
+    &::after {
       top: 128px;
       left: 0;
     }

@@ -5,7 +5,7 @@ var logo = document.querySelector(".header__logo");
 var enter = document.querySelector(".enter-link");
 var userLinks = document.querySelector(".user-links");
 
-window.onscroll = function(){
+window.addEventListener("scroll", function(){
   if(window.pageYOffset > 50){
     header.classList.add("header_scrolled");
     enter.classList.add("enter-link_scrolled")
@@ -20,7 +20,7 @@ window.onscroll = function(){
         userLinks.classList.remove("user-links_scrolled")
       }
     }
-  }
+});
 
 menuOpen.addEventListener("click", function(){
   enter.classList.add("enter-link_scrolled");

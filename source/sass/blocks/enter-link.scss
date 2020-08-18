@@ -1,10 +1,10 @@
 @media (min-width: $tablet) {
-  .enter-link{
+  .enter-link {
     box-sizing: border-box;
     position: absolute;
     display: block;
     top: 83px;
-    right: -320px;
+    right: -305px;
     width: 188px;
     font-family: $bold;
     font-size: 20px;
@@ -16,29 +16,32 @@
     padding-top: 20px;
     padding-right: 28px;
     padding-bottom: 18px;
-    z-index: 20;
 
-    &_header{
+    &_header {
       top: 93px;
     }
 
-    &_scrolled{
+    &_scrolled {
       position: fixed;
       top: 46px;
       right: calc(50% - 94px);
       margin-right: -250px;
+
+      .main-info{
+        position: inherit;
+      }
     }
   }
 
 }
 
 @media (min-width: $desktop) {
-  .enter-link{
+  .enter-link {
     position: relative;
     right: 0;
     top: 0;
 
-    &_header{
+    &_header {
       padding-left: 29px;
       padding-top: 40px;
       padding-right: 28px;
@@ -48,7 +51,7 @@
       right: 3px;
     }
 
-    &_scrolled{
+    &_scrolled {
       position: fixed;
       top: 51px;
       right: calc(50% - 405px);

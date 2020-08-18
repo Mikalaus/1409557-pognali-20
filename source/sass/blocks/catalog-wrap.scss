@@ -1,14 +1,20 @@
-.catalog-wrap{
+.catalog-wrap {
+  position: relative;
   background-color: #EDEFF6;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-bottom: 62px;
+  padding-bottom: 152px;
+  margin-top: -30px;
+  padding-top: 30px;
+  z-index: 1;
 
-  @media (min-width: $desktop){
+  @media (min-width: $desktop) {
     flex-direction: row;
     align-items: flex-start;
     justify-content: center;
     gap: 84px;
+    margin-top: -60px;
+    padding-top: 60px;
   }
 }

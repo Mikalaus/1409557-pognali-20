@@ -1,4 +1,4 @@
-.card{
+.card {
   display: flex;
   flex-direction: column;
   width: 270px;
@@ -9,12 +9,12 @@
   overflow: hidden;
 }
 
-.card__country-img{
+.card__country-img {
   width: 270px;
   max-height: 110px;
 }
 
-.card__content-block{
+.card__content-block {
   box-sizing: border-box;
   display: flex;
   align-items: center;
@@ -26,13 +26,13 @@
   padding-left: 24px;
 }
 
-.card__about-country{
+.card__about-country {
   display: block;
   min-height: 89px;
   width: 140px;
 }
 
-.card__country{
+.card__country {
   font-family: $bold;
   font-size: 21px;
   line-height: 21px;
@@ -40,7 +40,7 @@
   margin-bottom: 0px;
 }
 
-.card__country-description{
+.card__country-description {
   display: block;
   font-family: $bold;
   font-size: 16px;
@@ -49,7 +49,7 @@
   opacity: 0.3;
 }
 
-.card__guests{
+.card__guests {
   position: relative;
   margin-left: 25px;
   margin-top: -16px;
@@ -60,7 +60,7 @@
   opacity: 0.3;
 }
 
-.card__guests::before{
+.card__guests::before {
   display: inline-block;
   content: "";
   width: 12px;
@@ -71,7 +71,7 @@
   margin-right: 5px;
 }
 
-.card__country-flag{
+.card__country-flag {
   position: absolute;
   z-index: 0;
   top: 86px;
@@ -79,7 +79,7 @@
 }
 
 @media (min-width: $tablet) {
-  .card{
+  .card {
     flex-direction: row;
     flex-basis: 140px;
     width: 616px;
@@ -87,7 +87,7 @@
     box-shadow: none;
   }
 
-  .card__content-block{
+  .card__content-block {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -101,11 +101,11 @@
     order: -1;
   }
 
-  .card__about-country{
+  .card__about-country {
     min-width: 230px;
   }
 
-  .card__country{
+  .card__country {
     font-family: $bold;
     font-size: 24px;
     line-height: 24px;
@@ -113,7 +113,7 @@
     margin-bottom: 6px;
   }
 
-  .card__country-description{
+  .card__country-description {
     display: block;
     font-family: $bold;
     font-size: 20px;
@@ -121,14 +121,14 @@
     min-width: 230px;
   }
 
-  .card__guests{
+  .card__guests {
     margin-top: 10px;
     margin-left: 30px;
     font-size: 20px;
     line-height: 20px;
   }
 
-  .card__guests::before{
+  .card__guests::before {
     position: absolute;
     width: 22px;
     height: 22px;
@@ -136,7 +136,7 @@
     left: -34px;
   }
 
-  .card__country-flag{
+  .card__country-flag {
     position: absolute;
     z-index: 0;
     width: 70px;
@@ -147,21 +147,21 @@
 }
 
 @media (min-width: $desktop) {
-  .card{
+  .card {
     width: 560px;
   }
 
-  .card__content-block{
+  .card__content-block {
     width: 374px;
     padding-left: 30px;
   }
 
-  .card__country-flag{
+  .card__country-flag {
     left: 337px;
     top: 23px;
   }
 
-  .card__country{
+  .card__country {
     margin-top: 24px;
   }
 }

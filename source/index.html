@@ -12,10 +12,16 @@
       <div class="center-wrap">
         <div class="header__display">
           <a href="index.html" class="logo header__logo">
-            <picture>
+            <picture class="header__white-logo">
               <source media="(min-width: 1440px)" srcset="img/logo-desktop-white@1x.png 1x, img/logo-desktop-white@2x.png 2x">
               <source media="(min-width: 768px)" srcset="img/logo-tablet-white@1x.png 1x, img/logo-tablet-white@2x.png 2x">
-              <img src="img/logo-mobile-white@1x.png 1x" srcset="img/logo-mobile-white@2x.png 2x">
+              <img src="img/logo-mobile-white@1x.png" srcset="img/logo-mobile-white@2x.png 2x">
+            </picture>
+
+            <picture class="header__blue-logo">
+              <source media="(min-width: 1440px)" srcset="img/logo-desktop-blue@1x.png 1x, img/logo-desktop-blue@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/logo-tablet-blue@1x.png 1x, img/logo-tablet-blue@2x.png 2x">
+              <img src="img/logo-mobile-blue@1x.png" srcset="img/logo-mobile-blue@2x.png 2x">
             </picture>
           </a>
           <button type="button" class="header__menu-open"></button>
@@ -108,7 +114,7 @@
               <div class="card card_chech countries__card">
                 <picture>
                   <source media="(min-width: 768px)" srcset="img/czech-desktop@1x.jpg 1x, img/czech-desktop@2x.jpg 2x">
-                  <img src="img/czech-mobile@1x.jpg 1x" srcset="img/czech-mobile@2x.jpg 2x">
+                  <img src="img/czech-mobile@1x.jpg" srcset="img/czech-mobile@2x.jpg 2x">
                 </picture>
                 <div class="card__content-block">
                   <img src="img/chech-flag.png" alt="" class="card__country-flag">
@@ -133,7 +139,7 @@
                 <div class="companion-level companion-level_99 companion__level"></div>
                 <div class="companion__companion-img">
                   <picture>
-                    <img src="img/firsova-desktop@1x.jpg 1x" srcset="img/firsova-desktop@2x.jpg 2x">
+                    <img src="img/firsova-desktop@1x.jpg" srcset="img/firsova-desktop@2x.jpg 2x">
                   </picture>
                 </div>
                 <div class="companion__content">
@@ -156,7 +162,7 @@
                 <div class="companion-level companion-level_80 companion__level"></div>
                 <div class="companion__companion-img">
                   <picture>
-                    <img src="img/demin-desktop@1x.jpg 1x" srcset="img/demin-desktop@2x.jpg 2x">
+                    <img src="img/demin-desktop@1x.jpg" srcset="img/demin-desktop@2x.jpg 2x">
                   </picture>
                 </div>
                 <div class="companion__content">
@@ -235,8 +241,24 @@
             <a href="" class="address__build-way">Проложить маршрут</a>
           </div>
         </section>
-        <section class="map">
-          <!--<iframe src="" width="" height=""></iframe>-->
+        <section class="map" id="map">
+          <script>
+            function initMap() {
+              var element = document.getElementById("map");
+              var options = {
+                zoom: 16,
+                center: { lat: 59.937, lng: 30.322028 }
+              };
+
+              var myMap = new google.maps.Map(element, options);
+
+              var marker = new google.maps.Marker({
+                position: { lat: 59.9365, lng: 30.322028},
+                map: myMap,
+                icon: "img/map-marker.svg"
+              })
+            }
+          </script>
         </section>
       </div>
     </main>
@@ -257,5 +279,6 @@
     </footer>
     <script src="js/header-menu.js"></script>
     <script src="js/buisness-list.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCPrRvENEtxwJ87xxkuKcvKdumVkbS5ACc&callback=initMap"></script>
   </body>
 </html>
