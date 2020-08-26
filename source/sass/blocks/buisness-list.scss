@@ -1,6 +1,7 @@
 .buisness-list {
   position: fixed;
   top: calc(50% - 235px);
+  left: calc(50% - 135px);
   background: #FFFFFF;
   box-shadow: 0px 2px 8px rgba(29, 46, 91, 0.5);
   border-radius: 20px;
@@ -9,7 +10,7 @@
   flex-direction: column;
   align-items: center;
   padding-top: 13px;
-  z-index: 10;
+  z-index: 30;
 
   &_close {
     display: none;
@@ -75,7 +76,8 @@
 
 @media (min-width: $tablet) {
   .buisness-list {
-    top: calc(50% - 263px);
+    top: calc(50% - 203px);
+    left: calc(50% - 347px);
     width: 688px;
     margin-left: 0px;
   }
@@ -134,6 +136,7 @@
 
 @media (min-width: $desktop) {
   .buisness-list {
+    left: calc(50% - 370px);
     width: 750px;
     border-radius: 30px;
   }

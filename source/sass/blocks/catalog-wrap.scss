@@ -4,10 +4,14 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-bottom: 152px;
+  padding-bottom: 76px;
   margin-top: -30px;
   padding-top: 30px;
   z-index: 1;
+
+  @media(min-width: $tablet){
+    padding-bottom: 111px;
+  }
 
   @media (min-width: $desktop) {
     flex-direction: row;
@@ -16,5 +20,6 @@
     gap: 84px;
     margin-top: -60px;
     padding-top: 60px;
+    padding-bottom: 205px;
   }
 }

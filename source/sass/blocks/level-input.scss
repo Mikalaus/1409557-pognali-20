@@ -133,13 +133,56 @@
   }
 
   .level-input__num {
-    margin-top: -2px;
-    margin-right: 2px;
+    margin-top: -3px;
+    margin-right: -1px;
 
     &::after {
       top: 15px;
       transform: scale(1.33);
       left: 65px;
     }
+  }
+}
+
+@media(min-width: $desktop){
+  .level-input__num{
+    margin-left: -26px;
+    margin-top: 6px;
+
+    &::after{
+      left: 87px;
+      top: 17px;
+    }
+  }
+
+  .level-input__num input{
+    padding-top: 15px;
+    padding-bottom: 11px;
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 0.04em;
+    width: 96px;
+    height: 46px;
+  }
+
+  .level-input__range {
+    width: 192px;
+    height: 3px;
+    margin-left: -28px;
+    margin-top: 35px;
+
+    & button{
+      transform: scale(1.33);
+    }
+  }
+
+  .level-input__min-range {
+    left: 60px;
+    top: -4px;
+  }
+
+  .level-input__max-range {
+    right: 0px;
+    top: -4px;
   }
 }

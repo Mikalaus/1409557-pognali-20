@@ -126,7 +126,7 @@
 
 @media (min-width: $tablet) {
   .price-list {
-    padding-bottom: 88px;
+    padding-bottom: 80px;
     padding-top: 60px;
     margin-top: -60px;
   }
@@ -267,6 +267,7 @@
   .price-list__list {
     width: 1320px;
     padding-left: 40px;
+    margin-top: 60px;
     background: url("../img/price-list-back-desktop.svg") 710px 150px no-repeat;
   }
 

@@ -317,17 +317,17 @@
     min-height: 107px;
     flex-direction: row;
     flex-wrap: nowrap;
-    margin-top: 85px;
-    margin-left: -69px;
+    margin-top: 84px;
   }
 
   .main-info__item {
     min-height: 107px;
-    border-radius: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
     width: 375px;
 
     &:not(:first-of-type) {
-      margin-left: -33px;
+      margin-left: -50px;
     }
 
     &:first-of-type {
@@ -335,7 +335,7 @@
     }
 
     &:nth-of-type(3) {
-      margin-left: -35px;
+      margin-left: -30px;
 
       &::after {
         left: 300px;
@@ -349,7 +349,8 @@
     &:last-of-type {
       width: 315px;
       min-height: 107px;
-      margin-left: -35px;
+      margin-left: -25px;
+      border-radius: 20px;
     }
 
     &::after {

@@ -19,6 +19,8 @@
 
 .service__wrap {
   width: 270px;
+  padding-left: 25px;
+  box-sizing: border-box;
 }
 
 .service__title {
@@ -59,13 +61,13 @@
     padding-top: 66px;
     background: none;
     padding-bottom: 90px;
-    background: url("../img/about-tablet@1x.png") calc(50% + 190px) 110px no-repeat,
-                url("../img/service-tablet.svg") calc(50% - 3px) 70px no-repeat;
+    background: url("../img/about-tablet@1x.png") calc(50% + 190px) 104px no-repeat,
+                url("../img/service-tablet.svg") calc(50% - 3px) 55px no-repeat;
     background-color: #161C34;
 
     @media (min-resolution: 2dppx) {
-      background: url("../img/about-tablet@2x.png") calc(50% + 190px) 110px/376px 548px no-repeat,
-                  url("../img/service-tablet.svg") calc(50% - 3px) 70px no-repeat;
+      background: url("../img/about-tablet@2x.png") calc(50% + 190px) 104px/376px 548px no-repeat,
+                  url("../img/service-tablet.svg") calc(50% - 3px) 55px no-repeat;
       background-color: #161C34;
     }
   }

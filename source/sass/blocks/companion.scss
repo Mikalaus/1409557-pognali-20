@@ -3,11 +3,11 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: url("../img/companion-back-tablet.svg") calc(50% - 145px) 35px no-repeat,
-              url("../img/rogovaya-back-mobile@1x.png") calc(50% - 135px) 300px no-repeat;
+  background: url("../img/companion-back-tablet.svg") calc(50% - 152px) 35px no-repeat,
+              url("../img/rogovaya-back-mobile@1x.png") calc(50% - 132px) 307px no-repeat;
   @media(min-resolution: 2dppx) {
-    background: url("../img/companion-back-tablet.svg") calc(50% - 145px) 35px no-repeat,
-                url("../img/rogovaya-back-mobile@2x.png") calc(50% - 135px) 300px/71px no-repeat;
+    background: url("../img/companion-back-tablet.svg") calc(50% - 152px) 35px no-repeat,
+                url("../img/rogovaya-back-mobile@2x.png") calc(50% - 132px) 307px/71px no-repeat;
                 background-color: #192144;
   }
   @include typical-bottom-section;
@@ -15,16 +15,15 @@
   background-color: #192144;
   padding-bottom: 30px;
   z-index: 4;
-  margin-top: -60px;
 }
 
 .companion__wrap {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  background: url("../img/smolov-back-desktop@1x.png") 130px 35px no-repeat;
+  background: url("../img/smolov-back-desktop@1x.png") 127px 35px no-repeat;
   @media(min-resolution: 2dppx) {
-    background: url("../img/smolov-back-desktop@2x.png") 130px 35px/143px no-repeat;
+    background: url("../img/smolov-back-desktop@2x.png") 127px 35px/143px no-repeat;
   }
   width: 270px;
   overflow: visible;
@@ -64,7 +63,7 @@
   align-items: center;
   gap: 10px;
   overflow: hidden;
-  margin-top: 38px;
+  margin-top: 39px;
   overflow: visible;
   z-index: 2;
 }
@@ -81,6 +80,14 @@
     .companion__companion-img img {
       transform: scale(1.2);
     }
+  }
+
+  &_firsova{
+    z-index: 3;
+  }
+
+  &_demin{
+    z-index: 1;
   }
 }
 
@@ -107,7 +114,6 @@
   width: 270px;
   min-height: 158px;
   display: flex;
-  padding-bottom: 20px;
   align-items: center;
   flex-direction: column;
   background: #FFFFFF;
@@ -178,7 +184,7 @@
 
 .companion__transport-options {
   margin-left: 0px;
-  margin-top: 16px;
+  margin-top: 8px;
 }
 
 .companion__link {
@@ -188,7 +194,7 @@
 
 @media (min-width: $tablet) {
   .companion {
-    padding-bottom: 86px;
+    padding-bottom: 85px;
     padding-top: 27px;
     background: none;
     background-color: #192144;
@@ -200,13 +206,13 @@
     box-sizing: border-box;
     width: 688px;
     align-items: flex-start;
-    background: url("../img/rogovaya-back-desktop@1x.png") 389px 53px no-repeat,
-                url("../img/companion-back-tablet.svg") 20px 45px no-repeat,
-                url("../img/smolov-back-desktop@1x.png") 20px 398px no-repeat;
+    background: url("../img/rogovaya-back-desktop@1x.png") 369px 53px no-repeat,
+                url("../img/companion-back-tablet.svg") 0px 45px no-repeat,
+                url("../img/smolov-back-desktop@1x.png") 0px 398px no-repeat;
     @media(min-resolution: 2dppx) {
-      background: url("../img/rogovaya-back-desktop@2x.png") 389px 53px/285px no-repeat,
-                  url("../img/companion-back-tablet.svg") 20px 45px no-repeat,
-                  url("../img/smolov-back-desktop@2x.png") 20px 398px/143px no-repeat;
+      background: url("../img/rogovaya-back-desktop@2x.png") 369px 53px/285px no-repeat,
+                  url("../img/companion-back-tablet.svg") 0px 45px no-repeat,
+                  url("../img/smolov-back-desktop@2x.png") 0px 398px/143px no-repeat;
     }
   }
 
@@ -237,7 +243,7 @@
   .companion__cards {
     flex-direction: row;
     gap: 50px;
-    margin-left: 0px;
+    margin-left: -1px;
   }
 
   .companion__card {
@@ -246,6 +252,7 @@
   }
 
   .companion__companion-img {
+    height: 286px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 
@@ -262,6 +269,8 @@
     background: #FFFFFF;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
+    margin-top: -1px;
+    padding-bottom: 21px;
   }
 
   .companion__companion-name {

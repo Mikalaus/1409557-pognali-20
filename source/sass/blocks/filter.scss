@@ -225,6 +225,7 @@
   .filter {
     margin-top: -60px;
     padding-top: 60px;
+    padding-bottom: 17px;
   }
 
   .filter__wrap {
@@ -238,17 +239,17 @@
 
   .filter__filter-collapsed {
     justify-content: space-around;
-    padding-bottom: 31px;
+    padding-bottom: 30px;
   }
 
   .filter__country-list {
-    margin-left: -75px;
+    margin-left: -78px;
     order: -1;
     display: flex;
     flex-wrap: wrap;
     width: 400px;
     gap: 28px;
-    margin-top: 12px;
+    margin-top: 13px;
   }
 
   .filter__country-link {
@@ -276,8 +277,8 @@
       display: inline-block;
       width: 30px;
       height: 6px;
-      right: -50px;
-      top: 5px;
+      right: -52px;
+      top: 6px;
       background: url("../img/filter-show-more-tablet.svg") center no-repeat;
     }
 
@@ -430,6 +431,20 @@
   }
 
   .filter__close-expended-button {
-    margin-top: -30px;
+    margin-top: -5px;
+    width: calc(100% + 19px);
+    margin-left: -22px;
+    font-size: 20px;
+    line-height: 20px;
+
+    &::before{
+      transform: scale(1.33);
+      margin-right: 20px;
+    }
+  }
+
+  .filter__countries-list{
+    margin-top: 27px;
+    margin-left: -23px;
   }
 }

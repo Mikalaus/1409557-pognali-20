@@ -15,13 +15,198 @@
   border-radius: 20px;
   padding-top: 15px;
   padding-left: 18px;
-  padding-bottom: 75px;
+  padding-bottom: 74px;
 
   &:hover {
     filter: drop-shadow(0px 4px 9px rgba(0, 0, 0, 0.16));
 
     .photo__companion img {
       transform: scale(1.2);
+    }
+  }
+
+  @media (max-width: 767px) {
+
+    &:nth-of-type(2){
+      margin-top: -1px;
+
+      & .photo__hashtags{
+        margin-top: 15px;
+      }
+
+      & .photo__transport-level-wrapper{
+        margin-top: 8px;
+      }
+
+      & .photo__call-button{
+        bottom: 23px;
+      }
+    }
+
+    &:nth-of-type(3){
+      & .photo__call-button{
+        bottom: 14px;
+      }
+    }
+
+    &:nth-of-type(4){
+      & .photo__hashtags{
+        margin-top: 16px;
+      }
+
+      & .photo__transport-level-wrapper{
+        margin-top: 8px;
+      }
+    }
+  }
+
+  @media (min-width: $tablet) and (max-width: $media-max-desktop) {
+
+    &:nth-of-type(2){
+      .photo__name{
+        margin-left: 3px;
+      }
+
+      .photo__hashtags{
+        margin-left: 6px;
+        margin-top: 3px;
+      }
+
+      .photo__like{
+        margin-left: 0px;
+        margin-top: 45px;
+      }
+
+      .photo__country-list{
+        margin-bottom: 16px;
+      }
+    }
+
+    &:nth-of-type(3){
+      .photo__name{
+        margin-left: -8px;
+      }
+
+      .photo__hashtags{
+        margin-left: -5px;
+        margin-top: 3px;
+      }
+
+      .photo__like{
+        margin-left: -11px;
+        margin-top: 46px;
+      }
+
+      .photo__call-button{
+        margin-top: -1px;
+      }
+
+      .photo__country-list{
+        margin-bottom: 13px;
+      }
+    }
+
+    &:nth-of-type(4){
+      .photo__name{
+        margin-left: -13px;
+      }
+
+      .photo__hashtags{
+        margin-left: -10px;
+        margin-top: 3px;
+      }
+
+      .photo__like{
+        margin-left: -17px;
+        margin-top: 46px;
+      }
+
+      .photo__call-button{
+        margin-top: -1px;
+      }
+
+      .photo__country-list{
+        margin-bottom: 16px;
+      }
+    }
+  }
+
+  @media(min-width: $desktop){
+    &:nth-of-type(1){
+      .photo__like{
+        margin-left: 42px;
+      }
+
+      .photo__call-button{
+        margin-top: -3px;
+      }
+
+      .photo__hashtags{
+        margin-left: 50px;
+      }
+
+      .photo__name{
+        margin-left: 50px;
+      }
+    }
+
+    &:nth-of-type(2){
+      .photo__like{
+        margin-left: 40px;
+      }
+
+      .photo__call-button{
+        margin-top: -2px;
+      }
+
+      .photo__hashtags{
+        margin-top: 6px;
+        margin-left: 48px;
+      }
+
+      .photo__name{
+        margin-left: 48px;
+      }
+    }
+
+    &:nth-of-type(3){
+      .photo__like{
+        margin-left: 33px;
+      }
+
+      .photo__call-button{
+        margin-top: -2px;
+      }
+
+      .photo__hashtags{
+        margin-top: 7px;
+        margin-left: 40px;
+      }
+
+      .photo__name{
+        margin-left: 40px;
+      }
+    }
+
+    &:nth-of-type(4){
+      .photo__like{
+        margin-left: 26px;
+        margin-top: 46px;
+      }
+
+      .photo__call-button{
+        margin-top: -4px;
+      }
+
+      .photo__hashtags{
+        margin-top: 6px;
+        margin-left: 34px;
+      }
+
+      .photo__name{
+        margin-left: 34px;
+        margin-top: 48px;
+      }
     }
   }
 }
@@ -78,7 +263,7 @@
   border: none;
   outline: none;
   background: url("../img/like.svg") center no-repeat;
-  margin-top: 8px;
+  margin-top: 13px;
 
   &:hover {
     background-image: url("../img/like-hover.svg");
@@ -111,8 +296,8 @@
 
 .photo__call-button {
   position: absolute;
-  left: 20px;
-  bottom: 21px;
+  left: 21px;
+  bottom: 22px;
   font-family: $bold;
   font-size: 17px;
   line-height: 17px;
@@ -120,7 +305,10 @@
   text-transform: uppercase;
   color: #161C35;
 
-  padding: 12px 78px;
+  padding-top: 13px;
+  padding-bottom: 10px;
+  padding-right: 78px;
+  padding-left: 78px;
   background-color: #FFD74B;
   border-radius: 25px;
 
@@ -148,12 +336,12 @@
   text-transform: uppercase;
   color: #161C35;
   margin-left: 5px;
-  margin-top: 9px;
+  margin-top: 15px;
 }
 
 .photo__hashtags {
-  margin-top: 10px;
-  margin-left: 10px;
+  margin-top: 13px;
+  margin-left: 8px;
   font-family: $default;
   width: 180px;
   min-height: 34px;
@@ -186,7 +374,7 @@
   width: auto;
   min-width: 46px;
   padding-left: 0;
-  margin-top: 25px;
+  margin-top: 32px;
 }
 
 .photo__country-item {
@@ -194,16 +382,29 @@
   font-family: $med;
   font-size: 15px;
   line-height: 16px;
+  position: relative;
   text-transform: uppercase;
+  margin-top: 1px;
+  margin-left: 38px;
   color: #1D2E5B;
 
-  &:not(:last-of-type) {
-    margin-bottom: 3px;
+  &:nth-of-type(1) {
+    margin-bottom: 9px;
+  }
+
+  &:nth-of-type(2) {
+    margin-bottom: 12px;
+  }
+
+  &:last-of-type{
+    margin-bottom: 0;
   }
 
   &::before {
     display: inline-block;
-    margin-right: 14px;
+    position: absolute;
+    left: -40px;
+    top: -3px;
     content: "";
     width: 26px;
     height: 18px;
@@ -318,7 +519,8 @@
 }
 
 .photo__show-more {
-  margin-top: 18px;
+  margin-top: 9px;
+  margin-left: -2px;
   font-family: $bold;
   font-size: 17px;
   line-height: 30px;
@@ -345,7 +547,7 @@
 }
 
 .photo__page-scroll {
-  margin-top: 10px;
+  margin-top: 7px;
   width: 270px;
   display: flex;
   justify-content: space-between;
@@ -389,7 +591,7 @@
 @media (min-width: $tablet) {
   .photo {
     width: 688px;
-    margin-top: 42px;
+    margin-top: 41px;
     gap: 40px;
   }
 
@@ -399,7 +601,7 @@
     flex-wrap: wrap;
     padding-top: 35px;
     padding-left: 35px;
-    padding-bottom: 6px;
+    padding-bottom: 0px;
 
     &:hover {
       .photo__companion {
@@ -415,11 +617,6 @@
     min-width: 500px;
   }
 
-  .photo__like {
-    order: 10;
-    margin-top: 0;
-  }
-
   .photo__companion {
     width: 190px;
     height: 190px;
@@ -431,8 +628,8 @@
     font-size: 30px;
     line-height: 30px;
     min-width: 225px;
-    margin-left: 8px;
-    margin-top: 0px;
+    margin-left: 7px;
+    margin-top: -2px;
 
     &::after {
       transform: scale(1.25);
@@ -451,7 +648,8 @@
   }
 
   .photo__like {
-    margin-top: 43px;
+    order: 10;
+    margin-top: 44px;
     margin-left: 4px;
   }
 
@@ -463,6 +661,7 @@
     left: 0;
     bottom: 0;
     top: 2px;
+    margin-right: 1px;
   }
 
   .photo__like-button {
@@ -476,6 +675,7 @@
   .photo__companion-likes {
     font-size: 20px;
     line-height: 20px;
+    margin-top: 5px;
   }
 
   .photo__transport-level-wrapper {
@@ -484,7 +684,8 @@
     align-items: center;
     min-height: 190px;
     width: 60px;
-    margin-left: 60px;
+    margin-left: 67px;
+    margin-top: 0;
   }
 
   .photo__transport-title,
@@ -526,10 +727,11 @@
   .photo__country-list {
     width: calc(100% - 4px);
     display: flex;
-    gap: 30px;
+    gap: 35px;
     flex-direction: row;
-    margin-top: 27px;
-    margin-left: 3px;
+    margin-top: 30px;
+    margin-left: 0px;
+    margin-bottom: 13px;
   }
 
   .photo__country-item {
@@ -546,7 +748,8 @@
   .photo__show-more {
     font-size: 20px;
     line-height: 20px;
-    margin-top: 13px;
+    margin-top: 10px;
+    margin-left: -1px;
 
     &::before {
       transform: scale(1.44);
@@ -612,15 +815,19 @@
 
 @media (min-width: $desktop) {
   .photo {
-    min-width: 951px;
+    min-width: 966px;
     min-height: 285px;
     order: -1;
+    margin-top: 60px;
+    gap: 30px;
   }
 
   .photo__card {
     flex-direction: column;
     padding: 0;
     height: 285px;
+    width: 951px;
+    margin-left: -15px;
 
     &:hover {
       .photo__companion {
@@ -632,6 +839,8 @@
   .photo__companion {
     width: 285px;
     height: 285px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
 
     & img {
       width: 285px;
@@ -664,16 +873,18 @@
     order: 2;
     width: 220px;
     min-height: 120px;
-    margin-top: 45px;
+    margin-top: 52px;
+    margin-left: 26px;
   }
 
   .photo__country-item {
     &:not(:last-of-type) {
-      margin-bottom: -15px;
+      margin-bottom: -19px;
     }
 
     &::before {
-      margin-right: 19px;
+      margin-left: -10px;
+      margin-top: 2px;
     }
   }
 
@@ -691,8 +902,8 @@
     flex-direction: row;
     order: 3;
     min-height: 60px;
-    margin-top: 22px;
-    margin-left: -13px;
+    margin-top: 14px;
+    margin-left: 8px;
     min-width: 232px;
   }
 
@@ -709,10 +920,22 @@
   }
 
   .photo__level {
-    margin-left: 20px;
+    margin-left: 35px;
   }
 
   .photo__level-value {
     margin-top: -10px;
+  }
+
+  .photo__show-more{
+    margin-left: -86px;
+    margin-top: 37px;
+  }
+
+  .photo__page-scroll{
+    width: 948px;
+    margin-left: -18px;
+    margin-top: 43px;
+    padding-right: 43px;
   }
 }

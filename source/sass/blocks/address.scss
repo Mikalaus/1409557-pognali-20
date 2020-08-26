@@ -40,7 +40,7 @@
 .address__build-way {
   @include typical-link;
   @include typical-link_secondary;
-  margin-top: 19px;
+  margin-top: 32px;
 
   &:hover {
     border-color: #192144;
@@ -77,7 +77,7 @@
 
   .address__position {
     margin-top: 50px;
-    margin-left: 150px;
+    margin-left: 130px;
     width: 430px;
     font-size: 28px;
     line-height: 28px;
@@ -93,7 +93,7 @@
   }
 
   .address__build-way {
-    margin-left: 55px;
+    margin-left: 37px;
     padding-top: 29px;
 
     &::after {

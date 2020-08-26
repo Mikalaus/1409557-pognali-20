@@ -11,6 +11,10 @@
   z-index: 5;
 }
 
+.footer_map{
+  margin-top: -134px;
+}
+
 .footer__wrap {
   margin-top: -30px;
   display: flex;
@@ -70,7 +74,7 @@
 
 @media (min-width: $tablet) {
   .footer {
-    margin-top: -60px;
+    margin-top: -50px;
     padding-top: 60px;
     display: flex;
     flex-direction: row;
@@ -86,7 +90,7 @@
     align-items: center;
     box-sizing: border-box;
     padding-left: 0;
-    margin-top: -60px;
+    margin-top: -50px;
     padding-bottom: 20px;
   }
 
@@ -132,17 +136,18 @@
   .footer {
     flex-direction: row;
     justify-content: center;
+    margin-top: -133px;
   }
 
   .footer__logo {
     width: 200px;
     height: 55px;
-    margin-right: 20px;
+    margin-right: 0px;
     background: url("../img/logo-desktop-blue@1x.png") center no-repeat;
   }
 
   .footer__designed-by {
-    margin-left: 135px;
+    margin-left: 115px;
   }
 
   .footer__wrap {

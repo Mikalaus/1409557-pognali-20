@@ -2,8 +2,8 @@
   background-color: #D4D9EB;
   display: flex;
   justify-content: center;
-  padding-top: 41px;
-  padding-bottom: 43px;
+  padding-top: 10px;
+  padding-bottom: 72px;
   @include typical-top-section;
   margin-top: -30px;
 }
@@ -18,7 +18,13 @@
   padding-bottom: 23px;
 
   &:last-of-type {
+    margin-left: 1px;
     padding-bottom: 10px;
+  }
+
+  &:nth-of-type(2){
+    margin-left: 1px;
+    padding-bottom: 9px;
   }
 }
 
@@ -69,9 +75,17 @@
   width: 100%;
   border-radius: 10px;
   padding-left: 25px;
-  padding-right: 22px;
+  padding-right: 20px;
   padding-top: 8px;
   margin-left: 0;
+
+  &:last-of-type .add-plan__change-step{
+    margin-top: 15px;
+  }
+
+  &:last-of-type .add-plan__previous-step{
+    margin-top: 2px;
+  }
 }
 
 .add-plan__step-title {
@@ -159,6 +173,10 @@
   width: 42px;
   height: 42px;
   opacity: 0.2;
+
+  &:active{
+    opacity: 0.3;
+  }
 
   &_min {
     border-right: none;
@@ -264,6 +282,8 @@
   width: 230px;
   font-size: 17px;
   line-height: 30px;
+  margin-left: -5px;
+  margin-top: 5px;
 }
 
 .add-plan__choose-country-wrap {
@@ -271,6 +291,7 @@
   display: flex;
   flex-direction: column;
   gap: 22px;
+  margin-top: 20px;
 }
 
 .add-plan__choose-country {
@@ -279,12 +300,17 @@
   position: relative;
   cursor: pointer;
 
-  &_choose:hover {
-    .add-plan__country-name_choose {
-      border-color: #959BB2;
-    }
-    .add-plan__country-flag {
-      border-color: #959BB2;
+  &_choose {
+
+    margin-top: 3px;
+
+    &:hover{
+      .add-plan__country-name_choose {
+        border-color: #959BB2;
+      }
+      .add-plan__country-flag {
+        border-color: #959BB2;
+      }
     }
   }
 
@@ -493,9 +519,8 @@
 .add-plan__change-step {
   display: flex;
   flex-direction: column;
-  margin-left: -5px;
   align-items: center;
-  margin-top: 25px;
+  margin-top: 22px;
 }
 
 .add-plan__previous-step {
@@ -505,7 +530,8 @@
   letter-spacing: 0.01em;
   text-transform: uppercase;
   color: #1D2E5B;
-  margin-top: 8px;
+  margin-top: 13px;
+  margin-left: -6px;
 }
 
 .add-plan__choose-country-dropdown {
@@ -597,6 +623,7 @@
   flex-direction: column;
   gap: 3px;
   position: relative;
+  margin-top: -12px;
 
   &::before {
     content: '';
@@ -636,8 +663,8 @@
   width: 35px;
   height: 24px;
   position: absolute;
-  top: -3px;
-  right: -6px;
+  top: -5px;
+  right: -15px;
 
   &_bosnia-gerzegovina {
     background: url("../img/bosnia-gerzegovina.png") center no-repeat;
@@ -688,7 +715,7 @@
       &+label {
         position: absolute;
         margin-top: -61px;
-        margin-left: 16px;
+        margin-left: 3px;
         width: 728px;
         box-sizing: border-box;
         padding-top: 20px;
@@ -721,30 +748,31 @@
 @media (min-width: $tablet) {
   .add-plan{
     margin-top: -60px;
-    padding-top: 71px;
+    padding-top: 23px;
   }
 
   .add-plan__wrap {
     width: 688px;
-    padding-bottom: 63px;
+    padding-bottom: 41px;
     box-sizing: border-box;
-    padding-left: 44px;
-    padding-right: 44px;
+    padding-left: 35px;
+    padding-right: 35px;
   }
 
   .add-plan__form {
     gap: 40px;
-    width: 618px;
   }
 
   .add-plan__title {
     font-size: 36px;
     line-height: 36px;
+    margin-bottom: 47px;
   }
 
   .add-plan__slider-dots {
     width: 76px;
-    margin-right: -15px;
+    margin-right: -22px;
+    margin-top: 20px;
   }
 
   .add-plan__slider-item {
@@ -754,19 +782,47 @@
 
   .add-plan fieldset {
     border-radius: 30px;
-    padding-top: 28px;
-    padding-left: 44px;
-    padding-right: 44px;
-    padding-bottom: 52px;
+    padding-top: 18px;
+    padding-left: 43px;
+    padding-right: 43px;
+    padding-bottom: 56px;
+
+    &:nth-of-type(2){
+      margin-top: -1px;
+      margin-left: 0;
+      padding-bottom: 48px;
+      margin-bottom: 11px;
+
+      .add-plan__next-step{
+        margin-top: 0;
+      }
+    }
 
     &:last-of-type {
-      padding-bottom: 53px;
+      margin-left: 0;
+      padding-bottom: 43px;
+
+      .add-plan__change-step{
+        margin-top: -6px;
+      }
+
+      .add-plan__submit-button{
+        margin-left: 0;
+        padding-left: 0px;
+        padding-right: 110px;
+      }
+
+      .add-plan__previous-step{
+        margin-top: -5px;
+        margin-right: 0;
+      }
     }
   }
 
   .add-plan__step-title {
     font-size: 36px;
     line-height: 36px;
+    margin-bottom: 35px;
   }
 
   .add-plan__step-description {
@@ -781,7 +837,7 @@
 
   .add-plan__companion-search-duration-wrap {
     width: 100%;
-    margin-top: 40px;
+    margin-top: 37px;
     flex-direction: column;
   }
 
@@ -802,12 +858,13 @@
     letter-spacing: 0.1em;
     text-transform: uppercase;
     margin-left: 60px;
-    margin-top: 24px;
-    margin-bottom: 24px;
+    margin-top: 13px;
+    margin-bottom: 12px;
 
     &::before {
-      transform: scale(1.5);
+      transform: scale(1.44);
       left: -54px;
+      top: -4px;
     }
   }
 
@@ -831,6 +888,7 @@
     padding-bottom: 34px;
     padding-left: 23px;
     padding-right: 20px;
+    margin-top: 2px;
   }
 
   .add-plan__input {
@@ -840,6 +898,7 @@
     height: 68px;
     line-height: 18px;
     flex-grow: 1;
+    margin-top: 2px;
   }
 
   .add-plan__calendar {
@@ -847,7 +906,8 @@
   }
 
   .add-plan__next-step {
-    margin-top: 27px;
+    margin-top: 31px;
+    margin-left: 0px;
   }
 
   .add-plan__choose-country-wrap {
@@ -858,6 +918,21 @@
     position: relative;
     background: url("../img/form-border-tablet.svg") 396px 0 no-repeat,
                 url("../img/form-border-fade-tablet.svg") 396px 326px no-repeat,
+  }
+
+  .add-plan__choose-country:first-of-type{
+    margin-bottom: -7px;
+  }
+
+  .add-plan__choose-country:nth-of-type(2){
+    margin-bottom: -11px;
+  }
+
+  .add-plan__choose-country:nth-of-type(3){
+    .add-plan__list-open-button{
+      margin-left: 17px;
+      margin-top: 5px;
+    }
   }
 
   .add-plan__choose-country_add {
@@ -885,8 +960,8 @@
     &::after {
       width: 14px;
       height: 14px;
-      right: -35px;
-      top: 27px;
+      right: -34px;
+      top: 24px;
       z-index: 2;
     }
 
@@ -914,10 +989,17 @@
     &_expended {
       display: inline-block;
     }
+
+    &_dropdown-open{
+      margin-left: -2px;
+      margin-top: 0;
+    }
   }
 
   .add-plan__list-open-button {
     transform: scale(1.3);
+    margin-left: 33px;
+    margin-top: 8px;
 
     &_dropdown-open {
       transform: scale(2);
@@ -966,8 +1048,8 @@
   .add-plan__delete-button {
     width: 22px;
     height: 24px;
-    top: 20px;
-    right: -10px;
+    top: 21px;
+    right: -3px;
     background: url("../img/form-delete-button-tablet.svg") center no-repeat;
 
     &_dropdown-open {
@@ -994,15 +1076,15 @@
 
   .add-plan__alphabet-list {
     border-top: 1px solid #CBCED9;
-    width: 270px;
-    height: 350px;
+    width: 260px;
+    height: 338px;
     margin-top: 35px;
   }
 
   .add-plan__alphabet-item {
-    width: 54px;
-    height: 70px;
-    padding: 27px 22px;
+    width: 52px;
+    height: 67px;
+    padding: 27px 19px;
 
     &_selected {
       background: #1D2E5B;
@@ -1025,7 +1107,8 @@
     height: auto;
     margin-bottom: 0;
     padding-top: 38px;
-    margin-left: 70px;
+    margin-left: 80px;
+    padding-left: 25px;
   }
 
   .add-plan__letter-a-item {
@@ -1040,10 +1123,11 @@
   .add-plan__change-step {
     flex-direction: row;
     justify-content: space-between;
+    margin-top: 50px;
   }
 
   .add-plan__previous-step {
-    margin-top: 30px;
+    margin-top: 10px;
     font-size: 24px;
     line-height: 22px;
     text-transform: none;
@@ -1074,9 +1158,10 @@
   }
 
   .add-plan__trip-direction {
+    margin-top: 30px;
     border-top: 1px solid #E1E3E9;
-    padding-top: 10px;
-    gap: 25px;
+    padding-top: 7px;
+    gap: 17px;
     margin-bottom: 49px;
 
     &::before {
@@ -1087,8 +1172,8 @@
       content: '';
       display: inline-block;
       position: absolute;
-      right: -10px;
-      top: 48px;
+      right: -3px;
+      top: 46px;
       width: 14px;
       height: 274px;
       background: url("../img/form-direction-border-tablet.svg") center no-repeat;
@@ -1098,12 +1183,14 @@
   .add-plan__direction-name {
     font-size: 30px;
     line-height: 30px;
+    margin-left: -10px;
   }
 
   .add-plan__direction-flag {
     width: 70px;
     height: 47px;
     margin-top: -5px;
+    margin-right: 25px;
 
     &_bosnia-gerzegovina {
       background: url("../img/bosnia-gerzegovina-tablet.png") center no-repeat;
@@ -1117,7 +1204,8 @@
   .add-plan__plan-input {
     width: 500px;
     min-height: 140px;
-    margin-left: 15px;
+    margin-left: 2px;
+    margin-top: 10px;
     padding: 19px 18px;
     font-size: 20px;
     line-height: 20px;
@@ -1134,6 +1222,7 @@
     width: 1320px;
     padding-left: 0;
     padding-right: 0;
+    padding-bottom: 130px;
   }
 
   .add-plan__slider-dots {
@@ -1149,6 +1238,23 @@
     padding-right: 160px;
     padding-top: 101px;
     padding-bottom: 106px;
+    border-radius: 60px;
+
+    &:nth-of-type(2){
+      .add-plan__previous-step{
+        margin-top: -4px;
+      }
+      padding-bottom: 106px;
+      margin-bottom: -2px;
+    }
+
+    &:last-of-type{
+      .add-plan__change-step{
+        margin-top: 25px;
+      }
+
+      padding-bottom: 97px;
+    }
   }
 
   .add-plan__step-title {
@@ -1165,6 +1271,7 @@
     display: block;
     padding-left: 0;
     margin-left: 195px;
+    margin-top: 8px;
   }
 
   .add-plan__step {
@@ -1204,6 +1311,7 @@
 
   .add-plan__form {
     width: 100%;
+    gap: 45px;
   }
 
   .add-plan__block-title-part {
@@ -1215,13 +1323,13 @@
   }
 
   .add-plan__quantity-input {
-    width: 180px;
+    max-width: 160px;
     margin-top: -70px;
     margin-left: 220px;
   }
 
   .add-plan__input {
-    min-width: 96px;
+    min-width: 90px;
   }
 
   .add-plan__duration {
@@ -1238,13 +1346,19 @@
 
   .add-plan__companion-search-duration-wrap {
     border-top: 1px solid #E1E3E9;
-    padding-top: 35px;
+    padding-top: 32px;
     flex-direction: row;
     flex-wrap: wrap;
+    margin-top: 32px;
+    gap: 14px;
+  }
+
+  .add-plan__calendar {
+    margin-top: 34px;
   }
 
   .add-plan__next-step {
-    margin-top: 57px;
+    margin-top: 45px;
   }
 
   .add-plan__choose-country-wrap {
@@ -1255,19 +1369,43 @@
       display: inline-block;
       height: 540px;
       width: 1px;
-      left: 757px;
+      left: 774px;
       top: 0;
       background-color: #E1E3E9;
       position: absolute;
     }
   }
 
+  .add-plan__kids + label::before{
+    margin-left: -4px;
+    margin-top: 10px;
+  }
+
   .add-plan__country-name {
     width: 730px;
 
+    &:after{
+      right: -53px;
+    }
+
     &_choose {
       width: 660px;
+      &::after{
+        right: -122px;
+      }
     }
+
+    &_add::after{
+      top: 17px;
+    }
+  }
+
+  .add-plan__country-flag:not(.add-plan__country-flag_choose):not(.add-plan__country-flag_add){
+    margin-left: 85px;
+  }
+
+  .add-plan__choose-country:first-of-type{
+    margin-top: 20px;
   }
 
   .add-plan__choose-country_add {
@@ -1282,8 +1420,8 @@
   .add-plan__alphabet-list {
     border: none;
     width: 380px;
-    height: 476px;
-    margin-right: 40px;
+    height: 442px;
+    margin-right: 2px;
   }
 
   .add-plan__alphabet-item {
@@ -1291,9 +1429,14 @@
     height: 70px;
     box-sizing: border-box;
     margin-right: 15px;
-    margin-bottom: 13px;
     border-radius: 4px;
     border: 1px solid #CBCED9;
+    padding-left: 23px;
+    padding-top: 25px;
+
+    &:nth-of-type(n + 6){
+      margin-top: -23px;
+    }
 
     &:hover {
       border-color: #959BB2;
@@ -1310,7 +1453,7 @@
   }
 
   .add-plan__letter-a-item {
-    margin-bottom: 13px;
+    margin-bottom: 10px;
   }
 
   .add-plan__previous-step {
@@ -1322,13 +1465,22 @@
   }
 
   .add-plan__trip-direction {
-    margin-top: 55px;
-    padding-top: 80px;
+    margin-top: 32px;
+    padding-top: 50px;
 
     &::after {
-      left: 775px;
-      top: 120px;
+      left: 767px;
+      top: 90px;
     }
+  }
+
+  .add-plan__country-card:last-of-type .add-plan__plan-input{
+    margin-top: 7px;
+  }
+
+  .add-plan__direction-flag{
+    margin-right: 6px;
+    margin-top: 0px;
   }
 
   .add-plan__label {

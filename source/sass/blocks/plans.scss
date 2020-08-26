@@ -2,7 +2,7 @@
   background-color: #DFE3F0;
   display: flex;
   justify-content: center;
-  padding-top: 36px;
+  padding-top: 8px;
   padding-bottom: 43px;
   @include typical-top-section;
   margin-top: -30px;
@@ -61,7 +61,7 @@
 
 .plans__companion-num,
 .plans__duration {
-  width: 100px;
+  width: 120px;
   text-align: left;
   font-family: $med;
   font-size: 14px;
@@ -73,7 +73,11 @@
 }
 
 .plans__companion-num {
-  margin-top: 20px;
+  margin-top: 18px;
+}
+
+.plans__duration{
+  margin-top: -7px;
 }
 
 .plans__change-button {
@@ -100,8 +104,8 @@
 @media (min-width: $tablet) {
   .plans{
     margin-top: -60px;
-    padding-top: 66px;
-    padding-bottom: 73px;
+    padding-top: 27px;
+    padding-bottom: 121px;
   }
 
   .plans__wrap {
@@ -112,7 +116,12 @@
   }
 
   .plans__card {
+    height: 152px;
     padding-bottom: 0;
+
+    &:first-of-type{
+      margin-top: 18px;
+    }
   }
 
   .plans__title {
@@ -123,12 +132,14 @@
   .plans__countries-name {
     font-size: 24px;
     line-height: 24px;
+    margin-top: 29px;
+    margin-left: 12px;
   }
 
   .plans__card::before {
     font-size: 20px;
     line-height: 20px;
-    top: 34px;
+    top: 44px;
     left: 571px;
   }
 
@@ -138,7 +149,6 @@
     box-sizing: border-box;
     margin-left: -25px;
     border-top: 1px solid #CBCED9;
-    padding-top: 5px;
     padding-left: 32px;
     padding-right: 34px;
     justify-content: space-between;
@@ -146,9 +156,12 @@
   }
 
   .plans__companion-num {
-    width: 139px;
+    width: 142px;
     font-size: 20px;
     line-height: 20px;
+    letter-spacing: 0.1em;
+
+    margin-left: 1px;
   }
 
   .plans__duration {
@@ -156,6 +169,8 @@
     font-size: 20px;
     line-height: 20px;
     letter-spacing: 0.06em;
+    margin-left: -40px;
+    margin-top: 18px;
   }
 
 
@@ -164,30 +179,41 @@
     line-height: 20px;
     width: 107px;
     margin-top: 20px;
+    letter-spacing: 0.1em;
   }
 }
 
 @media (min-width: $desktop) {
+  .plans {
+    padding-bottom: 109px;
+  }
+
   .plans__wrap {
     width: 1320px;
     padding-left: 64px;
     padding-right: 0;
   }
 
+  .plans__title {
+    margin-left: 7px;
+  }
+
   .plans__cards {
     gap: 15px;
+    margin-top: -2px;
   }
 
   .plans__countries-name {
-    margin-left: 65px;
+    margin-left: 70px;
     margin-top: 26px;
   }
 
   .plans__card {
     display: flex;
-    min-height: 105px;
+    height: 97px;
     justify-content: space-between;
     padding-right: 42px;
+
 
     &::before {
       top: 40px;
@@ -208,6 +234,7 @@
   }
 
   .plans__duration {
+    margin-left: 5px;
     margin-right: auto;
   }
 }

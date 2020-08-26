@@ -43,8 +43,13 @@
 
 @media (min-width: $tablet) {
   .intro-section {
-    margin-top: 10px;
+    margin-top: 9px;
     margin-bottom: 0px;
+    padding-bottom: 0px;
+
+    &_form{
+      margin-top: 10px;
+    }
   }
 
   .intro-section__wrap {
@@ -54,8 +59,12 @@
     padding-left: 35px;
     display: flex;
     justify-content: flex-start;
-    padding-bottom: 13px;
     height: 230px;
+  }
+
+  .intro-section_form .intro-section__title::after{
+    top: 129px;
+    left: 0px;
   }
 
   .intro-section__title {
@@ -64,7 +73,7 @@
     line-height: 70px;
 
     &::after {
-      top: 129px;
+      top: 130px;
       left: 3px;
       height: 8px;
     }
@@ -101,7 +110,7 @@
 
 @media (min-width: $desktop) {
   .intro-section {
-    padding-bottom: 13px;
+    padding-bottom: 16px;
   }
 
   .intro-section__wrap {
@@ -110,13 +119,18 @@
     justify-content: space-between;
     padding-left: 66px;
     padding-right: 63px;
-    padding-top: 55px;
+    padding-top: 57px;
     }
 
   .intro-section__title {
     &::after {
-      top: 128px;
+      top: 129px;
       left: 0;
     }
+  }
+
+  .intro-section_form .intro-section__title::after{
+    top: 128px;
+    left: 0px;
   }
 }

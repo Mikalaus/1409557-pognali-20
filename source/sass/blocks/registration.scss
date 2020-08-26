@@ -7,7 +7,7 @@
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   background-color: #192144;
   padding-bottom: 41px;
-  padding-top: 83px;
+  padding-top: 72px;
   z-index: 2;
   margin-top: -30px;
 }
@@ -55,7 +55,7 @@
   width: 270px;
   display: flex;
   justify-content: flex-start;
-  margin-top: 14px;
+  margin-top: 13px;
 }
 
 .registration__mail-input {
@@ -138,7 +138,7 @@
 @media (min-width: $tablet) {
   .registration {
     padding-bottom: 77px;
-    padding-top: 113px;
+    padding-top: 112px;
     margin-top: -60px;
   }
 
@@ -203,7 +203,7 @@
 
 @media (min-width: $desktop) {
   .registration {
-    padding-top: 85px;
+    padding-top: 145px;
     padding-bottom: 93px;
   }
 

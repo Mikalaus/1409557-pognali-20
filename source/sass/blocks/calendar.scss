@@ -83,10 +83,10 @@
 
 .calendar__item {
   box-sizing: border-box;
-  padding-top: 8px;
+  padding-top: 6px;
   list-style: none;
   width: 32px;
-  height: 32px;
+  height: 31px;
   text-align: center;
   font-family: $med;
   font-size: 14px;
@@ -101,13 +101,13 @@
 
     &:hover {
       &::before {
-        top: -1px;
+        top: -2px;
         left: -1px;
         content: '';
         display: inline-block;
         position: absolute;
         width: 29px;
-        height: 29px;
+        height: 28px;
         border: 2px solid #FF5C23;
         z-index: 10;
       }
@@ -127,13 +127,13 @@
       z-index: 1;
 
       &::before {
-        top: -1px;
+        top: -2px;
         left: -1px;
         content: '';
         display: inline-block;
         position: absolute;
         width: 29px;
-        height: 29px;
+        height: 28px;
         border: 2px solid #FF5C23;
       }
     }
@@ -154,19 +154,25 @@
   .calendar__month {
     font-size: 36px;
     line-height: 36px;
+    margin-right: -25px;
+    margin-top: 0;
   }
 
   .calendar__button {
     transform: scale(1.9);
-    margin-top: 5px;
+    margin-top: 7px;
+    margin-left: 25px;
 
     &_next {
+      margin-right: 25px;
+      margin-top: 5px;
       transform: scale(1.9) rotate(180deg);
     }
   }
 
   .calendar__weekday-list {
     min-width: 470px;
+    margin-top: 0px;
   }
 
   .calendar__weekday {
@@ -196,7 +202,6 @@
     height: 69px;
     font-size: 18px;
     line-height: 18px;
-    padding: 31px auto;
     padding-top: 25px;
 
     &_active:hover::before {
@@ -204,7 +209,7 @@
       height: 63px;
       border-width: 4px;
       left: -2px;
-      top: -2px;
+      top: -1px;
     }
 
     &_selected_first::before {
@@ -212,7 +217,7 @@
       height: 63px;
       border-width: 4px;
       left: -2px;
-      top: -2px;
+      top: -1px;
     }
   }
 }
@@ -220,6 +225,24 @@
 @media (min-width: $desktop) {
   .calendar {
     min-width: 1000px;
+  }
+
+  .calendar__month{
+    margin-left: -18px;
+  }
+
+  .calendar__button {
+    margin-left: 5px;
+    transform: scale(1.6);
+
+    &_next {
+      transform: rotate(180deg) scale(1.6);
+      margin-right: 7px;
+    }
+  }
+
+  .calendar__month-block {
+    margin-bottom: 27px;
   }
 
   .calendar__weekday-list {
@@ -235,7 +258,7 @@
 
   .calendar__item {
     width: 143px;
-    height: 72px;
+    height: 70px;
     text-align: left;
     padding-left: 16px;
     padding-top: 15px;
