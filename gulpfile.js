@@ -17,7 +17,7 @@ const styles = () => {
     .pipe(sourcemap.init())
     .pipe(sass())
     .pipe(csso())
-    .pipe(postcss([ auroprefixer() ]))
+    .pipe(postcss([ autoprefixer() ]))
     .pipe(sourcemap.write("."))
     .pipe(gulp.dest("build/css"))
     .pipe(sync.stream());
@@ -34,6 +34,8 @@ const images = () => {
       imagemin.mozjpeg({progressive: true}),
       imagemin.svgo()
     ]))
+
+    .pipe(gulp.dest("build/img"))
 }
 
 exports.images = images;
@@ -87,7 +89,6 @@ const watcher = () => {
 const copy = () => {
   return gulp.src([
     "source/fonts/**/*.{woff,woff2}",
-    "source/img/**",
     "source/js/**"
   ], {
     base: "source"
@@ -114,5 +115,5 @@ exports.default = gulp.series(
 );
 
 exports.build = gulp.series(
-  clean, styles, copy, html, server
+  clean, images, styles, copy, html
 );
