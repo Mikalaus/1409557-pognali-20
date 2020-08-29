@@ -1,44 +1,43 @@
-.transport-options{
+.transport-options {
   min-width: 130px;
   display: flex;
   justify-content: space-between;
   min-height: 25px;
 
 
-  &_disabled{
+  &_disabled {
     opacity: 0.15;
   }
 
   z-index: 2;
 }
 
-.transport-options__list{
+.transport-options__list {
   width: 140px;
   height: 25px;
   padding-left: 0;
   margin-top: 0;
 }
 
-.transport-options__input{
+.transport-options__input {
   width: 100%;
   border: 1px solid #CBCED9;
   border-radius: 10px;
   padding-right: 0;
   box-sizing: border-box;
-  margin-top: 25px;
   padding-left: 70px;
   margin-left: 0;
 
-  @media (min-width: $tablet){
+  @media (min-width: $tablet) {
     margin-top: 0px;
   }
 }
 
-.transport-options__input label{
+.transport-options__input label {
   margin-right: -3px;
 }
 
-.transport-options__legend{
+.transport-options__legend {
   font-family: $bold;
   font-size: 16px;
   line-height: 18px;
@@ -49,12 +48,12 @@
   width: 100px;
 }
 
-.transport-options li{
+.transport-options li {
   list-style: none;
   display: inline-block;
 }
 
-.transport-options__plain{
+.transport-options__plain {
   width: 20px;
   height: 20px;
   background: url("../img/plane.svg") center no-repeat;
@@ -62,27 +61,27 @@
   margin-right: 11px;
 }
 
-.transport-options__bus{
+.transport-options__bus {
   width: 20px;
   height: 20px;
   background: url("../img/bus.svg") center no-repeat;
   margin-right: 12px;
 }
 
-.transport-options__bike{
+.transport-options__bike {
   width: 20px;
   height: 20px;
   background: url("../img/bike.svg") center no-repeat;
   margin-right: 8px;
 }
 
-.transport-options__walk{
+.transport-options__walk {
   width: 20px;
   height: 20px;
   background: url("../img/run.svg") center no-repeat;
 }
 
-.transport-options__option+label{
+.transport-options__option+label {
   position: relative;
   display: inline-flex;
   align-items: center;
@@ -99,11 +98,11 @@
   flex-shrink: 0;
   flex-grow: 0;
 
-  @media (min-width: $tablet) and (max-width: $media-max-desktop){
+  @media (min-width: $tablet) and (max-width: $media-max-desktop) {
     transform: scale(1.33);
   }
 
-  &::before{
+  &::before {
     content: '';
     position: absolute;
     top: 8px;
@@ -114,28 +113,28 @@
     margin-right: 0.5em;
   }
 
-  &:nth-of-type(1)::before{
+  &:nth-of-type(1)::before {
     background: url("../img/plane.svg") center no-repeat;
   }
 
-  &:nth-of-type(2)::before{
+  &:nth-of-type(2)::before {
     background: url("../img/bus.svg") center no-repeat;
   }
 
-  &:nth-of-type(3)::before{
+  &:nth-of-type(3)::before {
     background: url("../img/bike.svg") center no-repeat;
   }
 
-  &:nth-of-type(4)::before{
+  &:nth-of-type(4)::before {
     background: url("../img/run.svg") center no-repeat;
   }
 }
 
-.transport-options__option+label span{
+.transport-options__option+label span {
   display: none;
 }
 
-.transport-options__option+label:hover .transport-options__tooltip{
+.transport-options__option+label:hover .transport-options__tooltip {
   display: inline-block;
   position: absolute;
   font-family: $default;
@@ -161,35 +160,35 @@
   }
 }
 
-.transport-options__option_plain+label:hover .transport-options__tooltip{
+.transport-options__option_plain+label:hover .transport-options__tooltip {
   right: -55px;
 }
 
-.transport-options__option_bus+label:hover .transport-options__tooltip{
+.transport-options__option_bus+label:hover .transport-options__tooltip {
   right: -62px;
 }
 
-.transport-options__option_bike+label:hover .transport-options__tooltip{
+.transport-options__option_bike+label:hover .transport-options__tooltip {
   right: -45px;
 }
 
-.transport-options__option_walk+label:hover .transport-options__tooltip{
+.transport-options__option_walk+label:hover .transport-options__tooltip {
   right: -35px;
 }
 
-.transport-options__option+label:hover::before{
+.transport-options__option+label:hover::before {
   opacity: 0.3;
 }
 
-.transport-options__option:checked+label:hover::before{
+.transport-options__option:checked+label:hover::before {
   opacity: 0.7;
 }
 
-.transport-options__option+label:active{
+.transport-options__option+label:active {
   background-color: #E2E5F1;
 }
 
-.transport-options__option+span{
+.transport-options__option+span {
   position: relative;
   display: inline-flex;
   align-items: center;
@@ -206,7 +205,7 @@
   flex-shrink: 0;
   flex-grow: 0;
 
-  &::before{
+  &::before {
     content: '';
     position: absolute;
     top: 8px;
@@ -217,49 +216,50 @@
     margin-right: 0.5em;
   }
 
-  &:nth-of-type(2n)::before{
+  &:nth-of-type(2n)::before {
     background: url("../img/plane.svg") center no-repeat;
   }
 
-  &:nth-of-type(4n)::before{
+  &:nth-of-type(4n)::before {
     background: url("../img/bus.svg") center no-repeat;
   }
 
-  &:nth-of-type(6n)::before{
+  &:nth-of-type(6n)::before {
     background: url("../img/bike.svg") center no-repeat;
   }
 
-  &:nth-of-type(8n)::before{
+  &:nth-of-type(8n)::before {
     background: url("../img/run.svg") center no-repeat;
   }
 
-  @media (min-width: $tablet){
+  @media (min-width: $tablet) {
     transform: scale(1.33);
     background-color: transparent;
   }
 }
 
-.transport-options__option_no-back+span{
+.transport-options__option_no-back+span {
   background-color: transparent;
+  transform: scale(1.3);
 }
 
-.transport-options__option{
+.transport-options__option {
   position: absolute;
   z-index: -1;
   opacity: 0;
 
-  &_active{
-    &+span::before{
+  &_active {
+    &+span::before {
       opacity: 1;
     }
   }
 }
 
-.transport-options__option+span .transport-options__tooltip{
+.transport-options__option+span .transport-options__tooltip {
   display: none;
 }
 
-.transport-options__option+span:hover .transport-options__tooltip{
+.transport-options__option+span:hover .transport-options__tooltip {
   display: inline-block;
   position: absolute;
   font-family: $default;
@@ -285,40 +285,42 @@
   }
 }
 
-.transport-options__option_plain+span:hover .transport-options__tooltip{
+.transport-options__option_plain+span:hover .transport-options__tooltip {
   right: -55px;
 }
 
-.transport-options__option_bus+span:hover .transport-options__tooltip{
+.transport-options__option_bus+span:hover .transport-options__tooltip {
   right: -62px;
 }
 
-.transport-options__option_bike+span:hover .transport-options__tooltip{
+.transport-options__option_bike+span:hover .transport-options__tooltip {
   right: -45px;
 }
 
-.transport-options__option_walk+span:hover .transport-options__tooltip{
+.transport-options__option_walk+span:hover .transport-options__tooltip {
   right: -35px;
 }
 
-.transport-options__option:checked+label::before{
+.transport-options__option:checked+label::before {
   opacity: 1;
 }
 
-@media(min-width: $tablet){
-  .transport-options__input-wrap{
-    margin-right: 69px;
-    margin-top: 15px;
+@media(min-width: $tablet) {
+  .transport-options__input-wrap {
+    margin-right: 72px;
+    margin-top: 12px;
     display: flex;
     gap: 14px;
   }
 }
 
-@media(min-width: $desktop){
-  .transport-options__input-wrap{
-    margin-right: 108px;
-    margin-top: 15px;
-    display: flex;
-    gap: 14px;
+@media(min-width: $desktop) {
+  .transport-options__input-wrap {
+    margin-right: 112px;
+    margin-top: 13px;
+  }
+
+  .transport-options__option+label{
+    transform: scale(1.33);
   }
 }

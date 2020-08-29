@@ -1,7 +1,7 @@
-.main-info{
+.main-info {
   background: url("../img/globe-back-mobile@1x.jpg") 0px -555px no-repeat;
   background-size: cover;
-  @media(min-resolution: 2dppx){
+  @media(min-resolution: 2dppx) {
     background: url("../img/globe-back-mobile@2x.jpg") 0px -555px no-repeat;
     background-size: cover;
     background-color: #161C34;
@@ -16,9 +16,9 @@
   position: relative;
 }
 
-.main-info__wrap{
+.main-info__wrap {
   background: url("../img/traveller-illustration-mobile@1x.png") 55px 170px no-repeat;
-  @media(min-resolution: 2dppx){
+  @media(min-resolution: 2dppx) {
     background: url("../img/traveller-illustration-mobile@2x.png") 55px 170px/192px 255px no-repeat;
   }
   width: 270px;
@@ -27,7 +27,7 @@
   align-items: center;
 }
 
-.main-info__title{
+.main-info__title {
   display: block;
   overflow: visible;
   width: 250px;
@@ -41,11 +41,11 @@
   margin-left: 0px;
 }
 
-.main-info__user-links{
+.main-info__user-links {
   margin-top: 245px;
 }
 
-.user-links__enter-link{
+.user-links__enter-link {
   min-width: 190px;
   min-height: 40px;
   box-sizing: border-box;
@@ -62,7 +62,7 @@
   padding-right: 28.3px;
 }
 
-.main-info__review{
+.main-info__review {
   display: flex;
   flex-direction: column;
   width: 161px;
@@ -71,7 +71,7 @@
   margin-bottom: 29px;
 }
 
-.main-info__review-quote{
+.main-info__review-quote {
   font-family: $light;
   font-size: 16px;
   line-height: 22px;
@@ -79,7 +79,7 @@
   margin-bottom: 18px;
 }
 
-.main-info__review-author{
+.main-info__review-author {
   font-family: $bold;
   font-size: 16px;
   line-height: 22px;
@@ -87,7 +87,7 @@
   font-style: normal;
 }
 
-.main-info__list{
+.main-info__list {
   margin-top: 0;
   padding-left: 0;
   display: flex;
@@ -96,7 +96,7 @@
   width: 100%;
 }
 
-.main-info__item{
+.main-info__item {
   position: relative;
   min-width: 270px;
   min-height: 160px;
@@ -105,11 +105,11 @@
   border-radius: 8px;
 }
 
-.main-info__item:last-of-type{
+.main-info__item:last-of-type {
   min-height: 80px;
 }
 
-.main-info__link{
+.main-info__link {
   display: block;
   font-family: $bold;
   font-size: 18px;
@@ -121,7 +121,7 @@
   margin-left: 24px;
 }
 
-.main-info__item::after{
+.main-info__item::after {
   counter-increment: myCounter;
   content: counter(myCounter);
   display: block;
@@ -135,33 +135,33 @@
   right: 21px;
 }
 
-.main-info__item_orange{
+.main-info__item_orange {
   background-color: #FF8D30;
   z-index: 1;
 }
 
-.main-info__item_light-orange{
+.main-info__item_light-orange {
   background-color: #FFA530;
   z-index: 2;
   margin-top: -80px;
 }
 
-.main-info__item_dark-yellow{
+.main-info__item_dark-yellow {
   background-color: #FFBD30;
   z-index: 3;
   margin-top: -80px;
 }
 
-.main-info__item_yellow{
+.main-info__item_yellow {
   background-color: #FFD74B;
   z-index: 4;
   margin-top: -80px;
 }
 
 @media (min-width: $tablet) {
-  .main-info{
+  .main-info {
     background: url("../img/globe-back-tablet@1x.jpg") -400px -182px no-repeat;
-    @media(min-resolution: 2dppx){
+    @media(min-resolution: 2dppx) {
       background: url("../img/globe-back-tablet@2x.jpg") -400px -182px no-repeat;
       background-size: cover;
       background-color: #161C34;
@@ -170,15 +170,15 @@
     background-color: #161C34;
   }
 
-  .main-info__wrap{
+  .main-info__wrap {
     background: url("../img/traveller-illustration-tablet@1x.png") calc(50% + 85px) 270px no-repeat;
-    @media(min-resolution: 2dppx){
+    @media(min-resolution: 2dppx) {
       background: url("../img/traveller-illustration-tablet@2x.png") calc(50% + 85px) 270px/372px 451px no-repeat;
     }
     width: 688px;
   }
 
-  .main-info__title{
+  .main-info__title {
     width: 439px;
     min-height: 210px;
     font-size: 60px;
@@ -186,14 +186,14 @@
     margin-top: 27px;
   }
 
-  .main-info__review{
+  .main-info__review {
     width: 264px;
     min-height: 186px;
     margin-top: 88px;
     margin-left: -320px;
   }
 
-  .main-info__review-quote{
+  .main-info__review-quote {
     width: 264px;
     min-height: 66px;
     font-size: 28px;
@@ -201,57 +201,57 @@
     margin-bottom: 45px;
   }
 
-  .main-info__review-author{
+  .main-info__review-author {
     width: 260px;
     min-height: 75px;
     font-size: 21px;
     line-height: 25px;
   }
 
-  .main-info__list{
+  .main-info__list {
     margin-top: 180px;
     min-width: 688px;
     flex-direction: row;
   }
 
-  .main-info__item{
+  .main-info__item {
     min-height: 140px;
     margin-top: 0;
     border-radius: 0;
     width: 344px;
   }
 
-  .main-info__item:last-of-type{
+  .main-info__item:last-of-type {
     min-height: 140px;
   }
 
-  .main-info__item:nth-of-type(1){
+  .main-info__item:nth-of-type(1) {
     border-top-left-radius: 20px;
   }
 
-  .main-info__item:nth-of-type(2){
+  .main-info__item:nth-of-type(2) {
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
   }
 
-  .main-info__item:nth-of-type(3){
+  .main-info__item:nth-of-type(3) {
     border-bottom-left-radius: 20px;
   }
 
-  .main-info__item:nth-of-type(4){
+  .main-info__item:nth-of-type(4) {
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
   }
 
-  .main-info__item:nth-of-type(2n+1){
+  .main-info__item:nth-of-type(2n+1) {
     min-width: 365px;
   }
 
-  .main-info__item:nth-of-type(2n){
+  .main-info__item:nth-of-type(2n) {
     margin-left: -22px;
   }
 
-  .main-info__link{
+  .main-info__link {
     width: 211px;
     min-height: 48px;
     font-size: 24px;
@@ -260,7 +260,7 @@
     margin-left: 32.63px;
   }
 
-  .main-info__item::after{
+  .main-info__item::after {
     font-size: 30px;
     line-height: 30px;
     position: absolute;
@@ -270,10 +270,10 @@
 }
 
 @media (min-width: $desktop) {
-  .main-info{
+  .main-info {
     background: none;
     background: url("../img/globe-back-desktop@1x.jpg") -130px 0px no-repeat;
-    @media(min-resolution: 2dppx){
+    @media(min-resolution: 2dppx) {
       background: url("../img/globe-back-desktop@2x.jpg") -130px 0px no-repeat;
       background-size: cover;
       background-color: #161C34;
@@ -285,11 +285,11 @@
     justify-content: center;
   }
 
-  .main-info__wrap{
+  .main-info__wrap {
     width: 1320px;
     display: flex;
     background: url("../img/traveller-illustration-desktop@1x.png") 544px -10px no-repeat;
-    @media(min-resolution: 2dppx){
+    @media(min-resolution: 2dppx) {
       background: url("../img/traveller-illustration-desktop@2x.png") 544px -10px/431px 640px no-repeat;
     }
     flex-direction: row;
@@ -298,61 +298,62 @@
     padding-bottom: 108px;
   }
 
-  .main-info__title{
+  .main-info__title {
     margin-left: 68px;
     margin-top: 77px;
     text-align: left;
     margin-right: 846px;
   }
 
-  .main-info__review{
+  .main-info__review {
     min-width: 264px;
     min-height: 183px;
     margin-top: 103px;
     margin-right: 0px;
   }
 
-  .main-info__list{
+  .main-info__list {
     min-width: 1320px;
     min-height: 107px;
     flex-direction: row;
     flex-wrap: nowrap;
-    margin-top: 85px;
-    margin-left: -69px;
+    margin-top: 84px;
   }
 
-  .main-info__item{
+  .main-info__item {
     min-height: 107px;
-    border-radius: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
     width: 375px;
 
-    &:not(:first-of-type){
-      margin-left: -33px;
+    &:not(:first-of-type) {
+      margin-left: -50px;
     }
 
-    &:first-of-type{
+    &:first-of-type {
       width: 345px;
     }
 
-    &:nth-of-type(3){
-      margin-left: -35px;
+    &:nth-of-type(3) {
+      margin-left: -30px;
 
-      &::after{
+      &::after {
         left: 300px;
       }
     }
 
-    &:nth-of-type(2)::after{
+    &:nth-of-type(2)::after {
       left: 300px;
     }
 
-    &:last-of-type{
+    &:last-of-type {
       width: 315px;
       min-height: 107px;
-      margin-left: -35px;
+      margin-left: -25px;
+      border-radius: 20px;
     }
 
-    &::after{
+    &::after {
       top: 28px;
       left: 268px;
       font-size: 24px;
@@ -360,7 +361,7 @@
     }
   }
 
-  .main-info__list{
+  .main-info__list {
     margin-left: 0px;
   }
 }

@@ -1,4 +1,4 @@
-.social-media{
+.social-media {
   width: 105px;
   height: 21px;
   font-size: 0;
@@ -6,24 +6,24 @@
   justify-content: space-between;
   align-items: center;
 
-  &_footer{
+  &_footer {
     width: 135px;
   }
 }
 
-.social-media__link{
+.social-media__link {
   display: block;
 
-  &:hover{
+  &:hover {
     opacity: 0.7;
   }
 
-  &:active{
+  &:active {
     opacity: 0.3;
   }
 }
 
-.social-media__link_yellow{
+.social-media__link_yellow {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -32,25 +32,25 @@
   background-color: #FFD74B;
   border-radius: 50%;
 
-  &:hover{
+  &:hover {
     opacity: 1;
     background-color: #FFBD30;
   }
 
-  &:active img{
+  &:active img {
     opacity: 0.3;
   }
 
-  @media (min-width: $tablet){
+  @media (min-width: $tablet) {
     min-width: 62px;
     height: 62px;
   }
 }
 
-@media (min-width: $desktop){
-  .social-media{
+@media (min-width: $desktop) {
+  .social-media {
 
-    &_desktop{
+    &_desktop {
       display: none;
     }
   }

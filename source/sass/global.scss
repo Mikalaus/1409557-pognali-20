@@ -6,17 +6,22 @@ $tablet: 768px;
 $desktop: 1440px;
 $media-max-desktop: 1399px;
 
-body{
+body {
+  position: relative;
   padding: 0;
   margin: 0;
   min-width: 320px;
 }
 
-a{
+section{
+  position: relative;
+}
+
+a {
   text-decoration: none;
 }
 
-.center-wrap{
+.center-wrap {
   position: relative;
   width: 100%;
 }

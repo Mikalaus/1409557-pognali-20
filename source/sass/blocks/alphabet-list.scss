@@ -1,20 +1,53 @@
-.alphabet-list{
+.alphabet-list {
   display: none;
 }
 
 @media (min-width: $desktop) {
-  .alphabet-list{
+  .alphabet-list {
     display: flex;
     flex-wrap: wrap;
   }
 
-  .alphabet-list__item{
+  .alphabet-list__item {
     list-style: none;
     min-width: 250px;
     margin-bottom: 50px;
+
+    &:nth-of-type(n + 16) {
+      margin-top: 37px;
+    }
+
+    &:nth-of-type(n + 21) {
+      margin-top: -3px;
+
+      .alphabet-list__countries-by-letter-list{
+        margin-top: 38px;
+      }
+    }
+
+    &:nth-of-type(5n - 2) {
+
+      .alphabet-list__countries-by-letter-list{
+        margin-left: -35px;
+      }
+    }
+
+    &:nth-of-type(5n - 1) {
+
+      .alphabet-list__countries-by-letter-list{
+        margin-left: -35px;
+      }
+    }
+
+    &:nth-of-type(5n + 5) {
+
+      .alphabet-list__countries-by-letter-list{
+        margin-left: -35px;
+      }
+    }
   }
 
-  .alphabet-list__link{
+  .alphabet-list__link {
     font-family: $bold;
     font-size: 60px;
     line-height: 60px;

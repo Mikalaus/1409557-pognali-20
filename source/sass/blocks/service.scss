@@ -1,7 +1,7 @@
-.service{
+.service {
   position: relative;
   background: url("../img/about-mobile@1x.png") center no-repeat;
-  @media (min-resolution: 2dppx){
+  @media (min-resolution: 2dppx) {
     background: url("../img/about-mobile@2x.png") center/292px 353px no-repeat;
     background-color: #161C34;
   }
@@ -14,20 +14,23 @@
   @include typical-bottom-section;
   margin-top: -1px;
   padding-bottom: 65px;
+  z-index: 6;
 }
 
-.service__wrap{
+.service__wrap {
   width: 270px;
+  padding-left: 25px;
+  box-sizing: border-box;
 }
 
-.service__title{
+.service__title {
   display: block;
   @include typical-title;
   margin-top: 31px;
   margin-bottom: 0;
 }
 
-.service p:first-of-type{
+.service p:first-of-type {
   display: block;
   margin-top: 19px;
   width: 211px;
@@ -38,7 +41,7 @@
   color: #fff;
 }
 
-.service p:nth-of-type(2){
+.service p:nth-of-type(2) {
   display: block;
   margin-top: 20px;
   width: 211px;
@@ -49,27 +52,27 @@
   color: #fff;
 }
 
-.service__link{
+.service__link {
   display: none;
 }
 
 @media (min-width: $tablet) {
-  .service{
+  .service {
     padding-top: 66px;
     background: none;
     padding-bottom: 90px;
-    background: url("../img/about-tablet@1x.png") calc(50% + 190px) 110px no-repeat,
-                url("../img/service-tablet.svg") calc(50% - 3px) 70px no-repeat;
+    background: url("../img/about-tablet@1x.png") calc(50% + 190px) 104px no-repeat,
+                url("../img/service-tablet.svg") calc(50% - 3px) 55px no-repeat;
     background-color: #161C34;
 
-    @media (min-resolution: 2dppx){
-      background: url("../img/about-tablet@2x.png") calc(50% + 190px) 110px/376px 548px no-repeat,
-                  url("../img/service-tablet.svg") calc(50% - 3px) 70px no-repeat;
+    @media (min-resolution: 2dppx) {
+      background: url("../img/about-tablet@2x.png") calc(50% + 190px) 104px/376px 548px no-repeat,
+                  url("../img/service-tablet.svg") calc(50% - 3px) 55px no-repeat;
       background-color: #161C34;
     }
   }
 
-  .service__wrap{
+  .service__wrap {
     width: 688px;
     box-sizing: border-box;
     display: flex;
@@ -78,11 +81,11 @@
     padding-left: 35px;
   }
 
-  .service__title{
+  .service__title {
     margin-bottom: 23px;
   }
 
-  .service p:first-of-type{
+  .service p:first-of-type {
     width: 300px;
     min-height: 231px;
     font-size: 28px;
@@ -90,7 +93,7 @@
     margin-bottom: 29px;
   }
 
-  .service p:last-of-type{
+  .service p:last-of-type {
     width: 265px;
     min-height: 75px;
     margin-top: 0;
@@ -98,7 +101,7 @@
     line-height: 25px;
   }
 
-  .service__link{
+  .service__link {
     display: block;
     position: relative;
     background-color: #FFD74B;
@@ -115,19 +118,19 @@
     color: #1D2E5B;
     box-shadow: 0 4px 5px rgba(0, 0, 0, 0.3);
 
-    &:hover{
+    &:hover {
       background-color: #FFBD30;
     }
 
-    &:active{
-      &::after{
+    &:active {
+      &::after {
         opacity: 0.3
       }
 
       color: rgba(#161C35, 0.3);
     }
 
-    &::after{
+    &::after {
       content: "";
       display: inline-block;
       position: absolute;
@@ -141,14 +144,14 @@
 }
 
 @media (min-width: 1440px) {
-  .service{
+  .service {
     padding-bottom: 163px;
     $back: calc(50% - 555px);
     $back2: calc(50% + 345px);
     background: url("../img/service-back-desktop.svg") $back 70px no-repeat,
                 url("../img/about-desktop@1x.png") $back2 85px no-repeat;
 
-    @media (min-resolution: 2dppx){
+    @media (min-resolution: 2dppx) {
       background: url("../img/service-back-desktop.svg") $back 70px no-repeat,
                   url("../img/about-desktop@2x.png") $back2 85px/630px 665px no-repeat;
       background-color: #192144;
@@ -157,7 +160,7 @@
     padding-top: 101px;
   }
 
-  .service__wrap{
+  .service__wrap {
     box-sizing: border-box;
     background: none;
     overflow: visible;
@@ -166,25 +169,25 @@
     align-items: flex-start;
   }
 
-  .service__title{
+  .service__title {
     margin-left: 5px;
     margin-bottom: 39px;
   }
 
-  .service p:first-of-type{
+  .service p:first-of-type {
     margin-left: 5px;
     min-height: 102px;
     width: 619px;
     margin-bottom: 35px;
   }
 
-  .service p:last-of-type{
+  .service p:last-of-type {
     margin-left: 5px;
     width: 425px;
     min-height: 48px;
   }
 
-  .service__link{
+  .service__link {
     margin-top: 64px;
     margin-left: 5px;
   }
