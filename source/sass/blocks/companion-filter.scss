@@ -315,8 +315,11 @@
   .companion-filter__transport-options {
     display: flex;
     justify-content: flex-start;
-    gap: 11px;
     margin-left: 15px;
+
+    & label:not(:last-of-type){
+      margin-right: 11px;
+    }
   }
 
   .companion-filter__submit-button {
@@ -334,7 +337,7 @@
   .companion-filter {
     margin-top: 60px;
     width: 285px;
-    margin-left: -17px;
+    margin-left: 67px;
     padding-left: 47px;
     padding-top: 22px;
     padding-bottom: 48px;
@@ -388,7 +391,10 @@
   .companion-filter__transport-options{
     margin-top: 20px;
     margin-left: 4px;
-    gap: 12px;
+
+    & label:not(:last-of-type){
+      margin-right: 12px;
+    }
   }
 
   .companion-filter__submit-button{

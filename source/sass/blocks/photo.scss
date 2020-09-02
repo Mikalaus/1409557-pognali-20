@@ -4,7 +4,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 11px;
 }
 
 .photo__card {
@@ -16,6 +15,10 @@
   padding-top: 15px;
   padding-left: 18px;
   padding-bottom: 74px;
+
+  &:not(:last-of-type){
+    margin-bottom: 11px;
+  }
 
   &:hover {
     filter: drop-shadow(0px 4px 9px rgba(0, 0, 0, 0.16));
@@ -584,15 +587,14 @@
 
 .photo__page-buttons {
   width: 100%;
+  margin-top: 12px;
   display: flex;
-  gap: 1px;
 }
 
 @media (min-width: $tablet) {
   .photo {
     width: 688px;
     margin-top: 41px;
-    gap: 40px;
   }
 
   .photo__card {
@@ -602,6 +604,10 @@
     padding-top: 35px;
     padding-left: 35px;
     padding-bottom: 0px;
+
+    &:not(:last-of-type){
+      margin-bottom: 40px;
+    }
 
     &:hover {
       .photo__companion {
@@ -727,7 +733,6 @@
   .photo__country-list {
     width: calc(100% - 4px);
     display: flex;
-    gap: 35px;
     flex-direction: row;
     margin-top: 30px;
     margin-left: 0px;
@@ -737,6 +742,10 @@
   .photo__country-item {
     font-size: 20px;
     line-height: 20px;
+
+    &:not(:last-of-type){
+      margin-right: 35px;
+    }
 
     &::before {
       transform: scale(1.33);
@@ -759,7 +768,7 @@
 
   .photo__page-scroll {
     width: 100%;
-    margin-top: 12px;
+    margin-top: 53px;
     box-sizing: border-box;
     background: white;
     border-radius: 20px;
@@ -771,7 +780,7 @@
     justify-content: flex-start;
     margin-left: 0px;
     margin-top: 25px;
-    padding-left: 30px;
+    padding-left: 27px;
     padding-bottom: 10px;
   }
 
@@ -819,7 +828,6 @@
     min-height: 285px;
     order: -1;
     margin-top: 60px;
-    gap: 30px;
   }
 
   .photo__card {
@@ -828,6 +836,10 @@
     height: 285px;
     width: 951px;
     margin-left: -15px;
+
+    &:not(:last-of-type){
+      margin-bottom: 30px;
+    }
 
     &:hover {
       .photo__companion {
@@ -879,7 +891,7 @@
 
   .photo__country-item {
     &:not(:last-of-type) {
-      margin-bottom: -19px;
+      margin-bottom: 11px;
     }
 
     &::before {
@@ -935,7 +947,7 @@
   .photo__page-scroll{
     width: 948px;
     margin-left: -18px;
-    margin-top: 43px;
+    margin-top: 74px;
     padding-right: 43px;
   }
 }

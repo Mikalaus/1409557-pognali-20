@@ -8,7 +8,7 @@
   </head>
   <body>
 
-    <header class="header header_catalog">
+    <header class="header header_catalog  header_no-js">
       <div class="center-wrap">
         <div class="header__display">
           <a href="index.html" class="logo header__logo">
@@ -31,7 +31,7 @@
             <a href="" class="enter-link user-links__enter-link enter-link_header">Авторизация</a>
           </div>
         </div>
-        <div class="header__menu header__menu_hidden">
+        <div class="header__menu header__menu_no-js">
           <div class="header__menu-wrap">
             <nav class="header__links">
               <a href="index.html" class="header__link"><span data-hover="О сервисе">О сервисе</span></a>
@@ -418,7 +418,7 @@
                     <legend class="companion-filter__legend">Хобби</legend>
                     <button type="button" class="companion-filter__expend-button"></button>
                   </div>
-                  <div class="companion-filter__input companion-filter__content-block companion-filter__content-block_hidden">
+                  <div class="companion-filter__input companion-filter__content-block">
                     <input id="sport" type="checkbox" name="hobby" class="companion-filter__checkbox" checked> <label for="sport">Спортзал</label>
                     <input id="smoke" type="checkbox" name="hobby" class="companion-filter__checkbox"> <label for="smoke">Кальян</label>
                     <input id="sofa" type="checkbox" name="hobby" class="companion-filter__checkbox"> <label for="sofa">Диван</label>
@@ -429,7 +429,7 @@
                 <div class="companion-filter__block">
                   <div class="companion-filter__title-part">
                     <legend class="companion-filter__legend">Музыка</legend>
-                    <button type="button" class="companion-filter__expend-button companion-filter__expend-button_open"></button>
+                    <button type="button" class="companion-filter__expend-button"></button>
                   </div>
                   <div class="companion-filter__input companion-filter__content-block">
                     <input id="rock" type="checkbox" name="music" class="companion-filter__checkbox" checked> <label for="rock">Тяжелый рок</label>
@@ -444,7 +444,7 @@
                     <legend class="companion-filter__legend">Еда</legend>
                     <button type="button" class="companion-filter__expend-button"></button>
                   </div>
-                  <div class="companion-filter__input companion-filter__content-block companion-filter__content-block_hidden">
+                  <div class="companion-filter__input companion-filter__content-block">
                     <input id="meat" type="checkbox" name="food" class="companion-filter__checkbox" checked> <label for="meat">Мясоед</label>
                     <input id="hf" type="checkbox" name="food" class="companion-filter__checkbox"> <label for="hf">Сидит на ПП</label>
                     <input id="vegan" type="checkbox" name="food" class="companion-filter__checkbox"> <label for="vegan">Веган-сыроед</label>
@@ -455,7 +455,7 @@
                 <div class="companion-filter__block">
                   <div class="companion-filter__title-part">
                     <legend class="companion-filter__legend">Транспорт</legend>
-                    <button type="button" class="companion-filter__expend-button companion-filter__expend-button_open"></button>
+                    <button type="button" class="companion-filter__expend-button"></button>
                   </div>
                   <div class="transport-options companion-filter__transport-options companion-filter__content-block">
                     <input class="transport-options__option transport-options__option_plain" id="plane" name="transport" type="checkbox" checked><label for="plane"><span class="transport-options__tooltip">Авиаперелет</span></label>
@@ -469,7 +469,7 @@
                 <div class="companion-filter__block">
                   <div class="companion-filter__title-part">
                     <legend class="companion-filter__legend">Левел</legend>
-                    <button type="button" class="companion-filter__expend-button companion-filter__expend-button_open"></button>
+                    <button type="button" class="companion-filter__expend-button"></button>
                   </div>
                   <div class="level-input companion-filter__level-input companion-filter__content-block">
                     <div class="level-input__num">
@@ -489,14 +489,14 @@
           <section class="photo">
             <div class="photo__card">
               <div class="photo__about-companion">
-                <div class="photo__companion">
+                <a href="firsova.html" class="photo__companion">
                   <picture>
                     <source media="(min-width: 1440px)" srcset="img/firsova-desktop@1x.jpg 1x, img/firsova-desktop@2x.jpg 2x">
                     <source media="(min-width: 768px)" srcset="img/firsova-tablet@1x.jpg 1x, img/firsova-tablet@2x.jpg 2x">
                     <img src="img/firsova-mobile@1x.jpg 1x" srcset="img/firsova-mobile@2x.jpg 2x">
                   </picture>
-                </div>
-                <h1 class="photo__name photo__name_offline">Таня Фирсова</h1>
+                </a>
+                <a href="firsova.html" class="photo__name photo__name_offline">Таня Фирсова</a>
                 <div class="photo__like">
                   <a href="" class="typical-button photo__call-button">Позвать!</a>
                   <button class="photo__like-button photo__like-button_active"></button>
@@ -530,14 +530,14 @@
             </div>
             <div class="photo__card">
               <div class="photo__about-companion">
-                <div class="photo__companion">
+                <a href="demin.html" class="photo__companion">
                   <picture>
                     <source media="(min-width: 1440px)" srcset="img/demin-desktop@1x.jpg 1x, img/demin-desktop@2x.jpg 2x">
                     <source media="(min-width: 768px)" srcset="img/demin-tablet@1x.jpg 1x, img/demin-tablet@2x.jpg 2x">
                     <img src="img/demin-mobile@1x.jpg 1x" srcset="img/demin-mobile@2x.jpg 2x">
                   </picture>
-                </div>
-                <h1 class="photo__name photo__name_offline">Петя Демин</h1>
+                </a>
+                <a href="demin.html" class="photo__name photo__name_offline">Петя Демин</a>
                 <div class="photo__like">
                   <a href="" class="typical-button photo__call-button">Позвать!</a>
                   <button class="photo__like-button"></button>
@@ -570,14 +570,14 @@
             </div>
             <div class="photo__card">
               <div class="photo__about-companion">
-                <div class="photo__companion">
+                <a href="smolov.html" class="photo__companion">
                   <picture>
                     <source media="(min-width: 1440px)" srcset="img/smolov-desktop@1x.jpg 1x, img/smolov-desktop@2x.jpg 2x">
                     <source media="(min-width: 768px)" srcset="img/smolov-tablet@1x.jpg 1x, img/smolov-tablet@2x.jpg 2x">
                     <img src="img/smolov-mobile@1x.jpg 1x" srcset="img/smolov-mobile@2x.jpg 2x">
                   </picture>
-                </div>
-                <h1 class="photo__name photo__name_offline">Марк Смолов</h1>
+                </a>
+                <a href="smolov.html" class="photo__name photo__name_offline">Марк Смолов</a>
                 <div class="photo__like">
                   <a href="" class="typical-button photo__call-button">Позвать!</a>
                   <button class="photo__like-button"></button>
@@ -611,14 +611,14 @@
             </div>
             <div class="photo__card">
               <div class="photo__about-companion">
-                <div class="photo__companion">
+                <a href="rogovaya.html" class="photo__companion">
                   <picture>
                     <source media="(min-width: 1440px)" srcset="img/rogovaya-desktop@1x.jpg 1x, img/rogovaya-desktop@2x.jpg 2x">
                     <source media="(min-width: 768px)" srcset="img/rogovaya-tablet@1x.jpg 1x, img/rogovaya-tablet@2x.jpg 2x">
                     <img src="img/rogovaya-mobile@1x.jpg 1x" srcset="img/rogovaya-mobile@2x.jpg 2x">
                   </picture>
-                </div>
-                <h1 class="photo__name photo__name_online">Лариса Роговая</h1>
+                </a>
+                <a href="rogovaya.html" class="photo__name photo__name_online">Лариса Роговая</a>
                 <div class="photo__like">
                   <a href="" class="typical-button photo__call-button">Позвать!</a>
                   <button class="photo__like-button"></button>

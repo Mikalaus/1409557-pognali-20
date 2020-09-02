@@ -46,6 +46,7 @@
     margin-top: 9px;
     margin-bottom: 0px;
     padding-bottom: 0px;
+    padding-top: 33px;
 
     &_form{
       margin-top: 10px;
@@ -111,6 +112,7 @@
 @media (min-width: $desktop) {
   .intro-section {
     padding-bottom: 16px;
+    padding-top: 0px;
   }
 
   .intro-section__wrap {
@@ -119,7 +121,8 @@
     justify-content: space-between;
     padding-left: 66px;
     padding-right: 63px;
-    padding-top: 57px;
+    padding-top: 27px;
+    height: 200px;
     }
 
   .intro-section__title {

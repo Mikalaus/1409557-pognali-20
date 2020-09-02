@@ -8,7 +8,7 @@
   </head>
   <body>
 
-    <header class="header header_catalog">
+    <header class="header header_catalog header_no-js">
       <div class="center-wrap">
         <div class="header__display">
           <a href="index.html" class="logo header__logo">
@@ -31,7 +31,7 @@
             <a href="" class="enter-link user-links__enter-link enter-link_header">Авторизация</a>
           </div>
         </div>
-        <div class="header__menu header__menu_hidden">
+        <div class="header__menu header__menu_no-js">
           <div class="header__menu-wrap">
             <nav class="header__links">
               <a href="index.html" class="header__link"><span data-hover="О сервисе">О сервисе</span></a>
@@ -128,7 +128,7 @@
               </ul>
             </div>
             <form action="form.html" method="post" class="add-plan__form">
-              <fieldset class="add-plan__block">
+              <fieldset class="add-plan__block" id="step1">
                 <div class="add-plan__block-title-part">
                   <div class="add-plan__description">
                     <h1 class="add-plan__step-title">Шаг 1. Даты пребывания</h1>
@@ -236,12 +236,12 @@
                       <li class="calendar__item calendar__item_active">5</li>
                     </ul>
                   </div>
-                  <a href="#" class="add-plan__next-step">Следующий шаг</a>
+                  <a href="#step2" class="add-plan__next-step">Следующий шаг</a>
                 </div>
               </fieldset>
-              <fieldset class="add-plan__block">
+              <fieldset class="add-plan__block" id="step2">
                 <div class="add-plan__block-title-part">
-                  <div class="add-plans__description">
+                  <div class="add-plan__description">
                     <h1 class="add-plan__step-title">Шаг 2. Маршрут</h1>
                     <p class="add-plan__step-description add-plan__step-description_direction">Укажите страны, которые вы хотели посетить. Это может быть одна или сразу несколько.</p>
                   </div>
@@ -327,13 +327,13 @@
                   </div>
                 </div>
                 <div class="add-plan__change-step">
-                  <a class="add-plan__next-step">Следующий шаг</a>
-                  <a class="add-plan__previous-step">На шаг назад</a>
+                  <a href="#step3" class="add-plan__next-step">Следующий шаг</a>
+                  <a href="#step1" class="add-plan__previous-step">На шаг назад</a>
                 </div>
               </fieldset>
-              <fieldset class="add-plan__block">
+              <fieldset class="add-plan__block" id="step3">
                 <div class="add-plan__block-title-part">
-                  <div class="add-plans__description">
+                  <div class="add-plan__description">
                     <h1 class="add-plan__step-title">Шаг 3. Развлечения</h1>
                     <p class="add-plan__step-description">Наконец, расскажите о своих планах времяпровождения. Можно писать в свободной форме и ставить тэги.</p>
                   </div>
@@ -361,7 +361,7 @@
                 </div>
                 <div class="add-plan__change-step">
                   <button type="submit" class="add-plan__submit-button">Отправить</button>
-                  <a class="add-plan__previous-step add-plan__previous-step_submit">На шаг назад</a>
+                  <a href="#step2" class="add-plan__previous-step add-plan__previous-step_submit">На шаг назад</a>
                 </div>
               </fieldset>
             </form>

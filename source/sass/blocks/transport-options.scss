@@ -310,7 +310,10 @@
     margin-right: 72px;
     margin-top: 12px;
     display: flex;
-    gap: 14px;
+
+    & label:not(:last-of-type){
+      margin-right: 14px;
+    }
   }
 }
 
