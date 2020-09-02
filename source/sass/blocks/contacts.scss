@@ -99,11 +99,14 @@
 @media (min-width: $desktop) {
   .contacts {
     flex-direction: row;
-    gap: 231px;
 
     &_desktop {
       display: none;
     }
+  }
+
+  .contacts__telephone{
+    margin-right: 231px;
   }
 
   .contacts__telephone::before {

@@ -47,12 +47,11 @@
   flex-direction: column;
   width: 270px;
   align-items: center;
-  gap: 10px;
 }
 
 .countries__link {
   @include typical-link;
-  margin-top: 28px;
+  margin-top: 18px;
 }
 
 @media (min-width: $tablet) {
@@ -110,7 +109,7 @@
   }
 
   .countries__link {
-    margin-top: 47px;
+    margin-top: 38px;
     margin-left: 3px;
   }
 }
@@ -119,10 +118,13 @@
   $back: calc(50% + 518px);
   .countries {
     background: url("../img/flags-back@1x.png") $back 88px no-repeat;
+    background-color: white;
     @media(min-resolution: 2dppx) {
       background: url("../img/flags-back@2x.png") $back 88px/287px 575px no-repeat;
+      background-color: white;
     }
     padding-bottom: 90px;
+    padding-top: 60px;
     justify-content: center;
   }
 
@@ -148,11 +150,11 @@
 
   .countries p {
     margin-left: 30px;
-    margin-bottom: 50px;
+    margin-bottom: 60px;
   }
 
   .countries__link {
     width: 275px;
-    margin-left: 30px;
+    margin-left: 33px;
   }
 }

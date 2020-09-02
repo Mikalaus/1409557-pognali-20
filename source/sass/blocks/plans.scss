@@ -24,7 +24,6 @@
   counter-reset: myCounter;
   display: flex;
   flex-direction: column;
-  gap: 10px;
 }
 
 .plans__card {
@@ -38,6 +37,9 @@
   position: relative;
   padding-bottom: 23px;
 
+  &:not(:last-of-type){
+    margin-bottom: 10px;
+  }
 
   &::before {
     counter-increment: myCounter;
@@ -199,7 +201,6 @@
   }
 
   .plans__cards {
-    gap: 15px;
     margin-top: -2px;
   }
 
@@ -214,6 +215,9 @@
     justify-content: space-between;
     padding-right: 42px;
 
+    &:not(:last-of-type){
+      margin-bottom: 15px;
+    }
 
     &::before {
       top: 40px;
