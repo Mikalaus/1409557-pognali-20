@@ -10,13 +10,13 @@
   position: relative;
   box-sizing: border-box;
   width: 100%;
-  background-color: #FFF;
+  background-color: #fff;
   border-radius: 20px;
   padding-top: 15px;
   padding-left: 18px;
   padding-bottom: 74px;
 
-  &:not(:last-of-type){
+  &:not(:last-of-type) {
     margin-bottom: 11px;
   }
 
@@ -30,34 +30,34 @@
 
   @media (max-width: 767px) {
 
-    &:nth-of-type(2){
+    &:nth-of-type(2) {
       margin-top: -1px;
 
-      & .photo__hashtags{
+      & .photo__hashtags {
         margin-top: 15px;
       }
 
-      & .photo__transport-level-wrapper{
+      & .photo__transport-level-wrapper {
         margin-top: 8px;
       }
 
-      & .photo__call-button{
+      & .photo__call-button {
         bottom: 23px;
       }
     }
 
-    &:nth-of-type(3){
-      & .photo__call-button{
+    &:nth-of-type(3) {
+      & .photo__call-button {
         bottom: 14px;
       }
     }
 
-    &:nth-of-type(4){
-      & .photo__hashtags{
+    &:nth-of-type(4) {
+      & .photo__hashtags {
         margin-top: 16px;
       }
 
-      & .photo__transport-level-wrapper{
+      & .photo__transport-level-wrapper {
         margin-top: 8px;
       }
     }
@@ -65,148 +65,148 @@
 
   @media (min-width: $tablet) and (max-width: $media-max-desktop) {
 
-    &:nth-of-type(2){
-      .photo__name{
+    &:nth-of-type(2) {
+      .photo__name {
         margin-left: 3px;
       }
 
-      .photo__hashtags{
+      .photo__hashtags {
         margin-left: 6px;
         margin-top: 3px;
       }
 
-      .photo__like{
+      .photo__like {
         margin-left: 0px;
         margin-top: 45px;
       }
 
-      .photo__country-list{
+      .photo__country-list {
         margin-bottom: 16px;
       }
     }
 
-    &:nth-of-type(3){
-      .photo__name{
+    &:nth-of-type(3) {
+      .photo__name {
         margin-left: -8px;
       }
 
-      .photo__hashtags{
+      .photo__hashtags {
         margin-left: -5px;
         margin-top: 3px;
       }
 
-      .photo__like{
+      .photo__like {
         margin-left: -11px;
         margin-top: 46px;
       }
 
-      .photo__call-button{
+      .photo__call-button {
         margin-top: -1px;
       }
 
-      .photo__country-list{
+      .photo__country-list {
         margin-bottom: 13px;
       }
     }
 
-    &:nth-of-type(4){
-      .photo__name{
+    &:nth-of-type(4) {
+      .photo__name {
         margin-left: -13px;
       }
 
-      .photo__hashtags{
+      .photo__hashtags {
         margin-left: -10px;
         margin-top: 3px;
       }
 
-      .photo__like{
+      .photo__like {
         margin-left: -17px;
         margin-top: 46px;
       }
 
-      .photo__call-button{
+      .photo__call-button {
         margin-top: -1px;
       }
 
-      .photo__country-list{
+      .photo__country-list {
         margin-bottom: 16px;
       }
     }
   }
 
-  @media(min-width: $desktop){
-    &:nth-of-type(1){
-      .photo__like{
+  @media(min-width: $desktop) {
+    &:nth-of-type(1) {
+      .photo__like {
         margin-left: 42px;
       }
 
-      .photo__call-button{
+      .photo__call-button {
         margin-top: -3px;
       }
 
-      .photo__hashtags{
+      .photo__hashtags {
         margin-left: 50px;
       }
 
-      .photo__name{
+      .photo__name {
         margin-left: 50px;
       }
     }
 
-    &:nth-of-type(2){
-      .photo__like{
+    &:nth-of-type(2) {
+      .photo__like {
         margin-left: 40px;
       }
 
-      .photo__call-button{
+      .photo__call-button {
         margin-top: -2px;
       }
 
-      .photo__hashtags{
+      .photo__hashtags {
         margin-top: 6px;
         margin-left: 48px;
       }
 
-      .photo__name{
+      .photo__name {
         margin-left: 48px;
       }
     }
 
-    &:nth-of-type(3){
-      .photo__like{
+    &:nth-of-type(3) {
+      .photo__like {
         margin-left: 33px;
       }
 
-      .photo__call-button{
+      .photo__call-button {
         margin-top: -2px;
       }
 
-      .photo__hashtags{
+      .photo__hashtags {
         margin-top: 7px;
         margin-left: 40px;
       }
 
-      .photo__name{
+      .photo__name {
         margin-left: 40px;
       }
     }
 
-    &:nth-of-type(4){
-      .photo__like{
+    &:nth-of-type(4) {
+      .photo__like {
         margin-left: 26px;
         margin-top: 46px;
       }
 
-      .photo__call-button{
+      .photo__call-button {
         margin-top: -4px;
       }
 
-      .photo__hashtags{
+      .photo__hashtags {
         margin-top: 6px;
         margin-left: 34px;
       }
 
-      .photo__name{
+      .photo__name {
         margin-left: 34px;
         margin-top: 48px;
       }
@@ -226,7 +226,7 @@
   font-family: $bold;
   font-size: 20px;
   line-height: 20px;
-  color: #1D2E5B;
+  color: #1d2e5b;
   margin-top: 0;
   margin-bottom: 0;
   cursor: pointer;
@@ -306,21 +306,21 @@
   line-height: 17px;
   text-align: center;
   text-transform: uppercase;
-  color: #161C35;
+  color: #161c35;
 
   padding-top: 13px;
   padding-bottom: 10px;
   padding-right: 78px;
   padding-left: 78px;
-  background-color: #FFD74B;
+  background-color: #ffd74b;
   border-radius: 25px;
 
   &:hover {
-    background-color: #FFBD30;
+    background-color: #ffbd30;
   }
 
   &:active {
-    color: #B98D32;
+    color: #b98d32;
   }
 }
 
@@ -337,7 +337,7 @@
   font-size: 14px;
   line-height: 16px;
   text-transform: uppercase;
-  color: #161C35;
+  color: #161c35;
   margin-left: 5px;
   margin-top: 15px;
 }
@@ -362,7 +362,7 @@
 }
 
 .photo__want-to-visit-title {
-  background: linear-gradient(to right, #EDEFF6, #EDEFF6 15px, #FFF 15px, #FFF 142px, #EDEFF6 142px, #EDEFF6);
+  background: linear-gradient(to right, #edeff6, #edeff6 15px, #fff 15px, #fff 142px, #edeff6 142px, #edeff6);
   font-family: $default;
   width: 270px;
   box-sizing: border-box;
@@ -389,7 +389,7 @@
   text-transform: uppercase;
   margin-top: 1px;
   margin-left: 38px;
-  color: #1D2E5B;
+  color: #1d2e5b;
 
   &:nth-of-type(1) {
     margin-bottom: 9px;
@@ -399,7 +399,7 @@
     margin-bottom: 12px;
   }
 
-  &:last-of-type{
+  &:last-of-type {
     margin-bottom: 0;
   }
 
@@ -495,7 +495,7 @@
   font-size: 15px;
   line-height: 1px;
   color: #444444;
-  background: linear-gradient(to right, #EDEFF6, #EDEFF6 15px, #FFF 15px, #FFF 102px, #EDEFF6 102px, #EDEFF6 194px);
+  background: linear-gradient(to right, #edeff6, #edeff6 15px, #fff 15px, #fff 102px, #edeff6 102px, #edeff6 194px);
 }
 
 .photo__transport-options {
@@ -516,7 +516,7 @@
   font-size: 15px;
   line-height: 1px;
   color: #444444;
-  background: linear-gradient(to right, #FFF, #FFF 50px, #EDEFF6 50px, #EDEFF6);
+  background: linear-gradient(to right, #fff, #fff 50px, #edeff6 50px, #edeff6);
   margin-bottom: 18px;
   margin-left: 2px;
 }
@@ -528,7 +528,7 @@
   font-size: 17px;
   line-height: 30px;
   text-transform: uppercase;
-  color: #1D2E5B;
+  color: #1d2e5b;
 
   &:hover::before {
     opacity: 0.7;
@@ -605,7 +605,7 @@
     padding-left: 35px;
     padding-bottom: 0px;
 
-    &:not(:last-of-type){
+    &:not(:last-of-type) {
       margin-bottom: 40px;
     }
 
@@ -727,7 +727,7 @@
     min-width: 688px;
     margin-left: -45px;
     padding-left: 85px;
-    background: linear-gradient(to right, #EDEFF6, #EDEFF6 70px, #FFF 70px, #FFF 212px, #EDEFF6 212px, #EDEFF6);
+    background: linear-gradient(to right, #edeff6, #edeff6 70px, #fff 70px, #fff 212px, #edeff6 212px, #edeff6);
   }
 
   .photo__country-list {
@@ -743,7 +743,7 @@
     font-size: 20px;
     line-height: 20px;
 
-    &:not(:last-of-type){
+    &:not(:last-of-type) {
       margin-right: 35px;
     }
 
@@ -793,7 +793,7 @@
     font-size: 20px;
     line-height: 20px;
     text-transform: uppercase;
-    color: #1D2E5B;
+    color: #1d2e5b;
     border-radius: 50%;
     padding-top: 17px;
     padding-left: 20px;
@@ -806,7 +806,7 @@
     &:active,
     &_selected {
       opacity: 1;
-      background-color: #FFD74B;
+      background-color: #ffd74b;
     }
   }
 
@@ -837,7 +837,7 @@
     width: 951px;
     margin-left: -15px;
 
-    &:not(:last-of-type){
+    &:not(:last-of-type) {
       margin-bottom: 30px;
     }
 
@@ -939,12 +939,12 @@
     margin-top: -10px;
   }
 
-  .photo__show-more{
+  .photo__show-more {
     margin-left: -86px;
     margin-top: 37px;
   }
 
-  .photo__page-scroll{
+  .photo__page-scroll {
     width: 948px;
     margin-left: -18px;
     margin-top: 74px;

@@ -1,6 +1,6 @@
 .filter {
   @include typical-bottom-section-catalog;
-  background-color: #E2E5F2;
+  background-color: #e2e5f2;
   display: flex;
   justify-content: center;
   margin-top: -30px;
@@ -97,7 +97,7 @@
   list-style: none;
   margin-bottom: 9px;
 
-  &:not(:last-of-type){
+  &:not(:last-of-type) {
     margin-right: 28px;
   }
 }
@@ -136,12 +136,12 @@
   width: 44px;
   height: 40px;
   padding: 10px 16px;
-  border-left: 1px solid #CBCED9;
-  border-top: 1px solid #CBCED9;
+  border-left: 1px solid #cbced9;
+  border-top: 1px solid #cbced9;
 
   &_selected {
-    background-color: #1D2E5B;
-    border: 1px solid #1D2E5B;
+    background-color: #1d2e5b;
+    border: 1px solid #1d2e5b;
 
     & a {
       color: white;
@@ -149,11 +149,11 @@
   }
 
   &:nth-of-type(5n) {
-    border-right: 1px solid #CBCED9;
+    border-right: 1px solid #cbced9;
   }
 
   &:nth-of-type(n + 21) {
-    border-bottom: 1px solid #CBCED9;
+    border-bottom: 1px solid #cbced9;
   }
 }
 
@@ -163,7 +163,7 @@
   line-height: 14px;
   text-align: center;
   text-transform: uppercase;
-  color: #1D2E5B;
+  color: #1d2e5b;
 }
 
 .filter__letter-a-list {
@@ -190,7 +190,7 @@
   padding-top: 7px;
   outline: none;
   border: none;
-  background: #D6DAED;
+  background: #d6daed;
   border-radius: 20px;
   margin-top: 10px;
 
@@ -203,11 +203,11 @@
   cursor: pointer;
 
   &:hover {
-    background-color: #C8CEE8;
+    background-color: #c8cee8;
   }
 
   &:active {
-    color: #949AB7;
+    color: #949ab7;
 
     &::before {
       opacity: 0.3;
@@ -440,13 +440,13 @@
     font-size: 20px;
     line-height: 20px;
 
-    &::before{
+    &::before {
       transform: scale(1.33);
       margin-right: 20px;
     }
   }
 
-  .filter__countries-list{
+  .filter__countries-list {
     margin-top: 27px;
     margin-left: -23px;
   }

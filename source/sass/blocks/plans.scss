@@ -1,5 +1,5 @@
 .plans {
-  background-color: #DFE3F0;
+  background-color: #dfe3f0;
   display: flex;
   justify-content: center;
   padding-top: 8px;
@@ -37,7 +37,7 @@
   position: relative;
   padding-bottom: 23px;
 
-  &:not(:last-of-type){
+  &:not(:last-of-type) {
     margin-bottom: 10px;
   }
 
@@ -49,7 +49,7 @@
     font-size: 16px;
     line-height: 16px;
     text-align: center;
-    color: #1D2E5B;
+    color: #1d2e5b;
     position: absolute;
     top: 24px;
     left: 23px;
@@ -71,14 +71,14 @@
   text-align: left;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: #1D2E5B;
+  color: #1d2e5b;
 }
 
 .plans__companion-num {
   margin-top: 18px;
 }
 
-.plans__duration{
+.plans__duration {
   margin-top: -7px;
 }
 
@@ -104,7 +104,7 @@
 }
 
 @media (min-width: $tablet) {
-  .plans{
+  .plans {
     margin-top: -60px;
     padding-top: 27px;
     padding-bottom: 121px;
@@ -121,7 +121,7 @@
     height: 152px;
     padding-bottom: 0;
 
-    &:first-of-type{
+    &:first-of-type {
       margin-top: 18px;
     }
   }
@@ -150,7 +150,7 @@
     min-width: calc(100% + 25px);
     box-sizing: border-box;
     margin-left: -25px;
-    border-top: 1px solid #CBCED9;
+    border-top: 1px solid #cbced9;
     padding-left: 32px;
     padding-right: 34px;
     justify-content: space-between;
@@ -215,7 +215,7 @@
     justify-content: space-between;
     padding-right: 42px;
 
-    &:not(:last-of-type){
+    &:not(:last-of-type) {
       margin-bottom: 15px;
     }
 

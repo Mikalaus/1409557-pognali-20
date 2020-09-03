@@ -1,6 +1,6 @@
 .catalog-wrap {
   position: relative;
-  background-color: #EDEFF6;
+  background-color: #edeff6;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -9,7 +9,7 @@
   padding-top: 30px;
   z-index: 1;
 
-  @media(min-width: $tablet){
+  @media(min-width: $tablet) {
     padding-bottom: 111px;
   }
 

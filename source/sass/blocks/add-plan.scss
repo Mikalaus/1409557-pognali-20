@@ -1,5 +1,5 @@
 .add-plan {
-  background-color: #D4D9EB;
+  background-color: #d4d9eb;
   display: flex;
   justify-content: center;
   padding-top: 10px;
@@ -22,7 +22,7 @@
     padding-bottom: 10px;
   }
 
-  &:nth-of-type(2){
+  &:nth-of-type(2) {
     margin-left: 1px;
     padding-bottom: 9px;
   }
@@ -78,15 +78,15 @@
   padding-top: 8px;
   margin-left: 0;
 
-  &:not(:last-of-type){
+  &:not(:last-of-type) {
     margin-bottom: 10px;
   }
 
-  &:last-of-type .add-plan__change-step{
+  &:last-of-type .add-plan__change-step {
     margin-top: 15px;
   }
 
-  &:last-of-type .add-plan__previous-step{
+  &:last-of-type .add-plan__previous-step {
     margin-top: 2px;
   }
 }
@@ -110,7 +110,7 @@
   margin-top: 20px;
 }
 
-.add-plan__companion-search{
+.add-plan__companion-search {
   margin-bottom: 21px;
 }
 
@@ -132,7 +132,7 @@
   line-height: 16px;
   letter-spacing: 0.09em;
   text-transform: uppercase;
-  color: #1D2E5B;
+  color: #1d2e5b;
 }
 
 .add-plan__measure {
@@ -142,7 +142,7 @@
   text-align: right;
   letter-spacing: 0.07em;
   text-transform: uppercase;
-  color: #1D2E5B;
+  color: #1d2e5b;
   opacity: 0.3;
 }
 
@@ -151,7 +151,7 @@
 
   &:hover {
     .add-plan__input {
-      border-color: #959BB2;
+      border-color: #959bb2;
     }
 
     .add-plan__button {
@@ -161,7 +161,7 @@
 
   &:focus-within {
     .add-plan__input {
-      border-color: #161C35;
+      border-color: #161c35;
     }
 
     .add-plan__button {
@@ -173,26 +173,26 @@
 .add-plan__button {
   background-color: #fff;
   outline: none;
-  border-top: 1px solid #161C35;
-  border-bottom: 1px solid #161C35;
+  border-top: 1px solid #161c35;
+  border-bottom: 1px solid #161c35;
   font-size: 0;
   width: 42px;
   height: 42px;
   opacity: 0.2;
 
-  &:active{
+  &:active {
     opacity: 0.3;
   }
 
   &_min {
     border-right: none;
-    border-left: 1px solid #161C35;
+    border-left: 1px solid #161c35;
     background: url("../img/form-minus.svg") center no-repeat;
   }
 
   &_max {
     border-left: none;
-    border-right: 1px solid #161C35;
+    border-right: 1px solid #161c35;
     background: url("../img/form-plus-quantity.svg") center no-repeat;
   }
 }
@@ -201,8 +201,8 @@
   min-width: 136px;
   border-left: none;
   border-right: none;
-  border-top: 1px solid #CBCED9;
-  border-bottom: 1px solid #CBCED9;
+  border-top: 1px solid #cbced9;
+  border-bottom: 1px solid #cbced9;
   outline: none;
   text-align: center;
 
@@ -210,7 +210,7 @@
   font-size: 15px;
   line-height: 15px;
   text-transform: uppercase;
-  color: #1D2E5B;
+  color: #1d2e5b;
 }
 
 .add-plan__kids+label {
@@ -218,7 +218,7 @@
   font-family: $default;
   font-size: 15px;
   line-height: 16px;
-  color: #1D2E5B;
+  color: #1d2e5b;
   margin-left: 39px;
   position: relative;
   display: inline-flex;
@@ -227,12 +227,12 @@
   cursor: pointer;
 
   &:hover::before {
-    border-color: #959BB2;
+    border-color: #959bb2;
   }
 
   &:active::before {
-    background-color: #E2E5F1;
-    border-color: #E2E5F1;
+    background-color: #e2e5f1;
+    border-color: #e2e5f1;
   }
 
   &::before {
@@ -248,7 +248,7 @@
     flex-shrink: 0;
     flex-grow: 0;
     border-radius: 4px;
-    border: 1px solid #CBCED9;
+    border: 1px solid #cbced9;
     margin-right: 0.5em;
     background-repeat: no-repeat;
     background-position: center center;
@@ -266,16 +266,16 @@
 .add-plan__kids:checked+label {
   &::before {
     background: url("../img/filter-checkbox-active.svg") center no-repeat;
-    background-color: #FFF;
+    background-color: #fff;
   }
 
   &:hover::before {
-    border-color: #959BB2;
+    border-color: #959bb2;
   }
 
   &:active::before {
-    background-color: #E2E5F1;
-    border-color: #E2E5F1;
+    background-color: #e2e5f1;
+    border-color: #e2e5f1;
   }
 }
 
@@ -305,7 +305,7 @@
   position: relative;
   cursor: pointer;
 
-  &:not(:last-of-type){
+  &:not(:last-of-type) {
     margin-bottom: 22px;
   }
 
@@ -313,22 +313,22 @@
 
     margin-top: 3px;
 
-    &:hover{
+    &:hover {
       .add-plan__country-name_choose {
-        border-color: #959BB2;
+        border-color: #959bb2;
       }
       .add-plan__country-flag {
-        border-color: #959BB2;
+        border-color: #959bb2;
       }
     }
   }
 
   &_add {
-    background-color: #EDEFF6;
+    background-color: #edeff6;
     border-radius: 4px;
 
     &:hover {
-      background-color: #DFE3F0;
+      background-color: #dfe3f0;
 
       .add-plan__country-flag_add {
         opacity: 1;
@@ -351,7 +351,7 @@
   padding-bottom: 10px;
   position: relative;
   width: 168px;
-  border: 1px solid #CBCED9;
+  border: 1px solid #cbced9;
   box-sizing: border-box;
   border-radius: 4px;
 
@@ -374,7 +374,7 @@
     display: inline-block;
     position: absolute;
     border-radius: 50%;
-    background-color: #1D2E5B;
+    background-color: #1d2e5b;
     right: -4px;
     top: 15px;
   }
@@ -386,7 +386,7 @@
 
     &::after {
       background-color: transparent;
-      border: 1px solid #CBCED9;
+      border: 1px solid #cbced9;
     }
   }
 
@@ -397,7 +397,7 @@
     &::after {
       top: 17px;
       background-color: transparent;
-      border: 1px solid #CBCED9;
+      border: 1px solid #cbced9;
     }
 
     &::before {
@@ -406,8 +406,8 @@
   }
 
   &_dropdown-open {
-    background-color: #1D2E5B;
-    border-color: #1D2E5B;
+    background-color: #1d2e5b;
+    border-color: #1d2e5b;
     border-bottom-left-radius: 0;
 
     &::after {
@@ -426,7 +426,7 @@
   line-height: 18px;
   letter-spacing: 0.09em;
   text-transform: uppercase;
-  color: #1D2E5B;
+  color: #1d2e5b;
 
   &_dropdown-open {
     color: white;
@@ -478,7 +478,7 @@
 }
 
 .add-plan__country-flag {
-  border: 1px solid #CBCED9;
+  border: 1px solid #cbced9;
   box-sizing: border-box;
   width: 53px;
   padding: 9px;
@@ -506,8 +506,8 @@
   }
 
   &_dropdown-open {
-    background-color: #1D2E5B;
-    border-color: #1D2E5B;
+    background-color: #1d2e5b;
+    border-color: #1d2e5b;
     border-bottom-right-radius: 0;
   }
 }
@@ -538,7 +538,7 @@
   line-height: 30px;
   letter-spacing: 0.01em;
   text-transform: uppercase;
-  color: #1D2E5B;
+  color: #1d2e5b;
   margin-top: 13px;
   margin-left: -6px;
 }
@@ -558,7 +558,7 @@
   display: flex;
   padding-left: 0;
   flex-wrap: wrap;
-  border-right: 1px solid #CBCED9;
+  border-right: 1px solid #cbced9;
   margin-bottom: 0;
 }
 
@@ -567,14 +567,14 @@
   width: 43.8px;
   height: 44px;
   list-style: none;
-  border-bottom: 1px solid #CBCED9;
-  border-left: 1px solid #CBCED9;
+  border-bottom: 1px solid #cbced9;
+  border-left: 1px solid #cbced9;
   padding-top: 12px;
   padding-left: 17px;
   background-color: #fff;
 
   &:active {
-    background: #1D2E5B;
+    background: #1d2e5b;
 
     & a {
       color: white;
@@ -582,8 +582,8 @@
   }
 
   &_selected {
-    background-color: #EDEFF6;
-    border-bottom-color: #EDEFF6;
+    background-color: #edeff6;
+    border-bottom-color: #edeff6;
   }
 }
 
@@ -594,14 +594,14 @@
   text-align: center;
   text-transform: uppercase;
 
-  color: #1D2E5B;
+  color: #1d2e5b;
 }
 
 .add-plan__letter-a-list {
   margin-top: 0;
-  border-left: 1px solid #CBCED9;
-  border-right: 1px solid #CBCED9;
-  border-bottom: 1px solid #CBCED9;
+  border-left: 1px solid #cbced9;
+  border-right: 1px solid #cbced9;
+  border-bottom: 1px solid #cbced9;
   padding-top: 19px;
   padding-left: 19px;
   padding-bottom: 27px;
@@ -619,7 +619,7 @@
   color: #444444;
 
   &:hover {
-    color: #1D2E5B;
+    color: #1d2e5b;
   }
 
   &:active {
@@ -645,7 +645,7 @@
   }
 }
 
-.add-plan__country-card{
+.add-plan__country-card {
   margin-bottom: 3px;
 }
 
@@ -659,7 +659,7 @@
   font-family: $med;
   font-size: 18px;
   line-height: 18px;
-  color: #1D2E5B;
+  color: #1d2e5b;
 }
 
 .add-plan__fade {
@@ -696,7 +696,7 @@
   padding-top: 10px;
   padding-right: 19px;
   border-radius: 4px;
-  border: 1px solid #CBCED9;
+  border: 1px solid #cbced9;
   outline: none;
 
   font-family: $default;
@@ -713,15 +713,15 @@
   }
 
   &:hover {
-    border-color: #959BB2;
+    border-color: #959bb2;
   }
 
   &:focus {
-    border-color: #161C35;
+    border-color: #161c35;
   }
 
   &:invalid {
-    border-color: #F47E7E;
+    border-color: #f47e7e;
 
     @media (min-width: $desktop) {
       &+label {
@@ -735,10 +735,10 @@
         font-family: $default;
         font-size: 20px;
         line-height: 20px;
-        color: #FF0000;
+        color: #ff0000;
         height: 56px;
         display: block;
-        background-color: #FFEFEF;
+        background-color: #ffefef;
         border-bottom-left-radius: 4px;
         border-bottom-right-radius: 4px;
       }
@@ -758,7 +758,7 @@
 }
 
 @media (min-width: $tablet) {
-  .add-plan{
+  .add-plan {
     margin-top: -60px;
     padding-top: 23px;
   }
@@ -795,17 +795,17 @@
     padding-right: 43px;
     padding-bottom: 56px;
 
-    &:first-of-type{
+    &:first-of-type {
       margin-bottom: 40px;
     }
 
-    &:nth-of-type(2){
+    &:nth-of-type(2) {
       margin-top: -1px;
       margin-left: 0;
       padding-bottom: 48px;
       margin-bottom: 51px;
 
-      .add-plan__next-step{
+      .add-plan__next-step {
         margin-top: 0;
       }
     }
@@ -814,17 +814,17 @@
       margin-left: 0;
       padding-bottom: 43px;
 
-      .add-plan__change-step{
+      .add-plan__change-step {
         margin-top: -6px;
       }
 
-      .add-plan__submit-button{
+      .add-plan__submit-button {
         margin-left: 0;
         padding-left: 0px;
         padding-right: 110px;
       }
 
-      .add-plan__previous-step{
+      .add-plan__previous-step {
         margin-top: -5px;
         margin-right: 0;
       }
@@ -855,7 +855,7 @@
 
   .add-plan__companion-search,
   .add-plan__duration {
-    border-top: 1px solid #E1E3E9;
+    border-top: 1px solid #e1e3e9;
     padding-top: 26px;
   }
 
@@ -924,7 +924,7 @@
 
   .add-plan__choose-country-wrap {
     width: 100%;
-    border-top: 1px solid #E1E3E9;
+    border-top: 1px solid #e1e3e9;
     padding-top: 42px;
     margin-top: 33px;
     position: relative;
@@ -932,16 +932,16 @@
                 url("../img/form-border-fade-tablet.svg") 396px 326px no-repeat,
   }
 
-  .add-plan__choose-country:first-of-type{
+  .add-plan__choose-country:first-of-type {
     margin-bottom: 16px;
   }
 
-  .add-plan__choose-country:nth-of-type(2){
+  .add-plan__choose-country:nth-of-type(2) {
     margin-bottom: 11px;
   }
 
-  .add-plan__choose-country:nth-of-type(3){
-    .add-plan__list-open-button{
+  .add-plan__choose-country:nth-of-type(3) {
+    .add-plan__list-open-button {
       margin-left: 17px;
       margin-top: 13px;
     }
@@ -989,7 +989,7 @@
     }
 
     &_add::after {
-      background-color: #EDEFF6;
+      background-color: #edeff6;
       right: -34px;
     }
   }
@@ -1002,7 +1002,7 @@
       display: inline-block;
     }
 
-    &_dropdown-open{
+    &_dropdown-open {
       margin-left: -2px;
       margin-top: 0;
     }
@@ -1034,7 +1034,7 @@
 
     &_choose {
       margin-left: 0;
-      border: 1px solid #CBCED9;
+      border: 1px solid #cbced9;
       border-radius: 4px;
       border-left: none;
       padding-top: 25px;
@@ -1052,7 +1052,7 @@
     }
 
     &_dropdown-open {
-      border-color: #1D2E5B;
+      border-color: #1d2e5b;
       border-bottom-right-radius: 0;
     }
   }
@@ -1087,7 +1087,7 @@
   }
 
   .add-plan__alphabet-list {
-    border-top: 1px solid #CBCED9;
+    border-top: 1px solid #cbced9;
     width: 260px;
     height: 338px;
     margin-top: 35px;
@@ -1099,8 +1099,8 @@
     padding: 27px 19px;
 
     &_selected {
-      background: #1D2E5B;
-      border-color: #1D2E5B;
+      background: #1d2e5b;
+      border-color: #1d2e5b;
 
       & a {
         color: white;
@@ -1171,7 +1171,7 @@
 
   .add-plan__trip-direction {
     margin-top: 30px;
-    border-top: 1px solid #E1E3E9;
+    border-top: 1px solid #e1e3e9;
     padding-top: 7px;;
     margin-bottom: 49px;
 
@@ -1191,7 +1191,7 @@
     }
   }
 
-  .add-plan__country-card:not(:last-of-type){
+  .add-plan__country-card:not(:last-of-type) {
     margin-bottom: 17px;
   }
 
@@ -1255,20 +1255,20 @@
     padding-bottom: 106px;
     border-radius: 60px;
 
-    &:first-of-type{
+    &:first-of-type {
       margin-bottom: 45px;
     }
 
-    &:nth-of-type(2){
-      .add-plan__previous-step{
+    &:nth-of-type(2) {
+      .add-plan__previous-step {
         margin-top: -4px;
       }
       padding-bottom: 106px;
       margin-bottom: 43px;
     }
 
-    &:last-of-type{
-      .add-plan__change-step{
+    &:last-of-type {
+      .add-plan__change-step {
         margin-top: 25px;
       }
 
@@ -1312,7 +1312,7 @@
       height: 6px;
       content: '';
       display: inline-block;
-      background: #1D2E5B;
+      background: #1d2e5b;
       opacity: 0.3;
       border-radius: 50%;
       margin-bottom: 4px;
@@ -1370,7 +1370,7 @@
     margin-top: 32px;
   }
 
-  .add-plan__companion-search{
+  .add-plan__companion-search {
     margin-bottom: 14px;
   }
 
@@ -1392,12 +1392,12 @@
       width: 1px;
       left: 774px;
       top: 0;
-      background-color: #E1E3E9;
+      background-color: #e1e3e9;
       position: absolute;
     }
   }
 
-  .add-plan__kids + label::before{
+  .add-plan__kids + label::before {
     margin-left: -4px;
     margin-top: 10px;
   }
@@ -1405,27 +1405,27 @@
   .add-plan__country-name {
     width: 730px;
 
-    &:after{
+    &:after {
       right: -53px;
     }
 
     &_choose {
       width: 660px;
-      &::after{
+      &::after {
         right: -122px;
       }
     }
 
-    &_add::after{
+    &_add::after {
       top: 17px;
     }
   }
 
-  .add-plan__country-flag:not(.add-plan__country-flag_choose):not(.add-plan__country-flag_add){
+  .add-plan__country-flag:not(.add-plan__country-flag_choose):not(.add-plan__country-flag_add) {
     margin-left: 85px;
   }
 
-  .add-plan__choose-country:first-of-type{
+  .add-plan__choose-country:first-of-type {
     margin-top: 20px;
   }
 
@@ -1451,25 +1451,25 @@
     box-sizing: border-box;
     margin-right: 15px;
     border-radius: 4px;
-    border: 1px solid #CBCED9;
+    border: 1px solid #cbced9;
     padding-left: 23px;
     padding-top: 25px;
 
-    &:nth-of-type(n + 6){
+    &:nth-of-type(n + 6) {
       margin-top: -23px;
     }
 
     &:hover {
-      border-color: #959BB2;
+      border-color: #959bb2;
     }
 
     &:active {
-      background: #1D2E5B;
-      border-color: #1D2E5B
+      background: #1d2e5b;
+      border-color: #1d2e5b;
     }
 
     &_selected {
-      border-color: #1D2E5B;
+      border-color: #1d2e5b;
     }
   }
 
@@ -1495,11 +1495,11 @@
     }
   }
 
-  .add-plan__country-card:last-of-type .add-plan__plan-input{
+  .add-plan__country-card:last-of-type .add-plan__plan-input {
     margin-top: 7px;
   }
 
-  .add-plan__direction-flag{
+  .add-plan__direction-flag {
     margin-right: 6px;
     margin-top: 0px;
   }

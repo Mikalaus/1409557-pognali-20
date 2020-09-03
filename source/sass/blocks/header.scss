@@ -1,6 +1,6 @@
 .header {
   height: 50px;
-  background-color: #161C34;
+  background-color: #161c34;
   display: flex;
   justify-content: center;
   padding-top: 19px;
@@ -147,7 +147,7 @@
     display: inline-block;
     position: absolute;
     top: 100%;
-    color: #FFD74B;
+    color: #ffd74b;
     transform: translate3d(0, 0, 0);
   }
 }
@@ -159,18 +159,18 @@
 
 .header__link:active {
   opacity: 0.3;
-  color: #FFD74B;
+  color: #ffd74b;
 }
 
 .header__enter-link {
   display: block;
-  background-color: #FFD74B;
+  background-color: #ffd74b;
   font-family: $bold;
   font-style: normal;
   font-weight: bold;
   font-size: 17px;
   line-height: 30px;
-  color: #161C35;
+  color: #161c35;
   text-transform: uppercase;
   padding-top: 12px;
   padding-bottom: 8px;
@@ -188,36 +188,36 @@
   margin-top: 53px;
 }
 
-.header_no-js{
+.header_no-js {
   height: auto;
   background-color: white;
 
-  .header__white-logo{
+  .header__white-logo {
     display: none;
   }
 
-  .header__blue-logo{
+  .header__blue-logo {
     display: block;
     height: auto;
   }
 
-  .header__logo{
+  .header__logo {
     margin-left: -35px;
   }
 
-  .header__menu-open{
+  .header__menu-open {
     display: none;
   }
 }
 
-.header__menu_no-js{
+.header__menu_no-js {
   display: flex;
 }
 
 @media (min-width: $tablet) {
   .header {
     height: 132px;
-    background-color: #161C34;
+    background-color: #161c34;
 
     &_catalog {
       background-color: #182044;
@@ -283,26 +283,26 @@
     display: none;
   }
 
-  .header_no-js{
+  .header_no-js {
     height: auto;
     background-color: white;
 
-    .header__white-logo{
+    .header__white-logo {
       display: none;
     }
 
-    .header__blue-logo{
+    .header__blue-logo {
       display: block;
       height: auto;
     }
 
 
-    .header__logo{
+    .header__logo {
       margin-left: -360px;
     }
   }
 
-  .header__menu_no-js{
+  .header__menu_no-js {
     display: flex;
   }
 }
@@ -313,7 +313,7 @@
     justify-content: center;
     height: 90px;
     padding-top: 45px;
-    background-color: #161C34;
+    background-color: #161c34;
 
     & .center-wrap {
       width: 1320px;
@@ -360,7 +360,7 @@
     background-color: white;
     padding-top: 50px;
 
-    .header_catalog{
+    .header_catalog {
       padding-top: 100px;
     }
 
@@ -386,7 +386,7 @@
     display: flex;
     padding-left: 40px;
     padding-top: 0;
-    background-color: #161C34;
+    background-color: #161c34;
   }
 
   .header__menu-wrap {
@@ -433,12 +433,12 @@
     display: block;
   }
 
-  .header_no-js{
-    .header__white-logo{
+  .header_no-js {
+    .header__white-logo {
       display: block;
     }
 
-    .header__blue-logo{
+    .header__blue-logo {
       display: none;
     }
   }
