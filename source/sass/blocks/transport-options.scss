@@ -21,7 +21,7 @@
 
 .transport-options__input {
   width: 100%;
-  border: 1px solid #CBCED9;
+  border: 1px solid #cbced9;
   border-radius: 10px;
   padding-right: 0;
   box-sizing: border-box;
@@ -43,7 +43,7 @@
   line-height: 18px;
   text-align: center;
   text-transform: uppercase;
-  color: #1D2E5B;
+  color: #1d2e5b;
   padding-top: 4px;
   width: 100px;
 }
@@ -142,8 +142,8 @@
   line-height: 20px;
   padding: 18px 18px;
   box-sizing: border-box;
-  color: #FFF;
-  background-color: #101D41;
+  color: #fff;
+  background-color: #101d41;
   border-radius: 4px;
   top: calc(100% + 10px);
   z-index: 2;
@@ -156,7 +156,7 @@
     margin-left: -5px;
     border-width: 5px;
     border-style: solid;
-    border-color: transparent transparent #101D41 transparent;
+    border-color: transparent transparent #101d41 transparent;
   }
 }
 
@@ -185,7 +185,7 @@
 }
 
 .transport-options__option+label:active {
-  background-color: #E2E5F1;
+  background-color: #e2e5f1;
 }
 
 .transport-options__option+span {
@@ -194,7 +194,7 @@
   align-items: center;
   user-select: none;
   cursor: pointer;
-  background-color: #EDEFF6;
+  background-color: #edeff6;
   border-radius: 50%;
   top: 0px;
   left: 0;
@@ -267,8 +267,8 @@
   line-height: 20px;
   padding: 18px 18px;
   box-sizing: border-box;
-  color: #FFF;
-  background-color: #101D41;
+  color: #fff;
+  background-color: #101d41;
   border-radius: 4px;
   top: calc(100% + 10px);
   z-index: 2;
@@ -281,7 +281,7 @@
     margin-left: -5px;
     border-width: 5px;
     border-style: solid;
-    border-color: transparent transparent #101D41 transparent;
+    border-color: transparent transparent #101d41 transparent;
   }
 }
 
@@ -311,7 +311,7 @@
     margin-top: 12px;
     display: flex;
 
-    & label:not(:last-of-type){
+    & label:not(:last-of-type) {
       margin-right: 14px;
     }
   }
@@ -323,7 +323,7 @@
     margin-top: 13px;
   }
 
-  .transport-options__option+label{
+  .transport-options__option+label {
     transform: scale(1.33);
   }
 }

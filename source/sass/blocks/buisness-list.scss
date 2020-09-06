@@ -2,7 +2,7 @@
   position: fixed;
   top: calc(50% - 235px);
   left: calc(50% - 135px);
-  background: #FFFFFF;
+  background: #ffffff;
   box-shadow: 0px 2px 8px rgba(29, 46, 91, 0.5);
   border-radius: 20px;
   width: 270px;
@@ -56,8 +56,8 @@
   font-size: 16px;
   line-height: 24px;
   text-transform: uppercase;
-  color: #1D2E5B;
-  background: #F3F4F8;
+  color: #1d2e5b;
+  background: #f3f4f8;
   border: none;
   outline: none;
   border-bottom-left-radius: 20px;
@@ -66,11 +66,11 @@
   cursor: pointer;
 
   &:hover {
-    background-color: #EDEFF6;
+    background-color: #edeff6;
   }
 
   &:active {
-    color: #AFB5C8;
+    color: #afb5c8;
   }
 }
 

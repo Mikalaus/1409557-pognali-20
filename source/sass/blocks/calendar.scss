@@ -5,8 +5,8 @@
 }
 
 .calendar__month-block {
-  border-top: 1px solid #D6D9E6;
-  border-bottom: 1px solid #D6D9E6;
+  border-top: 1px solid #d6d9e6;
+  border-bottom: 1px solid #d6d9e6;
   display: flex;
   width: 100%;
   padding-top: 10px;
@@ -63,7 +63,7 @@
   color: #444444;
 
   &_weekend {
-    color: #FF5C23;
+    color: #ff5c23;
   }
 }
 
@@ -77,8 +77,8 @@
   display: flex;
   flex-wrap: wrap;
   padding-left: 0;
-  border-right: 1px solid #D6D9E6;
-  border-bottom: 1px solid #D6D9E6;
+  border-right: 1px solid #d6d9e6;
+  border-bottom: 1px solid #d6d9e6;
 }
 
 .calendar__item {
@@ -91,13 +91,13 @@
   font-family: $med;
   font-size: 14px;
   line-height: 18px;
-  color: #1D2E5B;
-  border-top: 1px solid #D6D9E6;
-  border-left: 1px solid #D6D9E6;
+  color: #1d2e5b;
+  border-top: 1px solid #d6d9e6;
+  border-left: 1px solid #d6d9e6;
 
   &_active {
     position: relative;
-    background-color: #EDEFF6;
+    background-color: #edeff6;
 
     &:hover {
       &::before {
@@ -108,18 +108,18 @@
         position: absolute;
         width: 29px;
         height: 28px;
-        border: 2px solid #FF5C23;
+        border: 2px solid #ff5c23;
         z-index: 10;
       }
     }
   }
 
   &_disabled {
-    color: #C7C7C7;
+    color: #c7c7c7;
   }
 
   &_selected {
-    background-color: #1D2E5B;
+    background-color: #1d2e5b;
     color: white;
     position: relative;
 
@@ -134,7 +134,7 @@
         position: absolute;
         width: 29px;
         height: 28px;
-        border: 2px solid #FF5C23;
+        border: 2px solid #ff5c23;
       }
     }
   }
@@ -189,7 +189,7 @@
     margin-left: -5px;
 
     &_weekend {
-      color: #FF5C23;
+      color: #ff5c23;
     }
   }
 
@@ -227,7 +227,7 @@
     min-width: 1000px;
   }
 
-  .calendar__month{
+  .calendar__month {
     margin-left: -18px;
   }
 

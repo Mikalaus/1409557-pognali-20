@@ -10,7 +10,7 @@
   background-color: white;
   margin-bottom: -30px;
 
-  @media(min-width: $tablet){
+  @media(min-width: $tablet) {
     margin-bottom: -60px;
   }
 }
@@ -25,7 +25,7 @@
 .countries__title {
   display: block;
   @include typical-title;
-  text-shadow: 0 3px 2px #CDC7CD;
+  text-shadow: 0 3px 2px #cdc7cd;
   margin-top: 71px;
   margin-left: 25px;
 }

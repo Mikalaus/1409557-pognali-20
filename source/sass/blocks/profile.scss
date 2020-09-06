@@ -1,5 +1,5 @@
 .profile {
-  background-color: #EDEFF6;
+  background-color: #edeff6;
   display: flex;
   justify-content: center;
   padding-bottom: 62px;
@@ -7,7 +7,7 @@
   padding-top: 30px;
 }
 
-.profile__photo-change{
+.profile__photo-change {
   display: none;
 }
 
@@ -56,7 +56,7 @@
 .profile__tags {
   width: 100%;
   box-sizing: border-box;
-  border: 1px solid #CBCED9;
+  border: 1px solid #cbced9;
   border-radius: 10px;
   padding-left: 20px;
   padding-top: 15px;
@@ -64,11 +64,11 @@
   margin-left: 0;
 
   &:hover {
-    border-color: #959BB2;
+    border-color: #959bb2;
   }
 
   &:focus-within {
-    border-color: #161C35;
+    border-color: #161c35;
   }
 }
 
@@ -80,7 +80,7 @@
   line-height: 18px;
   text-align: center;
   text-transform: uppercase;
-  color: #1D2E5B
+  color: #1d2e5b;
 }
 
 .profile__tags-input {
@@ -154,7 +154,7 @@
   }
 
   .profile__tags-legend,
-  .transport-options__legend{
+  .transport-options__legend {
     font-size: 20px;
     line-height: 20px;
     padding-left: 10px;
@@ -162,7 +162,7 @@
     letter-spacing: 0.08em;
   }
 
-  .profile__tags-legend{
+  .profile__tags-legend {
     padding-left: 15px;
   }
 
@@ -230,7 +230,7 @@
     }
 
     &:hover::after {
-      background: #D1D7E9;
+      background: #d1d7e9;
     }
 
     &:active::after {
@@ -238,7 +238,7 @@
     }
   }
 
-  .profile__photo-change{
+  .profile__photo-change {
     display: block;
     position: absolute;
     width: 190px;
@@ -253,8 +253,8 @@
     font-size: 20px;
     line-height: 18px;
     text-transform: uppercase;
-    color: #161C35;
-    background-color: #DFE3F0;
+    color: #161c35;
+    background-color: #dfe3f0;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
   }

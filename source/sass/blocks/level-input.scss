@@ -18,7 +18,7 @@
     left: 101px;
     width: 17px;
     height: 13px;
-    background: linear-gradient(#fff, #fff 6px, #CBCED9 6px, #CBCED9 7px, #fff 7px, #fff);
+    background: linear-gradient(#fff, #fff 6px, #cbced9 6px, #cbced9 7px, #fff 7px, #fff);
     z-index: 3;
   }
 }
@@ -26,46 +26,46 @@
 .level-input__num input {
   width: 110px;
   box-sizing: border-box;
-  border-top: 1px solid #CBCED9;
-  border-bottom: 1px solid #CBCED9;
+  border-top: 1px solid #cbced9;
+  border-bottom: 1px solid #cbced9;
   outline: none;
   font-family: $med;
   font-size: 14px;
   line-height: 13px;
   letter-spacing: 0.06em;
-  color: #1D2E5B;
+  color: #1d2e5b;
   text-align: center;
   height: 35px;
 }
 
 .level-input__num input:first-of-type {
   position: relative;
-  border: 1px solid #CBCED9;
+  border: 1px solid #cbced9;
   border-top-left-radius: 4px;
   border-bottom-left-radius: 4px;
 
   &:hover {
-    border-color: #959BB2;
+    border-color: #959bb2;
   }
 
   &:focus {
-    border-color: #161C35;
+    border-color: #161c35;
   }
 }
 
 .level-input__num input:last-of-type {
-  border: 1px solid #CBCED9;
+  border: 1px solid #cbced9;
   border-top-right-radius: 4px;
   border-bottom-right-radius: 4px;
   margin-left: -1px;
 
   &:hover {
-    border-color: #959BB2;
+    border-color: #959bb2;
     z-index: 2;
   }
 
   &:focus {
-    border-color: #161C35;
+    border-color: #161c35;
   }
 }
 
@@ -76,7 +76,7 @@
   overflow: visible;
   width: 215px;
   height: 2px;
-  background: linear-gradient(to right, #D2B54E, #D2B54E 73px, #1D2E5B 73px);
+  background: linear-gradient(to right, #d2b54e, #d2b54e 73px, #1d2e5b 73px);
 }
 
 .level-input__min-range,
@@ -144,18 +144,18 @@
   }
 }
 
-@media(min-width: $desktop){
-  .level-input__num{
+@media(min-width: $desktop) {
+  .level-input__num {
     margin-left: -26px;
     margin-top: 6px;
 
-    &::after{
+    &::after {
       left: 87px;
       top: 17px;
     }
   }
 
-  .level-input__num input{
+  .level-input__num input {
     padding-top: 15px;
     padding-bottom: 11px;
     font-size: 20px;
@@ -171,7 +171,7 @@
     margin-left: -28px;
     margin-top: 35px;
 
-    & button{
+    & button {
       transform: scale(1.33);
     }
   }

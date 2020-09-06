@@ -33,17 +33,17 @@
   font-size: 16px;
   line-height: 22px;
   text-align: center;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .registration__yellow-link {
-  color: #FFD74B;
-  border-bottom: 1px solid #FFD74B;
+  color: #ffd74b;
+  border-bottom: 1px solid #ffd74b;
   display: inline-block;
 
   &:hover {
-    color: #FF8D30;
-    border-color: #FF8D30;
+    color: #ff8d30;
+    border-color: #ff8d30;
   }
 
   &:active {
@@ -78,10 +78,10 @@
   &:invalid {
     background-color: white;
     border-color: white;
-    color: #FF0000;
+    color: #ff0000;
 
     &::-webkit-input-placeholder {
-      color: #FF0000;
+      color: #ff0000;
       opacity: 1;
     }
   }
@@ -100,7 +100,7 @@
   border: none;
   border: 4px solid white;
   background: #192144;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .registration__submit {
@@ -114,7 +114,7 @@
   width: 61px;
   height: 62px;
   background: url("../img/reg-arrow.svg") 26px 24px no-repeat;
-  background-color: #FFD74B;
+  background-color: #ffd74b;
   margin-left: -15px;
 }
 
@@ -125,7 +125,7 @@
   font-size: 16px;
   line-height: 22px;
   text-align: center;
-  color: #FFFFFF;
+  color: #ffffff;
   width: 216px;
   margin-bottom: 33px;
   min-height: 44px;
@@ -184,7 +184,7 @@
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
     background: url("../img/reg-arrow.svg") 34px 31px no-repeat;
-    background-color: #FFD74B;
+    background-color: #ffd74b;
   }
 
   .registration__write-us-text {
@@ -230,14 +230,14 @@
   .registration__submit {
     font-family: $bold;
     font-size: 24px;
-    color: #1D2E5B;
+    color: #1d2e5b;
     line-height: 24px;
     margin-left: 0;
     width: 327px;
     padding-left: 35px;
     text-align: left;
     background: url("../img/reg-arrow.svg") 278px 32px no-repeat;
-    background-color: #FFD74B;
+    background-color: #ffd74b;
   }
 
   .registration__write-us-text {

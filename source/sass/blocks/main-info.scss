@@ -4,9 +4,9 @@
   @media(min-resolution: 2dppx) {
     background: url("../img/globe-back-mobile@2x.jpg") 0px -555px no-repeat;
     background-size: cover;
-    background-color: #161C34;
+    background-color: #161c34;
   }
-  background-color: #161C34;
+  background-color: #161c34;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -35,7 +35,7 @@
   font-size: 36px;
   line-height: 40px;
   text-align: center;
-  color: #FFFFFF;
+  color: #ffffff;
   margin-bottom: 0;
   margin-top: 42px;
   margin-left: 0px;
@@ -53,8 +53,8 @@
   font-size: 20px;
   line-height: 20px;
   text-transform: uppercase;
-  color: #161C35;
-  background-color: #FFD74B;
+  color: #161c35;
+  background-color: #ffd74b;
   border-radius: 25px;
   padding-top: 12.8px;
   padding-bottom: 11.2px;
@@ -75,7 +75,7 @@
   font-family: $light;
   font-size: 16px;
   line-height: 22px;
-  color: #FFFFFF;
+  color: #ffffff;
   margin-bottom: 18px;
 }
 
@@ -83,7 +83,7 @@
   font-family: $bold;
   font-size: 16px;
   line-height: 22px;
-  color: #FFFFFF;
+  color: #ffffff;
   font-style: normal;
 }
 
@@ -114,7 +114,7 @@
   font-family: $bold;
   font-size: 18px;
   line-height: 18px;
-  color: #161C35;
+  color: #161c35;
   width: 140px;
   min-height: 36px;
   margin-top: 22px;
@@ -129,31 +129,31 @@
   font-family: $bold;
   font-size: 18px;
   line-height: 18px;
-  color: #FFFFFF;
+  color: #ffffff;
   position: absolute;
   top: 22px;
   right: 21px;
 }
 
 .main-info__item_orange {
-  background-color: #FF8D30;
+  background-color: #ff8d30;
   z-index: 1;
 }
 
 .main-info__item_light-orange {
-  background-color: #FFA530;
+  background-color: #ffa530;
   z-index: 2;
   margin-top: -80px;
 }
 
 .main-info__item_dark-yellow {
-  background-color: #FFBD30;
+  background-color: #ffbd30;
   z-index: 3;
   margin-top: -80px;
 }
 
 .main-info__item_yellow {
-  background-color: #FFD74B;
+  background-color: #ffd74b;
   z-index: 4;
   margin-top: -80px;
 }
@@ -164,10 +164,10 @@
     @media(min-resolution: 2dppx) {
       background: url("../img/globe-back-tablet@2x.jpg") -400px -182px no-repeat;
       background-size: cover;
-      background-color: #161C34;
+      background-color: #161c34;
     }
     background-size: cover;
-    background-color: #161C34;
+    background-color: #161c34;
   }
 
   .main-info__wrap {
@@ -208,7 +208,7 @@
     line-height: 25px;
   }
 
-  .main-info__user-links_no-js{
+  .main-info__user-links_no-js {
     margin-top: -396px;
   }
 
@@ -280,10 +280,10 @@
     @media(min-resolution: 2dppx) {
       background: url("../img/globe-back-desktop@2x.jpg") -130px 0px no-repeat;
       background-size: cover;
-      background-color: #161C34;
+      background-color: #161c34;
     }
     background-size: cover;
-    background-color: #161C34;
+    background-color: #161c34;
     width: 100%;
     padding-bottom: 0;
     justify-content: center;
