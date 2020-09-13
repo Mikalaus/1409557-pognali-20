@@ -92,7 +92,8 @@
   top: -4px;
 
   &:hover,
-  &:active {
+  &:active,
+  &:focus {
     transform: scale(1.41);
   }
 }

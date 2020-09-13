@@ -17,6 +17,8 @@ const styles = () => {
     .pipe(sourcemap.init())
     .pipe(sass())
     .pipe(autoprefixer())
+    .pipe(csso())
+    .pipe(rename("style.min.css"))
     .pipe(sourcemap.write("."))
     .pipe(gulp.dest("build/css"))
     .pipe(sync.stream());
@@ -44,7 +46,7 @@ exports.images = images;
 const webp = require("gulp-webp");
 
 const webpOpti = () => {
-  return gulp.src("source/img/**/*.{(png,jpg)}")
+  return gulp.src("source/img/**/*.{png,jpg}")
     .pipe(webp({quality: 90}))
     .pipe(gulp.dest("build/img"))
 }
@@ -97,6 +99,15 @@ const copy = () => {
 
 exports.copy = copy;
 
+//sprite
+
+const sprite = () => {
+  return gulp.src("source/img/svg-sprite.svg")
+  .pipe(gulp.dest("build/img"));
+}
+
+exports.sprite = sprite;
+
 //clean
 
 const del = require("del");
@@ -110,9 +121,9 @@ exports.clean = clean;
 //build
 
 exports.default = gulp.series(
-  clean, images, styles, copy, html
+  clean, images, webpOpti, sprite, styles, copy, html, server
 );
 
 exports.build = gulp.series(
-  clean, images, styles, copy, html
+  clean, images, webpOpti, sprite, styles, copy, html, server
 );

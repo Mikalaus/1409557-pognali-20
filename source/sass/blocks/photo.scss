@@ -244,7 +244,6 @@
     content: '';
     width: 6px;
     height: 6px;
-    background: url("../img/offline.svg") center no-repeat;
     position: absolute;
     top: 23px;
     right: 22px;
@@ -275,6 +274,10 @@
 
   &:active {
     opacity: 0.9;
+  }
+
+  &:focus{
+    outline: 1px solid blue;
   }
 
   &_active {
@@ -313,6 +316,7 @@
   padding-bottom: 10px;
   padding-right: 78px;
   padding-left: 78px;
+  max-width: 100px;
   background-color: #ffd74b;
   border-radius: 25px;
 
@@ -642,7 +646,11 @@
     &::after {
       transform: scale(1.25);
       top: 11px;
-      right: -18px;
+      right: 7px;
+    }
+
+    &_rogovaya::after{
+      right: -14px;
     }
   }
 

@@ -13,14 +13,20 @@
         <div class="header__display">
           <a href="index.html" class="logo header__logo">
             <picture class="header__white-logo">
+              <source media="(min-width: 1440px)" type="image/webp" srcset="img/logo-desktop-white@1x.webp 1x, img/logo-desktop-white@2x.webp 2x">
               <source media="(min-width: 1440px)" srcset="img/logo-desktop-white@1x.png 1x, img/logo-desktop-white@2x.png 2x">
+              <source media="(min-width: 768px)" type="image/webp" srcset="img/logo-tablet-white@1x.webp 1x, img/logo-tablet-white@2x.webp 2x">
               <source media="(min-width: 768px)" srcset="img/logo-tablet-white@1x.png 1x, img/logo-tablet-white@2x.png 2x">
+              <source type="image/webp" srcset="img/logo-mobile-white@1x.webp 1x, img/logo-mobile-white@2x.webp 2x">
               <img src="img/logo-mobile-white@1x.png" alt="Погнали?" srcset="img/logo-mobile-white@2x.png 2x">
             </picture>
 
             <picture class="header__blue-logo">
+              <source media="(min-width: 1440px)" type="image/webp" srcset="img/logo-desktop-blue@1x.webp 1x, img/logo-desktop-blue@2x.webp 2x">
               <source media="(min-width: 1440px)" srcset="img/logo-desktop-blue@1x.png 1x, img/logo-desktop-blue@2x.png 2x">
+              <source media="(min-width: 768px)" type="image/webp" srcset="img/logo-tablet-blue@1x.webp 1x, img/logo-tablet-blue@2x.webp 2x">
               <source media="(min-width: 768px)" srcset="img/logo-tablet-blue@1x.png 1x, img/logo-tablet-blue@2x.png 2x">
+              <source type="image/webp" srcset="img/logo-mobile-blue@1x.webp 1x, img/logo-mobile-blue@2x.webp 2x">
               <img src="img/logo-mobile-blue@1x.png" alt="Погнали?" srcset="img/logo-mobile-blue@2x.png 2x">
             </picture>
           </a>
@@ -491,9 +497,12 @@
               <div class="photo__about-companion">
                 <a href="firsova.html" class="photo__companion">
                   <picture>
-                    <source media="(min-width: 1440px)" srcset="img/firsova-desktop@1x.jpg 1x, img/firsova-desktop@2x.jpg 2x">
-                    <source media="(min-width: 768px)" srcset="img/firsova-tablet@1x.jpg 1x, img/firsova-tablet@2x.jpg 2x">
-                    <img src="img/firsova-mobile@1x.jpg 1x" alt="Фирсова" srcset="img/firsova-mobile@2x.jpg 2x">
+                    <source type="image/webp" media="(min-width:1440px)" srcset="img/firsova-desktop@1x.webp 1x, img/firsova-desktop@2x.webp 2x">
+                    <source media="(min-width:1440px)" srcset="img/firsova-desktop@1x.jpg 1x, img/firsova-desktop@2x.jpg 2x">
+                    <source type="image/webp" media="(min-width:768px)" srcset="img/firsova-tablet@1x.webp 1x, img/firsova-tablet@2x.webp 2x">
+                    <source media="(min-width:768px)" srcset="img/firsova-tablet@1x.jpg 1x, img/firsova-tablet@2x.jpg 2x">
+                    <source type="image/webp" srcset="img/firsova-tablet@1x.webp 1x, img/firsova-tablet@2x.webp 2x">
+                    <img src="img/firsova-tablet@1x.jpg" alt="Фирсова" srcset="img/firsova-tablet@2x.jpg 2x">
                   </picture>
                 </a>
                 <a href="firsova.html" class="photo__name photo__name_offline">Таня Фирсова</a>
@@ -532,14 +541,17 @@
               <div class="photo__about-companion">
                 <a href="demin.html" class="photo__companion">
                   <picture>
-                    <source media="(min-width: 1440px)" srcset="img/demin-desktop@1x.jpg 1x, img/demin-desktop@2x.jpg 2x">
-                    <source media="(min-width: 768px)" srcset="img/demin-tablet@1x.jpg 1x, img/demin-tablet@2x.jpg 2x">
-                    <img src="img/demin-mobile@1x.jpg 1x" alt="Демин" srcset="img/demin-mobile@2x.jpg 2x">
+                    <source type="image/webp" media="(min-width:1440px)" srcset="img/demin-desktop@1x.webp 1x, img/demin-desktop@2x.webp 2x">
+                    <source media="(min-width:1440px)" srcset="img/demin-desktop@1x.jpg 1x, img/demin-desktop@2x.jpg 2x">
+                    <source type="image/webp" media="(min-width:768px)" srcset="img/demin-tablet@1x.webp 1x, img/demin-tablet@2x.webp 2x">
+                    <source media="(min-width:768px)" srcset="img/demin-tablet@1x.jpg 1x, img/demin-tablet@2x.jpg 2x">
+                    <source type="image/webp" srcset="img/demin-tablet@1x.webp 1x, img/demin-tablet@2x.webp 2x">
+                    <img src="img/demin-tablet@1x.jpg" alt="Демин" srcset="img/demin-tablet@2x.jpg 2x">
                   </picture>
                 </a>
                 <a href="demin.html" class="photo__name photo__name_offline">Петя Демин</a>
                 <div class="photo__like">
-                  <a href="" class="typical-button photo__call-button">Позвать!</a>
+                  <a href="" class="photo__call-button">Позвать!</a>
                   <button type="button" class="photo__like-button">like</button>
                   <span class="photo__companion-likes">1500</span>
                 </div>
@@ -572,9 +584,12 @@
               <div class="photo__about-companion">
                 <a href="smolov.html" class="photo__companion">
                   <picture>
-                    <source media="(min-width: 1440px)" srcset="img/smolov-desktop@1x.jpg 1x, img/smolov-desktop@2x.jpg 2x">
-                    <source media="(min-width: 768px)" srcset="img/smolov-tablet@1x.jpg 1x, img/smolov-tablet@2x.jpg 2x">
-                    <img src="img/smolov-mobile@1x.jpg 1x" alt="Смолов" srcset="img/smolov-mobile@2x.jpg 2x">
+                    <source type="image/webp" media="(min-width:1440px)" srcset="img/smolov-desktop@1x.webp 1x, img/smolov-desktop@2x.webp 2x">
+                    <source media="(min-width:1440px)" srcset="img/smolov-desktop@1x.jpg 1x, img/smolov-desktop@2x.jpg 2x">
+                    <source type="image/webp" media="(min-width:768px)" srcset="img/smolov-tablet@1x.webp 1x, img/smolov-tablet@2x.webp 2x">
+                    <source media="(min-width:768px)" srcset="img/smolov-tablet@1x.jpg 1x, img/smolov-tablet@2x.jpg 2x">
+                    <source type="image/webp" srcset="img/smolov-tablet@1x.webp 1x, img/smolov-tablet@2x.webp 2x">
+                    <img src="img/smolov-tablet@1x.jpg" alt="Смолов" srcset="img/smolov-tablet@2x.jpg 2x">
                   </picture>
                 </a>
                 <a href="smolov.html" class="photo__name photo__name_offline">Марк Смолов</a>
@@ -613,12 +628,15 @@
               <div class="photo__about-companion">
                 <a href="rogovaya.html" class="photo__companion">
                   <picture>
-                    <source media="(min-width: 1440px)" srcset="img/rogovaya-desktop@1x.jpg 1x, img/rogovaya-desktop@2x.jpg 2x">
-                    <source media="(min-width: 768px)" srcset="img/rogovaya-tablet@1x.jpg 1x, img/rogovaya-tablet@2x.jpg 2x">
-                    <img src="img/rogovaya-mobile@1x.jpg 1x" alt="Роговая" srcset="img/rogovaya-mobile@2x.jpg 2x">
+                    <source type="image/webp" media="(min-width:1440px)" srcset="img/rogovaya-desktop@1x.webp 1x, img/rogovaya-desktop@2x.webp 2x">
+                    <source media="(min-width:1440px)" srcset="img/rogovaya-desktop@1x.jpg 1x, img/rogovaya-desktop@2x.jpg 2x">
+                    <source type="image/webp" media="(min-width:768px)" srcset="img/rogovaya-tablet@1x.webp 1x, img/rogovaya-tablet@2x.webp 2x">
+                    <source media="(min-width:768px)" srcset="img/rogovaya-tablet@1x.jpg 1x, img/rogovaya-tablet@2x.jpg 2x">
+                    <source type="image/webp" srcset="img/rogovaya-tablet@1x.webp 1x, img/rogovaya-tablet@2x.webp 2x">
+                    <img src="img/rogovaya-tablet@1x.jpg" alt="Роговая" srcset="img/rogovaya-tablet@2x.jpg 2x">
                   </picture>
                 </a>
-                <a href="rogovaya.html" class="photo__name photo__name_online">Лариса Роговая</a>
+                <a href="rogovaya.html" class="photo__name photo__name_rogovaya photo__name_online">Лариса Роговая</a>
                 <div class="photo__like">
                   <a href="" class="typical-button photo__call-button">Позвать!</a>
                   <button type="button" class="photo__like-button">like</button>
