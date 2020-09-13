@@ -8,6 +8,7 @@
   padding-top: 50px;
   margin-top: -30px;
   z-index: 1;
+  position: relative;
 }
 
 .address__wrap {
@@ -45,7 +46,7 @@
   &:hover {
     border-color: #192144;
     background-color: #192144;
-    color: #fff;
+    color: #ffffff;
 
     &::after {
       background-image: url("../img/polygon-white.svg");

@@ -18,7 +18,7 @@
     left: 101px;
     width: 17px;
     height: 13px;
-    background: linear-gradient(#fff, #fff 6px, #cbced9 6px, #cbced9 7px, #fff 7px, #fff);
+    background: linear-gradient(#ffffff, #ffffff 6px, #cbced9 6px, #cbced9 7px, #ffffff 7px, #ffffff);
     z-index: 3;
   }
 }
@@ -81,6 +81,7 @@
 
 .level-input__min-range,
 .level-input__max-range {
+  font-size: 0;
   cursor: pointer;
   width: 10px;
   height: 10px;
@@ -91,7 +92,8 @@
   top: -4px;
 
   &:hover,
-  &:active {
+  &:active,
+  &:focus {
     transform: scale(1.41);
   }
 }

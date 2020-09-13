@@ -10,7 +10,7 @@
   position: relative;
   box-sizing: border-box;
   width: 100%;
-  background-color: #fff;
+  background-color: #ffffff;
   border-radius: 20px;
   padding-top: 15px;
   padding-left: 18px;
@@ -244,7 +244,6 @@
     content: '';
     width: 6px;
     height: 6px;
-    background: url("../img/offline.svg") center no-repeat;
     position: absolute;
     top: 23px;
     right: 22px;
@@ -260,6 +259,7 @@
 }
 
 .photo__like-button {
+  font-size: 0;
   cursor: pointer;
   width: 31px;
   height: 31px;
@@ -274,6 +274,10 @@
 
   &:active {
     opacity: 0.9;
+  }
+
+  &:focus{
+    outline: 1px solid blue;
   }
 
   &_active {
@@ -312,6 +316,7 @@
   padding-bottom: 10px;
   padding-right: 78px;
   padding-left: 78px;
+  max-width: 100px;
   background-color: #ffd74b;
   border-radius: 25px;
 
@@ -362,7 +367,7 @@
 }
 
 .photo__want-to-visit-title {
-  background: linear-gradient(to right, #edeff6, #edeff6 15px, #fff 15px, #fff 142px, #edeff6 142px, #edeff6);
+  background: linear-gradient(to right, #edeff6, #edeff6 15px, #ffffff 15px, #ffffff 142px, #edeff6 142px, #edeff6);
   font-family: $default;
   width: 270px;
   box-sizing: border-box;
@@ -495,7 +500,7 @@
   font-size: 15px;
   line-height: 1px;
   color: #444444;
-  background: linear-gradient(to right, #edeff6, #edeff6 15px, #fff 15px, #fff 102px, #edeff6 102px, #edeff6 194px);
+  background: linear-gradient(to right, #edeff6, #edeff6 15px, #ffffff 15px, #ffffff 102px, #edeff6 102px, #edeff6 194px);
 }
 
 .photo__transport-options {
@@ -516,7 +521,7 @@
   font-size: 15px;
   line-height: 1px;
   color: #444444;
-  background: linear-gradient(to right, #fff, #fff 50px, #edeff6 50px, #edeff6);
+  background: linear-gradient(to right, #ffffff, #ffffff 50px, #edeff6 50px, #edeff6);
   margin-bottom: 18px;
   margin-left: 2px;
 }
@@ -562,6 +567,7 @@
 
 .photo__previous-page,
 .photo__next-page {
+  font-size: 0;
   outline: none;
   border: none;
   width: 134.5px;
@@ -640,7 +646,11 @@
     &::after {
       transform: scale(1.25);
       top: 11px;
-      right: -18px;
+      right: 7px;
+    }
+
+    &_rogovaya::after{
+      right: -14px;
     }
   }
 
@@ -727,7 +737,7 @@
     min-width: 688px;
     margin-left: -45px;
     padding-left: 85px;
-    background: linear-gradient(to right, #edeff6, #edeff6 70px, #fff 70px, #fff 212px, #edeff6 212px, #edeff6);
+    background: linear-gradient(to right, #edeff6, #edeff6 70px, #ffffff 70px, #ffffff 212px, #edeff6 212px, #edeff6);
   }
 
   .photo__country-list {
