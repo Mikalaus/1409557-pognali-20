@@ -20,7 +20,7 @@
 .header_scrolled {
   margin-top: -23px;
   height: 50px;
-  background-color: #fff;
+  background-color: #ffffff;
   position: fixed;
   z-index: 10;
   padding-top: 23px;
@@ -38,6 +38,7 @@
     height: 11px;
     width: 25px;
     padding: 0;
+    font-size: 0;
   }
 
   .header__menu-open_close-version {
@@ -48,11 +49,12 @@
 }
 
 .header_menu-open {
-  background-color: #fff;
+  background-color: #ffffff;
   position: fixed;
   padding-bottom: 41px;
   z-index: 10;
   margin-top: -23px;
+  font-size: 0;
 }
 
 .header__display {
@@ -88,6 +90,7 @@
   outline: none;
   border: none;
   cursor: pointer;
+  font-size: 0;
 }
 
 .header__menu-open_close-version {

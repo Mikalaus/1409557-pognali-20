@@ -6,6 +6,7 @@
   padding-bottom: 43px;
   @include typical-top-section;
   margin-top: -30px;
+  position: relative;
 }
 
 .plans__wrap {
@@ -19,7 +20,7 @@
 .plans__cards {
   width: 100%;
   box-sizing: border-box;
-  margin-top: 28px;
+  margin-top: 30px;
   padding-left: 0;
   counter-reset: myCounter;
   display: flex;
@@ -29,13 +30,13 @@
 .plans__card {
   border-radius: 10px;
   padding-left: 25px;
-  background-color: #fff;
+  background-color: #ffffff;
   width: 100%;
   box-sizing: border-box;
   padding-top: 11px;
   list-style: none;
   position: relative;
-  padding-bottom: 23px;
+  padding-bottom: 22px;
 
   &:not(:last-of-type) {
     margin-bottom: 10px;

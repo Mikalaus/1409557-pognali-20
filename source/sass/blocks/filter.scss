@@ -6,6 +6,7 @@
   margin-top: -30px;
   padding-top: 30px;
   z-index: 2;
+  position: relative;
 }
 
 .filter__wrap {
@@ -158,7 +159,7 @@
 }
 
 .filter__alphabet-link {
-  font-style: $default;
+  font-family: $default;
   font-size: 14px;
   line-height: 14px;
   text-align: center;
@@ -304,6 +305,10 @@
 
   .filter__expend-button_close .filter__show-all {
     display: none;
+  }
+
+  .filter__show-all {
+    position: relative;
   }
 
   .filter__filter-expended {
