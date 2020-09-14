@@ -1,7 +1,8 @@
-.buisness-list{
+.buisness-list {
   position: fixed;
   top: calc(50% - 235px);
-  background: #FFFFFF;
+  left: calc(50% - 135px);
+  background: #ffffff;
   box-shadow: 0px 2px 8px rgba(29, 46, 91, 0.5);
   border-radius: 20px;
   width: 270px;
@@ -9,20 +10,20 @@
   flex-direction: column;
   align-items: center;
   padding-top: 13px;
-  z-index: 10;
+  z-index: 30;
 
-  &_close{
+  &_close {
     display: none;
   }
 }
 
-.buisness-list__title{
+.buisness-list__title {
   @include typical-title;
   margin-left: -1px;
   margin-bottom: 10px;
 }
 
-.buisness-list__option{
+.buisness-list__option {
   display: block;
   width: 220px;
   font-family: $light;
@@ -35,7 +36,7 @@
   border-top: 1px solid rgba(0, 0, 0, 0.05);
 }
 
-.buisness-list__cost{
+.buisness-list__cost {
   font-family: $light;
   font-size: 16px;
   line-height: 22px;
@@ -44,7 +45,7 @@
   margin-bottom: 11px;
 }
 
-.buisness-list__close{
+.buisness-list__close {
   margin-top: 20px;
   display: block;
   width: 100%;
@@ -55,8 +56,8 @@
   font-size: 16px;
   line-height: 24px;
   text-transform: uppercase;
-  color: #1D2E5B;
-  background: #F3F4F8;
+  color: #1d2e5b;
+  background: #f3f4f8;
   border: none;
   outline: none;
   border-bottom-left-radius: 20px;
@@ -64,30 +65,31 @@
   z-index: 11;
   cursor: pointer;
 
-  &:hover{
-    background-color: #EDEFF6;
+  &:hover {
+    background-color: #edeff6;
   }
 
-  &:active{
-    color: #AFB5C8;
+  &:active {
+    color: #afb5c8;
   }
 }
 
 @media (min-width: $tablet) {
-  .buisness-list{
-    top: calc(50% - 263px);
+  .buisness-list {
+    top: calc(50% - 203px);
+    left: calc(50% - 347px);
     width: 688px;
     margin-left: 0px;
   }
 
-  .buisness-list__items{
+  .buisness-list__items {
     width: 506px;
     position: relative;
     margin-top: 35px;
     margin-left: -3px;
   }
 
-  .buisness-list__option{
+  .buisness-list__option {
     width: 506px;
     font-size: 22px;
     line-height: 28px;
@@ -95,7 +97,7 @@
     padding-top: 14px;
   }
 
-  .buisness-list__cost{
+  .buisness-list__cost {
     width: 200px;
     text-align: right;
     font-size: 22px;
@@ -105,24 +107,24 @@
     top: 0px;
     margin-top: 19px;
 
-    &:nth-of-type(1){
+    &:nth-of-type(1) {
       margin-top: 14px;
     }
 
-    &:nth-of-type(2){
+    &:nth-of-type(2) {
       margin-top: 69px;
     }
 
-    &:nth-of-type(3){
+    &:nth-of-type(3) {
       margin-top: 124px;
     }
 
-    &:nth-of-type(4){
+    &:nth-of-type(4) {
       margin-top: 180px;
     }
   }
 
-  .buisness-list__close{
+  .buisness-list__close {
     margin-top: 40px;
     font-size: 24px;
     line-height: 24px;
@@ -133,36 +135,37 @@
 }
 
 @media (min-width: $desktop) {
-  .buisness-list{
+  .buisness-list {
+    left: calc(50% - 370px);
     width: 750px;
     border-radius: 30px;
   }
 
-  .buisness-list__title{
+  .buisness-list__title {
     margin: 0 auto;
     margin-top: 44px;
     margin-bottom: 7px;
   }
 
-  .buisness-list__items{
+  .buisness-list__items {
     width: 635px;
     position: relative;
     margin-top: 35px;
     margin-left: 2px;
   }
 
-  .buisness-list__cost{
+  .buisness-list__cost {
     right: 3px;
-    &:nth-of-type(3){
+    &:nth-of-type(3) {
       margin-top: 127px;
     }
 
-    &:nth-of-type(4){
+    &:nth-of-type(4) {
       margin-top: 183px;
     }
   }
 
-  .buisness-list__close{
+  .buisness-list__close {
     border-bottom-left-radius: 30px;
     border-bottom-right-radius: 30px;
   }

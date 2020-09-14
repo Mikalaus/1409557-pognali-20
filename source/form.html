@@ -3,23 +3,41 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
     <title>HTML Academy: Погнали</title>
   </head>
   <body>
 
-    <header class="header header_catalog">
+    <header class="header header_catalog header_no-js">
       <div class="center-wrap">
         <div class="header__display">
-          <a href="index.html" class="logo header__logo">Погнали</a>
-          <button type="button" class="header__menu-open"></button>
+          <a href="index.html" class="logo header__logo">
+            <picture class="header__white-logo">
+              <source media="(min-width: 1440px)" type="image/webp" srcset="img/logo-desktop-white@1x.webp 1x, img/logo-desktop-white@2x.webp 2x">
+              <source media="(min-width: 1440px)" srcset="img/logo-desktop-white@1x.png 1x, img/logo-desktop-white@2x.png 2x">
+              <source media="(min-width: 768px)" type="image/webp" srcset="img/logo-tablet-white@1x.webp 1x, img/logo-tablet-white@2x.webp 2x">
+              <source media="(min-width: 768px)" srcset="img/logo-tablet-white@1x.png 1x, img/logo-tablet-white@2x.png 2x">
+              <source type="image/webp" srcset="img/logo-mobile-white@1x.webp 1x, img/logo-mobile-white@2x.webp 2x">
+              <img src="img/logo-mobile-white@1x.png" alt="Погнали?" srcset="img/logo-mobile-white@2x.png 2x">
+            </picture>
+
+            <picture class="header__blue-logo">
+              <source media="(min-width: 1440px)" type="image/webp" srcset="img/logo-desktop-blue@1x.webp 1x, img/logo-desktop-blue@2x.webp 2x">
+              <source media="(min-width: 1440px)" srcset="img/logo-desktop-blue@1x.png 1x, img/logo-desktop-blue@2x.png 2x">
+              <source media="(min-width: 768px)" type="image/webp" srcset="img/logo-tablet-blue@1x.webp 1x, img/logo-tablet-blue@2x.webp 2x">
+              <source media="(min-width: 768px)" srcset="img/logo-tablet-blue@1x.png 1x, img/logo-tablet-blue@2x.png 2x">
+              <source type="image/webp" srcset="img/logo-mobile-blue@1x.webp 1x, img/logo-mobile-blue@2x.webp 2x">
+              <img src="img/logo-mobile-blue@1x.png" alt="Погнали?" srcset="img/logo-mobile-blue@2x.png 2x">
+            </picture>
+          </a>
+          <button type="button" class="header__menu-open">открыть меню</button>
           <div class="header__user-links user-links user-links_header">
             <a href="" class="user-links__phone"></a>
             <a href="" class="user-links__mail"></a>
             <a href="" class="enter-link user-links__enter-link enter-link_header">Авторизация</a>
           </div>
         </div>
-        <div class="header__menu header__menu_hidden">
+        <div class="header__menu header__menu_no-js">
           <div class="header__menu-wrap">
             <nav class="header__links">
               <a href="index.html" class="header__link"><span data-hover="О сервисе">О сервисе</span></a>
@@ -32,9 +50,9 @@
               <a href="" class="contacts__mail">mail@htmlacademy.ru</a>
             </div>
             <div class="social-media header__social-media social-media_desktop">
-              <a href="#" class="social-media__link"><img src="img/facebook.svg" width="11" height="21" alt="facebook"></a>
-              <a href="#" class="social-media__link"><img src="img/vk.svg" width="23" height="12" alt="vkontakte"></a>
-              <a href="#" class="social-media__link"><img src="img/instagram.svg" width="18" height="18" alt="instagram"></a>
+              <a href="#" class="social-media__link"><svg width="11" height="21"><use xlink:href="img/svg-sprite.svg#fb-icon"></use></svg></a>
+              <a href="#" class="social-media__link"><svg width="23" height="12"><use xlink:href="img/svg-sprite.svg#vk-icon"></use></svg></a>
+              <a href="#" class="social-media__link"><svg width="18" height="18"><use xlink:href="img/svg-sprite.svg#insta-icon"></use></svg></a>
             </div>
           </div>
         </div>
@@ -43,7 +61,7 @@
 
     <main>
       <div class="center-wrap">
-        <section class="intro-section">
+        <section class="intro-section intro-section_form">
           <div class="intro-section__wrap">
             <h1 class="intro-section__title">Направления</h1>
           </div>
@@ -52,9 +70,19 @@
         <section class="profile">
           <div class="profile__wrap">
             <div class="companion-level companion-level_big companion-level_80 profile__level"></div>
-            <div class="profile__photo"></div>
+            <div class="profile__photo">
+              <picture>
+                <source type="image/webp" media="(min-width:1440px)" srcset="img/demin-desktop@1x.webp 1x, img/demin-desktop@2x.webp 2x">
+                <source media="(min-width:1440px)" srcset="img/demin-desktop@1x.jpg 1x, img/demin-desktop@2x.jpg 2x">
+                <source type="image/webp" media="(min-width:768px)" srcset="img/demin-tablet@1x.webp 1x, img/demin-tablet@2x.webp 2x">
+                <source media="(min-width:768px)" srcset="img/demin-tablet@1x.jpg 1x, img/demin-tablet@2x.jpg 2x">
+                <source type="image/webp" srcset="img/demin-tablet@1x.webp 1x, img/demin-tablet@2x.webp 2x">
+                <img src="img/demin-tablet@1x.jpg" alt="Демин" srcset="img/demin-tablet@2x.jpg 2x">
+              </picture>
+            </div>
+            <span class="profile__photo-change">фото</span>
             <a class="profile__change-img-button">Сменить фото</a>
-            <form action="" class="profile__tags-form">
+            <form action="form.html" class="profile__tags-form">
               <fieldset class="profile__tags">
                 <legend align="center" class="profile__tags-legend">Тэги</legend>
                 <div class="profile__tags-wrap">
@@ -63,7 +91,7 @@
               </fieldset>
             </form>
 
-            <form action="" class="profile__transport-form transport-options">
+            <form action="form.html" class="profile__transport-form transport-options">
               <fieldset class="transport-options__input">
                 <legend align="center" class="transport-options__legend">Транспорт</legend>
                 <div class="transport-options__input-wrap">
@@ -109,10 +137,10 @@
               </ul>
             </div>
             <form action="form.html" method="post" class="add-plan__form">
-              <fieldset class="add-plan__block">
+              <fieldset class="add-plan__block" id="step1">
                 <div class="add-plan__block-title-part">
                   <div class="add-plan__description">
-                    <h1 class="add-plan__step-title">Шаг 1.<br>Даты пребывания</h1>
+                    <div class="add-plan__step-title"><div class="add-plan__step-title-step">Шаг 1.</div><div class="add-plan__step-title-description">Даты пребывания</div></div>
                     <p class="add-plan__step-description">
                       Укажите предпочтительное
                       количество попутчиков, которых
@@ -136,9 +164,9 @@
                       <span class="add-plan__measure">чел.</span>
                     </div>
                     <div class="add-plan__quantity-input">
-                      <button class="add-plan__button add-plan__button_min">-</button>
+                      <button type="button" class="add-plan__button add-plan__button_min">-</button>
                       <input type="text" class="add-plan__input" value="2">
-                      <button class="add-plan__button add-plan__button_max">+</button>
+                      <button type="button" class="add-plan__button add-plan__button_max">+</button>
                     </div>
                   </div>
 
@@ -148,9 +176,9 @@
                       <span class="add-plan__measure">дн.</span>
                     </div>
                     <div class="add-plan__quantity-input">
-                      <button class="add-plan__button add-plan__button_min">-</button>
+                      <button type="button" class="add-plan__button add-plan__button_min">-</button>
                       <input type="text" class="add-plan__input" value="2">
-                      <button class="add-plan__button add-plan__button_max">+</button>
+                      <button type="button" class="add-plan__button add-plan__button_max">+</button>
                     </div>
                   </div>
 
@@ -217,13 +245,13 @@
                       <li class="calendar__item calendar__item_active">5</li>
                     </ul>
                   </div>
-                  <a href="#" class="add-plan__next-step">Следующий шаг</a>
+                  <a href="#step2" class="add-plan__next-step">Следующий шаг</a>
                 </div>
               </fieldset>
-              <fieldset class="add-plan__block">
+              <fieldset class="add-plan__block" id="step2">
                 <div class="add-plan__block-title-part">
-                  <div class="add-plans__description">
-                    <h1 class="add-plan__step-title">Шаг 2.<br>Маршрут</h1>
+                  <div class="add-plan__description">
+                    <div class="add-plan__step-title"><div class="add-plan__step-title-step">Шаг 2.</div><div class="add-plan__step-title-description">Маршрут</div></div>
                     <p class="add-plan__step-description add-plan__step-description_direction">Укажите страны, которые вы хотели посетить. Это может быть одна или сразу несколько.</p>
                   </div>
 
@@ -237,7 +265,7 @@
                   <div class="add-plan__choose-country">
                     <div class="add-plan__country-name">
                       <span class="add-plan__country-title">Босния и герцегов<span class="add-plan__country-title_expended">ина</span></span>
-                      <div class="add-plan__fade-block"><button class="add-plan__list-open-button"></button></div>
+                      <div class="add-plan__fade-block"><button type="button" class="add-plan__list-open-button">добавить план</button></div>
                     </div>
                     <div class="add-plan__country-flag add-plan__country-flag_bosnia-gerzegovina"></div>
                     <a class="add-plan__delete-button"></a>
@@ -245,7 +273,7 @@
                   <div class="add-plan__choose-country">
                     <div class="add-plan__country-name">
                       <span class="add-plan__country-title">Чехия</span>
-                      <div class="add-plan__fade-block"><button class="add-plan__list-open-button"></button></div>
+                      <div class="add-plan__fade-block"><button type="button" class="add-plan__list-open-button">добавить план</button></div>
                     </div>
                     <div class="add-plan__country-flag add-plan__country-flag_chech"></div>
                     <a class="add-plan__delete-button"></a>
@@ -254,7 +282,7 @@
                     <div class="add-plan__country-name add-plan__country-name_choose">
                       <span class="add-plan__country-title add-plan__country-title_choose">Выберите страну</span>
                     </div>
-                    <div class="add-plan__country-flag add-plan__country-flag_choose"><button class="add-plan__list-open-button add-plan__list-open-button_choose"></button></div>
+                    <div class="add-plan__country-flag add-plan__country-flag_choose"><button type="button" class="add-plan__list-open-button add-plan__list-open-button_choose">выбрать план</button></div>
                     <a class="add-plan__delete-button add-plan__delete-button_choose"></a>
 
                     <div class="add-plan__choose-country-dropdown add-plan__choose-country-dropdown_hidden">
@@ -308,14 +336,14 @@
                   </div>
                 </div>
                 <div class="add-plan__change-step">
-                  <a class="add-plan__next-step">Следующий шаг</a>
-                  <a class="add-plan__previous-step">На шаг назад</a>
+                  <a href="#step3" class="add-plan__next-step">Следующий шаг</a>
+                  <a href="#step1" class="add-plan__previous-step">На шаг назад</a>
                 </div>
               </fieldset>
-              <fieldset class="add-plan__block">
+              <fieldset class="add-plan__block" id="step3">
                 <div class="add-plan__block-title-part">
-                  <div class="add-plans__description">
-                    <h1 class="add-plan__step-title">Шаг 3.<br>Развлечения</h1>
+                  <div class="add-plan__description">
+                    <div class="add-plan__step-title"><div class="add-plan__step-title-step">Шаг 3.</div><div class="add-plan__step-title-description">Развлечения</div></div>
                     <p class="add-plan__step-description">Наконец, расскажите о своих планах времяпровождения. Можно писать в свободной форме и ставить тэги.</p>
                   </div>
                   <ul class="add-plan__step-change">
@@ -330,19 +358,19 @@
                       <h3 class="add-plan__direction-name">Босния и Герцеговина</h3>
                       <div class="add-plan__fade"><div class="add-plan__direction-flag add-plan__direction-flag_bosnia-gerzegovina"></div></div>
                     </div>
-                    <textarea class="add-plan__plan-input" placeholder="План действий" required></textarea>
+                    <textarea class="add-plan__plan-input" placeholder="План действий" required></textarea><label class="add-plan__plan-input-invalid">Это поле должно быть заполнено</label>
                   </div>
                   <div class="add-plan__country-card">
                     <div class="add-plan__label">
                       <h3 class="add-plan__direction-name">Чехия</h3>
                       <div class="add-plan__fade"><div class="add-plan__direction-flag add-plan__direction-flag_chech"></div></div>
                     </div>
-                    <textarea class="add-plan__plan-input" required>Пить пиво и лазить по старым замкам, наслаждаться архитектурой и вот это все.</textarea>
+                    <textarea class="add-plan__plan-input" required>Пить пиво и лазить по старым замкам, наслаждаться архитектурой и вот это все.</textarea><label class="add-plan__plan-input-invalid">Это поле должно быть заполнено</label>
                   </div>
                 </div>
                 <div class="add-plan__change-step">
                   <button type="submit" class="add-plan__submit-button">Отправить</button>
-                  <a class="add-plan__previous-step add-plan__previous-step_submit">На шаг назад</a>
+                  <a href="#step2" class="add-plan__previous-step add-plan__previous-step_submit">На шаг назад</a>
                 </div>
               </fieldset>
             </form>
@@ -356,13 +384,13 @@
       <div class="footer__wrap">
         <a href="#" class="footer__logo">Погнали</a>
         <div class="social-media social-media_footer footer__social-media">
-          <a href="#" class="social-media__link social-media__link_yellow"><img src="img/facebook.svg" width="11" height="21" alt="facebook"></a>
-          <a href="#" class="social-media__link social-media__link_yellow"><img src="img/vk.svg" width="23" height="12" alt="vkontakte"></a>
-          <a href="#" class="social-media__link social-media__link_yellow"><img src="img/instagram.svg" width="18" height="18" alt="instagram"></a>
+          <a href="#" class="social-media__link social-media__link_yellow"><svg width="11" height="21"><use xlink:href="img/svg-sprite.svg#fb-icon"></use></svg></a>
+          <a href="#" class="social-media__link social-media__link_yellow"><svg width="23" height="12"><use xlink:href="img/svg-sprite.svg#vk-icon"></use></svg></a>
+          <a href="#" class="social-media__link social-media__link_yellow"><svg width="18" height="18"><use xlink:href="img/svg-sprite.svg#insta-icon"></use></svg></a>
         </div>
         <div class="footer__bottom-part-wrapper">
           <span class="footer__designed-by">Разработано</span>
-          <a class="footer__academy" href="https://up.htmlacademy.ru/adaptive">htmlacademy</a>
+          <a class="footer__academy" href="https://up.htmlacademy.ru/adaptive"><svg width="27" height="34"><use xlink:href="#htmlacademy"></use></svg></a>
         </div>
       </div>
     </footer>

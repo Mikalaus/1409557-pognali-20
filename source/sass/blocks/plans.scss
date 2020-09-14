@@ -1,43 +1,48 @@
-.plans{
-  background-color: #DFE3F0;
+.plans {
+  background-color: #dfe3f0;
   display: flex;
   justify-content: center;
-  padding-top: 6px;
-  padding-bottom: 13px;
+  padding-top: 8px;
+  padding-bottom: 43px;
+  @include typical-top-section;
+  margin-top: -30px;
+  position: relative;
 }
 
-.plans__wrap{
+.plans__wrap {
   width: 270px;
 }
 
-.plans__title{
+.plans__title {
   @include blue-title(24px);
 }
 
-.plans__cards{
+.plans__cards {
   width: 100%;
   box-sizing: border-box;
-  margin-top: 28px;
+  margin-top: 30px;
   padding-left: 0;
   counter-reset: myCounter;
   display: flex;
   flex-direction: column;
-  gap: 10px;
 }
 
-.plans__card{
+.plans__card {
   border-radius: 10px;
   padding-left: 25px;
-  background-color: #fff;
+  background-color: #ffffff;
   width: 100%;
   box-sizing: border-box;
   padding-top: 11px;
   list-style: none;
   position: relative;
-  padding-bottom: 23px;
+  padding-bottom: 22px;
 
+  &:not(:last-of-type) {
+    margin-bottom: 10px;
+  }
 
-  &::before{
+  &::before {
     counter-increment: myCounter;
     content: counter(myCounter)".";
     display: block;
@@ -45,21 +50,21 @@
     font-size: 16px;
     line-height: 16px;
     text-align: center;
-    color: #1D2E5B;
+    color: #1d2e5b;
     position: absolute;
     top: 24px;
     left: 23px;
   }
 }
 
-.plans__countries-name{
+.plans__countries-name {
   @include blue-title (16px);
   margin-left: 16px;
 }
 
 .plans__companion-num,
-.plans__duration{
-  width: 100px;
+.plans__duration {
+  width: 120px;
   text-align: left;
   font-family: $med;
   font-size: 14px;
@@ -67,14 +72,18 @@
   text-align: left;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: #1D2E5B;
+  color: #1d2e5b;
 }
 
-.plans__companion-num{
-  margin-top: 20px;
+.plans__companion-num {
+  margin-top: 18px;
 }
 
-.plans__change-button{
+.plans__duration {
+  margin-top: -7px;
+}
+
+.plans__change-button {
   display: block;
   font-family: $med;
   font-size: 14px;
@@ -86,108 +95,138 @@
   margin-top: 25px;
   cursor: pointer;
 
-  &:hover{
+  &:hover {
     opacity: 0.6;
   }
 
-  &:active{
+  &:active {
     opacity: 0.1;
   }
 }
 
-@media (min-width: $tablet){
-  .plans__wrap{
+@media (min-width: $tablet) {
+  .plans {
+    margin-top: -60px;
+    padding-top: 27px;
+    padding-bottom: 121px;
+  }
+
+  .plans__wrap {
     box-sizing: border-box;
     width: 688px;
     padding-left: 35px;
     padding-right: 35px;
   }
 
-  .plans__card{
+  .plans__card {
+    height: 152px;
     padding-bottom: 0;
+
+    &:first-of-type {
+      margin-top: 18px;
+    }
   }
 
-  .plans__title{
+  .plans__title {
     font-size: 36px;
     line-height: 36px;
   }
 
-  .plans__countries-name{
+  .plans__countries-name {
     font-size: 24px;
     line-height: 24px;
+    margin-top: 29px;
+    margin-left: 12px;
   }
 
-  .plans__card::before{
+  .plans__card::before {
     font-size: 20px;
     line-height: 20px;
-    top: 34px;
+    top: 44px;
     left: 571px;
   }
 
-  .plans__description{
+  .plans__description {
     display: flex;
     min-width: calc(100% + 25px);
     box-sizing: border-box;
     margin-left: -25px;
-    border-top: 1px solid #CBCED9;
-    padding-top: 5px;
+    border-top: 1px solid #cbced9;
     padding-left: 32px;
     padding-right: 34px;
     justify-content: space-between;
     margin-top: 34px;
   }
 
-  .plans__companion-num{
-    width: 139px;
+  .plans__companion-num {
+    width: 142px;
     font-size: 20px;
     line-height: 20px;
+    letter-spacing: 0.1em;
+
+    margin-left: 1px;
   }
 
-  .plans__duration{
+  .plans__duration {
     width: 173px;
     font-size: 20px;
     line-height: 20px;
     letter-spacing: 0.06em;
+    margin-left: -40px;
+    margin-top: 18px;
   }
 
 
-  .plans__change-button{
+  .plans__change-button {
     font-size: 20px;
     line-height: 20px;
     width: 107px;
     margin-top: 20px;
+    letter-spacing: 0.1em;
   }
 }
 
-@media (min-width: $desktop){
-  .plans__wrap{
+@media (min-width: $desktop) {
+  .plans {
+    padding-bottom: 109px;
+  }
+
+  .plans__wrap {
     width: 1320px;
     padding-left: 64px;
     padding-right: 0;
   }
 
-  .plans__cards{
-    gap: 15px;
+  .plans__title {
+    margin-left: 7px;
   }
 
-  .plans__countries-name{
-    margin-left: 65px;
+  .plans__cards {
+    margin-top: -2px;
+  }
+
+  .plans__countries-name {
+    margin-left: 70px;
     margin-top: 26px;
   }
 
-  .plans__card{
+  .plans__card {
     display: flex;
-    min-height: 105px;
+    height: 97px;
     justify-content: space-between;
     padding-right: 42px;
 
-    &::before{
+    &:not(:last-of-type) {
+      margin-bottom: 15px;
+    }
+
+    &::before {
       top: 40px;
       left: 43px;
     }
   }
 
-  .plans__description{
+  .plans__description {
     min-width: 589px;
     padding: 0;
     margin-top: 10px;
@@ -195,11 +234,12 @@
     justify-content: flex-start;
   }
 
-  .plans__companion-num{
+  .plans__companion-num {
     margin-right: 32px;
   }
 
-  .plans__duration{
+  .plans__duration {
+    margin-left: 5px;
     margin-right: auto;
   }
 }

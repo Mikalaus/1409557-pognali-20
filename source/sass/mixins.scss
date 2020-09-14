@@ -1,69 +1,73 @@
-@mixin typical-bottom-section{
+@mixin typical-bottom-section {
   border-bottom-left-radius: 30px;
   border-bottom-right-radius: 30px;
-  @media (min-width: 768px){
+
+  @media (min-width: 768px) {
     border-bottom-left-radius: 60px;
     border-bottom-right-radius: 60px;
   }
 }
 
-@mixin typical-bottom-section-catalog{
+@mixin typical-bottom-section-catalog {
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
-  @media (min-width: 768px){
+
+  @media (min-width: 768px) {
     border-bottom-left-radius: 60px;
     border-bottom-right-radius: 60px;
   }
 }
 
-@mixin typical-top-section{
+@mixin typical-top-section {
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
-  @media (min-width: 768px){
+
+  @media (min-width: 768px) {
     border-top-left-radius: 60px;
     border-top-right-radius: 60px;
   }
 }
 
-@mixin typical-title{
+@mixin typical-title {
   font-family: "Blogger Sans bold", "Arial", sans-serif;
   font-size: 24px;
   line-height: 24px;
-  color: #FF8D30;
-  @media(min-width: 768px){
+  color: #ff8d30;
+
+  @media(min-width: 768px) {
     font-size: 45px;
     line-height: 45px;
   }
 }
 
-@mixin typical-link{
+@mixin typical-link {
   position: relative;
   width: 270px;
   height: 62px;
   box-sizing: border-box;
   border-radius: 10px;
   display: block;
-  background-color: #FFD74B;
+  background-color: #ffd74b;
   padding-top: 22.48px;
   padding-left: 23.1px;
   font-family: "Blogger Sans bold", "Arial", sans-serif;
   font-size: 18px;
   line-height: 18px;
-  color: #1D2E5B;
+  color: #1d2e5b;
 
-  &:hover{
-    background-color: #FFBD30;
+  &:hover {
+    background-color: #ffbd30;
   }
 
-  &:active{
-    &::after{
+  &:active {
+    &::after {
       opacity: 0.3
     }
 
-    color: rgba(#161C35, 0.3);
+    color: rgba(#161c35, 0.3);
   }
 
-  &::after{
+  &::after {
     content: "";
     display: inline-block;
     position: absolute;
@@ -74,7 +78,7 @@
     background: url("../img/polygon.svg") center no-repeat;
   }
 
-  @media (min-width: 768px){
+  @media (min-width: 768px) {
     font-size: 24px;
     line-height: 24px;
     border-radius: 20px;
@@ -85,49 +89,49 @@
     padding-top: 31px;
     padding-left: 33px;
 
-    &::after{
+    &::after {
       top: 35px;
       right: 31px;
     }
   }
 }
 
-@mixin typical-link_secondary{
+@mixin typical-link_secondary {
   padding-top: 19px;
   border: 3px solid black;
   box-shadow: none;
   padding-left: 20px;
 
-  &::after{
+  &::after {
     top: 21px;
     right: 19px;
   }
 }
 
-@mixin typical-button{
+@mixin typical-button {
   width: 100%;
   padding-top: 7px;
-  padding-bottom: 7px;
+  padding-bottom: 3px;
   text-align: center;
   font-family: $med;
-  color: #161C35;
-  background-color: #FFD74B;
+  color: #161c35;
+  background-color: #ffd74b;
   border-radius: 20px;
   text-transform: uppercase;
 
-  &:hover{
-    background-color: #FFBD30;
+  &:hover {
+    background-color: #ffbd30;
   }
 
-  &:active{
-    &::after{
+  &:active {
+    &::after {
       opacity: 0.3
     }
 
-    color: rgba(#161C35, 0.3);
+    color: rgba(#161c35, 0.3);
   }
 
-  @media (min-width: $tablet){
+  @media (min-width: $tablet) {
     box-sizing: border-box;
     font-size: 24px;
     line-height: 24px;
@@ -139,7 +143,7 @@
     width: 286px;
     position: relative;
 
-    &::after{
+    &::after {
       content: '';
       position: absolute;
       width: 14px;
@@ -151,22 +155,22 @@
   }
 }
 
-@mixin typical-button_secondary{
+@mixin typical-button_secondary {
   width: 100%;
-  padding-top: 7px;
-  padding-bottom: 7px;
+  padding-top: 12px;
+  padding-bottom: 10px;
   text-align: center;
   font-family: $med;
-  color: #161C35;
-  background-color: #FFD74B;
+  color: #161c35;
+  background-color: #ffd74b;
   border-radius: 20px;
   text-transform: uppercase;
-  background-color: #DFE3F0;
+  background-color: #dfe3f0;
 }
 
-@mixin blue-title($size){
+@mixin blue-title($size) {
   font-family: $bold;
   font-size: $size;
   line-height: $size;
-  color: #1D2E5B;
+  color: #1d2e5b;
 }

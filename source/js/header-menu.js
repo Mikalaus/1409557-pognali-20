@@ -5,7 +5,12 @@ var logo = document.querySelector(".header__logo");
 var enter = document.querySelector(".enter-link");
 var userLinks = document.querySelector(".user-links");
 
-window.onscroll = function(){
+header.classList.remove("header_no-js");
+menu.classList.remove("header__menu_no-js");
+menu.classList.add("header__menu_hidden");
+userLinks.classList.remove("main-info__user-links_no-js");
+
+window.addEventListener("scroll", function(){
   if(window.pageYOffset > 50){
     header.classList.add("header_scrolled");
     enter.classList.add("enter-link_scrolled")
@@ -20,7 +25,7 @@ window.onscroll = function(){
         userLinks.classList.remove("user-links_scrolled")
       }
     }
-  }
+});
 
 menuOpen.addEventListener("click", function(){
   enter.classList.add("enter-link_scrolled");

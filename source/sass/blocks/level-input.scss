@@ -1,16 +1,16 @@
-.level-input{
+.level-input {
   width: 220px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.level-input__num{
+.level-input__num {
   position: relative;
   display: flex;
   justify-content: flex-start;
 
-  &::after{
+  &::after {
     position: absolute;
     content: '';
     display: inline-block;
@@ -18,69 +18,70 @@
     left: 101px;
     width: 17px;
     height: 13px;
-    background: linear-gradient(#fff, #fff 6px, #CBCED9 6px, #CBCED9 7px, #fff 7px, #fff);
+    background: linear-gradient(#ffffff, #ffffff 6px, #cbced9 6px, #cbced9 7px, #ffffff 7px, #ffffff);
     z-index: 3;
   }
 }
 
-.level-input__num input{
+.level-input__num input {
   width: 110px;
   box-sizing: border-box;
-  border-top: 1px solid #CBCED9;
-  border-bottom: 1px solid #CBCED9;
+  border-top: 1px solid #cbced9;
+  border-bottom: 1px solid #cbced9;
   outline: none;
   font-family: $med;
   font-size: 14px;
   line-height: 13px;
   letter-spacing: 0.06em;
-  color: #1D2E5B;
+  color: #1d2e5b;
   text-align: center;
   height: 35px;
 }
 
-.level-input__num input:first-of-type{
+.level-input__num input:first-of-type {
   position: relative;
-  border: 1px solid #CBCED9;
+  border: 1px solid #cbced9;
   border-top-left-radius: 4px;
   border-bottom-left-radius: 4px;
 
-  &:hover{
-    border-color: #959BB2;
+  &:hover {
+    border-color: #959bb2;
   }
 
-  &:focus{
-    border-color: #161C35;
+  &:focus {
+    border-color: #161c35;
   }
 }
 
-.level-input__num input:last-of-type{
-  border: 1px solid #CBCED9;
+.level-input__num input:last-of-type {
+  border: 1px solid #cbced9;
   border-top-right-radius: 4px;
   border-bottom-right-radius: 4px;
   margin-left: -1px;
 
-  &:hover{
-    border-color: #959BB2;
+  &:hover {
+    border-color: #959bb2;
     z-index: 2;
   }
 
-  &:focus{
-    border-color: #161C35;
+  &:focus {
+    border-color: #161c35;
   }
 }
 
-.level-input__range{
+.level-input__range {
   margin-left: -5px;
   margin-top: 24px;
   position: relative;
   overflow: visible;
   width: 215px;
   height: 2px;
-  background: linear-gradient(to right, #D2B54E, #D2B54E 73px, #1D2E5B 73px);
+  background: linear-gradient(to right, #d2b54e, #d2b54e 73px, #1d2e5b 73px);
 }
 
 .level-input__min-range,
-.level-input__max-range{
+.level-input__max-range {
+  font-size: 0;
   cursor: pointer;
   width: 10px;
   height: 10px;
@@ -91,40 +92,41 @@
   top: -4px;
 
   &:hover,
-  &:active{
+  &:active,
+  &:focus {
     transform: scale(1.41);
   }
 }
 
-.level-input__min-range{
+.level-input__min-range {
   left: 67px;
 }
 
-.level-input__max-range{
+.level-input__max-range {
   right: -5px;
 }
 
-@media (min-width: $tablet) and (max-width: $media-max-desktop){
-  .level-input__range{
+@media (min-width: $tablet) and (max-width: $media-max-desktop) {
+  .level-input__range {
     order: -1;
   }
 
   .level-input__min-range,
-  .level-input__max-range{
+  .level-input__max-range {
     transform: scale(1.33);
   }
 
-  .level-input__max-range{
+  .level-input__max-range {
     right: 1px;
   }
 
-  .level-input__range{
+  .level-input__range {
     height: 3px;
     width: 281px;
     margin-top: -4px;
   }
 
-  .level-input__num input{
+  .level-input__num input {
     width: 74px;
     height: 46px;
     font-size: 20px;
@@ -132,14 +134,57 @@
     letter-spacing: 0.04em
   }
 
-  .level-input__num{
-    margin-top: -2px;
-    margin-right: 2px;
+  .level-input__num {
+    margin-top: -3px;
+    margin-right: -1px;
 
-    &::after{
+    &::after {
       top: 15px;
       transform: scale(1.33);
       left: 65px;
     }
+  }
+}
+
+@media(min-width: $desktop) {
+  .level-input__num {
+    margin-left: -26px;
+    margin-top: 6px;
+
+    &::after {
+      left: 87px;
+      top: 17px;
+    }
+  }
+
+  .level-input__num input {
+    padding-top: 15px;
+    padding-bottom: 11px;
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 0.04em;
+    width: 96px;
+    height: 46px;
+  }
+
+  .level-input__range {
+    width: 192px;
+    height: 3px;
+    margin-left: -28px;
+    margin-top: 35px;
+
+    & button {
+      transform: scale(1.33);
+    }
+  }
+
+  .level-input__min-range {
+    left: 60px;
+    top: -4px;
+  }
+
+  .level-input__max-range {
+    right: 0px;
+    top: -4px;
   }
 }

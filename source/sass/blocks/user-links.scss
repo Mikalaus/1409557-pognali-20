@@ -1,62 +1,63 @@
-.user-links{
+.user-links {
   position: relative;
   display: flex;
 }
 
-.user-links__phone{
+.user-links__phone {
   width: 40px;
   height: 40px;
   border-radius: 50%;
   background: url("../img/icon-call.svg") center no-repeat;
-  background-color: #FF8D30;
+  background-color: #ff8d30;
 
-  &:hover{
-    background-color: #F26926;
+  &:hover {
+    background-color: #f26926;
   }
 
-  &:active{
+  &:active {
     opacity: 0.7;
   }
 }
 
-.user-links__mail{
+.user-links__mail {
   width: 40px;
   height: 40px;
   border-radius: 50%;
   background: url("../img/icon-mail.svg") center no-repeat;
-  background-color: #FFBD30;
+  background-color: #ffbd30;
 
-  &:hover{
-    background-color: #FF8D30;
+  &:hover {
+    background-color: #ff8d30;
   }
 
-  &:active{
+  &:active {
     opacity: 0.7;
   }
 }
 
-.user-links__enter-link{
+.user-links__enter-link {
 
-  &:hover{
-    background-color: #FFBD30;
+  &:hover {
+    background-color: #ffbd30;
   }
 
-  &:active{
+  &:active {
     opacity: 0.7;
   }
 }
 
-.user-links_header{
+.user-links_header {
   display: none;
 }
 
-@media (min-width: $tablet){
-  .user-links{
+@media (min-width: $tablet) {
+  .user-links {
     position: absolute;
     top: -420px;
+    z-index: 11;
   }
 
-  .user-links_header{
+  .user-links_header {
     display: block;
     position: absolute;
     top: -70px;
@@ -64,12 +65,12 @@
   }
 }
 
-@media(min-width: $desktop){
-  .user-links{
+@media(min-width: $desktop) {
+  .user-links {
     top: -310px;
     right: calc(50% - 660px);
 
-    &_scrolled{
+    &_scrolled {
       position: fixed;
       top: -195px;
       right: calc(50% - 215px);
@@ -79,16 +80,16 @@
   }
 
   .user-links__phone,
-  .user-links__mail{
+  .user-links__mail {
     transform: scale(1.25);
     margin-right: 5px;
   }
 
-  .user-links__phone{
+  .user-links__phone {
     margin-right: 10px;
   }
 
-  .user-links_header{
+  .user-links_header {
     margin-left: 0;
     position: absolute;
     display: flex;
@@ -98,8 +99,8 @@
     left: calc(50% + 377px);
   }
 
-  .enter-link_header.enter-link_scrolled{
-    top: 25px;
+  .enter-link_header.enter-link_scrolled {
+    top: 45px;
     right: calc(50% - 412px);
   }
 }

@@ -3,23 +3,41 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
     <title>HTML Academy: Погнали</title>
   </head>
   <body>
 
-    <header class="header header_catalog">
+    <header class="header header_catalog  header_no-js">
       <div class="center-wrap">
         <div class="header__display">
-          <a href="index.html" class="logo header__logo">Погнали</a>
-          <button type="button" class="header__menu-open"></button>
+          <a href="index.html" class="logo header__logo">
+            <picture class="header__white-logo">
+              <source media="(min-width: 1440px)" type="image/webp" srcset="img/logo-desktop-white@1x.webp 1x, img/logo-desktop-white@2x.webp 2x">
+              <source media="(min-width: 1440px)" srcset="img/logo-desktop-white@1x.png 1x, img/logo-desktop-white@2x.png 2x">
+              <source media="(min-width: 768px)" type="image/webp" srcset="img/logo-tablet-white@1x.webp 1x, img/logo-tablet-white@2x.webp 2x">
+              <source media="(min-width: 768px)" srcset="img/logo-tablet-white@1x.png 1x, img/logo-tablet-white@2x.png 2x">
+              <source type="image/webp" srcset="img/logo-mobile-white@1x.webp 1x, img/logo-mobile-white@2x.webp 2x">
+              <img src="img/logo-mobile-white@1x.png" alt="Погнали?" srcset="img/logo-mobile-white@2x.png 2x">
+            </picture>
+
+            <picture class="header__blue-logo">
+              <source media="(min-width: 1440px)" type="image/webp" srcset="img/logo-desktop-blue@1x.webp 1x, img/logo-desktop-blue@2x.webp 2x">
+              <source media="(min-width: 1440px)" srcset="img/logo-desktop-blue@1x.png 1x, img/logo-desktop-blue@2x.png 2x">
+              <source media="(min-width: 768px)" type="image/webp" srcset="img/logo-tablet-blue@1x.webp 1x, img/logo-tablet-blue@2x.webp 2x">
+              <source media="(min-width: 768px)" srcset="img/logo-tablet-blue@1x.png 1x, img/logo-tablet-blue@2x.png 2x">
+              <source type="image/webp" srcset="img/logo-mobile-blue@1x.webp 1x, img/logo-mobile-blue@2x.webp 2x">
+              <img src="img/logo-mobile-blue@1x.png" alt="Погнали?" srcset="img/logo-mobile-blue@2x.png 2x">
+            </picture>
+          </a>
+          <button type="button" class="header__menu-open">открыть меню</button>
           <div class="header__user-links user-links user-links_header">
             <a href="" class="user-links__phone"></a>
             <a href="" class="user-links__mail"></a>
             <a href="" class="enter-link user-links__enter-link enter-link_header">Авторизация</a>
           </div>
         </div>
-        <div class="header__menu header__menu_hidden">
+        <div class="header__menu header__menu_no-js">
           <div class="header__menu-wrap">
             <nav class="header__links">
               <a href="index.html" class="header__link"><span data-hover="О сервисе">О сервисе</span></a>
@@ -32,9 +50,9 @@
               <a href="" class="contacts__mail">mail@htmlacademy.ru</a>
             </div>
             <div class="social-media header__social-media social-media_desktop">
-              <a href="#" class="social-media__link"><img src="img/facebook.svg" width="11" height="21" alt="facebook"></a>
-              <a href="#" class="social-media__link"><img src="img/vk.svg" width="23" height="12" alt="vkontakte"></a>
-              <a href="#" class="social-media__link"><img src="img/instagram.svg" width="18" height="18" alt="instagram"></a>
+              <a href="#" class="social-media__link"><svg width="11" height="21"><use xlink:href="img/svg-sprite.svg#fb-icon"></use></svg></a>
+              <a href="#" class="social-media__link"><svg width="23" height="12"><use xlink:href="img/svg-sprite.svg#vk-icon"></use></svg></a>
+              <a href="#" class="social-media__link"><svg width="18" height="18"><use xlink:href="img/svg-sprite.svg#insta-icon"></use></svg></a>
             </div>
           </div>
         </div>
@@ -53,7 +71,7 @@
           <div class="filter__wrap">
             <div class="filter__filter-collapsed">
               <h1 class="filter__title">Фильтрация по странам</h1>
-              <button class="filter__expend-button"><span class="filter__show-all">Показать все</span><span class="filter__collapse">Свернуть</span></button>
+              <button type="button" class="filter__expend-button"><span class="filter__show-all">Показать все</span><span class="filter__collapse">Свернуть</span></button>
               <ul class="filter__country-list">
                 <li class="filter__list-item"><a href="" class="filter__country-link filter__country-link_selected">Европа</a></li>
                 <li class="filter__list-item"><a href="" class="filter__country-link">Азия</a></li>
@@ -308,9 +326,6 @@
                     <li class="countries-by-letter-list__item"><a class="countries-by-letter-list__link" href="#">Сербия</a></li>
                     <li class="countries-by-letter-list__item"><a class="countries-by-letter-list__link" href="#">Сингапур</a></li>
                     <li class="countries-by-letter-list__item"><a class="countries-by-letter-list__link" href="#">Сирия</a></li>
-                    <li class="countries-by-letter-list__item"><a class="countries-by-letter-list__link" href="#">Словакия</a></li>
-                    <li class="countries-by-letter-list__item"><a class="countries-by-letter-list__link" href="#">Словения</a></li>
-                    <li class="countries-by-letter-list__item"><a class="countries-by-letter-list__link" href="#">США</a></li>
                   </ul>
                 </li>
                 <li class="alphabet-list__item">
@@ -395,19 +410,19 @@
                 </li>
               </ul>
 
-              <button class="filter__close-expended-button">Свернуть</button>
+              <button type="button" class="filter__close-expended-button">Свернуть</button>
             </div>
           </div>
         </section>
         <div class="catalog-wrap">
           <section class="companion-filter">
             <h1 class="companion-filter__title">Подберите идеального попутчика</h1>
-            <form action="catalog.html" method="post" class="companion-filter__form">
+            <form action="photo.html" method="post" class="companion-filter__form">
               <fieldset>
                 <div class="companion-filter__block">
                   <div class="companion-filter__title-part">
                     <legend class="companion-filter__legend">Хобби</legend>
-                    <button type="button" class="companion-filter__expend-button"></button>
+                    <button type="button" class="companion-filter__expend-button">открыть</button>
                   </div>
                   <div class="companion-filter__input companion-filter__content-block companion-filter__content-block_hidden">
                     <input id="sport" type="checkbox" name="hobby" class="companion-filter__checkbox" checked> <label for="sport">Спортзал</label>
@@ -420,9 +435,9 @@
                 <div class="companion-filter__block">
                   <div class="companion-filter__title-part">
                     <legend class="companion-filter__legend">Музыка</legend>
-                    <button type="button" class="companion-filter__expend-button"></button>
+                    <button type="button" class="companion-filter__expend-button companion-filter__expend-button_open">открыть</button>
                   </div>
-                  <div class="companion-filter__input companion-filter__content-block companion-filter__content-block_hidden">
+                  <div class="companion-filter__input companion-filter__content-block">
                     <input id="rock" type="checkbox" name="music" class="companion-filter__checkbox" checked> <label for="rock">Тяжелый рок</label>
                     <input id="rap" type="checkbox" name="music" class="companion-filter__checkbox"> <label for="rap">Русский реп</label>
                     <input id="euro" type="checkbox" name="music" class="companion-filter__checkbox"> <label for="euro">Евроденс</label>
@@ -433,7 +448,7 @@
                 <div class="companion-filter__block">
                   <div class="companion-filter__title-part">
                     <legend class="companion-filter__legend">Еда</legend>
-                    <button type="button" class="companion-filter__expend-button"></button>
+                    <button type="button" class="companion-filter__expend-button">открыть</button>
                   </div>
                   <div class="companion-filter__input companion-filter__content-block companion-filter__content-block_hidden">
                     <input id="meat" type="checkbox" name="food" class="companion-filter__checkbox" checked> <label for="meat">Мясоед</label>
@@ -446,9 +461,9 @@
                 <div class="companion-filter__block">
                   <div class="companion-filter__title-part">
                     <legend class="companion-filter__legend">Транспорт</legend>
-                    <button type="button" class="companion-filter__expend-button"></button>
+                    <button type="button" class="companion-filter__expend-button companion-filter__expend-button_open">открыть</button>
                   </div>
-                  <div class="transport-options companion-filter__transport-options companion-filter__content-block companion-filter__content-block_hidden">
+                  <div class="transport-options companion-filter__transport-options companion-filter__content-block">
                     <input class="transport-options__option transport-options__option_plain" id="plane" name="transport" type="checkbox" checked><label for="plane"><span class="transport-options__tooltip">Авиаперелет</span></label>
                     <input class="transport-options__option transport-options__option_bus" id="bus" name="transport" type="checkbox" checked><label for="bus"><span class="transport-options__tooltip">Автотранспорт</span></label>
                     <input class="transport-options__option transport-options__option_bike" id="bike" name="transport" type="checkbox"><label for="bike"><span class="transport-options__tooltip">Велосипед</span></label>
@@ -460,16 +475,16 @@
                 <div class="companion-filter__block">
                   <div class="companion-filter__title-part">
                     <legend class="companion-filter__legend">Левел</legend>
-                    <button type="button" class="companion-filter__expend-button"></button>
+                    <button type="button" class="companion-filter__expend-button companion-filter__expend-button_open">открыть</button>
                   </div>
-                  <div class="level-input companion-filter__level-input companion-filter__content-block companion-filter__content-block_hidden">
+                  <div class="level-input companion-filter__level-input companion-filter__content-block">
                     <div class="level-input__num">
                       <input type="text" class="level-input__min-num" value="30">
                       <input type="text" class="level-input__max-num" value="100">
                     </div>
                     <div class="level-input__range">
-                      <button class="level-input__min-range"></button>
-                      <button class="level-input__max-range"></button>
+                      <button type="button" class="level-input__min-range">минимум</button>
+                      <button type="button" class="level-input__max-range">максимум</button>
                     </div>
                   </div>
                 </div>
@@ -480,11 +495,20 @@
           <section class="photo">
             <div class="photo__card">
               <div class="photo__about-companion">
-                <div class="photo__companion photo__companion_firsova"></div>
-                <h1 class="photo__name photo__name_offline">Таня Фирсова</h1>
+                <a href="firsova.html" class="photo__companion">
+                  <picture>
+                    <source type="image/webp" media="(min-width:1440px)" srcset="img/firsova-desktop@1x.webp 1x, img/firsova-desktop@2x.webp 2x">
+                    <source media="(min-width:1440px)" srcset="img/firsova-desktop@1x.jpg 1x, img/firsova-desktop@2x.jpg 2x">
+                    <source type="image/webp" media="(min-width:768px)" srcset="img/firsova-tablet@1x.webp 1x, img/firsova-tablet@2x.webp 2x">
+                    <source media="(min-width:768px)" srcset="img/firsova-tablet@1x.jpg 1x, img/firsova-tablet@2x.jpg 2x">
+                    <source type="image/webp" srcset="img/firsova-tablet@1x.webp 1x, img/firsova-tablet@2x.webp 2x">
+                    <img src="img/firsova-tablet@1x.jpg" alt="Фирсова" srcset="img/firsova-tablet@2x.jpg 2x">
+                  </picture>
+                </a>
+                <a href="firsova.html" class="photo__name photo__name_offline">Таня Фирсова</a>
                 <div class="photo__like">
                   <a href="" class="typical-button photo__call-button">Позвать!</a>
-                  <button class="photo__like-button photo__like-button_active"></button>
+                  <button type="button" class="photo__like-button photo__like-button_active">like</button>
                   <span class="photo__companion-likes">1,5 м</span>
                 </div>
                 <span class="photo__hashtags">#ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи</span>
@@ -515,11 +539,20 @@
             </div>
             <div class="photo__card">
               <div class="photo__about-companion">
-                <div class="photo__companion photo__companion_demin"></div>
-                <h1 class="photo__name photo__name_offline">Петя Демин</h1>
+                <a href="demin.html" class="photo__companion">
+                  <picture>
+                    <source type="image/webp" media="(min-width:1440px)" srcset="img/demin-desktop@1x.webp 1x, img/demin-desktop@2x.webp 2x">
+                    <source media="(min-width:1440px)" srcset="img/demin-desktop@1x.jpg 1x, img/demin-desktop@2x.jpg 2x">
+                    <source type="image/webp" media="(min-width:768px)" srcset="img/demin-tablet@1x.webp 1x, img/demin-tablet@2x.webp 2x">
+                    <source media="(min-width:768px)" srcset="img/demin-tablet@1x.jpg 1x, img/demin-tablet@2x.jpg 2x">
+                    <source type="image/webp" srcset="img/demin-tablet@1x.webp 1x, img/demin-tablet@2x.webp 2x">
+                    <img src="img/demin-tablet@1x.jpg" alt="Демин" srcset="img/demin-tablet@2x.jpg 2x">
+                  </picture>
+                </a>
+                <a href="demin.html" class="photo__name photo__name_offline">Петя Демин</a>
                 <div class="photo__like">
-                  <a href="" class="typical-button photo__call-button">Позвать!</a>
-                  <button class="photo__like-button"></button>
+                  <a href="" class="photo__call-button">Позвать!</a>
+                  <button type="button" class="photo__like-button">like</button>
                   <span class="photo__companion-likes">1500</span>
                 </div>
                 <span class="photo__hashtags">#бургер #бар #футбол #концерт #крафт</span>
@@ -549,11 +582,20 @@
             </div>
             <div class="photo__card">
               <div class="photo__about-companion">
-                <div class="photo__companion photo__companion_smolov"></div>
-                <h1 class="photo__name photo__name_offline">Марк Смолов</h1>
+                <a href="smolov.html" class="photo__companion">
+                  <picture>
+                    <source type="image/webp" media="(min-width:1440px)" srcset="img/smolov-desktop@1x.webp 1x, img/smolov-desktop@2x.webp 2x">
+                    <source media="(min-width:1440px)" srcset="img/smolov-desktop@1x.jpg 1x, img/smolov-desktop@2x.jpg 2x">
+                    <source type="image/webp" media="(min-width:768px)" srcset="img/smolov-tablet@1x.webp 1x, img/smolov-tablet@2x.webp 2x">
+                    <source media="(min-width:768px)" srcset="img/smolov-tablet@1x.jpg 1x, img/smolov-tablet@2x.jpg 2x">
+                    <source type="image/webp" srcset="img/smolov-tablet@1x.webp 1x, img/smolov-tablet@2x.webp 2x">
+                    <img src="img/smolov-tablet@1x.jpg" alt="Смолов" srcset="img/smolov-tablet@2x.jpg 2x">
+                  </picture>
+                </a>
+                <a href="smolov.html" class="photo__name photo__name_offline">Марк Смолов</a>
                 <div class="photo__like">
                   <a href="" class="typical-button photo__call-button">Позвать!</a>
-                  <button class="photo__like-button"></button>
+                  <button type="button" class="photo__like-button">like</button>
                   <span class="photo__companion-likes">170</span>
                 </div>
                 <span class="photo__hashtags">#рэп #тату #хайпбист #кроссовки #суприм</span>
@@ -584,11 +626,20 @@
             </div>
             <div class="photo__card">
               <div class="photo__about-companion">
-                <div class="photo__companion photo__companion_rogovaya"></div>
-                <h1 class="photo__name photo__name_online">Лариса Роговая</h1>
+                <a href="rogovaya.html" class="photo__companion">
+                  <picture>
+                    <source type="image/webp" media="(min-width:1440px)" srcset="img/rogovaya-desktop@1x.webp 1x, img/rogovaya-desktop@2x.webp 2x">
+                    <source media="(min-width:1440px)" srcset="img/rogovaya-desktop@1x.jpg 1x, img/rogovaya-desktop@2x.jpg 2x">
+                    <source type="image/webp" media="(min-width:768px)" srcset="img/rogovaya-tablet@1x.webp 1x, img/rogovaya-tablet@2x.webp 2x">
+                    <source media="(min-width:768px)" srcset="img/rogovaya-tablet@1x.jpg 1x, img/rogovaya-tablet@2x.jpg 2x">
+                    <source type="image/webp" srcset="img/rogovaya-tablet@1x.webp 1x, img/rogovaya-tablet@2x.webp 2x">
+                    <img src="img/rogovaya-tablet@1x.jpg" alt="Роговая" srcset="img/rogovaya-tablet@2x.jpg 2x">
+                  </picture>
+                </a>
+                <a href="rogovaya.html" class="photo__name photo__name_rogovaya photo__name_online">Лариса Роговая</a>
                 <div class="photo__like">
                   <a href="" class="typical-button photo__call-button">Позвать!</a>
-                  <button class="photo__like-button"></button>
+                  <button type="button" class="photo__like-button">like</button>
                   <span class="photo__companion-likes">23</span>
                 </div>
                 <span class="photo__hashtags">#образование #карьера #учеба #линкедин</span>
@@ -625,8 +676,8 @@
                 <li class="photo__page-num">4</li>
               </ul>
               <div class="photo__page-buttons">
-                <button class="photo__previous-page"></button>
-                <button class="photo__next-page"></button>
+                <button type="button" class="photo__previous-page">назад</button>
+                <button type="button" class="photo__next-page">вперед</button>
               </div>
             </div>
           </section>
@@ -638,13 +689,13 @@
       <div class="footer__wrap">
         <a href="#" class="footer__logo">Погнали</a>
         <div class="social-media social-media_footer footer__social-media">
-          <a href="#" class="social-media__link social-media__link_yellow"><img src="img/facebook.svg" width="11" height="21" alt="facebook"></a>
-          <a href="#" class="social-media__link social-media__link_yellow"><img src="img/vk.svg" width="23" height="12" alt="vkontakte"></a>
-          <a href="#" class="social-media__link social-media__link_yellow"><img src="img/instagram.svg" width="18" height="18" alt="instagram"></a>
+          <a href="#" class="social-media__link social-media__link_yellow"><svg width="11" height="21"><use xlink:href="img/svg-sprite.svg#fb-icon"></use></svg></a>
+          <a href="#" class="social-media__link social-media__link_yellow"><svg width="23" height="12"><use xlink:href="img/svg-sprite.svg#vk-icon"></use></svg></a>
+          <a href="#" class="social-media__link social-media__link_yellow"><svg width="18" height="18"><use xlink:href="img/svg-sprite.svg#insta-icon"></use></svg></a>
         </div>
         <div class="footer__bottom-part-wrapper">
           <span class="footer__designed-by">Разработано</span>
-          <a class="footer__academy" href="https://up.htmlacademy.ru/adaptive">htmlacademy</a>
+          <a class="footer__academy" href="https://up.htmlacademy.ru/adaptive"><svg width="27" height="34"><use xlink:href="img/svg-sprite.svg#htmlacademy"></use></svg></a>
         </div>
       </div>
     </footer>
